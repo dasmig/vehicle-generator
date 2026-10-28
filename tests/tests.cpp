@@ -668,7 +668,9 @@ TEST_CASE("to_string, streaming and JSON", "[json]")
     REQUIRE(os.str() == summary);
     const auto json = v.to_json();
     REQUIRE(json.starts_with(R"({"country_code":")"));
-    REQUIRE(json.find(R"("vin":")" + v.vin + "\"") != std::string::npos);
+    // Built outside REQUIRE: MSVC's preprocessor cannot stringize a raw string followed by "\"".
+    const std::string vin_field = std::string{R"("vin":")"} + v.vin + '"';
+    REQUIRE(json.find(vin_field) != std::string::npos);
     REQUIRE(json.find(R"("signature":{"seed":"0000000000000007")") != std::string::npos);
 }
 
