@@ -1,0 +1,608 @@
+# Trims of each model: label, fuel, engine (cc, 0 for electric), power (kW), model years, gearboxes (m manual, a automatic), drives (f, r, a; the first is the usual one), weight and the markets that got it (empty: all). Curated from the makers' specifications.
+model	label	fuel	engine_cc	power_kw	from_year	to_year	transmissions	drives	weight	markets
+ford-f150	4.6 V8	petrol	4601	172	1997	2010	a	ra	4	
+ford-f150	5.0 V8	petrol	4951	268	2011		a	ra	5	
+ford-f150	3.5 EcoBoost	petrol	3496	280	2011		a	ra	6	
+ford-f150	2.7 EcoBoost	petrol	2694	242	2015		a	ra	4	
+ford-f150	4.9 I6	petrol	4942	108	1990	1996	ma	ra	2	
+ford-f150	5.4 V8	petrol	5408	224	1997	2010	a	ra	3	
+ford-f150	3.5 PowerBoost	hybrid	3496	321	2021		a	a	1	
+ford-f150	Lightning	electric	0	336	2022		a	a	1	
+ford-focus	1.6	petrol	1596	74	1998	2018	ma	f	6	
+ford-focus	2.0	petrol	1999	104	1998	2018	ma	f	4	NAM,LAM,CHN,CIS
+ford-focus	1.0 EcoBoost	petrol	999	92	2012		ma	f	5	EUR,TR
+ford-focus	1.5 EcoBoost	petrol	1498	134	2014		ma	f	2	
+ford-focus	1.6 TDCi	diesel	1560	85	2004	2018	m	f	5	EUR,TR
+ford-focus	1.8 TDCi	diesel	1753	85	2001	2011	m	f	3	EUR
+ford-focus	1.5 EcoBlue	diesel	1499	88	2018		ma	f	2	EUR,TR
+ford-fiesta	1.25	petrol	1242	55	1995	2019	m	f	6	
+ford-fiesta	1.4	petrol	1388	71	2001	2012	ma	f	3	
+ford-fiesta	1.6	petrol	1596	88	2008	2019	ma	f	3	LAM,MER,NAM,AFR,IND
+ford-fiesta	1.0 EcoBoost	petrol	998	74	2012	2023	ma	f	6	EUR,TR,AFR
+ford-fiesta	1.4 TDCi	diesel	1399	50	2002	2017	m	f	3	EUR,TR
+ford-fiesta	1.1	petrol	1118	37	1990	1995	m	f	2	EUR
+ford-escape	3.0 V6	petrol	2967	149	2001	2012	a	fa	3	
+ford-escape	2.5	petrol	2488	127	2009	2019	a	fa	3	
+ford-escape	1.5 EcoBoost	petrol	1498	134	2013		a	fa	5	
+ford-escape	2.0 EcoBoost	petrol	1999	184	2013		a	a	3	
+ford-escape	2.5 Hybrid	hybrid	2488	150	2005		a	fa	1	
+ford-explorer	4.0 V6	petrol	4016	153	1990	2010	a	ra	5	
+ford-explorer	3.5 V6	petrol	3496	216	2011	2019	a	fa	4	
+ford-explorer	2.3 EcoBoost	petrol	2261	224	2016		a	ra	4	
+ford-explorer	3.0 EcoBoost	petrol	2956	272	2020		a	a	2	
+ford-ranger	2.5	petrol	2507	89	1990	2012	ma	ra	3	NAM,LAM
+ford-ranger	2.3 EcoBoost	petrol	2261	201	2019		a	ra	3	NAM
+ford-ranger	2.2 TDCi	diesel	2198	110	2011		ma	ra	5	
+ford-ranger	3.2 TDCi	diesel	3198	147	2011	2022	ma	a	5	
+ford-ranger	2.0 Bi-Turbo	diesel	1996	157	2018		a	a	3	
+ford-ranger	2.5 TD	diesel	2499	65	1998	2011	m	ra	3	
+chevrolet-silverado	4.8 V8	petrol	4806	212	1999	2013	a	ra	3	
+chevrolet-silverado	5.3 V8	petrol	5328	265	1999		a	ra	6	
+chevrolet-silverado	4.3 V6	petrol	4300	212	1999	2018	a	r	3	
+chevrolet-silverado	2.7 Turbo	petrol	2700	231	2019		a	ra	3	
+chevrolet-silverado	6.2 V8	petrol	6162	313	2014		a	a	1	
+chevrolet-malibu	2.4	petrol	2384	127	1997	2015	a	f	5	
+chevrolet-malibu	3.5 V6	petrol	3511	165	2004	2012	a	f	2	
+chevrolet-malibu	1.5 Turbo	petrol	1490	119	2016	2024	a	f	6	
+chevrolet-malibu	2.0 Turbo	petrol	1998	186	2016	2022	a	f	1	
+chevrolet-equinox	3.4 V6	petrol	3350	138	2005	2009	a	fa	3	
+chevrolet-equinox	2.4	petrol	2384	136	2010	2017	a	fa	4	
+chevrolet-equinox	1.5 Turbo	petrol	1490	127	2018		a	fa	6	
+chevrolet-equinox	EV	electric	0	157	2024		a	fa	1	
+chevrolet-cruze	1.6	petrol	1598	83	2008	2016	ma	f	4	
+chevrolet-cruze	1.8	petrol	1796	104	2008	2016	ma	f	5	
+chevrolet-cruze	1.4 Turbo	petrol	1364	103	2011	2019	ma	f	4	
+chevrolet-cruze	2.0 VCDi	diesel	1998	120	2008	2016	ma	f	2	EUR,KOR,OCE
+chevrolet-aveo	1.2	petrol	1206	62	2002	2011	m	f	3	EUR
+chevrolet-aveo	1.4	petrol	1399	69	2002	2011	ma	f	4	
+chevrolet-aveo	1.5	petrol	1498	79	2018		ma	f	4	LAM,MEA
+chevrolet-aveo	1.6	petrol	1598	78	2002	2018	ma	f	5	
+chevrolet-onix	1.0	petrol	999	58	2012		ma	f	6	
+chevrolet-onix	1.4	petrol	1389	73	2012	2019	ma	f	3	
+chevrolet-onix	1.0 Turbo	petrol	999	85	2019		ma	f	3	
+jeep-grandcherokee	4.0 I6	petrol	3964	142	1993	2004	a	ra	4	
+jeep-grandcherokee	3.7 V6	petrol	3701	157	2005	2010	a	ra	3	
+jeep-grandcherokee	3.6 V6	petrol	3604	216	2011		a	ra	7	
+jeep-grandcherokee	5.7 V8	petrol	5654	265	2005		a	a	3	
+jeep-grandcherokee	3.0 CRD	diesel	2987	184	2005	2022	a	a	2	EUR,CIS,OCE
+jeep-grandcherokee	4xe	plug_in	1995	280	2022		a	a	1	NAM,EUR
+jeep-wrangler	4.0 I6	petrol	3964	134	1990	2006	ma	a	3	
+jeep-wrangler	3.8 V6	petrol	3778	146	2007	2011	ma	a	3	
+jeep-wrangler	3.6 V6	petrol	3604	212	2012		ma	a	7	
+jeep-wrangler	2.0 Turbo	petrol	1995	200	2018		a	a	2	
+jeep-wrangler	4xe	plug_in	1995	280	2021		a	a	1	NAM,EUR
+jeep-compass	2.4	petrol	2360	134	2007		a	fa	6	
+jeep-compass	1.3 Turbo	petrol	1332	110	2020		a	fa	3	EUR,MER
+jeep-compass	2.0 MultiJet	diesel	1956	125	2017		ma	fa	3	EUR,MER,IND
+jeep-compass	4xe	plug_in	1332	176	2020		a	a	1	EUR
+ram-1500	5.7 HEMI	petrol	5654	295	2003		a	ra	7	
+ram-1500	3.6 V6	petrol	3604	227	2013		a	ra	3	
+ram-1500	5.2 V8	petrol	5211	172	1994	2003	a	ra	2	
+ram-1500	3.0 EcoDiesel	diesel	2987	179	2014	2023	a	ra	1	NAM
+ram-1500	3.0 Hurricane	petrol	2998	313	2025		a	a	1	
+dodge-caravan	3.3 V6	petrol	3301	112	1990	2007	a	f	4	
+dodge-caravan	3.8 V6	petrol	3778	146	1994	2010	a	f	3	
+dodge-caravan	3.6 V6	petrol	3604	210	2011	2020	a	f	5	
+tesla-model3	RWD	electric	0	208	2017		a	r	6	
+tesla-model3	Long Range	electric	0	324	2018		a	a	4	
+tesla-model3	Performance	electric	0	377	2018		a	a	1	
+tesla-modely	RWD	electric	0	220	2020		a	r	5	
+tesla-modely	Long Range	electric	0	378	2020		a	a	5	
+tesla-modely	Performance	electric	0	393	2020		a	a	1	
+holden-commodore	3.8 V6	petrol	3791	152	1990	2004	a	r	5	
+holden-commodore	3.6 V6	petrol	3564	210	2004	2020	a	ra	6	
+holden-commodore	6.0 V8	petrol	5967	270	2006	2017	ma	r	2	
+holden-commodore	2.0 Turbo	petrol	1998	191	2018	2020	a	f	1	
+hyundai-elantra	1.6	petrol	1591	94	1990		ma	f	6	
+hyundai-elantra	1.8	petrol	1797	110	2010	2016	ma	f	3	
+hyundai-elantra	2.0	petrol	1999	110	2000		a	f	5	
+hyundai-elantra	1.6 CRDi	diesel	1582	94	2010	2020	ma	f	1	EUR,KOR
+hyundai-elantra	1.6 Hybrid	hybrid	1580	104	2020		a	f	1	NAM,KOR
+hyundai-tucson	2.0	petrol	1999	114	2004		ma	fa	6	
+hyundai-tucson	2.4	petrol	2359	135	2010	2021	a	fa	3	NAM,MEA
+hyundai-tucson	1.6 T-GDi	petrol	1591	130	2015		ma	fa	4	
+hyundai-tucson	2.0 CRDi	diesel	1995	100	2004		ma	fa	4	EUR,KOR,CIS,AFR,TR
+hyundai-tucson	1.6 Hybrid	hybrid	1598	169	2020		a	fa	2	EUR,NAM,KOR
+hyundai-tucson	Plug-in	plug_in	1598	195	2021		a	a	1	EUR,NAM
+hyundai-santafe	2.4	petrol	2359	127	2000	2018	a	fa	5	
+hyundai-santafe	3.5 V6	petrol	3470	206	2006	2020	a	a	2	
+hyundai-santafe	2.5 T-GDi	petrol	2497	206	2021		a	fa	2	
+hyundai-santafe	2.2 CRDi	diesel	2199	147	2006		a	a	6	KOR,EUR,CIS,AFR,OCE
+hyundai-santafe	1.6 Hybrid	hybrid	1598	169	2021		a	a	2	KOR,NAM,EUR
+hyundai-accent	1.3	petrol	1341	63	1994	2005	ma	f	4	
+hyundai-accent	1.4	petrol	1396	74	2006		ma	f	5	
+hyundai-accent	1.6	petrol	1591	90	2006		ma	f	6	
+hyundai-accent	1.5 CRDi	diesel	1493	81	2006	2011	m	f	1	EUR
+hyundai-i10	1.0	petrol	998	49	2008		ma	f	6	
+hyundai-i10	1.1	petrol	1086	50	2007	2013	m	f	3	
+hyundai-i10	1.2	petrol	1197	63	2010		ma	f	5	
+hyundai-i10	1.2 CNG	cng	1197	50	2013		m	f	1	IND
+hyundai-i20	1.2	petrol	1248	62	2008		m	f	6	
+hyundai-i20	1.4	petrol	1396	74	2008	2020	ma	f	4	
+hyundai-i20	1.0 T-GDi	petrol	998	74	2015		ma	f	4	
+hyundai-i20	1.4 CRDi	diesel	1396	66	2008	2020	m	f	2	EUR,IND,TR
+hyundai-creta	1.5	petrol	1497	85	2020		ma	f	5	
+hyundai-creta	1.6	petrol	1591	90	2015	2020	ma	fa	4	
+hyundai-creta	1.5 CRDi	diesel	1493	85	2020		ma	f	4	IND
+hyundai-creta	2.0	petrol	1999	110	2016		a	fa	1	CIS
+hyundai-sonata	2.0	petrol	1997	101	1990	2019	a	f	6	
+hyundai-sonata	2.4	petrol	2359	134	2005	2019	a	f	4	
+hyundai-sonata	2.5	petrol	2497	141	2020		a	f	3	
+hyundai-sonata	2.0 LPi	lpg	1999	110	2010		a	f	3	KOR
+hyundai-sonata	2.0 Hybrid	hybrid	1999	143	2011		a	f	2	
+kia-sportage	2.0	petrol	1998	105	1993		ma	fa	7	
+kia-sportage	2.4	petrol	2359	135	2010	2022	a	fa	2	NAM,MEA
+kia-sportage	1.6 T-GDi	petrol	1591	130	2016		a	fa	3	
+kia-sportage	1.7 CRDi	diesel	1685	85	2010	2021	m	f	2	EUR,TR
+kia-sportage	2.0 CRDi	diesel	1995	100	2004		ma	a	3	EUR,KOR,CIS,AFR
+kia-sportage	Hybrid	hybrid	1598	169	2021		a	fa	2	EUR,NAM,KOR
+kia-rio	1.4	petrol	1396	79	2005		ma	f	6	
+kia-rio	1.6	petrol	1591	90	2005		ma	f	5	
+kia-rio	1.3	petrol	1343	60	2000	2005	m	f	2	
+kia-rio	1.0 T-GDi	petrol	998	74	2017		ma	f	2	EUR
+kia-rio	1.4 CRDi	diesel	1396	66	2011	2020	m	f	1	EUR
+kia-picanto	1.0	petrol	998	49	2004		ma	f	8	
+kia-picanto	1.2	petrol	1248	62	2011		ma	f	3	
+kia-cerato	1.6	petrol	1591	94	2003		ma	f	6	
+kia-cerato	2.0	petrol	1999	112	2003		a	f	5	
+daewoo-matiz	0.8	petrol	796	38	1998	2015	ma	f	8	
+daewoo-matiz	1.0	petrol	995	47	2005	2015	m	f	2	
+byd-atto3	60 kWh	electric	0	150	2022		a	f	8	
+byd-song	DM-i	plug_in	1498	145	2021		a	f	6	
+byd-song	EV	electric	0	160	2019		a	f	3	
+byd-song	1.5 T	petrol	1497	112	2016	2021	ma	f	2	
+byd-qin	DM-i	plug_in	1498	132	2014		a	f	6	
+byd-qin	EV	electric	0	100	2016		a	f	4	
+byd-qin	1.5	petrol	1497	80	2014	2019	ma	f	1	
+geely-emgrand	1.5	petrol	1498	84	2009		ma	f	8	
+geely-emgrand	1.8	petrol	1792	102	2009	2018	ma	f	2	
+chery-tiggo7	1.5 T	petrol	1498	115	2016		ma	f	7	
+chery-tiggo7	1.6 T	petrol	1598	145	2020		a	f	3	
+haval-h6	1.5 T	petrol	1497	124	2011		ma	fa	7	
+haval-h6	2.0 T	petrol	1967	165	2017		a	fa	2	
+haval-h6	HEV	hybrid	1497	179	2021		a	f	2	
+wuling-hongguang	1.5	petrol	1485	73	2010		m	r	7	
+wuling-hongguang	1.2	petrol	1206	60	2010		m	r	3	
+wuling-miniev	9.2 kWh	electric	0	20	2020		a	r	5	
+wuling-miniev	13.9 kWh	electric	0	20	2020		a	r	4	
+mg-zs	1.5	petrol	1498	78	2017		ma	f	5	
+mg-zs	1.0 T	petrol	999	82	2019		ma	f	3	
+mg-zs	EV	electric	0	130	2019		a	f	4	
+maruti-swift	1.2	petrol	1197	61	2005		ma	f	7	
+maruti-swift	1.3 DDiS	diesel	1248	55	2007	2020	m	f	3	IND
+maruti-swift	1.2 CNG	cng	1197	57	2023		m	f	1	IND
+maruti-dzire	1.2	petrol	1197	61	2008		ma	f	6	
+maruti-dzire	1.3 DDiS	diesel	1248	55	2008	2020	ma	f	3	
+maruti-dzire	1.2 CNG	cng	1197	57	2018		m	f	2	
+maruti-alto	0.8	petrol	796	35	2000		m	f	7	
+maruti-alto	0.8 CNG	cng	796	30	2010		m	f	2	
+maruti-alto	1.0 K10	petrol	998	50	2010		ma	f	3	
+maruti-800	0.8	petrol	796	28	1990	2014	m	f	8	
+maruti-wagonr	1.0	petrol	998	50	1999		ma	f	7	
+maruti-wagonr	1.0 CNG	cng	998	42	2010		m	f	3	
+maruti-wagonr	1.2	petrol	1197	61	2019		ma	f	2	
+maruti-baleno	1.2	petrol	1197	61	2015		ma	f	8	
+maruti-baleno	1.3 DDiS	diesel	1248	55	2015	2020	m	f	2	
+maruti-baleno	1.2 CNG	cng	1197	57	2022		m	f	1	
+tata-nexon	1.2 Turbo	petrol	1199	88	2017		ma	f	5	
+tata-nexon	1.5 Revotorq	diesel	1497	81	2017		ma	f	3	
+tata-nexon	EV	electric	0	95	2020		a	f	2	
+tata-indica	1.4	petrol	1405	63	1998	2018	m	f	5	
+tata-indica	1.4 D	diesel	1405	39	1998	2018	m	f	5	
+mahindra-scorpio	2.2 mHawk	diesel	2179	103	2006		ma	ra	8	
+mahindra-scorpio	2.6 CRDe	diesel	2609	80	2002	2009	m	ra	2	
+mahindra-scorpio	2.0 mStallion	petrol	1997	149	2022		ma	r	1	
+proton-saga	1.3	petrol	1299	69	1990		ma	f	6	
+proton-saga	1.5	petrol	1468	66	1990	2008	m	f	4	
+perodua-myvi	1.3	petrol	1298	64	2005		ma	f	6	
+perodua-myvi	1.5	petrol	1496	76	2011		a	f	4	
+ikco-samand	1.8	petrol	1761	74	2001		m	f	6	
+ikco-samand	1.7 EF7	cng	1645	83	2008		m	f	4	
+ikco-peugeot405	1.8	petrol	1761	74	1990		m	f	7	
+ikco-peugeot405	1.8 Dual-fuel	cng	1761	70	2007		m	f	3	
+ikco-dena	1.7 EF7	petrol	1645	83	2011		m	f	7	
+ikco-dena	1.7 EF7 Turbo	petrol	1645	110	2016		ma	f	3	
+saipa-pride	1.3	petrol	1323	47	1993	2020	m	f	7	
+saipa-pride	1.3 CNG	cng	1323	43	2008	2020	m	f	3	
+saipa-tiba	1.5	petrol	1498	62	2009		m	f	8	
+vw-golf	1.4	petrol	1390	55	1990	2008	ma	f	4	
+vw-golf	1.6	petrol	1595	74	1990	2012	ma	f	4	
+vw-golf	1.0 TSI	petrol	999	81	2017		ma	f	3	
+vw-golf	1.4 TSI	petrol	1395	90	2008	2020	ma	f	4	
+vw-golf	1.5 eTSI	hybrid	1498	110	2020		a	f	3	EUR
+vw-golf	1.5 TSI	petrol	1498	110	2017		ma	f	3	
+vw-golf	1.9 TDI	diesel	1896	77	1993	2009	ma	f	5	EUR,TR,CIS,AFR
+vw-golf	2.0 TDI	diesel	1968	110	2008		ma	f	5	EUR,TR,CIS,AFR,OCE
+vw-golf	GTI	petrol	1984	169	1990		ma	f	1	
+vw-golf	e-Golf	electric	0	100	2014	2020	a	f	1	EUR,NAM
+vw-golf	1.4 eHybrid	plug_in	1395	150	2015		a	f	1	EUR
+vw-polo	1.0 MPI	petrol	999	48	2014		m	f	4	
+vw-polo	1.2	petrol	1198	51	2001	2014	ma	f	4	
+vw-polo	1.4	petrol	1390	55	1994	2009	ma	f	3	
+vw-polo	1.0 TSI	petrol	999	70	2017		ma	f	4	
+vw-polo	1.6	petrol	1598	77	2010		ma	f	2	AFR,LAM,IND,CIS
+vw-polo	1.4 TDI	diesel	1422	55	2001	2017	m	f	2	EUR,TR,AFR
+vw-polo	1.6 TDI	diesel	1598	66	2009	2021	m	f	2	EUR,TR,IND
+vw-passat	1.8	petrol	1781	92	1990	2005	ma	f	3	
+vw-passat	2.0 TSI	petrol	1984	140	2006		a	fa	3	
+vw-passat	1.4 TSI	petrol	1395	110	2010		ma	f	2	
+vw-passat	1.9 TDI	diesel	1896	85	1996	2010	ma	f	5	EUR,TR,CIS,AFR
+vw-passat	2.0 TDI	diesel	1968	110	2005		ma	fa	7	EUR,TR,CIS,AFR
+vw-passat	GTE	plug_in	1395	160	2015		a	f	1	EUR
+vw-jetta	2.0	petrol	1984	85	1990	2010	ma	f	4	
+vw-jetta	1.4 TSI	petrol	1395	110	2011		ma	f	3	
+vw-jetta	1.5 TSI	petrol	1498	117	2022		ma	f	2	NAM,LAM
+vw-jetta	2.5	petrol	2480	125	2005	2014	ma	f	2	NAM,LAM
+vw-jetta	1.9 TDI	diesel	1896	77	1995	2006	ma	f	1	NAM,EUR
+vw-tiguan	1.4 TSI	petrol	1395	110	2007	2020	ma	fa	3	
+vw-tiguan	2.0 TSI	petrol	1984	132	2007		a	af	4	
+vw-tiguan	1.5 TSI	petrol	1498	110	2020		ma	f	3	
+vw-tiguan	2.0 TDI	diesel	1968	110	2007		ma	fa	5	EUR,TR,CIS,OCE,AFR
+vw-tiguan	eHybrid	plug_in	1395	180	2021		a	f	1	EUR
+vw-troc	1.0 TSI	petrol	999	81	2017		m	f	4	
+vw-troc	1.5 TSI	petrol	1498	110	2017		ma	f	4	
+vw-troc	2.0 TDI	diesel	1968	110	2017		ma	fa	2	EUR,TR
+vw-gol	1.0	petrol	999	52	1994	2022	m	f	6	
+vw-gol	1.6	petrol	1598	74	1990	2022	ma	f	4	
+vw-lavida	1.6	petrol	1598	81	2008		ma	f	5	
+vw-lavida	1.5	petrol	1498	83	2018		ma	f	4	
+vw-lavida	1.4 TSI	petrol	1395	96	2013	2022	a	f	2	
+audi-a3	1.6	petrol	1595	75	1996	2012	ma	f	3	
+audi-a3	1.4 TFSI	petrol	1395	92	2008	2020	ma	f	4	
+audi-a3	35 TFSI	petrol	1498	110	2018		a	f	3	
+audi-a3	2.0 TDI	diesel	1968	110	2003		ma	fa	5	EUR,OCE
+audi-a3	1.9 TDI	diesel	1896	77	1996	2010	ma	f	3	EUR
+audi-a4	1.8 T	petrol	1781	110	1995	2008	ma	fa	3	
+audi-a4	2.0 TFSI	petrol	1984	140	2008		a	fa	5	
+audi-a4	2.0 TDI	diesel	1968	105	2004		ma	fa	6	EUR,CIS
+audi-a4	1.9 TDI	diesel	1896	85	1995	2004	ma	f	3	EUR
+audi-a6	2.4	petrol	2393	125	1997	2005	ma	fa	2	
+audi-a6	2.0 TFSI	petrol	1984	140	2011		a	fa	4	
+audi-a6	3.0 TFSI	petrol	2995	250	2011		a	a	2	
+audi-a6	2.0 TDI	diesel	1968	120	2005		a	f	5	EUR,CIS
+audi-a6	3.0 TDI	diesel	2967	180	2004		a	a	4	EUR,CIS
+audi-q5	2.0 TFSI	petrol	1984	165	2008		a	a	6	
+audi-q5	2.0 TDI	diesel	1968	130	2008		a	a	6	EUR,CIS
+audi-q5	55 TFSI e	plug_in	1984	270	2020		a	a	1	EUR,NAM
+skoda-octavia	1.6	petrol	1595	75	1996	2012	ma	f	4	
+skoda-octavia	1.4 TSI	petrol	1395	110	2008	2020	ma	f	4	
+skoda-octavia	1.0 TSI	petrol	999	81	2019		m	f	2	
+skoda-octavia	1.5 TSI	petrol	1498	110	2019		ma	f	3	
+skoda-octavia	1.9 TDI	diesel	1896	77	1996	2010	m	f	5	EUR,CIS,TR
+skoda-octavia	2.0 TDI	diesel	1968	110	2010		ma	fa	6	EUR,CIS,TR
+skoda-octavia	1.4 G-TEC	cng	1395	81	2013	2019	m	f	1	EUR
+skoda-fabia	1.2	petrol	1198	51	2002	2014	m	f	5	
+skoda-fabia	1.0 MPI	petrol	999	48	2014		m	f	4	
+skoda-fabia	1.0 TSI	petrol	999	70	2017		ma	f	3	
+skoda-fabia	1.4 TDI	diesel	1422	59	2003	2017	m	f	3	EUR
+seat-ibiza	1.4	petrol	1390	55	1993	2010	m	f	5	
+seat-ibiza	1.0 TSI	petrol	999	81	2017		ma	f	4	
+seat-ibiza	1.2 TSI	petrol	1197	77	2010	2017	m	f	3	
+seat-ibiza	1.9 TDI	diesel	1896	74	1996	2009	m	f	4	EUR
+seat-ibiza	1.6 TDI	diesel	1598	66	2009	2020	m	f	2	EUR
+seat-leon	1.6	petrol	1595	75	1999	2012	m	f	4	
+seat-leon	1.4 TSI	petrol	1395	92	2012	2020	ma	f	4	
+seat-leon	1.5 TSI	petrol	1498	110	2020		ma	f	3	
+seat-leon	1.9 TDI	diesel	1896	77	1999	2010	m	f	4	EUR
+seat-leon	2.0 TDI	diesel	1968	110	2010		ma	f	4	EUR
+bmw-3	318i	petrol	1796	85	1990	2005	ma	r	4	
+bmw-3	320i	petrol	1997	135	2005		ma	ra	5	
+bmw-3	330i	petrol	1998	190	2015		a	ra	3	
+bmw-3	320d	diesel	1995	135	1998		ma	ra	7	EUR,CIS,OCE
+bmw-3	330e	plug_in	1998	215	2016		a	r	1	EUR,NAM
+bmw-5	520i	petrol	1997	135	1990		a	r	5	
+bmw-5	530i	petrol	1998	185	2016		a	ra	3	
+bmw-5	520d	diesel	1995	140	2000		a	ra	7	EUR,CIS
+bmw-5	530d	diesel	2993	210	1998		a	ra	3	EUR,CIS
+bmw-5	530e	plug_in	1998	215	2017		a	r	1	EUR,NAM,CHN
+bmw-5	i5 eDrive40	electric	0	250	2023		a	r	1	EUR,NAM
+bmw-x1	sDrive18i	petrol	1499	100	2015		ma	f	4	
+bmw-x1	xDrive20i	petrol	1998	140	2009		a	a	3	
+bmw-x1	sDrive18d	diesel	1995	110	2009		ma	fa	4	EUR
+bmw-x1	iX1	electric	0	200	2022		a	a	1	EUR
+bmw-x3	xDrive20i	petrol	1998	135	2010		a	a	4	
+bmw-x3	xDrive30i	petrol	1998	185	2017		a	a	3	
+bmw-x3	xDrive20d	diesel	1995	140	2004		a	a	6	EUR,CIS,OCE
+bmw-x3	iX3	electric	0	210	2021		a	r	1	EUR,CHN
+mini-hatch	One	petrol	1598	66	2001	2014	ma	f	4	
+mini-hatch	Cooper	petrol	1499	100	2014		ma	f	5	
+mini-hatch	Cooper S	petrol	1998	141	2001		ma	f	3	
+mini-hatch	Cooper D	diesel	1496	85	2007	2023	m	f	2	EUR
+mini-hatch	Cooper SE	electric	0	135	2020		a	f	1	
+mercedes-c	C 180	petrol	1595	115	1993		a	r	5	
+mercedes-c	C 200	petrol	1991	150	1993		a	ra	5	
+mercedes-c	C 300	petrol	1991	190	2015		a	ra	3	NAM,CHN,MEA
+mercedes-c	C 220 d	diesel	2143	125	1997		ma	ra	6	EUR,CIS,AFR
+mercedes-c	C 300 e	plug_in	1999	230	2015		a	r	1	EUR
+mercedes-e	E 200	petrol	1991	135	1990		a	r	5	
+mercedes-e	E 350	petrol	2996	220	2005		a	ra	3	
+mercedes-e	E 220 d	diesel	2143	125	1995		a	r	7	EUR,CIS,AFR,MEA
+mercedes-e	E 300 de	plug_in	1950	225	2019		a	r	1	EUR
+mercedes-glc	GLC 200	petrol	1991	150	2015		a	ra	4	
+mercedes-glc	GLC 300	petrol	1991	190	2015		a	a	5	
+mercedes-glc	GLC 220 d	diesel	1950	143	2015		a	a	5	EUR,CIS
+mercedes-glc	GLC 300 e	plug_in	1999	235	2019		a	a	1	EUR
+opel-corsa	1.2	petrol	1199	55	1993	2019	m	f	6	
+opel-corsa	1.4	petrol	1398	66	2006	2019	ma	f	3	
+opel-corsa	1.2 Turbo	petrol	1199	74	2019		ma	f	4	
+opel-corsa	1.3 CDTI	diesel	1248	55	2003	2019	m	f	3	EUR,TR
+opel-corsa	Corsa-e	electric	0	100	2020		a	f	1	EUR
+opel-astra	1.4	petrol	1389	66	1991	2015	m	f	5	
+opel-astra	1.6	petrol	1598	85	1991	2015	ma	f	4	
+opel-astra	1.4 Turbo	petrol	1364	103	2010	2022	ma	f	3	
+opel-astra	1.2 Turbo	petrol	1199	96	2021		ma	f	2	
+opel-astra	1.7 CDTI	diesel	1686	74	2003	2015	m	f	4	EUR,TR
+opel-astra	1.6 CDTI	diesel	1598	100	2015	2022	m	f	2	EUR,TR
+peugeot-208	1.2 PureTech	petrol	1199	60	2012		ma	f	8	
+peugeot-208	1.6 HDi	diesel	1560	68	2012	2019	m	f	3	EUR,TR,AFR
+peugeot-208	1.5 BlueHDi	diesel	1499	75	2019		m	f	2	EUR,TR
+peugeot-208	e-208	electric	0	100	2019		a	f	2	EUR
+peugeot-206	1.1	petrol	1124	44	1998	2012	m	f	4	
+peugeot-206	1.4	petrol	1360	55	1998	2012	ma	f	6	
+peugeot-206	1.4 HDi	diesel	1398	50	2001	2012	m	f	4	EUR,AFR
+peugeot-308	1.6 VTi	petrol	1598	88	2007	2014	ma	f	4	
+peugeot-308	1.2 PureTech	petrol	1199	96	2014		ma	f	5	
+peugeot-308	1.6 HDi	diesel	1560	82	2007	2017	m	f	5	EUR,TR,AFR
+peugeot-308	1.5 BlueHDi	diesel	1499	96	2017		ma	f	3	EUR,TR
+peugeot-308	Hybrid	plug_in	1598	132	2021		a	f	1	EUR
+peugeot-2008	1.2 PureTech	petrol	1199	96	2013		ma	f	8	
+peugeot-2008	1.5 BlueHDi	diesel	1499	96	2019		m	f	2	EUR,TR
+peugeot-2008	1.6 HDi	diesel	1560	68	2013	2019	m	f	2	EUR,TR
+peugeot-2008	e-2008	electric	0	100	2020		a	f	1	EUR
+peugeot-3008	1.6 THP	petrol	1598	115	2009	2016	ma	f	3	
+peugeot-3008	1.2 PureTech	petrol	1199	96	2016		ma	f	4	
+peugeot-3008	2.0 BlueHDi	diesel	1997	110	2016		a	f	3	EUR,TR
+peugeot-3008	1.6 HDi	diesel	1560	82	2009	2016	m	f	3	EUR
+peugeot-3008	Hybrid4	plug_in	1598	220	2019		a	a	1	EUR
+citroen-c3	1.4	petrol	1360	54	2002	2016	ma	f	5	
+citroen-c3	1.2 PureTech	petrol	1199	60	2016		m	f	5	
+citroen-c3	1.4 HDi	diesel	1398	50	2002	2016	m	f	3	EUR,TR
+citroen-c3	1.5 BlueHDi	diesel	1499	75	2019		m	f	2	EUR
+citroen-c3	e-C3	electric	0	83	2024		a	f	1	EUR,IND
+renault-clio	1.2	petrol	1149	43	1990	2012	m	f	7	
+renault-clio	1.4	petrol	1390	55	1990	2008	ma	f	3	
+renault-clio	0.9 TCe	petrol	898	66	2012	2020	m	f	4	
+renault-clio	1.0 TCe	petrol	999	67	2019		m	f	4	
+renault-clio	1.5 dCi	diesel	1461	66	2001		m	f	6	EUR,TR,AFR
+renault-clio	E-Tech	hybrid	1598	105	2020		a	f	1	EUR
+renault-megane	1.6	petrol	1598	81	1995	2016	ma	f	5	
+renault-megane	1.3 TCe	petrol	1332	103	2018		ma	f	3	
+renault-megane	1.5 dCi	diesel	1461	81	2002		m	f	7	EUR,TR,AFR
+renault-megane	E-Tech Electric	electric	0	160	2022		a	f	1	EUR
+renault-captur	0.9 TCe	petrol	898	66	2013	2019	m	f	5	
+renault-captur	1.3 TCe	petrol	1332	103	2019		ma	f	4	
+renault-captur	1.5 dCi	diesel	1461	66	2013		m	f	3	EUR,TR
+renault-captur	E-Tech	plug_in	1598	117	2020		a	f	1	EUR
+dacia-sandero	1.4 MPI	petrol	1390	55	2008	2012	m	f	4	
+dacia-sandero	1.0 SCe	petrol	999	54	2016		m	f	5	
+dacia-sandero	0.9 TCe	petrol	898	66	2012	2020	m	f	4	
+dacia-sandero	1.0 TCe	petrol	999	67	2020		ma	f	4	
+dacia-sandero	1.0 TCe LPG	lpg	999	74	2016		m	f	3	
+dacia-sandero	1.5 dCi	diesel	1461	55	2008	2021	m	f	3	
+dacia-logan	1.4 MPI	petrol	1390	55	2004	2012	m	f	5	
+dacia-logan	1.6 MPI	petrol	1598	64	2004	2012	m	f	3	
+dacia-logan	1.0 SCe	petrol	999	54	2016		m	f	3	
+dacia-logan	1.5 dCi	diesel	1461	55	2005	2021	m	f	5	
+dacia-logan	1.0 TCe LPG	lpg	999	74	2016		m	f	2	
+dacia-duster	1.6 SCe	petrol	1598	84	2010	2020	m	fa	4	
+dacia-duster	1.3 TCe	petrol	1332	96	2018		ma	fa	4	
+dacia-duster	1.0 TCe LPG	lpg	999	74	2019		m	f	2	
+dacia-duster	1.5 dCi	diesel	1461	80	2010		m	fa	5	
+fiat-panda	1.1	petrol	1108	40	1990	2012	m	f	5	
+fiat-panda	1.2	petrol	1242	51	2003		m	fa	6	
+fiat-panda	0.9 TwinAir	petrol	875	63	2012		m	fa	2	
+fiat-panda	Natural Power	cng	875	59	2006	2022	m	f	2	EUR
+fiat-panda	1.3 Multijet	diesel	1248	55	2004	2018	m	fa	3	EUR
+fiat-panda	1.0 Hybrid	hybrid	999	51	2020		m	f	3	EUR
+fiat-500	1.2	petrol	1242	51	2007		ma	f	7	
+fiat-500	0.9 TwinAir	petrol	875	63	2010	2020	ma	f	2	
+fiat-500	1.0 Hybrid	hybrid	999	51	2020		m	f	3	EUR
+fiat-500	500e	electric	0	87	2013		a	f	1	EUR,NAM
+fiat-punto	1.2	petrol	1242	44	1993	2018	m	f	7	
+fiat-punto	1.4	petrol	1368	57	2005	2018	ma	f	3	
+fiat-punto	1.3 Multijet	diesel	1248	55	2003	2018	m	f	5	EUR,TR
+fiat-tipo	1.4	petrol	1372	70	1990	1995	m	f	3	
+fiat-tipo	1.4 Fire	petrol	1368	70	2015		m	f	4	
+fiat-tipo	1.6 E-Torq	petrol	1598	81	2015		a	f	2	TR
+fiat-tipo	1.3 Multijet	diesel	1248	70	2015		m	f	4	
+fiat-tipo	1.6 Multijet	diesel	1598	88	2015		ma	f	4	
+fiat-uno	1.0 Fire	petrol	999	48	1990	2021	m	f	8	
+fiat-uno	1.4	petrol	1368	62	1990	2014	m	f	2	
+fiat-palio	1.0 Fire	petrol	999	48	1996	2017	m	f	6	
+fiat-palio	1.4	petrol	1368	62	1996	2017	m	f	4	
+fiat-palio	1.6	petrol	1581	74	1996	2010	m	f	2	
+volvo-xc60	T5	petrol	1969	187	2008		a	fa	4	
+volvo-xc60	B5	hybrid	1969	184	2020		a	a	3	
+volvo-xc60	D4	diesel	1969	140	2008	2021	a	fa	5	EUR
+volvo-xc60	T8 Recharge	plug_in	1969	287	2017		a	a	2	EUR,NAM,CHN
+lada-2107	1.5	petrol	1452	53	1990	2012	m	r	8	
+lada-2107	1.6	petrol	1568	55	2004	2012	m	r	4	
+lada-niva	1.7	petrol	1690	59	1993		m	a	8	
+lada-niva	1.6	petrol	1568	54	1990	1993	m	a	2	
+lada-granta	1.6 8V	petrol	1596	64	2011		m	f	8	
+lada-granta	1.6 16V	petrol	1596	78	2011		ma	f	4	
+lada-vesta	1.6	petrol	1596	78	2015		ma	f	7	
+lada-vesta	1.8	petrol	1774	90	2017		ma	f	3	
+lada-vesta	1.6 CNG	cng	1596	78	2017		m	f	1	
+toyota-corolla	1.3	petrol	1296	55	1990	2007	ma	f	4	EUR,LAM,AFR,SEA,MEA,JDM,JPN
+toyota-corolla	1.6	petrol	1598	81	1990	2019	ma	f	5	
+toyota-corolla	1.8	petrol	1794	103	1998		ma	f	6	NAM,LAM,CHN,MEA,OCE,SEA,MER
+toyota-corolla	2.0	petrol	1987	125	2019		a	f	3	NAM,CHN,OCE
+toyota-corolla	1.5	petrol	1496	80	2000	2018	a	f	3	JPN,JDM,TR
+toyota-corolla	1.8 Hybrid	hybrid	1798	90	2013		a	f	6	
+toyota-corolla	2.0 D-4D	diesel	1995	66	2002	2008	m	f	2	EUR,TR
+toyota-corolla	1.4 D-4D	diesel	1364	66	2004	2018	m	f	2	EUR,TR
+toyota-corolla	1.8 Flex	flex	1798	106	2008		a	f	4	MER
+toyota-camry	2.2	petrol	2164	100	1990	2001	a	f	4	
+toyota-camry	2.4	petrol	2362	117	2002	2011	a	f	5	
+toyota-camry	2.5	petrol	2494	133	2012		a	fa	7	
+toyota-camry	3.5 V6	petrol	3456	200	2007		a	f	2	NAM,MEA,CHN,OCE
+toyota-camry	2.5 Hybrid	hybrid	2487	160	2007		a	f	4	
+toyota-rav4	2.0	petrol	1998	110	1994	2018	ma	fa	5	
+toyota-rav4	2.4	petrol	2362	125	2006	2012	a	fa	3	NAM,OCE
+toyota-rav4	2.5	petrol	2487	152	2013		a	fa	5	
+toyota-rav4	2.5 Hybrid	hybrid	2487	160	2016		a	fa	5	
+toyota-rav4	2.2 D-4D	diesel	2231	110	2006	2018	m	fa	2	EUR,OCE
+toyota-rav4	Plug-in	plug_in	2487	225	2020		a	a	1	EUR,NAM,JPN
+toyota-yaris	1.0	petrol	998	51	1999		m	f	4	EUR,JPN,JDM
+toyota-yaris	1.3	petrol	1298	64	1999	2016	ma	f	5	
+toyota-yaris	1.5	petrol	1496	80	2005		ma	f	4	
+toyota-yaris	1.5 Hybrid	hybrid	1497	85	2012		a	f	5	EUR,JPN,JDM
+toyota-yaris	1.4 D-4D	diesel	1364	66	2002	2013	m	f	2	EUR
+toyota-hilux	2.4	petrol	2438	85	1990	2005	m	ra	3	
+toyota-hilux	2.7	petrol	2694	116	2005		ma	ra	4	
+toyota-hilux	2.5 D-4D	diesel	2494	75	2001	2016	m	ra	5	
+toyota-hilux	2.8 D-4D	diesel	2755	130	2015		ma	a	5	
+toyota-hilux	3.0 D-4D	diesel	2982	126	2005	2015	ma	a	4	
+toyota-hilux	2.8 D	diesel	2779	66	1990	2005	m	ra	3	
+toyota-landcruiser	4.5	petrol	4477	160	1990	2007	a	a	3	
+toyota-landcruiser	4.0 V6	petrol	3956	200	2002		a	a	4	
+toyota-landcruiser	4.6 V8	petrol	4608	227	2007	2021	a	a	3	
+toyota-landcruiser	3.5 V6 Turbo	petrol	3445	305	2021		a	a	3	MEA,NAM,CIS
+toyota-landcruiser	4.2 D	diesel	4164	96	1990	2007	m	a	3	AFR,OCE,MEA
+toyota-landcruiser	4.5 V8 D	diesel	4461	200	2007	2021	a	a	3	AFR,OCE,MEA,CIS
+toyota-prado	2.7	petrol	2694	120	1996		a	a	4	
+toyota-prado	4.0 V6	petrol	3956	202	2002	2022	a	a	4	
+toyota-prado	3.0 D-4D	diesel	2982	127	2002	2015	ma	a	5	
+toyota-prado	2.8 D-4D	diesel	2755	130	2015		a	a	4	
+toyota-prius	1.5 Hybrid	hybrid	1497	72	1997	2009	a	f	4	
+toyota-prius	1.8 Hybrid	hybrid	1798	100	2009	2022	a	f	6	
+toyota-prius	2.0 Hybrid	hybrid	1986	146	2023		a	f	2	
+toyota-prius	Prime	plug_in	1798	90	2012		a	f	1	NAM,JPN,EUR
+toyota-aqua	1.5 Hybrid	hybrid	1496	54	2011		a	f	8	
+toyota-vitz	1.0	petrol	996	51	1999	2020	a	f	6	
+toyota-vitz	1.3	petrol	1298	70	1999	2020	a	f	4	
+toyota-fielder	1.5	petrol	1496	80	2000		a	fa	8	
+toyota-fielder	1.5 Hybrid	hybrid	1496	54	2013		a	f	3	
+toyota-fielder	1.8	petrol	1797	100	2000	2012	a	f	2	
+toyota-probox	1.5	petrol	1496	80	2002		a	fa	8	
+toyota-probox	1.5 Hybrid	hybrid	1496	54	2018		a	f	1	
+toyota-noah	2.0	petrol	1986	112	2001		a	fa	6	
+toyota-noah	1.8 Hybrid	hybrid	1797	73	2014		a	f	4	
+toyota-fortuner	2.7	petrol	2694	122	2005		a	ra	4	
+toyota-fortuner	2.8 D-4D	diesel	2755	130	2015		ma	ra	5	
+toyota-fortuner	3.0 D-4D	diesel	2982	120	2005	2015	ma	ra	4	
+toyota-innova	2.0	petrol	1998	102	2004		ma	r	4	
+toyota-innova	2.4 D	diesel	2393	110	2016		ma	r	4	
+toyota-innova	2.5 D-4D	diesel	2494	75	2004	2016	m	r	4	
+toyota-innova	2.0 Hybrid	hybrid	1987	137	2022		a	f	2	
+toyota-avanza	1.3	petrol	1298	66	2003		ma	r	5	
+toyota-avanza	1.5	petrol	1496	77	2006		ma	r	5	
+toyota-vios	1.3	petrol	1329	63	2002		ma	f	4	
+toyota-vios	1.5	petrol	1496	79	2002		ma	f	6	
+lexus-rx	RX 300	petrol	2995	150	1998	2003	a	fa	3	
+lexus-rx	RX 350	petrol	3456	203	2006		a	fa	6	
+lexus-rx	RX 450h	hybrid	3456	230	2009		a	a	4	
+lexus-rx	RX 500h	hybrid	2393	273	2022		a	a	1	
+lexus-es	ES 300	petrol	2995	140	1992	2006	a	f	4	
+lexus-es	ES 350	petrol	3456	200	2007		a	f	5	
+lexus-es	ES 300h	hybrid	2487	160	2013		a	f	5	
+honda-civic	1.4	petrol	1396	66	1990	2012	ma	f	4	EUR,JDM,JPN,TR,SEA
+honda-civic	1.6	petrol	1590	88	1990	2005	ma	f	4	
+honda-civic	1.8	petrol	1799	103	2006	2015	ma	f	6	
+honda-civic	2.0	petrol	1996	116	2016		a	f	5	NAM,LAM,MER,MEA,OCE
+honda-civic	1.5 Turbo	petrol	1498	134	2016		a	f	5	
+honda-civic	1.6 i-DTEC	diesel	1597	88	2013	2021	m	f	2	EUR,TR
+honda-civic	1.3 Hybrid	hybrid	1339	70	2003	2015	a	f	1	
+honda-civic	2.0 e:HEV	hybrid	1993	135	2022		a	f	2	EUR,JPN,NAM
+honda-accord	2.2	petrol	2156	96	1990	2002	ma	f	4	
+honda-accord	2.4	petrol	2354	130	2003	2017	ma	f	7	
+honda-accord	1.5 Turbo	petrol	1498	143	2018		a	f	5	
+honda-accord	2.0 Turbo	petrol	1996	188	2018	2022	a	f	2	NAM
+honda-accord	3.5 V6	petrol	3471	206	2008	2017	a	f	2	NAM,MEA
+honda-accord	2.0 Hybrid	hybrid	1993	158	2014		a	f	3	
+honda-accord	2.2 i-CTDi	diesel	2204	103	2004	2015	m	f	3	EUR
+honda-crv	2.0	petrol	1973	94	1996	2006	ma	fa	4	
+honda-crv	2.4	petrol	2354	137	2007	2016	a	fa	6	
+honda-crv	1.5 Turbo	petrol	1498	140	2017		a	fa	6	
+honda-crv	2.2 i-DTEC	diesel	2199	110	2007	2018	ma	fa	3	EUR
+honda-crv	2.0 Hybrid	hybrid	1993	135	2019		a	fa	3	
+honda-fit	1.3	petrol	1339	73	2001		ma	f	6	
+honda-fit	1.5	petrol	1496	88	2007		ma	f	5	
+honda-fit	1.5 Hybrid	hybrid	1496	81	2013		a	f	4	JPN,JDM,EUR
+honda-city	1.5	petrol	1497	88	1996		ma	f	8	
+honda-city	1.5 i-DTEC	diesel	1498	74	2014	2023	m	f	2	IND
+honda-city	e:HEV	hybrid	1498	93	2022		a	f	1	IND,SEA
+honda-nbox	660	petrol	658	43	2011		a	fa	7	
+honda-nbox	660 Turbo	petrol	658	47	2011		a	fa	3	
+nissan-sentra	1.6	petrol	1597	81	1990	2012	ma	f	5	
+nissan-sentra	1.8	petrol	1798	97	2007	2019	a	f	5	
+nissan-sentra	2.0	petrol	1997	111	2020		a	f	4	
+nissan-altima	2.4	petrol	2389	112	1993	2001	a	f	3	
+nissan-altima	2.5	petrol	2488	135	2002		a	fa	8	
+nissan-altima	3.5 V6	petrol	3498	200	2002	2018	a	f	2	
+nissan-rogue	2.5	petrol	2488	127	2007	2020	a	fa	7	
+nissan-rogue	1.5 Turbo	petrol	1497	150	2021		a	fa	4	
+nissan-rogue	2.0 Hybrid	hybrid	1997	130	2017	2019	a	fa	1	
+nissan-xtrail	2.0	petrol	1997	104	2001		a	fa	5	
+nissan-xtrail	2.5	petrol	2488	126	2001		a	fa	5	
+nissan-xtrail	1.6 dCi	diesel	1598	96	2014	2021	ma	fa	2	EUR,OCE
+nissan-xtrail	2.2 dCi	diesel	2184	84	2001	2014	m	a	2	EUR
+nissan-xtrail	e-Power	hybrid	1497	150	2021		a	fa	2	JPN,EUR
+nissan-qashqai	1.6	petrol	1598	86	2007	2014	ma	fa	4	
+nissan-qashqai	1.2 DIG-T	petrol	1197	85	2013	2021	ma	f	4	
+nissan-qashqai	1.3 DIG-T	petrol	1332	103	2018		ma	fa	5	
+nissan-qashqai	1.5 dCi	diesel	1461	81	2007	2021	m	f	6	EUR,TR
+nissan-qashqai	e-Power	hybrid	1497	140	2022		a	f	2	EUR
+nissan-micra	1.0	petrol	998	40	1992	2010	ma	f	4	
+nissan-micra	1.2	petrol	1198	59	2003	2017	ma	f	5	
+nissan-micra	1.0 IG-T	petrol	999	74	2017	2023	ma	f	3	
+nissan-micra	1.5 dCi	diesel	1461	50	2003	2019	m	f	2	EUR
+nissan-note	1.2	petrol	1198	58	2012	2020	a	f	4	
+nissan-note	1.5	petrol	1498	81	2005	2012	a	f	3	
+nissan-note	e-Power	hybrid	1198	80	2016		a	fa	5	
+nissan-patrol	4.8	petrol	4759	185	1997	2010	a	a	3	
+nissan-patrol	5.6 V8	petrol	5552	298	2010		a	a	6	
+nissan-patrol	3.0 D	diesel	2953	118	1997	2016	m	a	3	OCE,AFR
+nissan-patrol	4.2 D	diesel	4169	85	1990	1997	m	a	2	AFR,MEA
+nissan-sunny	1.5	petrol	1498	73	1990	2013	ma	f	7	
+nissan-sunny	1.6	petrol	1597	80	2014		a	f	4	
+nissan-versa	1.6	petrol	1598	81	2006		ma	f	8	
+nissan-versa	1.8	petrol	1798	91	2006	2011	a	f	2	
+mazda-3	1.6	petrol	1598	77	2003	2013	ma	f	4	
+mazda-3	2.0	petrol	1998	110	2003		ma	fa	6	
+mazda-3	2.5	petrol	2488	139	2010		a	fa	4	NAM,OCE,LAM
+mazda-3	1.5	petrol	1496	73	2013	2019	ma	f	2	EUR,JPN,JDM
+mazda-3	2.2 D	diesel	2184	110	2013	2019	ma	f	1	EUR,OCE
+mazda-3	2.0 e-Skyactiv X	hybrid	1998	137	2019		ma	f	1	EUR,JPN
+mazda-cx5	2.0	petrol	1998	121	2012		ma	fa	5	
+mazda-cx5	2.5	petrol	2488	143	2012		a	fa	6	
+mazda-cx5	2.5 Turbo	petrol	2488	170	2019		a	a	1	NAM,OCE
+mazda-cx5	2.2 D	diesel	2191	110	2012		ma	fa	3	EUR,OCE,JPN
+mitsubishi-lancer	1.5	petrol	1468	65	1990	2017	ma	f	6	
+mitsubishi-lancer	1.6	petrol	1584	72	1990	2010	ma	f	3	
+mitsubishi-lancer	2.0	petrol	1998	112	2003	2017	ma	f	5	
+mitsubishi-lancer	1.8 DI-D	diesel	1798	85	2010	2014	m	f	1	EUR
+mitsubishi-outlander	2.4	petrol	2360	125	2001		a	fa	6	
+mitsubishi-outlander	2.0	petrol	1998	108	2001	2021	ma	fa	3	
+mitsubishi-outlander	2.2 DI-D	diesel	2268	110	2007	2018	ma	a	2	EUR,OCE
+mitsubishi-outlander	PHEV	plug_in	2360	185	2013		a	a	4	
+mitsubishi-pajero	3.0 V6	petrol	2972	130	1990	2006	a	a	4	
+mitsubishi-pajero	3.5 V6	petrol	3497	149	1997	2006	a	a	2	
+mitsubishi-pajero	3.8 V6	petrol	3828	184	2006	2021	a	a	3	
+mitsubishi-pajero	3.2 DI-D	diesel	3200	147	2000	2021	ma	a	5	
+mitsubishi-pajero	2.8 TD	diesel	2835	92	1990	2000	m	a	3	
+mitsubishi-mirage	1.2	petrol	1193	58	2012		ma	f	8	
+mitsubishi-mirage	1.3	petrol	1299	55	1990	2003	ma	f	2	JDM,AFR
+subaru-forester	2.0	petrol	1994	92	1997		ma	a	5	
+subaru-forester	2.5	petrol	2457	136	1997		ma	a	7	
+subaru-forester	2.0 e-Boxer	hybrid	1995	110	2019		a	a	2	EUR,JPN
+subaru-forester	2.0 D	diesel	1998	108	2008	2018	m	a	1	EUR,OCE
+subaru-outback	2.5	petrol	2457	129	1995		a	a	8	
+subaru-outback	3.6	petrol	3630	191	2010	2019	a	a	2	NAM,OCE
+subaru-outback	2.4 Turbo	petrol	2387	194	2020		a	a	2	NAM
+suzuki-swift	1.0	petrol	993	39	1990	2003	m	f	3	EUR,AFR,PK
+suzuki-swift	1.2	petrol	1242	66	2010		ma	f	8	
+suzuki-swift	1.3	petrol	1328	68	1990	2010	ma	f	5	
+suzuki-swift	1.5	petrol	1490	75	2005	2010	ma	f	2	
+suzuki-swift	1.2 Hybrid	hybrid	1197	61	2017		ma	fa	3	EUR,JPN
+suzuki-vitara	1.6	petrol	1586	86	1990		ma	fa	7	
+suzuki-vitara	2.0	petrol	1995	103	1998	2015	ma	a	3	
+suzuki-vitara	1.4 Boosterjet	petrol	1373	103	2015		ma	fa	3	EUR,OCE
+suzuki-vitara	1.6 DDiS	diesel	1598	88	2015	2018	m	fa	1	EUR
+suzuki-alto	660	petrol	658	37	1990		ma	fa	7	JPN,JDM
+suzuki-alto	1.0	petrol	998	50	2009	2014	ma	f	3	EUR,AFR,LAM,PK
+suzuki-alto	0.8	petrol	796	35	1990	2019	m	f	4	PK,AFR,LAM,SEA
+isuzu-dmax	2.5 TD	diesel	2499	85	2002	2020	m	ra	5	
+isuzu-dmax	3.0 TD	diesel	2999	130	2002		ma	a	6	
+isuzu-dmax	1.9 Ddi	diesel	1898	110	2017		ma	ra	4	

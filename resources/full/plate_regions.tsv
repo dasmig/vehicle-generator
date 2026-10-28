@@ -1,0 +1,1574 @@
+# Curated: the region codes plates carry, per set, as code=label:weight[:sub] (weight roughly the population in thousands; sub is the number of offices or cities numbered under the code, for the S and C tokens). A code written !code is reserved: no authority issues it, and safe plates use it. US, CA and AU are the jurisdictions whose formats differ. From national registration rules and population statistics.
+set	code	label	weight	sub	reserved
+AF	KBL	Kabul	5000		0
+AF	HRT	Herat	2100		0
+AF	KDR	Kandahar	1400		0
+AF	BLK	Balkh	1500		0
+AF	NGR	Nangarhar	1600		0
+AF	KDZ	Kunduz	1100		0
+AF	XXA	reserved	0		1
+AL	TR	Tirana	900		0
+AL	DR	Durrës	280		0
+AL	EL	Elbasan	270		0
+AL	FR	Fier	290		0
+AL	SH	Shkodër	200		0
+AL	KO	Korçë	200		0
+AL	VL	Vlorë	190		0
+AL	BR	Berat	120		0
+AL	LU	Lushnjë	120		0
+AL	GJ	Gjirokastër	60		0
+AL	KU	Kukës	70		0
+AL	DI	Dibër	110		0
+AL	QQ	reserved	0		1
+AT	W	Wien	2000		0
+AT	G	Graz	300		0
+AT	GU	Graz-Umgebung	160		0
+AT	L	Linz	210		0
+AT	LL	Linz-Land	150		0
+AT	S	Salzburg	155		0
+AT	SL	Salzburg-Umgebung	160		0
+AT	I	Innsbruck	130		0
+AT	IL	Innsbruck-Land	180		0
+AT	K	Klagenfurt	100		0
+AT	KL	Klagenfurt-Land	60		0
+AT	VI	Villach	65		0
+AT	SP	Spittal	75		0
+AT	WO	Wolfsberg	55		0
+AT	BN	Baden	150		0
+AT	MD	Mödling	120		0
+AT	KO	Korneuburg	90		0
+AT	KS	Krems	60		0
+AT	KR	Krems-Land	57		0
+AT	P	St. Pölten	60		0
+AT	PL	St. Pölten-Land	135		0
+AT	AM	Amstetten	115		0
+AT	TU	Tulln	105		0
+AT	WN	Wiener Neustadt	80		0
+AT	NK	Neunkirchen	87		0
+AT	MI	Mistelbach	76		0
+AT	GF	Gänserndorf	105		0
+AT	HL	Hollabrunn	51		0
+AT	ZT	Zwettl	42		0
+AT	GD	Gmünd	36		0
+AT	WT	Waidhofen	26		0
+AT	BL	Bruck an der Leitha	105		0
+AT	LF	Lilienfeld	26		0
+AT	ME	Melk	78		0
+AT	SB	Scheibbs	41		0
+AT	WU	Wien-Umgebung	120		0
+AT	VB	Vöcklabruck	140		0
+AT	GM	Gmunden	102		0
+AT	BR	Braunau	105		0
+AT	RI	Ried	62		0
+AT	SD	Schärding	57		0
+AT	GR	Grieskirchen	65		0
+AT	EF	Eferding	33		0
+AT	WE	Wels	62		0
+AT	WL	Wels-Land	73		0
+AT	SR	Steyr	38		0
+AT	SE	Steyr-Land	61		0
+AT	KI	Kirchdorf	57		0
+AT	PE	Perg	69		0
+AT	FR	Freistadt	66		0
+AT	UU	Urfahr-Umgebung	86		0
+AT	RO	Rohrbach	56		0
+AT	HA	Hallein	61		0
+AT	JO	St. Johann	80		0
+AT	ZE	Zell am See	88		0
+AT	TA	Tamsweg	20		0
+AT	KB	Kitzbühel	64		0
+AT	KU	Kufstein	111		0
+AT	SZ	Schwaz	84		0
+AT	IM	Imst	61		0
+AT	LA	Landeck	44		0
+AT	RE	Reutte	33		0
+AT	LZ	Lienz	49		0
+AT	B	Bregenz	135		0
+AT	DO	Dornbirn	90		0
+AT	FK	Feldkirch	110		0
+AT	BZ	Bludenz	64		0
+AT	LE	Leoben	60		0
+AT	BM	Bruck-Mürzzuschlag	99		0
+AT	HF	Hartberg-Fürstenfeld	91		0
+AT	WZ	Weiz	90		0
+AT	LB	Leibnitz	84		0
+AT	DL	Deutschlandsberg	61		0
+AT	VO	Voitsberg	51		0
+AT	MT	Murtal	72		0
+AT	MU	Murau	28		0
+AT	LI	Liezen	80		0
+AT	SO	Südoststeiermark	85		0
+AT	FE	Feldkirchen	30		0
+AT	HE	Hermagor	18		0
+AT	SV	St. Veit	54		0
+AT	VL	Villach-Land	65		0
+AT	VK	Völkermarkt	42		0
+AT	E	Eisenstadt	15		0
+AT	EU	Eisenstadt-Umgebung	43		0
+AT	MA	Mattersburg	40		0
+AT	ND	Neusiedl	60		0
+AT	OP	Oberpullendorf	37		0
+AT	OW	Oberwart	54		0
+AT	GS	Güssing	26		0
+AT	JE	Jennersdorf	17		0
+AT	QX	reserved	0		1
+AU	NSW	New South Wales	8300		0
+AU	VIC	Victoria	6800		0
+AU	QLD	Queensland	5500		0
+AU	WA	Western Australia	2900		0
+AU	SA	South Australia	1850		0
+AU	TAS	Tasmania	570		0
+AU	ACT	Australian Capital Territory	460		0
+AU	NT	Northern Territory	250		0
+AZ	10	Baku	2300		0
+AZ	90	Baku	600		0
+AZ	77	Baku	400		0
+AZ	20	Ganja	330		0
+AZ	50	Sumqayit	350		0
+AZ	85	Nakhchivan	460		0
+AZ	60	Shaki	180		0
+AZ	35	Lankaran	230		0
+AZ	30	Mingachevir	110		0
+AZ	70	Shirvan	90		0
+AZ	00	reserved	0		1
+BD	DHAKA METRO	Dhaka Metro	9000		0
+BD	DHAKA	Dhaka	3000		0
+BD	CHATTA METRO	Chattogram Metro	3000		0
+BD	CHATTOGRAM	Chattogram	1500		0
+BD	KHULNA METRO	Khulna Metro	800		0
+BD	RAJSHAHI METRO	Rajshahi Metro	700		0
+BD	SYLHET METRO	Sylhet Metro	600		0
+BD	GAZIPUR	Gazipur	900		0
+BD	NARAYANGANJ	Narayanganj	700		0
+BD	BOGURA	Bogura	400		0
+BD	XYZ	reserved	0		1
+BG	C	Sofia	1300		0
+BG	CA	Sofia	300		0
+BG	CB	Sofia	300		0
+BG	A	Burgas	400		0
+BG	B	Varna	470		0
+BG	PB	Plovdiv	660		0
+BG	PA	Pazardzhik	250		0
+BG	CT	Stara Zagora	310		0
+BG	BT	Veliko Tarnovo	230		0
+BG	EH	Pleven	240		0
+BG	PK	Pernik	120		0
+BG	X	Haskovo	220		0
+BG	K	Kardzhali	160		0
+BG	KH	Kyustendil	115		0
+BG	M	Montana	130		0
+BG	BP	Vratsa	160		0
+BG	E	Blagoevgrad	300		0
+BG	H	Shumen	170		0
+BG	P	Ruse	210		0
+BG	CC	Silistra	105		0
+BG	TX	Dobrich	170		0
+BG	OB	Lovech	125		0
+BG	T	Targovishte	110		0
+BG	CH	Sliven	185		0
+BG	Y	Yambol	120		0
+BG	BH	Vidin	85		0
+BG	CM	Smolyan	105		0
+BG	PP	Razgrad	110		0
+BG	EB	Gabrovo	105		0
+BG	JQ	reserved	0		1
+BY	7	Minsk	2000		0
+BY	5	Minsk Region	1450		0
+BY	1	Brest	1350		0
+BY	2	Vitebsk	1110		0
+BY	3	Gomel	1360		0
+BY	4	Grodno	1000		0
+BY	6	Mogilev	1000		0
+BY	0	reserved	0		1
+BZ	BZ	Belize	120		0
+BZ	CY	Cayo	100		0
+BZ	OW	Orange Walk	55		0
+BZ	CZ	Corozal	50		0
+BZ	SC	Stann Creek	45		0
+BZ	TO	Toledo	40		0
+BZ	QQ	reserved	0		1
+CA	ON	Ontario	15800		0
+CA	QC	Quebec	8900		0
+CA	BC	British Columbia	5600		0
+CA	AB	Alberta	4700		0
+CA	MB	Manitoba	1450		0
+CA	SK	Saskatchewan	1210		0
+CA	NS	Nova Scotia	1060		0
+CA	NB	New Brunswick	830		0
+CA	NL	Newfoundland and Labrador	540		0
+CA	PE	Prince Edward Island	170		0
+CA	NT	Northwest Territories	45		0
+CA	YT	Yukon	44		0
+CA	NU	Nunavut	40		0
+CH	ZH	Zürich	1580		0
+CH	BE	Bern	1050		0
+CH	VD	Vaud	830		0
+CH	AG	Aargau	710		0
+CH	SG	St. Gallen	520		0
+CH	GE	Genève	510		0
+CH	LU	Luzern	420		0
+CH	TI	Ticino	355		0
+CH	VS	Valais	355		0
+CH	FR	Fribourg	330		0
+CH	BL	Basel-Landschaft	295		0
+CH	SO	Solothurn	280		0
+CH	TG	Thurgau	290		0
+CH	GR	Graubünden	205		0
+CH	BS	Basel-Stadt	200		0
+CH	NE	Neuchâtel	178		0
+CH	SZ	Schwyz	165		0
+CH	ZG	Zug	130		0
+CH	SH	Schaffhausen	85		0
+CH	JU	Jura	74		0
+CH	AR	Appenzell Ausserrhoden	56		0
+CH	NW	Nidwalden	44		0
+CH	GL	Glarus	41		0
+CH	OW	Obwalden	39		0
+CH	UR	Uri	37		0
+CH	AI	Appenzell Innerrhoden	16		0
+CH	QQ	reserved	0		1
+CM	CE	Centre	4500		0
+CM	LT	Littoral	3800		0
+CM	OU	Ouest	2100		0
+CM	NW	Nord-Ouest	2000		0
+CM	SW	Sud-Ouest	1600		0
+CM	NO	Nord	2700		0
+CM	EN	Extrême-Nord	4500		0
+CM	AD	Adamaoua	1300		0
+CM	ES	Est	900		0
+CM	SU	Sud	800		0
+CM	QQ	reserved	0		1
+CN	京	Beijing	21900	13	0
+CN	沪	Shanghai	24900	13	0
+CN	粤	Guangdong	126000	20	0
+CN	苏	Jiangsu	85000	13	0
+CN	浙	Zhejiang	65000	11	0
+CN	鲁	Shandong	101000	17	0
+CN	豫	Henan	99000	18	0
+CN	川	Sichuan	84000	21	0
+CN	冀	Hebei	74000	13	0
+CN	湘	Hunan	66000	14	0
+CN	鄂	Hubei	58000	17	0
+CN	皖	Anhui	61000	16	0
+CN	闽	Fujian	41000	9	0
+CN	赣	Jiangxi	45000	11	0
+CN	辽	Liaoning	42000	14	0
+CN	陕	Shaanxi	39500	10	0
+CN	桂	Guangxi	50000	14	0
+CN	云	Yunnan	47000	16	0
+CN	黑	Heilongjiang	31000	13	0
+CN	晋	Shanxi	35000	11	0
+CN	贵	Guizhou	38500	9	0
+CN	渝	Chongqing	32000	4	0
+CN	吉	Jilin	24000	9	0
+CN	蒙	Inner Mongolia	24000	12	0
+CN	新	Xinjiang	26000	15	0
+CN	津	Tianjin	13700	6	0
+CN	甘	Gansu	25000	14	0
+CN	琼	Hainan	10000	5	0
+CN	宁	Ningxia	7200	5	0
+CN	青	Qinghai	5900	8	0
+CN	藏	Tibet	3600	7	0
+CN	使	reserved	0	1	1
+CV	ST	Santiago	310		0
+CV	SV	São Vicente	80		0
+CV	SA	Santo Antão	40		0
+CV	FG	Fogo	35		0
+CV	SL	Sal	35		0
+CV	BV	Boa Vista	15		0
+CV	MA	Maio	7		0
+CV	SN	São Nicolau	12		0
+CV	QQ	reserved	0		1
+CZ	A	Praha	1350		0
+CZ	B	Jihomoravský	1200		0
+CZ	C	Jihočeský	650		0
+CZ	E	Pardubický	525		0
+CZ	H	Královéhradecký	550		0
+CZ	J	Vysočina	510		0
+CZ	K	Karlovarský	290		0
+CZ	L	Liberecký	445		0
+CZ	M	Olomoucký	630		0
+CZ	P	Plzeňský	590		0
+CZ	S	Středočeský	1440		0
+CZ	T	Moravskoslezský	1180		0
+CZ	U	Ústecký	800		0
+CZ	Z	Zlínský	580		0
+CZ	Q	reserved	0		1
+DE	B	Berlin	3800		0
+DE	HH	Hamburg	1900		0
+DE	M	München	2900		0
+DE	K	Köln	1080		0
+DE	F	Frankfurt am Main	770		0
+DE	S	Stuttgart	630		0
+DE	D	Düsseldorf	630		0
+DE	DO	Dortmund	590		0
+DE	E	Essen	580		0
+DE	L	Leipzig	620		0
+DE	HB	Bremen	570		0
+DE	DD	Dresden	560		0
+DE	H	Hannover	1170		0
+DE	N	Nürnberg	530		0
+DE	DU	Duisburg	500		0
+DE	BO	Bochum	365		0
+DE	W	Wuppertal	355		0
+DE	BI	Bielefeld	335		0
+DE	BN	Bonn	335		0
+DE	MS	Münster	320		0
+DE	KA	Karlsruhe	750		0
+DE	MA	Mannheim	315		0
+DE	A	Augsburg	600		0
+DE	WI	Wiesbaden	280		0
+DE	GE	Gelsenkirchen	260		0
+DE	MG	Mönchengladbach	260		0
+DE	BS	Braunschweig	250		0
+DE	AC	Aachen	560		0
+DE	KI	Kiel	245		0
+DE	C	Chemnitz	245		0
+DE	HAL	Halle	240		0
+DE	MD	Magdeburg	240		0
+DE	FR	Freiburg	230		0
+DE	KR	Krefeld	225		0
+DE	MZ	Mainz	220		0
+DE	LÜ	Lübeck	215		0
+DE	EF	Erfurt	215		0
+DE	OB	Oberhausen	210		0
+DE	HRO	Rostock	210		0
+DE	KS	Kassel	450		0
+DE	HA	Hagen	190		0
+DE	SB	Saarbrücken	330		0
+DE	HAM	Hamm	180		0
+DE	MH	Mülheim	170		0
+DE	LU	Ludwigshafen	170		0
+DE	LEV	Leverkusen	165		0
+DE	OL	Oldenburg	300		0
+DE	OS	Osnabrück	520		0
+DE	SG	Solingen	160		0
+DE	HD	Heidelberg	160		0
+DE	HER	Herne	155		0
+DE	NE	Neuss	450		0
+DE	DA	Darmstadt	450		0
+DE	PB	Paderborn	310		0
+DE	RE	Recklinghausen	615		0
+DE	GT	Gütersloh	365		0
+DE	BM	Rhein-Erft-Kreis	470		0
+DE	ME	Mettmann	485		0
+DE	SU	Rhein-Sieg-Kreis	600		0
+DE	GL	Rheinisch-Bergischer Kreis	285		0
+DE	MK	Märkischer Kreis	410		0
+DE	UN	Unna	395		0
+DE	WES	Wesel	460		0
+DE	KLE	Kleve	310		0
+DE	BOR	Borken	370		0
+DE	ST	Steinfurt	450		0
+DE	COE	Coesfeld	220		0
+DE	WAF	Warendorf	280		0
+DE	SO	Soest	300		0
+DE	HSK	Hochsauerlandkreis	260		0
+DE	SI	Siegen-Wittgenstein	275		0
+DE	OE	Olpe	135		0
+DE	EN	Ennepe-Ruhr-Kreis	325		0
+DE	MI	Minden-Lübbecke	310		0
+DE	HF	Herford	250		0
+DE	LIP	Lippe	350		0
+DE	HX	Höxter	140		0
+DE	DN	Düren	265		0
+DE	HS	Heinsberg	255		0
+DE	VIE	Viersen	300		0
+DE	EU	Euskirchen	195		0
+DE	GM	Oberbergischer Kreis	270		0
+DE	LB	Ludwigsburg	545		0
+DE	ES	Esslingen	535		0
+DE	BB	Böblingen	395		0
+DE	WN	Rems-Murr-Kreis	425		0
+DE	RT	Reutlingen	290		0
+DE	TÜ	Tübingen	230		0
+DE	GP	Göppingen	260		0
+DE	HN	Heilbronn	470		0
+DE	AA	Ostalbkreis	315		0
+DE	HDH	Heidenheim	130		0
+DE	UL	Ulm	320		0
+DE	BC	Biberach	200		0
+DE	RV	Ravensburg	290		0
+DE	FN	Bodenseekreis	220		0
+DE	KN	Konstanz	290		0
+DE	VS	Schwarzwald-Baar-Kreis	215		0
+DE	TUT	Tuttlingen	140		0
+DE	RW	Rottweil	140		0
+DE	FDS	Freudenstadt	120		0
+DE	CW	Calw	160		0
+DE	PF	Pforzheim	330		0
+DE	RA	Rastatt	230		0
+DE	OG	Ortenaukreis	435		0
+DE	EM	Emmendingen	170		0
+DE	LÖ	Lörrach	230		0
+DE	WT	Waldshut	170		0
+DE	SIG	Sigmaringen	130		0
+DE	BL	Zollernalbkreis	190		0
+DE	RN	Rhein-Neckar-Kreis	550		0
+DE	MOS	Neckar-Odenwald-Kreis	145		0
+DE	TBB	Main-Tauber-Kreis	135		0
+DE	KÜN	Hohenlohekreis	115		0
+DE	SHA	Schwäbisch Hall	200		0
+DE	FS	Freising	180		0
+DE	ED	Erding	140		0
+DE	EBE	Ebersberg	145		0
+DE	RO	Rosenheim	325		0
+DE	TS	Traunstein	180		0
+DE	BGL	Berchtesgadener Land	105		0
+DE	AÖ	Altötting	110		0
+DE	MÜ	Mühldorf	120		0
+DE	PA	Passau	245		0
+DE	DEG	Deggendorf	120		0
+DE	LA	Landshut	225		0
+DE	R	Regensburg	350		0
+DE	SR	Straubing	140		0
+DE	CHA	Cham	130		0
+DE	AM	Amberg	150		0
+DE	WEN	Weiden	135		0
+DE	NEW	Neustadt a.d. Waldnaab	95		0
+DE	TIR	Tirschenreuth	72		0
+DE	IN	Ingolstadt	140		0
+DE	EI	Eichstätt	135		0
+DE	PAF	Pfaffenhofen	130		0
+DE	ND	Neuburg	100		0
+DE	DAH	Dachau	155		0
+DE	FFB	Fürstenfeldbruck	220		0
+DE	STA	Starnberg	136		0
+DE	LL	Landsberg	122		0
+DE	WM	Weilheim-Schongau	136		0
+DE	GAP	Garmisch-Partenkirchen	88		0
+DE	TÖL	Bad Tölz	128		0
+DE	MB	Miesbach	100		0
+DE	KE	Kempten	240		0
+DE	OA	Oberallgäu	157		0
+DE	MN	Unterallgäu	145		0
+DE	NU	Neu-Ulm	178		0
+DE	GZ	Günzburg	127		0
+DE	DLG	Dillingen	97		0
+DE	DON	Donau-Ries	135		0
+DE	AIC	Aichach-Friedberg	135		0
+DE	ER	Erlangen	250		0
+DE	FÜ	Fürth	245		0
+DE	RH	Roth	128		0
+DE	AN	Ansbach	230		0
+DE	NM	Neumarkt	135		0
+DE	BA	Bamberg	225		0
+DE	BT	Bayreuth	180		0
+DE	HO	Hof	140		0
+DE	KU	Kulmbach	70		0
+DE	CO	Coburg	125		0
+DE	LIF	Lichtenfels	66		0
+DE	KC	Kronach	66		0
+DE	FO	Forchheim	117		0
+DE	WÜ	Würzburg	290		0
+DE	SW	Schweinfurt	170		0
+DE	AB	Aschaffenburg	245		0
+DE	MIL	Miltenberg	130		0
+DE	KT	Kitzingen	92		0
+DE	NES	Rhön-Grabfeld	80		0
+DE	KG	Bad Kissingen	103		0
+DE	MSP	Main-Spessart	127		0
+DE	OF	Offenbach	490		0
+DE	GG	Groß-Gerau	280		0
+DE	HG	Hochtaunuskreis	240		0
+DE	MTK	Main-Taunus-Kreis	240		0
+DE	FB	Wetteraukreis	310		0
+DE	GI	Gießen	270		0
+DE	MR	Marburg-Biedenkopf	245		0
+DE	FD	Fulda	225		0
+DE	HR	Schwalm-Eder-Kreis	180		0
+DE	ESW	Werra-Meißner-Kreis	100		0
+DE	HEF	Hersfeld-Rotenburg	120		0
+DE	KB	Waldeck-Frankenberg	157		0
+DE	LDK	Lahn-Dill-Kreis	255		0
+DE	LM	Limburg-Weilburg	172		0
+DE	RÜD	Rheingau-Taunus-Kreis	187		0
+DE	HP	Bergstraße	270		0
+DE	ERB	Odenwaldkreis	97		0
+DE	MKK	Main-Kinzig-Kreis	420		0
+DE	VB	Vogelsbergkreis	105		0
+DE	KO	Koblenz	330		0
+DE	TR	Trier	255		0
+DE	KL	Kaiserslautern	205		0
+DE	PS	Pirmasens	135		0
+DE	LD	Landau	155		0
+DE	NW	Neustadt/Weinstraße	185		0
+DE	WO	Worms	85		0
+DE	AZ	Alzey-Worms	130		0
+DE	MYK	Mayen-Koblenz	215		0
+DE	NR	Neuwied	185		0
+DE	AK	Altenkirchen	128		0
+DE	WW	Westerwaldkreis	203		0
+DE	EMS	Rhein-Lahn-Kreis	123		0
+DE	SIM	Rhein-Hunsrück-Kreis	104		0
+DE	KH	Bad Kreuznach	158		0
+DE	BIR	Birkenfeld	80		0
+DE	DAU	Vulkaneifel	61		0
+DE	BIT	Eifelkreis	99		0
+DE	WIL	Bernkastel-Wittlich	113		0
+DE	COC	Cochem-Zell	61		0
+DE	AW	Ahrweiler	130		0
+DE	SLS	Saarlouis	195		0
+DE	NK	Neunkirchen	132		0
+DE	HOM	Saarpfalz-Kreis	142		0
+DE	WND	St. Wendel	87		0
+DE	MZG	Merzig-Wadern	103		0
+DE	HI	Hildesheim	275		0
+DE	GÖ	Göttingen	325		0
+DE	CE	Celle	180		0
+DE	LG	Lüneburg	185		0
+DE	STD	Stade	205		0
+DE	CUX	Cuxhaven	200		0
+DE	ROW	Rotenburg	165		0
+DE	VER	Verden	137		0
+DE	DH	Diepholz	218		0
+DE	NI	Nienburg	121		0
+DE	SHG	Schaumburg	157		0
+DE	HM	Hameln-Pyrmont	148		0
+DE	HOL	Holzminden	70		0
+DE	NOM	Northeim	132		0
+DE	GS	Goslar	136		0
+DE	WF	Wolfenbüttel	120		0
+DE	SZ	Salzgitter	105		0
+DE	PE	Peine	135		0
+DE	GF	Gifhorn	178		0
+DE	WOB	Wolfsburg	125		0
+DE	HE	Helmstedt	90		0
+DE	UE	Uelzen	93		0
+DE	DAN	Lüchow-Dannenberg	49		0
+DE	WL	Harburg	255		0
+DE	OHZ	Osterholz	115		0
+DE	DEL	Delmenhorst	78		0
+DE	WST	Ammerland	125		0
+DE	CLP	Cloppenburg	172		0
+DE	VEC	Vechta	145		0
+DE	EL	Emsland	330		0
+DE	NOH	Grafschaft Bentheim	138		0
+DE	LER	Leer	170		0
+DE	AUR	Aurich	190		0
+DE	EMD	Emden	50		0
+DE	WTM	Wittmund	57		0
+DE	FRI	Friesland	98		0
+DE	WHV	Wilhelmshaven	76		0
+DE	BRA	Wesermarsch	88		0
+DE	HK	Heidekreis	140		0
+DE	SE	Segeberg	280		0
+DE	PI	Pinneberg	320		0
+DE	OD	Stormarn	245		0
+DE	RZ	Herzogtum Lauenburg	200		0
+DE	OH	Ostholstein	200		0
+DE	PLÖ	Plön	130		0
+DE	RD	Rendsburg-Eckernförde	275		0
+DE	NMS	Neumünster	80		0
+DE	SL	Schleswig-Flensburg	200		0
+DE	FL	Flensburg	92		0
+DE	NF	Nordfriesland	167		0
+DE	HEI	Dithmarschen	133		0
+DE	IZ	Steinburg	132		0
+DE	SN	Schwerin	95		0
+DE	LUP	Ludwigslust-Parchim	210		0
+DE	NWM	Nordwestmecklenburg	157		0
+DE	LRO	Landkreis Rostock	215		0
+DE	VR	Vorpommern-Rügen	225		0
+DE	VG	Vorpommern-Greifswald	235		0
+DE	MSE	Mecklenburgische Seenplatte	255		0
+DE	P	Potsdam	185		0
+DE	PM	Potsdam-Mittelmark	215		0
+DE	HVL	Havelland	165		0
+DE	OHV	Oberhavel	215		0
+DE	BAR	Barnim	190		0
+DE	MOL	Märkisch-Oderland	200		0
+DE	LOS	Oder-Spree	180		0
+DE	LDS	Dahme-Spreewald	175		0
+DE	TF	Teltow-Fläming	175		0
+DE	EE	Elbe-Elster	100		0
+DE	OSL	Oberspreewald-Lausitz	107		0
+DE	SPN	Spree-Neiße	112		0
+DE	CB	Cottbus	98		0
+DE	FF	Frankfurt (Oder)	57		0
+DE	UM	Uckermark	118		0
+DE	OPR	Ostprignitz-Ruppin	98		0
+DE	PR	Prignitz	75		0
+DE	BRB	Brandenburg an der Havel	72		0
+DE	SK	Saalekreis	180		0
+DE	BK	Börde	170		0
+DE	SDL	Stendal	110		0
+DE	SAW	Altmarkkreis Salzwedel	83		0
+DE	JL	Jerichower Land	88		0
+DE	HZ	Harz	210		0
+DE	SLK	Salzlandkreis	185		0
+DE	ABI	Anhalt-Bitterfeld	155		0
+DE	DE	Dessau-Roßlau	78		0
+DE	WB	Wittenberg	122		0
+DE	MSH	Mansfeld-Südharz	130		0
+DE	BLK	Burgenlandkreis	175		0
+DE	J	Jena	110		0
+DE	G	Gera	93		0
+DE	WE	Weimar	65		0
+DE	GTH	Gotha	133		0
+DE	EA	Wartburgkreis	155		0
+DE	IK	Ilm-Kreis	107		0
+DE	SHK	Saale-Holzland-Kreis	82		0
+DE	SOK	Saale-Orla-Kreis	78		0
+DE	SLF	Saalfeld-Rudolstadt	100		0
+DE	GRZ	Greiz	95		0
+DE	ABG	Altenburger Land	88		0
+DE	UH	Unstrut-Hainich-Kreis	100		0
+DE	KYF	Kyffhäuserkreis	73		0
+DE	NDH	Nordhausen	80		0
+DE	EIC	Eichsfeld	98		0
+DE	SÖM	Sömmerda	68		0
+DE	AP	Weimarer Land	82		0
+DE	SM	Schmalkalden-Meiningen	122		0
+DE	HBN	Hildburghausen	62		0
+DE	SON	Sonneberg	56		0
+DE	Z	Zwickau	310		0
+DE	V	Vogtlandkreis	220		0
+DE	ERZ	Erzgebirgskreis	330		0
+DE	MEI	Meißen	240		0
+DE	PIR	Sächsische Schweiz	245		0
+DE	BZ	Bautzen	295		0
+DE	GR	Görlitz	250		0
+DE	FG	Mittelsachsen	300		0
+DE	TDO	Nordsachsen	197		0
+DE	QX	reserved	0		1
+DE	YY	reserved	0		1
+DZ	16	Alger	3500		0
+DZ	31	Oran	1700		0
+DZ	25	Constantine	1100		0
+DZ	19	Sétif	1700		0
+DZ	09	Blida	1100		0
+DZ	06	Béjaïa	1000		0
+DZ	15	Tizi Ouzou	1200		0
+DZ	05	Batna	1300		0
+DZ	35	Boumerdès	900		0
+DZ	13	Tlemcen	1050		0
+DZ	23	Annaba	700		0
+DZ	02	Chlef	1100		0
+DZ	99	reserved	0		1
+EC	P	Pichincha	3200		0
+EC	G	Guayas	4400		0
+EC	A	Azuay	900		0
+EC	M	Manabí	1600		0
+EC	E	Esmeraldas	600		0
+EC	L	Loja	500		0
+EC	T	Tungurahua	600		0
+EC	I	Imbabura	480		0
+EC	O	El Oro	700		0
+EC	R	Los Ríos	900		0
+EC	C	Carchi	180		0
+EC	X	Cotopaxi	480		0
+EC	H	Chimborazo	500		0
+EC	U	Cañar	280		0
+EC	Ñ	reserved	0		1
+ES-OLD	M	Madrid	5000		0
+ES-OLD	B	Barcelona	4600		0
+ES-OLD	V	Valencia	2200		0
+ES-OLD	SE	Sevilla	1700		0
+ES-OLD	MA	Málaga	1300		0
+ES-OLD	A	Alicante	1500		0
+ES-OLD	MU	Murcia	1200		0
+ES-OLD	BI	Vizcaya	1150		0
+ES-OLD	C	A Coruña	1100		0
+ES-OLD	CA	Cádiz	1150		0
+ES-OLD	IB	Baleares	900		0
+ES-OLD	PM	Palma	200		0
+ES-OLD	Z	Zaragoza	900		0
+ES-OLD	AS	Asturias	1080		0
+ES-OLD	O	Oviedo	200		0
+ES-OLD	PO	Pontevedra	950		0
+ES-OLD	GC	Las Palmas	1000		0
+ES-OLD	TF	Santa Cruz de Tenerife	950		0
+ES-OLD	GR	Granada	900		0
+ES-OLD	CO	Córdoba	780		0
+ES-OLD	J	Jaén	640		0
+ES-OLD	T	Tarragona	700		0
+ES-OLD	GI	Girona	700		0
+ES-OLD	H	Huelva	510		0
+ES-OLD	BA	Badajoz	680		0
+ES-OLD	TO	Toledo	620		0
+ES-OLD	CS	Castellón	560		0
+ES-OLD	NA	Navarra	600		0
+ES-OLD	VA	Valladolid	520		0
+ES-OLD	SS	Guipúzcoa	700		0
+ES-OLD	LE	León	500		0
+ES-OLD	S	Cantabria	580		0
+ES-OLD	CR	Ciudad Real	500		0
+ES-OLD	AL	Almería	600		0
+ES-OLD	CC	Cáceres	410		0
+ES-OLD	LO	La Rioja	300		0
+ES-OLD	L	Lleida	430		0
+ES-OLD	BU	Burgos	360		0
+ES-OLD	SA	Salamanca	340		0
+ES-OLD	VI	Álava	320		0
+ES-OLD	AB	Albacete	390		0
+ES-OLD	LU	Lugo	340		0
+ES-OLD	OR	Ourense	310		0
+ES-OLD	HU	Huesca	220		0
+ES-OLD	CU	Cuenca	200		0
+ES-OLD	ZA	Zamora	180		0
+ES-OLD	P	Palencia	170		0
+ES-OLD	SG	Segovia	150		0
+ES-OLD	AV	Ávila	160		0
+ES-OLD	GU	Guadalajara	240		0
+ES-OLD	TE	Teruel	135		0
+ES-OLD	SO	Soria	90		0
+ES-OLD	CE	Ceuta	80		0
+ES-OLD	ML	Melilla	80		0
+ES-OLD	QQ	reserved	0		1
+ET	AA	Addis Ababa	5000		0
+ET	OR	Oromia	2000		0
+ET	AM	Amhara	1500		0
+ET	SN	SNNPR	1000		0
+ET	DR	Dire Dawa	500		0
+ET	TG	Tigray	600		0
+ET	QQ	reserved	0		1
+FR	75	Paris	2150		0
+FR	13	Bouches-du-Rhône	2050		0
+FR	59	Nord	2600		0
+FR	69	Rhône	1900		0
+FR	92	Hauts-de-Seine	1630		0
+FR	93	Seine-Saint-Denis	1660		0
+FR	33	Gironde	1650		0
+FR	62	Pas-de-Calais	1460		0
+FR	78	Yvelines	1450		0
+FR	77	Seine-et-Marne	1420		0
+FR	94	Val-de-Marne	1410		0
+FR	06	Alpes-Maritimes	1100		0
+FR	31	Haute-Garonne	1450		0
+FR	44	Loire-Atlantique	1450		0
+FR	91	Essonne	1300		0
+FR	95	Val-d'Oise	1250		0
+FR	76	Seine-Maritime	1250		0
+FR	34	Hérault	1200		0
+FR	38	Isère	1280		0
+FR	67	Bas-Rhin	1150		0
+FR	35	Ille-et-Vilaine	1100		0
+FR	57	Moselle	1040		0
+FR	83	Var	1080		0
+FR	29	Finistère	920		0
+FR	60	Oise	830		0
+FR	74	Haute-Savoie	830		0
+FR	49	Maine-et-Loire	820		0
+FR	68	Haut-Rhin	770		0
+FR	42	Loire	770		0
+FR	54	Meurthe-et-Moselle	730		0
+FR	30	Gard	750		0
+FR	56	Morbihan	760		0
+FR	45	Loiret	680		0
+FR	63	Puy-de-Dôme	660		0
+FR	37	Indre-et-Loire	610		0
+FR	85	Vendée	690		0
+FR	64	Pyrénées-Atlantiques	690		0
+FR	14	Calvados	700		0
+FR	17	Charente-Maritime	650		0
+FR	71	Saône-et-Loire	550		0
+FR	84	Vaucluse	560		0
+FR	72	Sarthe	570		0
+FR	27	Eure	600		0
+FR	25	Doubs	540		0
+FR	01	Ain	660		0
+FR	26	Drôme	520		0
+FR	22	Côtes-d'Armor	600		0
+FR	51	Marne	570		0
+FR	80	Somme	570		0
+FR	21	Côte-d'Or	530		0
+FR	66	Pyrénées-Orientales	480		0
+FR	87	Haute-Vienne	370		0
+FR	86	Vienne	440		0
+FR	50	Manche	490		0
+FR	00	reserved	0		1
+GB	A	Anglia	6500		0
+GB	B	Birmingham	5000		0
+GB	C	Cymru	3100		0
+GB	D	Deeside	3500		0
+GB	E	Essex	2000		0
+GB	F	Forest and Fens	2800		0
+GB	G	Garden of England	3500		0
+GB	H	Hampshire and Dorset	3600		0
+GB	K	Milton Keynes	2500		0
+GB	L	London	9000		0
+GB	M	Manchester and Merseyside	5800		0
+GB	N	North	4000		0
+GB	O	Oxford	1500		0
+GB	P	Preston	3000		0
+GB	R	Reading	3200		0
+GB	S	Scotland	5400		0
+GB	V	Severn Valley	2800		0
+GB	W	West of England	3000		0
+GB	Y	Yorkshire	5400		0
+GB	Z	reserved	0		1
+GH	GR	Greater Accra	5500		0
+GH	AS	Ashanti	5400		0
+GH	WR	Western	2100		0
+GH	CR	Central	2900		0
+GH	ER	Eastern	2900		0
+GH	NR	Northern	2300		0
+GH	VR	Volta	1700		0
+GH	BA	Bono	1200		0
+GH	UE	Upper East	1300		0
+GH	UW	Upper West	900		0
+GH	QQ	reserved	0		1
+GM	BJL	Banjul	400		0
+GM	KM	Kanifing	400		0
+GM	WCR	West Coast	700		0
+GM	LRR	Lower River	90		0
+GM	NBR	North Bank	230		0
+GM	CRR	Central River	250		0
+GM	URR	Upper River	240		0
+GM	QQQ	reserved	0		1
+GR	Y	Attiki	2000		0
+GR	I	Attiki	900		0
+GR	Z	Attiki	700		0
+GR	N	Thessaloniki	1100		0
+GR	H	Achaia	300		0
+GR	K	Irakleio	300		0
+GR	A	Chalkidiki	200		0
+GR	B	Larisa	300		0
+GR	E	Ioannina	250		0
+GR	M	Kerkyra	200		0
+GR	P	Rodos	200		0
+GR	T	Evros	200		0
+GR	X	Kavala	250		0
+GR	O	Kriti	200		0
+GR	J	reserved	0		1
+HR	ZG	Zagreb	1100		0
+HR	ST	Split	450		0
+HR	RI	Rijeka	300		0
+HR	OS	Osijek	270		0
+HR	ZD	Zadar	160		0
+HR	PU	Pula	200		0
+HR	SB	Slavonski Brod	150		0
+HR	KA	Karlovac	120		0
+HR	VŽ	Varaždin	160		0
+HR	ŠI	Šibenik	100		0
+HR	DU	Dubrovnik	120		0
+HR	SK	Sisak	150		0
+HR	BJ	Bjelovar	100		0
+HR	KC	Koprivnica	100		0
+HR	ČK	Čakovec	105		0
+HR	VK	Vinkovci	120		0
+HR	VU	Vukovar	60		0
+HR	PŽ	Požega	65		0
+HR	NA	Našice	40		0
+HR	KR	Krapina	120		0
+HR	QQ	reserved	0		1
+ID	B	Jakarta	30000		0
+ID	D	Bandung	10000		0
+ID	L	Surabaya	6000		0
+ID	F	Bogor	8000		0
+ID	AB	Yogyakarta	3700		0
+ID	H	Semarang	6000		0
+ID	N	Malang	5000		0
+ID	BK	Medan	6000		0
+ID	DK	Bali	4300		0
+ID	W	Sidoarjo	4000		0
+ID	AD	Surakarta	5500		0
+ID	T	Karawang	5000		0
+ID	E	Cirebon	5000		0
+ID	Z	Garut	5000		0
+ID	G	Pekalongan	4000		0
+ID	K	Pati	4000		0
+ID	R	Banyumas	4000		0
+ID	S	Bojonegoro	4000		0
+ID	BM	Riau	6000		0
+ID	KT	Kalimantan Timur	3800		0
+ID	DD	Sulawesi Selatan	9000		0
+ID	BG	Sumatera Selatan	8000		0
+ID	QQ	reserved	0		1
+IE	D	Dublin	1450		0
+IE	C	Cork	580		0
+IE	G	Galway	280		0
+IE	L	Limerick	210		0
+IE	KY	Kerry	156		0
+IE	TS	Tipperary	167		0
+IE	W	Waterford	127		0
+IE	WX	Wexford	163		0
+IE	KE	Kildare	247		0
+IE	MH	Meath	220		0
+IE	LH	Louth	139		0
+IE	WW	Wicklow	156		0
+IE	DL	Donegal	167		0
+IE	MO	Mayo	137		0
+IE	CE	Clare	127		0
+IE	KK	Kilkenny	104		0
+IE	CW	Carlow	61		0
+IE	LS	Laois	91		0
+IE	OY	Offaly	83		0
+IE	WH	Westmeath	96		0
+IE	CN	Cavan	81		0
+IE	MN	Monaghan	65		0
+IE	SO	Sligo	70		0
+IE	RN	Roscommon	70		0
+IE	LM	Leitrim	35		0
+IE	LD	Longford	46		0
+IE	QQ	reserved	0		1
+IN	MH	Maharashtra	126000	50	0
+IN	UP	Uttar Pradesh	240000	96	0
+IN	DL	Delhi	21000	13	0
+IN	KA	Karnataka	68000	70	0
+IN	TN	Tamil Nadu	77000	99	0
+IN	GJ	Gujarat	70000	39	0
+IN	RJ	Rajasthan	80000	58	0
+IN	WB	West Bengal	99000	98	0
+IN	KL	Kerala	35000	86	0
+IN	AP	Andhra Pradesh	53000	39	0
+IN	TS	Telangana	38000	38	0
+IN	MP	Madhya Pradesh	85000	70	0
+IN	HR	Haryana	29000	99	0
+IN	PB	Punjab	30000	99	0
+IN	BR	Bihar	125000	57	0
+IN	OD	Odisha	46000	35	0
+IN	CG	Chhattisgarh	30000	30	0
+IN	JH	Jharkhand	38000	25	0
+IN	AS	Assam	35000	34	0
+IN	UK	Uttarakhand	11000	19	0
+IN	HP	Himachal Pradesh	7500	99	0
+IN	JK	Jammu and Kashmir	13000	22	0
+IN	GA	Goa	1600	12	0
+IN	CH	Chandigarh	1200	4	0
+IN	ZZ	reserved	0	1	1
+IR	11	Tehran	9000		0
+IR	22	Tehran	3000		0
+IR	33	Tehran	2000		0
+IR	44	Tehran	2000		0
+IR	55	Tehran	1000		0
+IR	66	Tehran	1000		0
+IR	77	Tehran	500		0
+IR	88	Tehran	500		0
+IR	99	Tehran	500		0
+IR	12	Khorasan Razavi	3000		0
+IR	13	Isfahan	2500		0
+IR	15	Fars	2500		0
+IR	14	East Azerbaijan	2000		0
+IR	17	Mazandaran	1600		0
+IR	16	Khuzestan	2500		0
+IR	18	Gilan	1300		0
+IR	24	Alborz	2700		0
+IR	19	Kerman	1500		0
+IR	21	Golestan	900		0
+IR	00	reserved	0		1
+IT-OLD	MI	Milano	3100		0
+IT-OLD	RM	Roma	3800		0
+IT-OLD	TO	Torino	2200		0
+IT-OLD	NA	Napoli	3000		0
+IT-OLD	BA	Bari	1500		0
+IT-OLD	PA	Palermo	1200		0
+IT-OLD	FI	Firenze	1000		0
+IT-OLD	BO	Bologna	1000		0
+IT-OLD	GE	Genova	900		0
+IT-OLD	VE	Venezia	800		0
+IT-OLD	VR	Verona	900		0
+IT-OLD	PD	Padova	900		0
+IT-OLD	BS	Brescia	1200		0
+IT-OLD	BG	Bergamo	1100		0
+IT-OLD	CT	Catania	1100		0
+IT-OLD	SA	Salerno	1100		0
+IT-OLD	VA	Varese	880		0
+IT-OLD	CO	Como	600		0
+IT-OLD	TV	Treviso	880		0
+IT-OLD	VI	Vicenza	860		0
+IT-OLD	MO	Modena	700		0
+IT-OLD	LE	Lecce	800		0
+IT-OLD	CA	Cagliari	550		0
+IT-OLD	PG	Perugia	650		0
+IT-OLD	TA	Taranto	580		0
+IT-OLD	CS	Cosenza	700		0
+IT-OLD	ME	Messina	640		0
+IT-OLD	RC	Reggio Calabria	550		0
+IT-OLD	LT	Latina	575		0
+IT-OLD	FG	Foggia	620		0
+IT-OLD	AN	Ancona	470		0
+IT-OLD	QQ	reserved	0		1
+JP	品川	Shinagawa	3000		0
+JP	練馬	Nerima	2500		0
+JP	足立	Adachi	2500		0
+JP	多摩	Tama	2500		0
+JP	八王子	Hachioji	1500		0
+JP	横浜	Yokohama	3800		0
+JP	川崎	Kawasaki	1500		0
+JP	相模	Sagami	2000		0
+JP	湘南	Shonan	1500		0
+JP	大宮	Omiya	2500		0
+JP	所沢	Tokorozawa	1500		0
+JP	川越	Kawagoe	1000		0
+JP	千葉	Chiba	2000		0
+JP	習志野	Narashino	1500		0
+JP	野田	Noda	800		0
+JP	袖ヶ浦	Sodegaura	700		0
+JP	水戸	Mito	1000		0
+JP	土浦	Tsuchiura	800		0
+JP	つくば	Tsukuba	700		0
+JP	宇都宮	Utsunomiya	1200		0
+JP	群馬	Gunma	1300		0
+JP	高崎	Takasaki	700		0
+JP	名古屋	Nagoya	2300		0
+JP	豊田	Toyota	1200		0
+JP	岡崎	Okazaki	1000		0
+JP	三河	Mikawa	1300		0
+JP	尾張小牧	Owari-Komaki	1500		0
+JP	一宮	Ichinomiya	600		0
+JP	静岡	Shizuoka	1000		0
+JP	浜松	Hamamatsu	1100		0
+JP	沼津	Numazu	900		0
+JP	大阪	Osaka	2700		0
+JP	なにわ	Naniwa	1200		0
+JP	和泉	Izumi	1500		0
+JP	堺	Sakai	830		0
+JP	神戸	Kobe	1500		0
+JP	姫路	Himeji	1300		0
+JP	京都	Kyoto	2500		0
+JP	奈良	Nara	1300		0
+JP	滋賀	Shiga	1400		0
+JP	福岡	Fukuoka	2500		0
+JP	北九州	Kitakyushu	1300		0
+JP	久留米	Kurume	800		0
+JP	札幌	Sapporo	2200		0
+JP	旭川	Asahikawa	500		0
+JP	函館	Hakodate	400		0
+JP	仙台	Sendai	1500		0
+JP	宮城	Miyagi	800		0
+JP	広島	Hiroshima	1800		0
+JP	福山	Fukuyama	800		0
+JP	岡山	Okayama	1900		0
+JP	新潟	Niigata	1500		0
+JP	長野	Nagano	1100		0
+JP	松本	Matsumoto	900		0
+JP	熊本	Kumamoto	1700		0
+JP	鹿児島	Kagoshima	1600		0
+JP	沖縄	Okinawa	1500		0
+JP	使	reserved	0		1
+KH	PP	Phnom Penh	2300		0
+KH	SR	Siem Reap	1000		0
+KH	BB	Battambang	1000		0
+KH	KD	Kandal	1200		0
+KH	SHV	Sihanoukville	300		0
+KH	KC	Kampong Cham	900		0
+KH	QQ	reserved	0		1
+KR	서울	Seoul	9700		0
+KR	부산	Busan	3300		0
+KR	경기	Gyeonggi	13600		0
+KR	인천	Incheon	3000		0
+KR	대구	Daegu	2400		0
+KR	대전	Daejeon	1500		0
+KR	광주	Gwangju	1450		0
+KR	울산	Ulsan	1100		0
+KR	경남	Gyeongnam	3300		0
+KR	경북	Gyeongbuk	2600		0
+KR	충남	Chungnam	2100		0
+KR	충북	Chungbuk	1600		0
+KR	전남	Jeonnam	1800		0
+KR	전북	Jeonbuk	1800		0
+KR	강원	Gangwon	1500		0
+KR	제주	Jeju	670		0
+KR	한국	reserved	0		1
+KZ	01	Astana	1350		0
+KZ	02	Almaty	2200		0
+KZ	05	Almaty Region	1500		0
+KZ	17	Shymkent	1200		0
+KZ	13	Turkestan	2100		0
+KZ	09	Karaganda	1100		0
+KZ	03	Akmola	740		0
+KZ	04	Aktobe	900		0
+KZ	06	Atyrau	690		0
+KZ	07	West Kazakhstan	680		0
+KZ	08	Zhambyl	1200		0
+KZ	10	Kostanay	830		0
+KZ	11	Kyzylorda	830		0
+KZ	12	Mangystau	760		0
+KZ	14	Pavlodar	750		0
+KZ	15	North Kazakhstan	540		0
+KZ	16	East Kazakhstan	720		0
+KZ	00	reserved	0		1
+LK	WP	Western	6000		0
+LK	CP	Central	2700		0
+LK	SP	Southern	2600		0
+LK	NW	North Western	2500		0
+LK	SG	Sabaragamuwa	2000		0
+LK	NP	Northern	1100		0
+LK	EP	Eastern	1700		0
+LK	NC	North Central	1300		0
+LK	UP	Uva	1300		0
+LK	QQ	reserved	0		1
+MA	1	Rabat	600		0
+MA	6	Casablanca	3500		0
+MA	7	Casablanca	800		0
+MA	10	Fès	1200		0
+MA	26	Marrakech	1000		0
+MA	40	Tanger	1000		0
+MA	33	Agadir	600		0
+MA	44	Meknès	800		0
+MA	48	Oujda	600		0
+MA	21	Kénitra	1000		0
+MA	15	Salé	900		0
+MA	55	Tétouan	500		0
+MA	89	reserved	0		1
+ME	PG	Podgorica	190		0
+ME	NK	Nikšić	65		0
+ME	BD	Budva	30		0
+ME	BR	Bar	45		0
+ME	HN	Herceg Novi	30		0
+ME	KO	Kotor	22		0
+ME	BP	Bijelo Polje	40		0
+ME	PV	Pljevlja	25		0
+ME	UL	Ulcinj	20		0
+ME	CT	Cetinje	15		0
+ME	TV	Tivat	15		0
+ME	BA	Berane	30		0
+ME	QQ	reserved	0		1
+MK	SK	Skopje	600		0
+MK	BT	Bitola	90		0
+MK	KU	Kumanovo	105		0
+MK	TE	Tetovo	90		0
+MK	OH	Ohrid	55		0
+MK	PP	Prilep	70		0
+MK	ST	Štip	45		0
+MK	VE	Veles	55		0
+MK	GE	Gevgelija	22		0
+MK	SR	Strumica	55		0
+MK	GV	Gostivar	80		0
+MK	KO	Kočani	35		0
+MK	KI	Kičevo	30		0
+MK	QQ	reserved	0		1
+MW	BT	Blantyre	1200		0
+MW	LL	Lilongwe	1100		0
+MW	MZ	Mzuzu	300		0
+MW	ZA	Zomba	300		0
+MW	BL	Blantyre	300		0
+MW	KU	Kasungu	150		0
+MW	QQ	reserved	0		1
+MY	W	Kuala Lumpur	1800		0
+MY	V	Kuala Lumpur	600		0
+MY	B	Selangor	6500		0
+MY	J	Johor	4000		0
+MY	P	Penang	1800		0
+MY	A	Perak	2500		0
+MY	K	Kedah	2200		0
+MY	N	Negeri Sembilan	1200		0
+MY	M	Melaka	1000		0
+MY	C	Pahang	1700		0
+MY	D	Kelantan	1900		0
+MY	T	Terengganu	1200		0
+MY	R	Perlis	260		0
+MY	Q	Sarawak	2500		0
+MY	S	Sabah	3400		0
+MY	Z	reserved	0		1
+MZ	MC	Maputo Cidade	1100		0
+MZ	MP	Maputo Província	2000		0
+MZ	GZ	Gaza	1500		0
+MZ	IB	Inhambane	1500		0
+MZ	SF	Sofala	2200		0
+MZ	MN	Manica	2000		0
+MZ	TT	Tete	2700		0
+MZ	ZB	Zambézia	5000		0
+MZ	NP	Nampula	6000		0
+MZ	CD	Cabo Delgado	2300		0
+MZ	NS	Niassa	1800		0
+MZ	QQ	reserved	0		1
+NA	W	Windhoek	450		0
+NA	N	Oshakati	300		0
+NA	OD	Ondangwa	200		0
+NA	SK	Swakopmund	80		0
+NA	WB	Walvis Bay	90		0
+NA	RU	Rundu	120		0
+NA	KH	Keetmanshoop	60		0
+NA	QQ	reserved	0		1
+NI	M	Managua	1550		0
+NI	L	León	430		0
+NI	C	Chinandega	440		0
+NI	G	Granada	210		0
+NI	MY	Masaya	390		0
+NI	E	Estelí	230		0
+NI	MT	Matagalpa	600		0
+NI	QQ	reserved	0		1
+NP	BA	Bagmati	5500		0
+NP	GA	Gandaki	2500		0
+NP	KO	Koshi	5000		0
+NP	LU	Lumbini	5100		0
+NP	JA	Janakpur	6100		0
+NP	SE	Seti	1500		0
+NP	ME	Mechi	1500		0
+NP	NA	Narayani	3000		0
+NP	QQ	reserved	0		1
+PK	LE	Lahore	13000		0
+PK	IS	Islamabad	2400		0
+PK	RI	Rawalpindi	5500		0
+PK	FS	Faisalabad	8000		0
+PK	MN	Multan	5000		0
+PK	GA	Gujranwala	5000		0
+PK	SA	Sargodha	4000		0
+PK	BW	Bahawalpur	4000		0
+PK	SK	Sialkot	4000		0
+PK	PE	Peshawar	4700		0
+PK	QQ	reserved	0		1
+PL	WA	Warszawa	1300		0
+PL	WI	Warszawa	600		0
+PL	WE	Warszawa	500		0
+PL	WW	Warszawa	300		0
+PL	KR	Kraków	800		0
+PL	KK	Kraków	200		0
+PL	PO	Poznań	550		0
+PL	PY	Poznań	200		0
+PL	WR	Wrocław	650		0
+PL	DW	Wrocław	300		0
+PL	GD	Gdańsk	480		0
+PL	GA	Gdynia	250		0
+PL	LD	Łódź	650		0
+PL	EL	Łódź	200		0
+PL	SZ	Szczecin	400		0
+PL	BI	Białystok	300		0
+PL	LU	Lublin	340		0
+PL	KA	Katowice	290		0
+PL	SK	Katowice	200		0
+PL	SG	Gliwice	180		0
+PL	SO	Sosnowiec	200		0
+PL	ST	Tychy	130		0
+PL	SB	Bielsko-Biała	170		0
+PL	RZ	Rzeszów	200		0
+PL	KI	Kielce	190		0
+PL	OP	Opole	130		0
+PL	TK	Tomaszów	30		0
+PL	CB	Bydgoszcz	340		0
+PL	CT	Toruń	200		0
+PL	NO	Olsztyn	170		0
+PL	FZ	Zielona Góra	140		0
+PL	ZS	Szczecin	150		0
+PL	WPI	Piaseczno	190		0
+PL	WPR	Pruszków	160		0
+PL	WGM	Grodzisk	100		0
+PL	WL	Legionowo	115		0
+PL	WOT	Otwock	125		0
+PL	WWL	Wołomin	240		0
+PL	KRA	Kraków powiat	280		0
+PL	PZ	Poznań powiat	400		0
+PL	GDA	Gdańsk powiat	110		0
+PL	DWR	Wrocław powiat	150		0
+PL	QQ	reserved	0		1
+RO	B	București	2100		0
+RO	IF	Ilfov	550		0
+RO	CJ	Cluj	740		0
+RO	TM	Timiș	700		0
+RO	IS	Iași	790		0
+RO	CT	Constanța	680		0
+RO	BV	Brașov	550		0
+RO	PH	Prahova	700		0
+RO	DJ	Dolj	600		0
+RO	GL	Galați	500		0
+RO	AG	Argeș	570		0
+RO	BC	Bacău	580		0
+RO	BH	Bihor	550		0
+RO	MS	Mureș	520		0
+RO	SV	Suceava	640		0
+RO	AR	Arad	410		0
+RO	SB	Sibiu	390		0
+RO	MM	Maramureș	450		0
+RO	HD	Hunedoara	360		0
+RO	DB	Dâmbovița	480		0
+RO	OT	Olt	390		0
+RO	NT	Neamț	440		0
+RO	VL	Vâlcea	340		0
+RO	BZ	Buzău	400		0
+RO	BR	Brăila	290		0
+RO	QQ	reserved	0		1
+RS	BG	Beograd	1700		0
+RS	NS	Novi Sad	500		0
+RS	NI	Niš	350		0
+RS	KG	Kragujevac	180		0
+RS	SU	Subotica	140		0
+RS	ZR	Zrenjanin	120		0
+RS	PA	Pančevo	120		0
+RS	ČA	Čačak	110		0
+RS	KV	Kraljevo	110		0
+RS	LE	Leskovac	140		0
+RS	SM	Smederevo	100		0
+RS	VA	Valjevo	90		0
+RS	ŠA	Šabac	110		0
+RS	SO	Sombor	80		0
+RS	NP	Novi Pazar	100		0
+RS	KŠ	Kruševac	120		0
+RS	UE	Užice	70		0
+RS	QQ	reserved	0		1
+RU	77	Moscow	5000		0
+RU	97	Moscow	2500		0
+RU	99	Moscow	2000		0
+RU	177	Moscow	2000		0
+RU	197	Moscow	1500		0
+RU	199	Moscow	1000		0
+RU	777	Moscow	500		0
+RU	50	Moscow Oblast	5000		0
+RU	150	Moscow Oblast	1500		0
+RU	190	Moscow Oblast	1000		0
+RU	750	Moscow Oblast	500		0
+RU	78	St Petersburg	3000		0
+RU	98	St Petersburg	1500		0
+RU	178	St Petersburg	1000		0
+RU	47	Leningrad Oblast	1900		0
+RU	23	Krasnodar	4000		0
+RU	123	Krasnodar	1500		0
+RU	61	Rostov	3000		0
+RU	161	Rostov	1000		0
+RU	66	Sverdlovsk	3000		0
+RU	96	Sverdlovsk	1000		0
+RU	16	Tatarstan	3000		0
+RU	116	Tatarstan	900		0
+RU	2	Bashkortostan	3000		0
+RU	102	Bashkortostan	1000		0
+RU	74	Chelyabinsk	2500		0
+RU	174	Chelyabinsk	800		0
+RU	54	Novosibirsk	2400		0
+RU	154	Novosibirsk	400		0
+RU	63	Samara	2500		0
+RU	163	Samara	600		0
+RU	52	Nizhny Novgorod	2600		0
+RU	152	Nizhny Novgorod	600		0
+RU	59	Perm	2000		0
+RU	24	Krasnoyarsk	2300		0
+RU	124	Krasnoyarsk	500		0
+RU	36	Voronezh	2000		0
+RU	34	Volgograd	2000		0
+RU	26	Stavropol	2400		0
+RU	5	Dagestan	3100		0
+RU	55	Omsk	1800		0
+RU	42	Kemerovo	2600		0
+RU	38	Irkutsk	2400		0
+RU	72	Tyumen	1500		0
+RU	64	Saratov	2400		0
+RU	56	Orenburg	1900		0
+RU	25	Primorye	1900		0
+RU	125	Primorye	400		0
+RU	27	Khabarovsk	1300		0
+RU	22	Altai Krai	2200		0
+RU	20	reserved	0		1
+SI	LJ	Ljubljana	550		0
+SI	MB	Maribor	300		0
+SI	CE	Celje	220		0
+SI	KR	Kranj	200		0
+SI	NM	Novo Mesto	140		0
+SI	KP	Koper	140		0
+SI	KK	Krško	70		0
+SI	GO	Nova Gorica	120		0
+SI	MS	Murska Sobota	115		0
+SI	PO	Postojna	50		0
+SI	SG	Slovenj Gradec	75		0
+SI	QQ	reserved	0		1
+SK	BA	Bratislava	480		0
+SK	BL	Bratislava	200		0
+SK	KE	Košice	240		0
+SK	KS	Košice-okolie	130		0
+SK	ZA	Žilina	160		0
+SK	NR	Nitra	160		0
+SK	TT	Trnava	130		0
+SK	PO	Prešov	170		0
+SK	BB	Banská Bystrica	110		0
+SK	TN	Trenčín	110		0
+SK	MT	Martin	95		0
+SK	PD	Prievidza	130		0
+SK	LM	Liptovský Mikuláš	70		0
+SK	PP	Poprad	105		0
+SK	NZ	Nové Zámky	140		0
+SK	DS	Dunajská Streda	120		0
+SK	GA	Galanta	95		0
+SK	PN	Piešťany	60		0
+SK	SC	Senec	90		0
+SK	PK	Pezinok	65		0
+SK	MI	Michalovce	110		0
+SK	SN	Spišská Nová Ves	100		0
+SK	LV	Levice	110		0
+SK	KN	Komárno	100		0
+SK	ZV	Zvolen	68		0
+SK	QQ	reserved	0		1
+SN	DK	Dakar	3700		0
+SN	TH	Thiès	2100		0
+SN	DL	Diourbel	1800		0
+SN	SL	Saint-Louis	1100		0
+SN	KL	Kaolack	1200		0
+SN	ZG	Ziguinchor	650		0
+SN	LG	Louga	1000		0
+SN	FK	Fatick	900		0
+SN	QQ	reserved	0		1
+TH	กรุงเทพมหานคร	Bangkok	10000		0
+TH	นนทบุรี	Nonthaburi	1300		0
+TH	สมุทรปราการ	Samut Prakan	1400		0
+TH	ปทุมธานี	Pathum Thani	1200		0
+TH	ชลบุรี	Chonburi	1600		0
+TH	เชียงใหม่	Chiang Mai	1800		0
+TH	นครราชสีมา	Nakhon Ratchasima	2600		0
+TH	ขอนแก่น	Khon Kaen	1800		0
+TH	ภูเก็ต	Phuket	420		0
+TH	สงขลา	Songkhla	1400		0
+TH	อุดรธานี	Udon Thani	1600		0
+TH	ระยอง	Rayong	750		0
+TH	นครปฐม	Nakhon Pathom	920		0
+TH	ไทย	reserved	0		1
+TM	AG	Ashgabat	1000		0
+TM	AH	Ahal	900		0
+TM	BN	Balkan	550		0
+TM	DZ	Daşoguz	1400		0
+TM	LB	Lebap	1400		0
+TM	MR	Mary	1600		0
+TM	QQ	reserved	0		1
+TR	34	İstanbul	15700		0
+TR	06	Ankara	5800		0
+TR	35	İzmir	4500		0
+TR	16	Bursa	3200		0
+TR	07	Antalya	2700		0
+TR	42	Konya	2300		0
+TR	01	Adana	2300		0
+TR	27	Gaziantep	2200		0
+TR	63	Şanlıurfa	2200		0
+TR	31	Hatay	1700		0
+TR	41	Kocaeli	2100		0
+TR	33	Mersin	1900		0
+TR	21	Diyarbakır	1800		0
+TR	55	Samsun	1400		0
+TR	26	Eskişehir	900		0
+TR	38	Kayseri	1450		0
+TR	20	Denizli	1060		0
+TR	61	Trabzon	820		0
+TR	54	Sakarya	1100		0
+TR	45	Manisa	1470		0
+TR	09	Aydın	1150		0
+TR	10	Balıkesir	1250		0
+TR	48	Muğla	1050		0
+TR	44	Malatya	810		0
+TR	65	Van	1120		0
+TR	46	Kahramanmaraş	1180		0
+TR	25	Erzurum	750		0
+TR	59	Tekirdağ	1140		0
+TR	99	reserved	0		1
+UA	AA	Kyiv	2000		0
+UA	KA	Kyiv	1000		0
+UA	AI	Kyiv Oblast	1800		0
+UA	AX	Kharkiv	2600		0
+UA	BH	Odesa	2300		0
+UA	AE	Dnipro	3100		0
+UA	BC	Lviv	2500		0
+UA	AH	Donetsk	1000		0
+UA	BI	Poltava	1350		0
+UA	AT	Ivano-Frankivsk	1350		0
+UA	BO	Ternopil	1030		0
+UA	AM	Zhytomyr	1200		0
+UA	AB	Vinnytsia	1500		0
+UA	BX	Khmelnytskyi	1250		0
+UA	BK	Rivne	1150		0
+UA	AC	Volyn	1030		0
+UA	AO	Zakarpattia	1250		0
+UA	CE	Chernivtsi	900		0
+UA	CA	Cherkasy	1190		0
+UA	CB	Chernihiv	960		0
+UA	BM	Sumy	1050		0
+UA	BA	Kirovohrad	920		0
+UA	BE	Mykolaiv	1100		0
+UA	BT	Kherson	1000		0
+UA	AP	Zaporizhzhia	1650		0
+UA	QQ	reserved	0		1
+US	CA	California	39000		0
+US	TX	Texas	30500		0
+US	FL	Florida	22600		0
+US	NY	New York	19600		0
+US	PA	Pennsylvania	13000		0
+US	IL	Illinois	12500		0
+US	OH	Ohio	11800		0
+US	GA	Georgia	11000		0
+US	NC	North Carolina	10800		0
+US	MI	Michigan	10000		0
+US	NJ	New Jersey	9300		0
+US	VA	Virginia	8700		0
+US	WA	Washington	7800		0
+US	AZ	Arizona	7400		0
+US	TN	Tennessee	7100		0
+US	MA	Massachusetts	7000		0
+US	IN	Indiana	6900		0
+US	MO	Missouri	6200		0
+US	MD	Maryland	6200		0
+US	WI	Wisconsin	5900		0
+US	CO	Colorado	5900		0
+US	MN	Minnesota	5700		0
+US	SC	South Carolina	5400		0
+US	AL	Alabama	5100		0
+US	LA	Louisiana	4600		0
+US	KY	Kentucky	4500		0
+US	OR	Oregon	4200		0
+US	OK	Oklahoma	4100		0
+US	CT	Connecticut	3600		0
+US	UT	Utah	3400		0
+US	IA	Iowa	3200		0
+US	NV	Nevada	3200		0
+US	AR	Arkansas	3100		0
+US	MS	Mississippi	2900		0
+US	KS	Kansas	2900		0
+US	NM	New Mexico	2100		0
+US	NE	Nebraska	2000		0
+US	ID	Idaho	1960		0
+US	WV	West Virginia	1770		0
+US	HI	Hawaii	1430		0
+US	NH	New Hampshire	1400		0
+US	ME	Maine	1400		0
+US	MT	Montana	1130		0
+US	RI	Rhode Island	1100		0
+US	DE	Delaware	1030		0
+US	SD	South Dakota	920		0
+US	ND	North Dakota	780		0
+US	AK	Alaska	730		0
+US	DC	District of Columbia	680		0
+US	VT	Vermont	650		0
+US	WY	Wyoming	585		0
+UY	S	Montevideo	1300		0
+UY	A	Canelones	600		0
+UY	M	Maldonado	180		0
+UY	B	Maldonado	30		0
+UY	F	Florida	70		0
+UY	J	San José	110		0
+UY	K	Colonia	125		0
+UY	P	Paysandú	115		0
+UY	O	Salto	130		0
+UY	D	Durazno	58		0
+UY	C	Colonia	20		0
+UY	Ñ	reserved	0		1
+UZ	01	Tashkent	2900		0
+UZ	10	Tashkent Region	3000		0
+UZ	20	Sirdaryo	870		0
+UZ	25	Jizzakh	1400		0
+UZ	30	Samarkand	4100		0
+UZ	40	Fergana	3900		0
+UZ	50	Namangan	3000		0
+UZ	60	Andijan	3300		0
+UZ	70	Kashkadarya	3500		0
+UZ	75	Surkhandarya	2800		0
+UZ	80	Bukhara	2000		0
+UZ	85	Navoiy	1000		0
+UZ	90	Khorezm	1900		0
+UZ	95	Karakalpakstan	1950		0
+UZ	99	reserved	0		1
+VN	29	Hà Nội	4000		0
+VN	30	Hà Nội	4000		0
+VN	51	Hồ Chí Minh	4500		0
+VN	59	Hồ Chí Minh	3500		0
+VN	43	Đà Nẵng	1200		0
+VN	15	Hải Phòng	2000		0
+VN	36	Thanh Hóa	3600		0
+VN	37	Nghệ An	3300		0
+VN	60	Đồng Nai	3100		0
+VN	61	Bình Dương	2600		0
+VN	65	Cần Thơ	1200		0
+VN	14	Quảng Ninh	1300		0
+VN	99	Bắc Ninh	1400		0
+VN	13	reserved	0		1
+XK	01	Prishtinë	500		0
+XK	02	Mitrovicë	270		0
+XK	03	Pejë	180		0
+XK	04	Prizren	330		0
+XK	05	Ferizaj	190		0
+XK	06	Gjilan	180		0
+XK	07	Gjakovë	190		0
+XK	08	reserved	0		1
+ZA	GP	Gauteng	15000		0
+ZA	CA	Western Cape	7000		0
+ZA	ZN	KwaZulu-Natal	11500		0
+ZA	EC	Eastern Cape	6700		0
+ZA	MP	Mpumalanga	4700		0
+ZA	L	Limpopo	6000		0
+ZA	NW	North West	4000		0
+ZA	FS	Free State	2900		0
+ZA	NC	Northern Cape	1300		0
+ZA	QQ	reserved	0		1

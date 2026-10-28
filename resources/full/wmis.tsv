@@ -1,0 +1,8 @@
+# World manufacturer identifiers no maker holds (checked against NHTSA vPIC DecodeWMI by scripts/prepare_wmis.py), for safe VINs.
+wmi	reserved
+EZ1	1
+EZ7	1
+FZ3	1
+FZ8	1
+GZ5	1
+GZ9	1

@@ -1,0 +1,145 @@
+# Curated: models of the Japanese makers (columns as in models_europe.tsv). JPN is the Japanese domestic market, JDM the countries that import used Japanese cars.
+key	make	model	from	to	bodies	markets	seats	lite	trims
+toyota-corolla	Toyota	Corolla	1990		sedan:60,hatchback:25,wagon:15	NAM:16,EUR:14,CHN:14,LAM:20,MER:14,SEA:10,MEA:14,AFR:14,JDM:8,JPN:6,OCE:14,IND:4,CIS:8,TR:20	5	1	1.3|petrol|1296|55|1990-2007|ma|f|4|EUR,LAM,AFR,SEA,MEA,JDM,JPN;1.6|petrol|1598|81|1990-2019|ma|f|5;1.8|petrol|1794|103|1998-|ma|f|6|NAM,LAM,CHN,MEA,OCE,SEA,MER;2.0|petrol|1987|125|2019-|a|f|3|NAM,CHN,OCE;1.5|petrol|1496|80|2000-2018|a|f|3|JPN,JDM,TR;1.8 Hybrid|hybrid|1798|90|2013-|a|f|6;2.0 D-4D|diesel|1995|66|2002-2008|m|f|2|EUR,TR;1.4 D-4D|diesel|1364|66|2004-2018|m|f|2|EUR,TR;1.8 Flex|flex|1798|106|2008-|a|f|4|MER
+toyota-camry	Toyota	Camry	1990		sedan:100	NAM:22,MEA:18,CHN:8,SEA:8,OCE:8,CIS:8,AFR:6,JDM:2,LAM:4,KOR:2	5	1	2.2|petrol|2164|100|1990-2001|a|f|4;2.4|petrol|2362|117|2002-2011|a|f|5;2.5|petrol|2494|133|2012-|a|fa|7;3.5 V6|petrol|3456|200|2007-|a|f|2|NAM,MEA,CHN,OCE;2.5 Hybrid|hybrid|2487|160|2007-|a|f|4
+toyota-rav4	Toyota	RAV4	1994		suv:100	NAM:24,EUR:12,CHN:10,OCE:12,JDM:6,JPN:4,CIS:10,MEA:6,LAM:6,AFR:5	5	1	2.0|petrol|1998|110|1994-2018|ma|fa|5;2.4|petrol|2362|125|2006-2012|a|fa|3|NAM,OCE;2.5|petrol|2487|152|2013-|a|fa|5;2.5 Hybrid|hybrid|2487|160|2016-|a|fa|5;2.2 D-4D|diesel|2231|110|2006-2018|m|fa|2|EUR,OCE;Plug-in|plug_in|2487|225|2020-|a|a|1|EUR,NAM,JPN
+toyota-yaris	Toyota	Yaris	1999		hatchback:85,sedan:15	EUR:18,NAM:4,LAM:6,SEA:6,MEA:6,AFR:4,JPN:6,JDM:6,OCE:4	5	1	1.0|petrol|998|51|1999-|m|f|4|EUR,JPN,JDM;1.3|petrol|1298|64|1999-2016|ma|f|5;1.5|petrol|1496|80|2005-|ma|f|4;1.5 Hybrid|hybrid|1497|85|2012-|a|f|5|EUR,JPN,JDM;1.4 D-4D|diesel|1364|66|2002-2013|m|f|2|EUR
+toyota-hilux	Toyota	Hilux	1990		pickup:100	AFR:40,LAM:16,MER:14,SEA:16,OCE:20,MEA:16,EUR:3,JDM:4,IND:2	5	1	2.4|petrol|2438|85|1990-2005|m|ra|3;2.7|petrol|2694|116|2005-|ma|ra|4;2.5 D-4D|diesel|2494|75|2001-2016|m|ra|5;2.8 D-4D|diesel|2755|130|2015-|ma|a|5;3.0 D-4D|diesel|2982|126|2005-2015|ma|a|4;2.8 D|diesel|2779|66|1990-2005|m|ra|3
+toyota-landcruiser	Toyota	Land Cruiser	1990		suv:100	MEA:30,AFR:20,OCE:8,CIS:10,JDM:6,LAM:4,NAM:2	7	1	4.5|petrol|4477|160|1990-2007|a|a|3;4.0 V6|petrol|3956|200|2002-|a|a|4;4.6 V8|petrol|4608|227|2007-2021|a|a|3;3.5 V6 Turbo|petrol|3445|305|2021-|a|a|3|MEA,NAM,CIS;4.2 D|diesel|4164|96|1990-2007|m|a|3|AFR,OCE,MEA;4.5 V8 D|diesel|4461|200|2007-2021|a|a|3|AFR,OCE,MEA,CIS
+toyota-prado	Toyota	Land Cruiser Prado	1996		suv:100	MEA:20,AFR:24,CIS:10,CHN:4,OCE:8,JDM:6,LAM:4,EUR:2	7	1	2.7|petrol|2694|120|1996-|a|a|4;4.0 V6|petrol|3956|202|2002-2022|a|a|4;3.0 D-4D|diesel|2982|127|2002-2015|ma|a|5;2.8 D-4D|diesel|2755|130|2015-|a|a|4
+toyota-prius	Toyota	Prius	1997		hatchback:100	NAM:8,JPN:20,JDM:20,EUR:4,OCE:3	5	1	1.5 Hybrid|hybrid|1497|72|1997-2009|a|f|4;1.8 Hybrid|hybrid|1798|100|2009-2022|a|f|6;2.0 Hybrid|hybrid|1986|146|2023-|a|f|2;Prime|plug_in|1798|90|2012-|a|f|1|NAM,JPN,EUR
+toyota-aqua	Toyota	Aqua	2011		hatchback:100	JPN:20,JDM:14	5	1	1.5 Hybrid|hybrid|1496|54|2011-|a|f|8
+toyota-vitz	Toyota	Vitz	1999	2020	hatchback:100	JPN:16,JDM:20	5	1	1.0|petrol|996|51|1999-2020|a|f|6;1.3|petrol|1298|70|1999-2020|a|f|4
+toyota-fielder	Toyota	Corolla Fielder	2000		wagon:100	JPN:8,JDM:20	5	1	1.5|petrol|1496|80|2000-|a|fa|8;1.5 Hybrid|hybrid|1496|54|2013-|a|f|3;1.8|petrol|1797|100|2000-2012|a|f|2
+toyota-premio	Toyota	Premio	2001	2021	sedan:100	JPN:4,JDM:14	5	0	1.5|petrol|1496|80|2001-2021|a|f|6;1.8|petrol|1797|100|2001-2021|a|f|4
+toyota-probox	Toyota	Probox	2002		wagon:100	JPN:4,JDM:14	5	1	1.5|petrol|1496|80|2002-|a|fa|8;1.5 Hybrid|hybrid|1496|54|2018-|a|f|1
+toyota-noah	Toyota	Noah	2001		van:100	JPN:14,JDM:10	7	1	2.0|petrol|1986|112|2001-|a|fa|6;1.8 Hybrid|hybrid|1797|73|2014-|a|f|4
+toyota-alphard	Toyota	Alphard	2002		van:100	JPN:10,JDM:6,CHN:2,SEA:4	7	0	2.4|petrol|2362|125|2002-2015|a|fa|3;2.5|petrol|2493|134|2015-|a|fa|4;3.5 V6|petrol|3456|206|2008-|a|fa|2;2.5 Hybrid|hybrid|2487|140|2015-|a|a|3
+toyota-sienta	Toyota	Sienta	2003		van:100	JPN:12,JDM:4,SEA:2	7	0	1.5|petrol|1496|80|2003-|a|f|5;1.5 Hybrid|hybrid|1496|54|2015-|a|f|5
+toyota-harrier	Toyota	Harrier	1997		suv:100	JPN:10,JDM:10	5	0	2.4|petrol|2362|118|1997-2013|a|fa|3;2.0|petrol|1986|111|2013-|a|fa|4;2.5 Hybrid|hybrid|2487|160|2013-|a|a|4
+toyota-crown	Toyota	Crown	1990		sedan:100	JPN:10,JDM:4,CHN:2	5	0	2.5|petrol|2499|149|1990-2018|a|r|5;2.5 Hybrid|hybrid|2487|160|2013-|a|ra|4
+toyota-hiace	Toyota	HiAce	1990		van:100	JPN:4,JDM:10,AFR:8,SEA:6,MEA:4,OCE:3	12	0	2.7|petrol|2694|111|2004-|ma|r|3;2.5 D-4D|diesel|2494|75|2004-2019|m|r|5;2.8 D-4D|diesel|2755|130|2019-|ma|r|2;3.0 D|diesel|2986|67|1990-2004|m|r|3
+toyota-fortuner	Toyota	Fortuner	2005		suv:100	SEA:16,IND:14,AFR:12,MEA:8,LAM:6	7	1	2.7|petrol|2694|122|2005-|a|ra|4;2.8 D-4D|diesel|2755|130|2015-|ma|ra|5;3.0 D-4D|diesel|2982|120|2005-2015|ma|ra|4
+toyota-innova	Toyota	Innova	2004		van:100	IND:14,SEA:12	7	1	2.0|petrol|1998|102|2004-|ma|r|4;2.4 D|diesel|2393|110|2016-|ma|r|4;2.5 D-4D|diesel|2494|75|2004-2016|m|r|4;2.0 Hybrid|hybrid|1987|137|2022-|a|f|2
+toyota-avanza	Toyota	Avanza	2003		van:100	SEA:20,AFR:4,LAM:2	7	1	1.3|petrol|1298|66|2003-|ma|r|5;1.5|petrol|1496|77|2006-|ma|r|5
+toyota-vios	Toyota	Vios	2002		sedan:100	SEA:16,CHN:6	5	1	1.3|petrol|1329|63|2002-|ma|f|4;1.5|petrol|1496|79|2002-|ma|f|6
+toyota-etios	Toyota	Etios	2010	2021	sedan:60,hatchback:40	IND:10,MER:6,AFR:4	5	0	1.5|petrol|1496|66|2010-2021|m|f|6;1.4 D-4D|diesel|1364|50|2011-2020|m|f|4|IND
+toyota-chr	Toyota	C-HR	2016		suv:100	EUR:10,JPN:6,JDM:4,CHN:3,NAM:2,TR:6	5	0	1.2 Turbo|petrol|1197|85|2016-2023|ma|fa|3;1.8 Hybrid|hybrid|1798|90|2016-|a|f|6;2.0 Hybrid|hybrid|1987|135|2020-|a|f|2
+toyota-tacoma	Toyota	Tacoma	1995		pickup:100	NAM:12,LAM:2	5	0	2.7|petrol|2694|119|1995-2023|ma|ra|3;3.5 V6|petrol|3456|207|2016-2023|ma|ra|4;4.0 V6|petrol|3956|176|2005-2015|ma|ra|3;2.4 Turbo|petrol|2393|207|2024-|ma|ra|3
+toyota-tundra	Toyota	Tundra	2000		pickup:100	NAM:6	5	0	4.7 V8|petrol|4664|179|2000-2009|a|ra|4;5.7 V8|petrol|5663|284|2007-2021|a|ra|4;3.5 V6 Turbo|petrol|3445|290|2022-|a|ra|3
+toyota-highlander	Toyota	Highlander	2001		suv:100	NAM:12,CHN:3,OCE:2,CIS:2	7	0	3.5 V6|petrol|3456|201|2008-2022|a|fa|5;3.0 V6|petrol|2995|164|2001-2007|a|fa|3;2.5 Hybrid|hybrid|2487|179|2020-|a|a|3;2.4 Turbo|petrol|2393|198|2023-|a|fa|2
+toyota-sienna	Toyota	Sienna	1998		van:100	NAM:6	7	0	3.5 V6|petrol|3456|198|2007-2020|a|fa|5;3.0 V6|petrol|2995|145|1998-2006|a|f|3;2.5 Hybrid|hybrid|2487|183|2021-|a|fa|3
+toyota-4runner	Toyota	4Runner	1990		suv:100	NAM:6,LAM:2	5	0	4.0 V6|petrol|3956|201|2003-2024|a|ra|6;3.4 V6|petrol|3378|136|1996-2002|ma|ra|3;2.4 Turbo|petrol|2393|207|2025-|a|a|1
+toyota-auris	Toyota	Auris	2006	2018	hatchback:80,wagon:20	EUR:10,TR:4	5	0	1.33|petrol|1329|73|2006-2018|m|f|4;1.6|petrol|1598|97|2006-2018|ma|f|3;1.8 Hybrid|hybrid|1798|73|2010-2018|a|f|5;1.4 D-4D|diesel|1364|66|2006-2018|m|f|3
+toyota-avensis	Toyota	Avensis	1997	2018	sedan:50,wagon:50	EUR:10	5	0	1.8|petrol|1794|95|1997-2018|ma|f|5;2.0 D-4D|diesel|1995|93|1999-2018|m|f|5
+toyota-carina	Toyota	Carina	1990	2001	sedan:70,wagon:30	EUR:6,JPN:6,JDM:8,AFR:4	5	0	1.6|petrol|1587|79|1990-2001|ma|f|6;2.0 D|diesel|1974|54|1990-2001|m|f|3|EUR,AFR
+toyota-starlet	Toyota	Starlet	1990	1999	hatchback:100	EUR:6,JPN:8,JDM:10,AFR:4,LAM:4	5	0	1.3|petrol|1331|55|1990-1999|ma|f|8
+toyota-passo	Toyota	Passo	2004		hatchback:100	JPN:10,JDM:10	5	0	1.0|petrol|996|51|2004-|a|fa|8
+toyota-mark-x	Toyota	Mark X	2004	2019	sedan:100	JPN:4,JDM:8	5	0	2.5|petrol|2499|149|2004-2019|a|ra|8
+toyota-aygo	Toyota	Aygo	2005		hatchback:85,suv:15	EUR:10	4	0	1.0|petrol|998|51|2005-|ma|f|8
+toyota-bz4x	Toyota	bZ4X	2022		suv:100	EUR:3,NAM:2,JPN:1,CHN:2	5	0	FWD|electric|0|150|2022-|a|f|3;AWD|electric|0|160|2022-|a|a|2
+toyota-yariscross	Toyota	Yaris Cross	2020		suv:100	EUR:12,JPN:10,SEA:4,JDM:2	5	0	1.5|petrol|1490|92|2020-|ma|fa|3;1.5 Hybrid|hybrid|1490|85|2020-|a|fa|6
+toyota-corollacross	Toyota	Corolla Cross	2020		suv:100	NAM:6,LAM:10,MER:10,SEA:8,CHN:6,JPN:4,AFR:4	5	0	1.8|petrol|1798|103|2020-|a|f|4;2.0|petrol|1987|126|2021-|a|fa|3|NAM;1.8 Hybrid|hybrid|1798|90|2020-|a|f|4
+lexus-rx	Lexus	RX	1998		suv:100	NAM:30,MEA:20,CHN:20,CIS:16,EUR:10,JDM:10,JPN:8,OCE:8	5	1	RX 300|petrol|2995|150|1998-2003|a|fa|3;RX 350|petrol|3456|203|2006-|a|fa|6;RX 450h|hybrid|3456|230|2009-|a|a|4;RX 500h|hybrid|2393|273|2022-|a|a|1
+lexus-es	Lexus	ES	1990		sedan:100	NAM:20,CHN:20,MEA:14,CIS:6,KOR:10	5	1	ES 300|petrol|2995|140|1992-2006|a|f|4;ES 350|petrol|3456|200|2007-|a|f|5;ES 300h|hybrid|2487|160|2013-|a|f|5
+lexus-nx	Lexus	NX	2014		suv:100	NAM:16,CHN:16,EUR:10,MEA:8,CIS:8,JPN:6,OCE:6	5	0	NX 200t|petrol|1998|175|2014-2021|a|fa|4;NX 300h|hybrid|2494|145|2014-2021|a|fa|5;NX 350h|hybrid|2487|179|2021-|a|fa|5;NX 450h+|plug_in|2487|227|2021-|a|a|1
+lexus-is	Lexus	IS	1999		sedan:100	NAM:10,EUR:6,JPN:6,JDM:6,CIS:4	5	0	IS 200|petrol|1988|114|1999-2005|ma|r|3;IS 250|petrol|2499|153|2005-2015|a|ra|5;IS 300h|hybrid|2494|164|2013-|a|r|4;IS 300|petrol|1998|180|2016-|a|r|3
+lexus-lx	Lexus	LX	1996		suv:100	MEA:20,CIS:10,NAM:3,CHN:4	7	0	LX 470|petrol|4664|175|1998-2007|a|a|4;LX 570|petrol|5663|270|2008-2021|a|a|6;LX 600|petrol|3445|305|2022-|a|a|3
+lexus-ux	Lexus	UX	2018		suv:100	EUR:6,NAM:4,JPN:3,CHN:3	5	0	UX 250h|hybrid|1987|135|2018-|a|fa|5;UX 300e|electric|0|150|2020-|a|f|1
+honda-civic	Honda	Civic	1990		sedan:55,hatchback:45	NAM:30,EUR:12,CHN:12,SEA:12,LAM:12,MER:12,MEA:8,JPN:4,JDM:10,TR:14,IND:6,OCE:8,CIS:4	5	1	1.4|petrol|1396|66|1990-2012|ma|f|4|EUR,JDM,JPN,TR,SEA;1.6|petrol|1590|88|1990-2005|ma|f|4;1.8|petrol|1799|103|2006-2015|ma|f|6;2.0|petrol|1996|116|2016-|a|f|5|NAM,LAM,MER,MEA,OCE;1.5 Turbo|petrol|1498|134|2016-|a|f|5;1.6 i-DTEC|diesel|1597|88|2013-2021|m|f|2|EUR,TR;1.3 Hybrid|hybrid|1339|70|2003-2015|a|f|1;2.0 e:HEV|hybrid|1993|135|2022-|a|f|2|EUR,JPN,NAM
+honda-accord	Honda	Accord	1990		sedan:85,wagon:10,coupe:5	NAM:30,CHN:16,MEA:10,EUR:4,JPN:4,JDM:4,SEA:6,OCE:4,CIS:4	5	1	2.2|petrol|2156|96|1990-2002|ma|f|4;2.4|petrol|2354|130|2003-2017|ma|f|7;1.5 Turbo|petrol|1498|143|2018-|a|f|5;2.0 Turbo|petrol|1996|188|2018-2022|a|f|2|NAM;3.5 V6|petrol|3471|206|2008-2017|a|f|2|NAM,MEA;2.0 Hybrid|hybrid|1993|158|2014-|a|f|3;2.2 i-CTDi|diesel|2204|103|2004-2015|m|f|3|EUR
+honda-crv	Honda	CR-V	1996		suv:100	NAM:30,CHN:20,EUR:8,SEA:8,MEA:6,OCE:8,LAM:8,JPN:4,JDM:6,CIS:6	5	1	2.0|petrol|1973|94|1996-2006|ma|fa|4;2.4|petrol|2354|137|2007-2016|a|fa|6;1.5 Turbo|petrol|1498|140|2017-|a|fa|6;2.2 i-DTEC|diesel|2199|110|2007-2018|ma|fa|3|EUR;2.0 Hybrid|hybrid|1993|135|2019-|a|fa|3
+honda-fit	Honda	Fit	2001		hatchback:100	JPN:20,JDM:20,NAM:5,LAM:6,MER:8,SEA:6,CHN:6,EUR:4	5	1	1.3|petrol|1339|73|2001-|ma|f|6;1.5|petrol|1496|88|2007-|ma|f|5;1.5 Hybrid|hybrid|1496|81|2013-|a|f|4|JPN,JDM,EUR
+honda-city	Honda	City	1996		sedan:90,hatchback:10	IND:20,SEA:20,LAM:4,MER:6,CHN:8	5	1	1.5|petrol|1497|88|1996-|ma|f|8;1.5 i-DTEC|diesel|1498|74|2014-2023|m|f|2|IND;e:HEV|hybrid|1498|93|2022-|a|f|1|IND,SEA
+honda-hrv	Honda	HR-V	1999		suv:100	EUR:6,NAM:8,MER:10,LAM:6,SEA:10,JPN:6,JDM:6,CHN:6,OCE:5	5	0	1.6|petrol|1590|77|1999-2006|ma|fa|3;1.8|petrol|1799|105|2015-|a|fa|5;1.5|petrol|1498|96|2014-|a|f|4;e:HEV|hybrid|1498|96|2021-|a|f|3|EUR,JPN
+honda-odyssey	Honda	Odyssey	1995		van:100	NAM:10,JPN:4,JDM:4,CHN:4	7	0	3.5 V6|petrol|3471|208|1999-|a|f|6;2.4|petrol|2354|128|2003-2020|a|f|3|JPN,JDM,CHN
+honda-pilot	Honda	Pilot	2003		suv:100	NAM:10,MEA:2	8	0	3.5 V6|petrol|3471|209|2003-|a|fa|8
+honda-nbox	Honda	N-Box	2011		hatchback:100	JPN:24,JDM:2	4	1	660|petrol|658|43|2011-|a|fa|7;660 Turbo|petrol|658|47|2011-|a|fa|3
+honda-freed	Honda	Freed	2008		van:100	JPN:10,JDM:6	6	0	1.5|petrol|1496|86|2008-|a|fa|5;1.5 Hybrid|hybrid|1496|81|2011-|a|f|5
+honda-amaze	Honda	Amaze	2013		sedan:100	IND:10	5	0	1.2|petrol|1199|66|2013-|ma|f|7;1.5 i-DTEC|diesel|1498|74|2013-2023|ma|f|3
+honda-ridgeline	Honda	Ridgeline	2005		pickup:100	NAM:4	5	0	3.5 V6|petrol|3471|209|2005-|a|fa|5
+honda-jazz	Honda	Jazz	2001		hatchback:100	EUR:10,IND:6,OCE:5,AFR:3	5	0	1.2|petrol|1198|57|2001-2020|ma|f|5;1.4|petrol|1339|73|2001-2020|ma|f|3;1.5 e:HEV|hybrid|1498|80|2020-|a|f|4|EUR
+honda-vezel	Honda	Vezel	2013		suv:100	JPN:12,JDM:10	5	0	1.5|petrol|1496|96|2013-|a|fa|5;1.5 Hybrid|hybrid|1496|96|2013-|a|fa|6
+acura-mdx	Acura	MDX	2001		suv:100	NAM:30,CHN:2	7	0	3.5 V6|petrol|3471|216|2001-|a|a|8;3.7 V6|petrol|3664|224|2007-2013|a|a|3
+acura-tlx	Acura	TLX	2014		sedan:100	NAM:20	5	0	2.4|petrol|2356|154|2014-2020|a|f|5;2.0 Turbo|petrol|1996|203|2021-|a|fa|5
+acura-rdx	Acura	RDX	2006		suv:100	NAM:30,CHN:4	5	0	2.3 Turbo|petrol|2300|179|2006-2012|a|a|3;3.5 V6|petrol|3471|204|2013-2018|a|fa|4;2.0 Turbo|petrol|1996|203|2019-|a|fa|5
+acura-integra	Acura	Integra	1990	2001	coupe:60,sedan:40	NAM:20	4	0	1.8|petrol|1834|104|1990-2001|ma|f|8
+acura-tl	Acura	TL	1996	2014	sedan:100	NAM:20	5	0	3.2 V6|petrol|3210|167|1996-2008|a|f|6;3.5 V6|petrol|3471|210|2009-2014|a|fa|4
+nissan-sentra	Nissan	Sentra	1990		sedan:100	NAM:18,LAM:20,MEA:6,SEA:4,CHN:12	5	1	1.6|petrol|1597|81|1990-2012|ma|f|5;1.8|petrol|1798|97|2007-2019|a|f|5;2.0|petrol|1997|111|2020-|a|f|4
+nissan-altima	Nissan	Altima	1993		sedan:100	NAM:24,MEA:10,CHN:6,LAM:4,CIS:2	5	1	2.4|petrol|2389|112|1993-2001|a|f|3;2.5|petrol|2488|135|2002-|a|fa|8;3.5 V6|petrol|3498|200|2002-2018|a|f|2
+nissan-rogue	Nissan	Rogue	2007		suv:100	NAM:26	5	1	2.5|petrol|2488|127|2007-2020|a|fa|7;1.5 Turbo|petrol|1497|150|2021-|a|fa|4;2.0 Hybrid|hybrid|1997|130|2017-2019|a|fa|1
+nissan-xtrail	Nissan	X-Trail	2001		suv:100	EUR:8,CHN:16,SEA:8,MEA:6,JPN:6,JDM:12,OCE:8,AFR:8,CIS:10,LAM:6	7	1	2.0|petrol|1997|104|2001-|a|fa|5;2.5|petrol|2488|126|2001-|a|fa|5;1.6 dCi|diesel|1598|96|2014-2021|ma|fa|2|EUR,OCE;2.2 dCi|diesel|2184|84|2001-2014|m|a|2|EUR;e-Power|hybrid|1497|150|2021-|a|fa|2|JPN,EUR
+nissan-qashqai	Nissan	Qashqai	2007		suv:100	EUR:28,TR:8,CIS:10,OCE:4,MEA:2	5	1	1.6|petrol|1598|86|2007-2014|ma|fa|4;1.2 DIG-T|petrol|1197|85|2013-2021|ma|f|4;1.3 DIG-T|petrol|1332|103|2018-|ma|fa|5;1.5 dCi|diesel|1461|81|2007-2021|m|f|6|EUR,TR;e-Power|hybrid|1497|140|2022-|a|f|2|EUR
+nissan-micra	Nissan	Micra	1992		hatchback:100	EUR:12,IND:3,MEA:4,AFR:4,JPN:4,JDM:8	5	1	1.0|petrol|998|40|1992-2010|ma|f|4;1.2|petrol|1198|59|2003-2017|ma|f|5;1.0 IG-T|petrol|999|74|2017-2023|ma|f|3;1.5 dCi|diesel|1461|50|2003-2019|m|f|2|EUR
+nissan-note	Nissan	Note	2005		hatchback:100	JPN:16,JDM:16,EUR:4	5	1	1.2|petrol|1198|58|2012-2020|a|f|4;1.5|petrol|1498|81|2005-2012|a|f|3;e-Power|hybrid|1198|80|2016-|a|fa|5
+nissan-navara	Nissan	Navara	1997		pickup:100	AFR:12,SEA:10,OCE:10,EUR:3,LAM:8,MEA:6	5	0	2.5 dCi|diesel|2488|128|2005-2015|ma|ra|5;2.3 dCi|diesel|2298|140|2015-|ma|ra|5;2.5|petrol|2488|122|2015-|m|r|2;2.7 D|diesel|2663|62|1997-2005|m|ra|2
+nissan-patrol	Nissan	Patrol	1990		suv:100	MEA:30,OCE:6,AFR:6,CIS:2	7	1	4.8|petrol|4759|185|1997-2010|a|a|3;5.6 V8|petrol|5552|298|2010-|a|a|6;3.0 D|diesel|2953|118|1997-2016|m|a|3|OCE,AFR;4.2 D|diesel|4169|85|1990-1997|m|a|2|AFR,MEA
+nissan-pathfinder	Nissan	Pathfinder	1990		suv:100	NAM:10,MEA:6,OCE:4,CIS:2	7	0	3.3 V6|petrol|3275|125|1996-2004|a|ra|3;4.0 V6|petrol|3954|198|2005-2012|a|ra|3;3.5 V6|petrol|3498|212|2013-|a|fa|5
+nissan-sunny	Nissan	Sunny	1990		sedan:100	MEA:20,JPN:4,JDM:10,AFR:10,IND:4,SEA:4	5	1	1.5|petrol|1498|73|1990-2013|ma|f|7;1.6|petrol|1597|80|2014-|a|f|4
+nissan-tiida	Nissan	Tiida	2004		hatchback:50,sedan:50	CHN:12,JPN:4,JDM:10,LAM:6,MEA:6,CIS:6	5	0	1.6|petrol|1597|81|2004-|ma|f|8;1.8|petrol|1798|93|2004-2012|ma|f|2
+nissan-versa	Nissan	Versa	2006		sedan:80,hatchback:20	NAM:12,LAM:24	5	1	1.6|petrol|1598|81|2006-|ma|f|8;1.8|petrol|1798|91|2006-2011|a|f|2
+nissan-march	Nissan	March	1992		hatchback:100	LAM:14,MER:6,JPN:6,JDM:10,SEA:4	5	0	1.0|petrol|998|51|1992-2010|ma|f|3;1.2|petrol|1198|58|2002-|ma|f|5;1.6|petrol|1598|81|2010-2022|ma|f|3|LAM,MER
+nissan-tsuru	Nissan	Tsuru	1992	2017	sedan:100	MX:30,LAM:6	5	0	1.6|petrol|1597|77|1992-2017|ma|f|8
+nissan-leaf	Nissan	Leaf	2010		hatchback:100	EUR:6,NAM:4,JPN:8,JDM:6,OCE:3	5	0	24 kWh|electric|0|80|2010-2017|a|f|4;40 kWh|electric|0|110|2018-|a|f|5;e+|electric|0|160|2019-|a|f|2
+nissan-kicks	Nissan	Kicks	2016		suv:100	NAM:8,LAM:12,MER:8,IND:3,SEA:4,MEA:4,CHN:4	5	0	1.6|petrol|1598|88|2016-|a|f|7;e-Power|hybrid|1198|100|2020-|a|f|2|SEA,JPN
+nissan-juke	Nissan	Juke	2010		suv:100	EUR:12,NAM:3,TR:4,CIS:4,JDM:4	5	0	1.6|petrol|1598|86|2010-2019|ma|fa|5;1.0 DIG-T|petrol|999|84|2019-|ma|f|5;1.5 dCi|diesel|1461|81|2010-2018|m|f|2|EUR;Hybrid|hybrid|1598|105|2022-|a|f|1|EUR
+nissan-frontier	Nissan	Frontier	1998		pickup:100	NAM:8,LAM:8	5	0	2.4|petrol|2389|106|1998-2004|m|ra|2;2.5|petrol|2488|113|2005-2021|ma|ra|3;4.0 V6|petrol|3954|194|2005-2019|a|ra|3;3.8 V6|petrol|3799|231|2020-|a|ra|3
+nissan-murano	Nissan	Murano	2002		suv:100	NAM:8,CIS:4,MEA:3	5	0	3.5 V6|petrol|3498|194|2002-|a|fa|8
+nissan-serena	Nissan	Serena	1991		van:100	JPN:14,JDM:10,SEA:3	8	0	2.0|petrol|1997|110|1991-|a|fa|5;e-Power|hybrid|1433|100|2018-|a|f|4
+nissan-dayz	Nissan	Dayz	2013		hatchback:100	JPN:16	4	0	660|petrol|659|38|2013-|a|fa|8
+nissan-almera	Nissan	Almera	1995		sedan:80,hatchback:20	EUR:8,CIS:10,SEA:8,AFR:6,MEA:4	5	0	1.4|petrol|1392|64|1995-2006|m|f|4;1.5|petrol|1498|73|2006-2018|ma|f|4;1.6|petrol|1598|75|2012-2018|ma|f|3|CIS;1.0 Turbo|petrol|999|74|2020-|a|f|2|SEA
+nissan-ariya	Nissan	Ariya	2022		suv:100	EUR:3,NAM:3,JPN:3,CHN:2	5	0	63 kWh|electric|0|160|2022-|a|f|4;87 kWh e-4ORCE|electric|0|225|2022-|a|a|2
+infiniti-qx60	Infiniti	QX60	2013		suv:100	NAM:30,MEA:10	7	0	3.5 V6|petrol|3498|198|2013-2021|a|fa|7;2.0 Turbo|petrol|1997|200|2022-|a|fa|3
+infiniti-q50	Infiniti	Q50	2013		sedan:100	NAM:20,MEA:6,CHN:6,KOR:4	5	0	3.7 V6|petrol|3696|244|2013-2015|a|ra|3;2.0 Turbo|petrol|1991|155|2014-2019|a|ra|3;3.0 Turbo|petrol|2997|224|2016-|a|ra|5
+infiniti-g35	Infiniti	G35	2003	2008	sedan:75,coupe:25	NAM:20	5	0	3.5 V6|petrol|3498|209|2003-2008|ma|ra|8
+infiniti-fx	Infiniti	FX	2003	2017	suv:100	NAM:10,CIS:10,MEA:6	5	0	FX35|petrol|3498|206|2003-2017|a|ra|8
+mazda-3	Mazda	3	2003		hatchback:60,sedan:40	NAM:30,EUR:14,OCE:18,CHN:10,JPN:8,JDM:8,MEA:6,CIS:6,LAM:8,SEA:4	5	1	1.6|petrol|1598|77|2003-2013|ma|f|4;2.0|petrol|1998|110|2003-|ma|fa|6;2.5|petrol|2488|139|2010-|a|fa|4|NAM,OCE,LAM;1.5|petrol|1496|73|2013-2019|ma|f|2|EUR,JPN,JDM;2.2 D|diesel|2184|110|2013-2019|ma|f|1|EUR,OCE;2.0 e-Skyactiv X|hybrid|1998|137|2019-|ma|f|1|EUR,JPN
+mazda-cx5	Mazda	CX-5	2012		suv:100	NAM:30,EUR:14,OCE:22,CHN:12,JPN:10,JDM:6,MEA:8,CIS:10,LAM:10,SEA:6	5	1	2.0|petrol|1998|121|2012-|ma|fa|5;2.5|petrol|2488|143|2012-|a|fa|6;2.5 Turbo|petrol|2488|170|2019-|a|a|1|NAM,OCE;2.2 D|diesel|2191|110|2012-|ma|fa|3|EUR,OCE,JPN
+mazda-cx30	Mazda	CX-30	2019		suv:100	NAM:12,EUR:10,OCE:8,JPN:4,CHN:3	5	0	2.0|petrol|1998|90|2019-|ma|fa|5;2.5|petrol|2488|142|2019-|a|fa|4|NAM,OCE;2.0 e-Skyactiv X|hybrid|1998|137|2019-|ma|f|2|EUR
+mazda-6	Mazda	6	2002	2024	sedan:70,wagon:30	NAM:14,EUR:10,OCE:8,CHN:6,JPN:4,JDM:6,CIS:6,MEA:4	5	0	2.0|petrol|1999|107|2002-2024|ma|f|5;2.5|petrol|2488|138|2008-2024|a|f|5;2.2 D|diesel|2184|110|2008-2024|ma|f|2|EUR,OCE,JPN
+mazda-2	Mazda	2	2002		hatchback:85,sedan:15	EUR:10,OCE:8,JPN:6,JDM:8,LAM:6,SEA:6,AFR:3	5	0	1.3|petrol|1349|55|2002-2014|ma|f|4;1.5|petrol|1496|66|2007-|ma|f|6;1.5 D|diesel|1498|77|2014-2021|m|f|1|EUR,JPN
+mazda-mx5	Mazda	MX-5	1990		convertible:100	NAM:6,EUR:4,JPN:4,JDM:6,OCE:2	2	0	1.6|petrol|1597|85|1990-2005|m|r|4;1.8|petrol|1839|96|1993-2015|m|r|4;2.0|petrol|1998|135|2006-|ma|r|5;1.5|petrol|1496|96|2015-|m|r|2|EUR,JPN
+mazda-323	Mazda	323	1990	2003	hatchback:60,sedan:40	EUR:10,JDM:6,AFR:6,LAM:8,OCE:6	5	0	1.3|petrol|1324|54|1990-2003|m|f|5;1.6|petrol|1598|65|1990-2003|ma|f|5
+mazda-demio	Mazda	Demio	1996	2019	hatchback:100	JPN:10,JDM:14	5	0	1.3|petrol|1348|67|1996-2019|a|f|6;1.5|petrol|1498|83|2002-2019|a|f|4
+mazda-bt50	Mazda	BT-50	2006		pickup:100	OCE:10,AFR:6,SEA:4	5	0	3.2 D|diesel|3198|147|2011-2020|ma|ra|5;2.2 D|diesel|2198|110|2011-2020|m|r|3;3.0 D|diesel|2999|140|2020-|a|ra|4
+mazda-cx9	Mazda	CX-9	2007	2023	suv:100	NAM:8,OCE:6,MEA:3	7	0	3.7 V6|petrol|3726|204|2007-2015|a|fa|4;2.5 Turbo|petrol|2488|170|2016-2023|a|fa|5
+mitsubishi-lancer	Mitsubishi	Lancer	1990	2017	sedan:85,wagon:15	NAM:6,EUR:6,MEA:12,CIS:12,LAM:8,SEA:8,CHN:8,OCE:8,AFR:6,JDM:6	5	1	1.5|petrol|1468|65|1990-2017|ma|f|6;1.6|petrol|1584|72|1990-2010|ma|f|3;2.0|petrol|1998|112|2003-2017|ma|f|5;1.8 DI-D|diesel|1798|85|2010-2014|m|f|1|EUR
+mitsubishi-outlander	Mitsubishi	Outlander	2001		suv:100	EUR:10,NAM:10,OCE:12,CIS:16,JPN:6,JDM:6,MEA:8,SEA:4,CHN:4	7	1	2.4|petrol|2360|125|2001-|a|fa|6;2.0|petrol|1998|108|2001-2021|ma|fa|3;2.2 DI-D|diesel|2268|110|2007-2018|ma|a|2|EUR,OCE;PHEV|plug_in|2360|185|2013-|a|a|4
+mitsubishi-asx	Mitsubishi	ASX	2010		suv:100	EUR:8,OCE:12,CIS:10,MEA:6,LAM:6,NAM:4	5	0	1.6|petrol|1590|86|2010-2023|m|f|5;2.0|petrol|1998|110|2010-2023|a|fa|5;1.8 DI-D|diesel|1798|85|2010-2018|m|fa|2|EUR,OCE
+mitsubishi-pajero	Mitsubishi	Pajero	1990	2021	suv:100	MEA:10,CIS:10,AFR:10,LAM:8,OCE:6,JPN:4,JDM:6,EUR:3	7	1	3.0 V6|petrol|2972|130|1990-2006|a|a|4;3.5 V6|petrol|3497|149|1997-2006|a|a|2;3.8 V6|petrol|3828|184|2006-2021|a|a|3;3.2 DI-D|diesel|3200|147|2000-2021|ma|a|5;2.8 TD|diesel|2835|92|1990-2000|m|a|3
+mitsubishi-l200	Mitsubishi	L200	1996		pickup:100	AFR:10,SEA:12,OCE:10,LAM:10,MER:6,EUR:4,MEA:6,CIS:6	5	0	2.4|petrol|2351|94|1996-|m|ra|3;2.5 DI-D|diesel|2477|100|2005-2015|ma|ra|5;2.4 DI-D|diesel|2442|133|2015-|ma|a|5
+mitsubishi-pajerosport	Mitsubishi	Pajero Sport	1996		suv:100	SEA:12,MEA:6,AFR:6,CIS:4,LAM:6,OCE:4	7	0	2.4 DI-D|diesel|2442|133|2015-|a|ra|6;2.5 DI-D|diesel|2477|100|2008-2015|ma|ra|4;3.0 V6|petrol|2972|162|2008-|a|a|2
+mitsubishi-mirage	Mitsubishi	Mirage	1990		hatchback:70,sedan:30	NAM:6,SEA:10,LAM:8,MEA:6,EUR:4,OCE:4,JPN:4	5	1	1.2|petrol|1193|58|2012-|ma|f|8;1.3|petrol|1299|55|1990-2003|ma|f|2|JDM,AFR
+mitsubishi-xpander	Mitsubishi	Xpander	2017		van:100	SEA:16,LAM:2	7	0	1.5|petrol|1499|77|2017-|ma|f|8
+mitsubishi-ek	Mitsubishi	eK Wagon	2001		hatchback:100	JPN:12	4	0	660|petrol|659|36|2001-|a|fa|8
+mitsubishi-galant	Mitsubishi	Galant	1990	2012	sedan:85,wagon:15	NAM:6,EUR:4,MEA:8,LAM:4,CIS:4,JDM:6	5	0	2.0|petrol|1997|100|1990-2012|ma|f|5;2.4|petrol|2378|118|1999-2012|a|f|5
+mitsubishi-colt	Mitsubishi	Colt	1990	2013	hatchback:100	EUR:8,JDM:6,OCE:3	5	0	1.3|petrol|1332|70|1990-2013|ma|f|6;1.5 DI-D|diesel|1493|70|2004-2012|m|f|2
+subaru-forester	Subaru	Forester	1997		suv:100	NAM:30,OCE:24,JPN:14,JDM:14,EUR:14,CIS:10,CHN:4	5	1	2.0|petrol|1994|92|1997-|ma|a|5;2.5|petrol|2457|136|1997-|ma|a|7;2.0 e-Boxer|hybrid|1995|110|2019-|a|a|2|EUR,JPN;2.0 D|diesel|1998|108|2008-2018|m|a|1|EUR,OCE
+subaru-outback	Subaru	Outback	1995		wagon:100	NAM:30,OCE:16,EUR:8,JPN:6,JDM:8,CIS:6	5	1	2.5|petrol|2457|129|1995-|a|a|8;3.6|petrol|3630|191|2010-2019|a|a|2|NAM,OCE;2.4 Turbo|petrol|2387|194|2020-|a|a|2|NAM
+subaru-impreza	Subaru	Impreza	1992		hatchback:55,sedan:45	NAM:16,OCE:12,JPN:12,JDM:16,EUR:6,CIS:4	5	0	1.6|petrol|1597|84|1992-|ma|a|6;2.0|petrol|1994|112|1992-|ma|a|5;WRX|petrol|1994|221|1992-2014|m|a|1
+subaru-legacy	Subaru	Legacy	1990		sedan:50,wagon:50	NAM:10,JPN:8,JDM:12,OCE:6,EUR:4	5	0	2.0|petrol|1994|110|1990-2014|ma|a|5;2.5|petrol|2457|129|1994-|a|a|5
+subaru-xv	Subaru	Crosstrek	2012		suv:100	NAM:20,OCE:16,EUR:8,JPN:10,JDM:6,CIS:4	5	0	2.0|petrol|1995|115|2012-|ma|a|7;2.5|petrol|2498|136|2021-|a|a|2|NAM;e-Boxer|hybrid|1995|110|2019-|a|a|2|EUR,JPN
+subaru-ascent	Subaru	Ascent	2018		suv:100	NAM:10	8	0	2.4 Turbo|petrol|2387|194|2018-|a|a|8
+suzuki-swift	Suzuki	Swift	1990		hatchback:85,sedan:15	EUR:20,JPN:10,JDM:12,SEA:10,OCE:10,AFR:14,LAM:10,MEA:8,PK:20	5	1	1.0|petrol|993|39|1990-2003|m|f|3|EUR,AFR,PK;1.2|petrol|1242|66|2010-|ma|f|8;1.3|petrol|1328|68|1990-2010|ma|f|5;1.5|petrol|1490|75|2005-2010|ma|f|2;1.2 Hybrid|hybrid|1197|61|2017-|ma|fa|3|EUR,JPN
+suzuki-vitara	Suzuki	Vitara	1990		suv:100	EUR:16,LAM:10,JDM:6,JPN:6,OCE:8,AFR:6,MEA:6,NAM:4	5	1	1.6|petrol|1586|86|1990-|ma|fa|7;2.0|petrol|1995|103|1998-2015|ma|a|3;1.4 Boosterjet|petrol|1373|103|2015-|ma|fa|3|EUR,OCE;1.6 DDiS|diesel|1598|88|2015-2018|m|fa|1|EUR
+suzuki-jimny	Suzuki	Jimny	1990		suv:100	JPN:10,JDM:8,EUR:6,OCE:6,AFR:6,LAM:6,MEA:4,IND:2	4	0	660|petrol|658|47|1990-|ma|a|4|JPN,JDM;1.3|petrol|1328|63|1998-2018|ma|a|4;1.5|petrol|1462|75|2018-|ma|a|4
+suzuki-alto	Suzuki	Alto	1990		hatchback:100	JPN:12,JDM:12,EUR:6,PK:20,AFR:10,LAM:8,SEA:6	5	1	660|petrol|658|37|1990-|ma|fa|7|JPN,JDM;1.0|petrol|998|50|2009-2014|ma|f|3|EUR,AFR,LAM,PK;0.8|petrol|796|35|1990-2019|m|f|4|PK,AFR,LAM,SEA
+suzuki-wagonr	Suzuki	Wagon R	1993		hatchback:100	JPN:16,JDM:12,PK:10,SEA:4	5	0	660|petrol|658|40|1993-|a|fa|8|JPN,JDM;1.0|petrol|998|50|2014-|m|f|4|PK,SEA
+suzuki-spacia	Suzuki	Spacia	2013		hatchback:100	JPN:12	4	0	660|petrol|658|38|2013-|a|fa|8
+suzuki-ertiga	Suzuki	Ertiga	2012		van:100	SEA:12,AFR:6,MEA:4,LAM:4	7	0	1.4|petrol|1373|68|2012-2018|ma|f|5;1.5|petrol|1462|77|2018-|ma|f|5
+suzuki-sx4	Suzuki	SX4 S-Cross	2006		hatchback:40,suv:60	EUR:10,LAM:4,CIS:4,JPN:4	5	0	1.6|petrol|1586|88|2006-2021|ma|fa|7;1.4 Boosterjet|petrol|1373|103|2016-|ma|fa|3|EUR
+suzuki-celerio	Suzuki	Celerio	2014		hatchback:100	SEA:8,AFR:8,LAM:6,EUR:2	5	0	1.0|petrol|998|50|2014-|ma|f|8
+suzuki-cultus	Suzuki	Cultus	1990		hatchback:100	PK:20	5	0	1.0|petrol|998|50|1990-|ma|f|8
+suzuki-mehran	Suzuki	Mehran	1990	2019	hatchback:100	PK:30	4	0	0.8|petrol|796|29|1990-2019|m|f|8
+suzuki-ignis	Suzuki	Ignis	2000		hatchback:100	EUR:6,JPN:4,OCE:3	5	0	1.2|petrol|1242|66|2016-|ma|fa|6;1.3|petrol|1328|69|2000-2008|m|f|3
+daihatsu-tanto	Daihatsu	Tanto	2003		hatchback:100	JPN:20	4	0	660|petrol|658|38|2003-|a|fa|8
+daihatsu-move	Daihatsu	Move	1995		hatchback:100	JPN:16,JDM:4	4	0	660|petrol|658|38|1995-|a|fa|8
+daihatsu-mira	Daihatsu	Mira	1990		hatchback:100	JPN:14,JDM:6,PK:4	4	0	660|petrol|658|36|1990-|a|fa|8
+daihatsu-terios	Daihatsu	Terios	1997		suv:100	JDM:6,SEA:10,AFR:4,LAM:6,EUR:2	5	0	1.3|petrol|1298|63|1997-2006|ma|a|4;1.5|petrol|1495|77|2006-|ma|ra|6
+daihatsu-xenia	Daihatsu	Xenia	2004		van:100	SEA:14	7	0	1.3|petrol|1298|70|2004-|ma|r|6;1.5|petrol|1496|77|2006-|ma|r|4
+daihatsu-ayla	Daihatsu	Ayla	2013		hatchback:100	SEA:14	5	0	1.0|petrol|998|49|2013-|ma|f|6;1.2|petrol|1197|65|2017-|ma|f|4
+daihatsu-sirion	Daihatsu	Sirion	1998		hatchback:100	EUR:4,SEA:8,JDM:6,AFR:4	5	0	1.0|petrol|989|43|1998-|ma|f|5;1.3|petrol|1298|64|2005-2013|ma|f|5
+daihatsu-hijet	Daihatsu	Hijet	1990		van:100	JPN:10,JDM:8,SEA:4	4	0	660|petrol|658|34|1990-|ma|ra|8
+isuzu-dmax	Isuzu	D-Max	2002		pickup:100	SEA:30,AFR:20,OCE:14,IND:6,LAM:10,MEA:6,EUR:4	5	1	2.5 TD|diesel|2499|85|2002-2020|m|ra|5;3.0 TD|diesel|2999|130|2002-|ma|a|6;1.9 Ddi|diesel|1898|110|2017-|ma|ra|4
+isuzu-mux	Isuzu	MU-X	2013		suv:100	SEA:16,OCE:8,AFR:4,IND:2	7	0	3.0 TD|diesel|2999|130|2013-|a|ra|6;1.9 Ddi|diesel|1898|110|2017-|a|r|3
+isuzu-trooper	Isuzu	Trooper	1990	2002	suv:100	NAM:6,EUR:4,AFR:6,OCE:4,MEA:4	5	0	3.2 V6|petrol|3165|130|1992-2002|ma|a|5;3.1 TD|diesel|3059|84|1990-2002|m|a|4

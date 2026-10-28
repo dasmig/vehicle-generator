@@ -1,0 +1,23 @@
+vehicle-generator's data, in resources/, comes from these sources.
+
+Derived by the scripts in scripts/ (see doc/data.md for each column):
+
+- Fleet age (ages.tsv) for the countries Eurostat measures: Eurostat,
+  road_eqs_carage (reuse with attribution, Commission Decision 2011/833/EU).
+- Fuel mix of new cars (fuel_shares.tsv) in Europe from 2013: Eurostat,
+  road_eqr_carpda; electric and plug-in shares elsewhere: Our World in Data,
+  from the IEA Global EV Outlook, CC BY 4.0.
+- Populations and driving side (countries.tsv): country-generator, which
+  states its own sources.
+- World manufacturer identifiers no maker holds (wmis.tsv): checked against
+  NHTSA vPIC (US public domain).
+
+Curated for this library from general knowledge, national registration
+rules and statistics, the makers' specifications and VIN guides, rounded
+public sales rankings and the paint makers' colour popularity reports;
+nothing was copied from a dataset, so they are released under the MIT
+licence of the library: cars per 1,000 people, mean fleet ages, markets,
+make shares, models and trims, automatic shares, colours and colour names,
+yearly mileage, plate formats, plate series anchors, plate region codes,
+factories and their WMIs, owner factors, and the fuel mix anchors outside
+the measured years.

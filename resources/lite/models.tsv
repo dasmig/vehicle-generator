@@ -1,0 +1,156 @@
+# Curated: models of the makes. Production years (for the market's model years), bodies with their shares, the markets that sold the model with its relative popularity within the make, and trims (label|fuel|engine cc|power kW|years|gearboxes m/a|drives f/r/a, first preferred|weight|markets, empty for all). From the makers' specifications and public sales rankings; see doc/data.md.
+key	make	model	from_year	to_year	bodies	markets	seats
+ford-f150	Ford	F-150	1990		pickup:100	NAM:40,MEA:4,LAM:4	5
+ford-focus	Ford	Focus	1998		hatchback:55,sedan:25,wagon:20	EUR:28,NAM:14,TR:12,CIS:10,CHN:6,LAM:8,OCE:6,AFR:4	5
+ford-fiesta	Ford	Fiesta	1990	2023	hatchback:90,sedan:10	EUR:30,LAM:10,MER:8,TR:6,AFR:6,IND:3,CHN:4,NAM:3	5
+ford-escape	Ford	Escape	2001		suv:100	NAM:22,LAM:4,MEA:2	5
+ford-explorer	Ford	Explorer	1990		suv:100	NAM:20,MEA:6,LAM:4,CHN:4	7
+ford-ranger	Ford	Ranger	1990		pickup:100	NAM:8,OCE:24,AFR:16,SEA:16,MER:10,LAM:8,EUR:6,MEA:4	5
+chevrolet-silverado	Chevrolet	Silverado	1999		pickup:100	NAM:30,MEA:4,LAM:3	5
+chevrolet-malibu	Chevrolet	Malibu	1997	2024	sedan:100	NAM:16,MEA:6,KOR:6	5
+chevrolet-equinox	Chevrolet	Equinox	2005		suv:100	NAM:22,LAM:6,MEA:2	5
+chevrolet-cruze	Chevrolet	Cruze	2008	2019	sedan:75,hatchback:25	NAM:12,EUR:4,CIS:8,MER:8,CHN:8,KOR:6,OCE:4,LAM:6,MEA:4	5
+chevrolet-aveo	Chevrolet	Aveo	2002		sedan:60,hatchback:40	LAM:16,NAM:6,EUR:4,CIS:8,CHN:4,MEA:4,SEA:4	5
+chevrolet-onix	Chevrolet	Onix	2012		hatchback:60,sedan:40	MER:34,LAM:10,CHN:4	5
+jeep-grandcherokee	Jeep	Grand Cherokee	1993		suv:100	NAM:30,EUR:4,MEA:16,CIS:6,LAM:6,OCE:4	5
+jeep-wrangler	Jeep	Wrangler	1990		suv:100	NAM:24,MEA:10,EUR:2,OCE:2,LAM:4	5
+jeep-compass	Jeep	Compass	2007		suv:100	NAM:12,EUR:6,MER:16,LAM:6,IND:8,CHN:4	5
+ram-1500	Ram	1500	1994		pickup:100	NAM:30,MEA:6	5
+dodge-caravan	Dodge	Grand Caravan	1990	2020	van:100	NAM:30,LAM:4,MEA:2	7
+tesla-model3	Tesla	Model 3	2017		sedan:100	NAM:40,EUR:30,CHN:30,OCE:30,KOR:30,JPN:20,MEA:20,SEA:20,TR:30,LAM:10	5
+tesla-modely	Tesla	Model Y	2020		suv:100	NAM:50,EUR:50,CHN:50,OCE:30,KOR:30,JPN:20,MEA:20,SEA:20,TR:40,LAM:10	5
+holden-commodore	Holden	Commodore	1990	2020	sedan:75,wagon:25	OCE:40	5
+hyundai-elantra	Hyundai	Elantra	1990		sedan:90,hatchback:10	NAM:20,KOR:16,CHN:12,LAM:12,MEA:16,CIS:8,EUR:4,AFR:6,OCE:6,SEA:4	5
+hyundai-tucson	Hyundai	Tucson	2004		suv:100	NAM:18,EUR:16,KOR:12,CHN:10,LAM:10,MEA:10,CIS:10,AFR:8,OCE:10,TR:8	5
+hyundai-santafe	Hyundai	Santa Fe	2000		suv:100	NAM:14,KOR:16,CHN:6,MEA:10,CIS:8,EUR:4,OCE:6,AFR:6,LAM:6	7
+hyundai-accent	Hyundai	Accent	1994		sedan:60,hatchback:40	LAM:20,MEA:20,CIS:20,AFR:10,NAM:6,KOR:4,SEA:6,CHN:8,EUR:4	5
+hyundai-i10	Hyundai	i10	2007		hatchback:90,sedan:10	EUR:10,IND:16,LAM:10,AFR:10,TR:8,MEA:6	5
+hyundai-i20	Hyundai	i20	2008		hatchback:100	EUR:12,IND:14,TR:12,AFR:6,MEA:4,LAM:4,OCE:4	5
+hyundai-creta	Hyundai	Creta	2015		suv:100	IND:20,CIS:12,MER:12,LAM:6,MEA:8,CHN:4,AFR:4	5
+hyundai-sonata	Hyundai	Sonata	1990		sedan:100	NAM:14,KOR:16,CHN:6,MEA:12,CIS:6,LAM:4	5
+kia-sportage	Kia	Sportage	1993		suv:100	EUR:18,NAM:12,KOR:12,CIS:14,MEA:12,LAM:10,AFR:8,OCE:8,TR:8,CHN:6	5
+kia-rio	Kia	Rio	2000		sedan:60,hatchback:40	CIS:22,LAM:14,NAM:6,EUR:10,MEA:12,AFR:8,CHN:6,OCE:4	5
+kia-picanto	Kia	Picanto	2004		hatchback:100	EUR:12,KOR:12,LAM:12,AFR:10,MEA:6,SEA:6,OCE:4	5
+kia-cerato	Kia	Cerato	2003		sedan:85,hatchback:15	CIS:10,MEA:14,LAM:10,OCE:8,AFR:6,CHN:6,NAM:10	5
+daewoo-matiz	Daewoo	Matiz	1998	2015	hatchback:100	KOR:10,UZ:30,CIS:10,EUR:6,IND:3	5
+byd-atto3	BYD	Atto 3	2022		suv:100	CHN:12,EUR:10,OCE:12,SEA:14,MEA:6,IND:6,LAM:6,AFR:4	5
+byd-song	BYD	Song	2016		suv:100	CHN:30,LAM:6,MER:6,SEA:4	5
+byd-qin	BYD	Qin	2014		sedan:100	CHN:30,LAM:4	5
+geely-emgrand	Geely	Emgrand	2009		sedan:85,hatchback:15	CHN:30,CIS:10,MEA:10,LAM:6,AFR:6	5
+chery-tiggo7	Chery	Tiggo 7	2016		suv:100	CHN:16,CIS:16,MEA:10,LAM:6,AFR:6,MER:4,SEA:4	5
+haval-h6	Haval	H6	2011		suv:100	CHN:40,CIS:20,MEA:12,OCE:6,AFR:8,LAM:6,SEA:6	5
+wuling-hongguang	Wuling	Hongguang	2010		van:100	CHN:30,SEA:6	7
+wuling-miniev	Wuling	Hongguang Mini EV	2020		hatchback:100	CHN:30,SEA:4	4
+mg-zs	MG	ZS	2017		suv:100	EUR:16,OCE:20,IND:8,MEA:14,SEA:10,LAM:10,AFR:6,CHN:6,GB:20	5
+maruti-swift	Maruti Suzuki	Swift	2005		hatchback:100	IND:30,NP:20,BT:20,LK:10	5
+maruti-dzire	Maruti Suzuki	Dzire	2008		sedan:100	IND:30,NP:10	5
+maruti-alto	Maruti Suzuki	Alto	2000		hatchback:100	IND:30,NP:20,BT:16,LK:12	5
+maruti-800	Maruti Suzuki	800	1990	2014	hatchback:100	IND:30,NP:10	4
+maruti-wagonr	Maruti Suzuki	Wagon R	1999		hatchback:100	IND:30,NP:12	5
+maruti-baleno	Maruti Suzuki	Baleno	2015		hatchback:100	IND:24,AFR:6,MEA:4	5
+tata-nexon	Tata	Nexon	2017		suv:100	IND:30	5
+tata-indica	Tata	Indica	1998	2018	hatchback:100	IND:30,ZA:2	5
+mahindra-scorpio	Mahindra	Scorpio	2002		suv:100	IND:30,NP:10,AFR:4	7
+proton-saga	Proton	Saga	1990		sedan:100	SEA:16,MY:40	5
+perodua-myvi	Perodua	Myvi	2005		hatchback:100	MY:40	5
+ikco-samand	Iran Khodro	Samand	2001		sedan:100	IR:30,AZ:4,SY:4	5
+ikco-peugeot405	Iran Khodro	Peugeot Pars	1990		sedan:100	IR:40	5
+ikco-dena	Iran Khodro	Dena	2011		sedan:100	IR:30	5
+saipa-pride	Saipa	Pride	1993	2020	sedan:70,hatchback:30	IR:50	5
+saipa-tiba	Saipa	Tiba	2009		sedan:70,hatchback:30	IR:30	5
+vw-golf	Volkswagen	Golf	1990		hatchback:85,wagon:15	EUR:30,TR:10,CIS:8,AFR:12,LAM:4,NAM:6,JDM:2,OCE:6,MEA:3	5
+vw-polo	Volkswagen	Polo	1990		hatchback:90,sedan:10	EUR:25,TR:8,AFR:25,IND:10,LAM:10,CIS:15,OCE:5,MEA:4	5
+vw-passat	Volkswagen	Passat	1990		sedan:55,wagon:45	EUR:15,TR:6,CIS:8,NAM:10,CHN:8,MEA:6,AFR:4	5
+vw-jetta	Volkswagen	Jetta	1990		sedan:100	NAM:30,LAM:25,CHN:10,EUR:3,CIS:6,MEA:4	5
+vw-tiguan	Volkswagen	Tiguan	2007		suv:100	EUR:22,NAM:20,CHN:15,CIS:10,TR:8,OCE:8,AFR:5,MEA:5,LAM:6	5
+vw-troc	Volkswagen	T-Roc	2017		suv:100	EUR:16,CHN:5,TR:4	5
+vw-gol	Volkswagen	Gol	1990	2022	hatchback:85,wagon:15	MER:30,LAM:20	5
+vw-lavida	Volkswagen	Lavida	2008		sedan:100	CHN:30	5
+audi-a3	Audi	A3	1996		hatchback:60,sedan:35,convertible:5	EUR:20,NAM:10,CHN:10,OCE:6,MEA:4	5
+audi-a4	Audi	A4	1995		sedan:60,wagon:40	EUR:20,NAM:14,CHN:20,CIS:6,MEA:6	5
+audi-a6	Audi	A6	1994		sedan:60,wagon:40	EUR:14,CHN:20,NAM:8,CIS:6,MEA:6	5
+audi-q5	Audi	Q5	2008		suv:100	EUR:14,NAM:16,CHN:16,CIS:5,MEA:4	5
+skoda-octavia	Skoda	Octavia	1996		hatchback:55,wagon:45	EUR:30,CIS:12,TR:6,IND:4,CHN:3	5
+skoda-fabia	Skoda	Fabia	1999		hatchback:80,wagon:20	EUR:25,CIS:8,IND:3	5
+seat-ibiza	Seat	Ibiza	1993		hatchback:100	EUR:30,MEA:4,LAM:4	5
+seat-leon	Seat	Leon	1999		hatchback:75,wagon:25	EUR:28,LAM:5,MEA:3	5
+bmw-3	BMW	3 Series	1990		sedan:70,wagon:25,coupe:5	EUR:30,NAM:24,CHN:22,CIS:8,MEA:6,OCE:6,AFR:8,JDM:6	5
+bmw-5	BMW	5 Series	1990		sedan:75,wagon:25	EUR:18,NAM:12,CHN:22,CIS:8,MEA:6	5
+bmw-x1	BMW	X1	2009		suv:100	EUR:14,NAM:6,CHN:12,OCE:4	5
+bmw-x3	BMW	X3	2003		suv:100	EUR:14,NAM:14,CHN:14,CIS:6,MEA:5,OCE:4	5
+mini-hatch	Mini	Cooper	2001		hatchback:85,convertible:15	EUR:12,NAM:6,JDM:4,OCE:3,CHN:2	4
+mercedes-c	Mercedes-Benz	C-Class	1993		sedan:70,wagon:25,coupe:5	EUR:22,NAM:14,CHN:18,CIS:8,MEA:8,AFR:12,OCE:5,JDM:4	5
+mercedes-e	Mercedes-Benz	E-Class	1990		sedan:70,wagon:30	EUR:16,NAM:10,CHN:16,CIS:8,MEA:8,AFR:12	5
+mercedes-glc	Mercedes-Benz	GLC	2015		suv:100	EUR:14,NAM:14,CHN:14,CIS:5,MEA:6,OCE:4	5
+opel-corsa	Opel	Corsa	1993		hatchback:100	EUR:30,TR:10,CIS:4,AFR:6	5
+opel-astra	Opel	Astra	1991		hatchback:60,wagon:30,sedan:10	EUR:28,TR:12,CIS:8,AFR:4	5
+peugeot-208	Peugeot	208	2012		hatchback:100	EUR:28,TR:6,MER:10,AFR:6,LAM:4	5
+peugeot-206	Peugeot	206	1998	2012	hatchback:85,sedan:10,convertible:5	EUR:25,MEA:10,MER:10,AFR:15,IR:15,LAM:6	5
+peugeot-308	Peugeot	308	2007		hatchback:70,wagon:30	EUR:18,TR:4,AFR:4,MER:4,CHN:2	5
+peugeot-2008	Peugeot	2008	2013		suv:100	EUR:20,TR:6,MER:8,AFR:4	5
+peugeot-3008	Peugeot	3008	2009		suv:100	EUR:18,TR:4,AFR:4,MEA:3,CHN:3	5
+citroen-c3	Citroen	C3	2002		hatchback:100	EUR:25,TR:6,MER:6,AFR:6,IND:4	5
+renault-clio	Renault	Clio	1990		hatchback:90,wagon:10	EUR:28,TR:12,AFR:10,LAM:6,MEA:4	5
+renault-megane	Renault	Megane	1995		hatchback:60,sedan:20,wagon:20	EUR:18,TR:12,LAM:4,AFR:4,CIS:3	5
+renault-captur	Renault	Captur	2013		suv:100	EUR:20,TR:6,LAM:4,CIS:4	5
+dacia-sandero	Dacia	Sandero	2008		hatchback:100	EUR:40,TR:10,AFR:6	5
+dacia-logan	Dacia	Logan	2004		sedan:70,wagon:30	EUR:22,AFR:8	5
+dacia-duster	Dacia	Duster	2010		suv:100	EUR:30,TR:12,AFR:6	5
+fiat-panda	Fiat	Panda	1990		hatchback:100	EUR:30,TR:2	5
+fiat-500	Fiat	500	2007		hatchback:85,convertible:15	EUR:25,NAM:6,LAM:4,TR:3	4
+fiat-punto	Fiat	Punto	1993	2018	hatchback:100	EUR:25,TR:8,MER:6,AFR:4	5
+fiat-tipo	Fiat	Tipo	1990		hatchback:40,sedan:45,wagon:15	EUR:10,TR:30,MEA:6	5
+fiat-uno	Fiat	Uno	1990	2021	hatchback:100	MER:30,LAM:6,EUR:6,AFR:4	5
+fiat-palio	Fiat	Palio	1996	2017	hatchback:75,wagon:25	MER:30,LAM:8,TR:6,IND:4,AFR:6	5
+volvo-xc60	Volvo	XC60	2008		suv:100	EUR:20,NAM:16,CHN:16,OCE:5	5
+lada-2107	Lada	2107	1990	2012	sedan:100	CIS:30,EUR:4,AFR:2	5
+lada-niva	Lada	Niva	1990		suv:100	CIS:25,EUR:4,LAM:2	5
+lada-granta	Lada	Granta	2011		sedan:60,hatchback:25,wagon:15	CIS:35	5
+lada-vesta	Lada	Vesta	2015		sedan:70,wagon:30	CIS:28	5
+toyota-corolla	Toyota	Corolla	1990		sedan:60,hatchback:25,wagon:15	NAM:16,EUR:14,CHN:14,LAM:20,MER:14,SEA:10,MEA:14,AFR:14,JDM:8,JPN:6,OCE:14,IND:4,CIS:8,TR:20	5
+toyota-camry	Toyota	Camry	1990		sedan:100	NAM:22,MEA:18,CHN:8,SEA:8,OCE:8,CIS:8,AFR:6,JDM:2,LAM:4,KOR:2	5
+toyota-rav4	Toyota	RAV4	1994		suv:100	NAM:24,EUR:12,CHN:10,OCE:12,JDM:6,JPN:4,CIS:10,MEA:6,LAM:6,AFR:5	5
+toyota-yaris	Toyota	Yaris	1999		hatchback:85,sedan:15	EUR:18,NAM:4,LAM:6,SEA:6,MEA:6,AFR:4,JPN:6,JDM:6,OCE:4	5
+toyota-hilux	Toyota	Hilux	1990		pickup:100	AFR:40,LAM:16,MER:14,SEA:16,OCE:20,MEA:16,EUR:3,JDM:4,IND:2	5
+toyota-landcruiser	Toyota	Land Cruiser	1990		suv:100	MEA:30,AFR:20,OCE:8,CIS:10,JDM:6,LAM:4,NAM:2	7
+toyota-prado	Toyota	Land Cruiser Prado	1996		suv:100	MEA:20,AFR:24,CIS:10,CHN:4,OCE:8,JDM:6,LAM:4,EUR:2	7
+toyota-prius	Toyota	Prius	1997		hatchback:100	NAM:8,JPN:20,JDM:20,EUR:4,OCE:3	5
+toyota-aqua	Toyota	Aqua	2011		hatchback:100	JPN:20,JDM:14	5
+toyota-vitz	Toyota	Vitz	1999	2020	hatchback:100	JPN:16,JDM:20	5
+toyota-fielder	Toyota	Corolla Fielder	2000		wagon:100	JPN:8,JDM:20	5
+toyota-probox	Toyota	Probox	2002		wagon:100	JPN:4,JDM:14	5
+toyota-noah	Toyota	Noah	2001		van:100	JPN:14,JDM:10	7
+toyota-fortuner	Toyota	Fortuner	2005		suv:100	SEA:16,IND:14,AFR:12,MEA:8,LAM:6	7
+toyota-innova	Toyota	Innova	2004		van:100	IND:14,SEA:12	7
+toyota-avanza	Toyota	Avanza	2003		van:100	SEA:20,AFR:4,LAM:2	7
+toyota-vios	Toyota	Vios	2002		sedan:100	SEA:16,CHN:6	5
+lexus-rx	Lexus	RX	1998		suv:100	NAM:30,MEA:20,CHN:20,CIS:16,EUR:10,JDM:10,JPN:8,OCE:8	5
+lexus-es	Lexus	ES	1990		sedan:100	NAM:20,CHN:20,MEA:14,CIS:6,KOR:10	5
+honda-civic	Honda	Civic	1990		sedan:55,hatchback:45	NAM:30,EUR:12,CHN:12,SEA:12,LAM:12,MER:12,MEA:8,JPN:4,JDM:10,TR:14,IND:6,OCE:8,CIS:4	5
+honda-accord	Honda	Accord	1990		sedan:85,wagon:10,coupe:5	NAM:30,CHN:16,MEA:10,EUR:4,JPN:4,JDM:4,SEA:6,OCE:4,CIS:4	5
+honda-crv	Honda	CR-V	1996		suv:100	NAM:30,CHN:20,EUR:8,SEA:8,MEA:6,OCE:8,LAM:8,JPN:4,JDM:6,CIS:6	5
+honda-fit	Honda	Fit	2001		hatchback:100	JPN:20,JDM:20,NAM:5,LAM:6,MER:8,SEA:6,CHN:6,EUR:4	5
+honda-city	Honda	City	1996		sedan:90,hatchback:10	IND:20,SEA:20,LAM:4,MER:6,CHN:8	5
+honda-nbox	Honda	N-Box	2011		hatchback:100	JPN:24,JDM:2	4
+nissan-sentra	Nissan	Sentra	1990		sedan:100	NAM:18,LAM:20,MEA:6,SEA:4,CHN:12	5
+nissan-altima	Nissan	Altima	1993		sedan:100	NAM:24,MEA:10,CHN:6,LAM:4,CIS:2	5
+nissan-rogue	Nissan	Rogue	2007		suv:100	NAM:26	5
+nissan-xtrail	Nissan	X-Trail	2001		suv:100	EUR:8,CHN:16,SEA:8,MEA:6,JPN:6,JDM:12,OCE:8,AFR:8,CIS:10,LAM:6	7
+nissan-qashqai	Nissan	Qashqai	2007		suv:100	EUR:28,TR:8,CIS:10,OCE:4,MEA:2	5
+nissan-micra	Nissan	Micra	1992		hatchback:100	EUR:12,IND:3,MEA:4,AFR:4,JPN:4,JDM:8	5
+nissan-note	Nissan	Note	2005		hatchback:100	JPN:16,JDM:16,EUR:4	5
+nissan-patrol	Nissan	Patrol	1990		suv:100	MEA:30,OCE:6,AFR:6,CIS:2	7
+nissan-sunny	Nissan	Sunny	1990		sedan:100	MEA:20,JPN:4,JDM:10,AFR:10,IND:4,SEA:4	5
+nissan-versa	Nissan	Versa	2006		sedan:80,hatchback:20	NAM:12,LAM:24	5
+mazda-3	Mazda	3	2003		hatchback:60,sedan:40	NAM:30,EUR:14,OCE:18,CHN:10,JPN:8,JDM:8,MEA:6,CIS:6,LAM:8,SEA:4	5
+mazda-cx5	Mazda	CX-5	2012		suv:100	NAM:30,EUR:14,OCE:22,CHN:12,JPN:10,JDM:6,MEA:8,CIS:10,LAM:10,SEA:6	5
+mitsubishi-lancer	Mitsubishi	Lancer	1990	2017	sedan:85,wagon:15	NAM:6,EUR:6,MEA:12,CIS:12,LAM:8,SEA:8,CHN:8,OCE:8,AFR:6,JDM:6	5
+mitsubishi-outlander	Mitsubishi	Outlander	2001		suv:100	EUR:10,NAM:10,OCE:12,CIS:16,JPN:6,JDM:6,MEA:8,SEA:4,CHN:4	7
+mitsubishi-pajero	Mitsubishi	Pajero	1990	2021	suv:100	MEA:10,CIS:10,AFR:10,LAM:8,OCE:6,JPN:4,JDM:6,EUR:3	7
+mitsubishi-mirage	Mitsubishi	Mirage	1990		hatchback:70,sedan:30	NAM:6,SEA:10,LAM:8,MEA:6,EUR:4,OCE:4,JPN:4	5
+subaru-forester	Subaru	Forester	1997		suv:100	NAM:30,OCE:24,JPN:14,JDM:14,EUR:14,CIS:10,CHN:4	5
+subaru-outback	Subaru	Outback	1995		wagon:100	NAM:30,OCE:16,EUR:8,JPN:6,JDM:8,CIS:6	5
+suzuki-swift	Suzuki	Swift	1990		hatchback:85,sedan:15	EUR:20,JPN:10,JDM:12,SEA:10,OCE:10,AFR:14,LAM:10,MEA:8,PK:20	5
+suzuki-vitara	Suzuki	Vitara	1990		suv:100	EUR:16,LAM:10,JDM:6,JPN:6,OCE:8,AFR:6,MEA:6,NAM:4	5
+suzuki-alto	Suzuki	Alto	1990		hatchback:100	JPN:12,JDM:12,EUR:6,PK:20,AFR:10,LAM:8,SEA:6	5
+isuzu-dmax	Isuzu	D-Max	2002		pickup:100	SEA:30,AFR:20,OCE:14,IND:6,LAM:10,MEA:6,EUR:4	5

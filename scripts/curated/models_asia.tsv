@@ -1,0 +1,137 @@
+# Curated: models of the Korean, Chinese, Indian, Malaysian, Iranian and Vietnamese makers (columns as in models_europe.tsv).
+key	make	model	from	to	bodies	markets	seats	lite	trims
+hyundai-elantra	Hyundai	Elantra	1990		sedan:90,hatchback:10	NAM:20,KOR:16,CHN:12,LAM:12,MEA:16,CIS:8,EUR:4,AFR:6,OCE:6,SEA:4	5	1	1.6|petrol|1591|94|1990-|ma|f|6;1.8|petrol|1797|110|2010-2016|ma|f|3;2.0|petrol|1999|110|2000-|a|f|5;1.6 CRDi|diesel|1582|94|2010-2020|ma|f|1|EUR,KOR;1.6 Hybrid|hybrid|1580|104|2020-|a|f|1|NAM,KOR
+hyundai-tucson	Hyundai	Tucson	2004		suv:100	NAM:18,EUR:16,KOR:12,CHN:10,LAM:10,MEA:10,CIS:10,AFR:8,OCE:10,TR:8	5	1	2.0|petrol|1999|114|2004-|ma|fa|6;2.4|petrol|2359|135|2010-2021|a|fa|3|NAM,MEA;1.6 T-GDi|petrol|1591|130|2015-|ma|fa|4;2.0 CRDi|diesel|1995|100|2004-|ma|fa|4|EUR,KOR,CIS,AFR,TR;1.6 Hybrid|hybrid|1598|169|2020-|a|fa|2|EUR,NAM,KOR;Plug-in|plug_in|1598|195|2021-|a|a|1|EUR,NAM
+hyundai-santafe	Hyundai	Santa Fe	2000		suv:100	NAM:14,KOR:16,CHN:6,MEA:10,CIS:8,EUR:4,OCE:6,AFR:6,LAM:6	7	1	2.4|petrol|2359|127|2000-2018|a|fa|5;3.5 V6|petrol|3470|206|2006-2020|a|a|2;2.5 T-GDi|petrol|2497|206|2021-|a|fa|2;2.2 CRDi|diesel|2199|147|2006-|a|a|6|KOR,EUR,CIS,AFR,OCE;1.6 Hybrid|hybrid|1598|169|2021-|a|a|2|KOR,NAM,EUR
+hyundai-accent	Hyundai	Accent	1994		sedan:60,hatchback:40	LAM:20,MEA:20,CIS:20,AFR:10,NAM:6,KOR:4,SEA:6,CHN:8,EUR:4	5	1	1.3|petrol|1341|63|1994-2005|ma|f|4;1.4|petrol|1396|74|2006-|ma|f|5;1.6|petrol|1591|90|2006-|ma|f|6;1.5 CRDi|diesel|1493|81|2006-2011|m|f|1|EUR
+hyundai-i10	Hyundai	i10	2007		hatchback:90,sedan:10	EUR:10,IND:16,LAM:10,AFR:10,TR:8,MEA:6	5	1	1.0|petrol|998|49|2008-|ma|f|6;1.1|petrol|1086|50|2007-2013|m|f|3;1.2|petrol|1197|63|2010-|ma|f|5;1.2 CNG|cng|1197|50|2013-|m|f|1|IND
+hyundai-i20	Hyundai	i20	2008		hatchback:100	EUR:12,IND:14,TR:12,AFR:6,MEA:4,LAM:4,OCE:4	5	1	1.2|petrol|1248|62|2008-|m|f|6;1.4|petrol|1396|74|2008-2020|ma|f|4;1.0 T-GDi|petrol|998|74|2015-|ma|f|4;1.4 CRDi|diesel|1396|66|2008-2020|m|f|2|EUR,IND,TR
+hyundai-i30	Hyundai	i30	2007		hatchback:75,wagon:25	EUR:12,KOR:4,OCE:10,TR:4,CIS:4	5	0	1.4|petrol|1396|73|2007-2017|ma|f|3;1.6|petrol|1591|88|2007-|ma|f|4;1.0 T-GDi|petrol|998|88|2016-|ma|f|3;1.6 CRDi|diesel|1582|85|2007-|ma|f|4|EUR,KOR,OCE,TR
+hyundai-creta	Hyundai	Creta	2015		suv:100	IND:20,CIS:12,MER:12,LAM:6,MEA:8,CHN:4,AFR:4	5	1	1.5|petrol|1497|85|2020-|ma|f|5;1.6|petrol|1591|90|2015-2020|ma|fa|4;1.5 CRDi|diesel|1493|85|2020-|ma|f|4|IND;2.0|petrol|1999|110|2016-|a|fa|1|CIS
+hyundai-sonata	Hyundai	Sonata	1990		sedan:100	NAM:14,KOR:16,CHN:6,MEA:12,CIS:6,LAM:4	5	1	2.0|petrol|1997|101|1990-2019|a|f|6;2.4|petrol|2359|134|2005-2019|a|f|4;2.5|petrol|2497|141|2020-|a|f|3;2.0 LPi|lpg|1999|110|2010-|a|f|3|KOR;2.0 Hybrid|hybrid|1999|143|2011-|a|f|2
+hyundai-grandi10	Hyundai	Grand i10	2013		hatchback:70,sedan:30	IND:20,LAM:12,SEA:8,AFR:8	5	0	1.2|petrol|1197|61|2013-|ma|f|8;1.2 CRDi|diesel|1186|55|2013-2020|m|f|2|IND
+hyundai-kona	Hyundai	Kona	2017		suv:100	EUR:12,NAM:10,KOR:8,OCE:6,TR:4	5	0	1.0 T-GDi|petrol|998|88|2017-|ma|f|4;2.0|petrol|1999|110|2017-|a|fa|4|NAM,KOR,OCE;Hybrid|hybrid|1580|104|2019-|a|f|3|EUR,KOR;Electric|electric|0|150|2018-|a|f|3
+hyundai-ioniq5	Hyundai	Ioniq 5	2021		suv:100	EUR:6,NAM:6,KOR:6,OCE:3	5	0	58 kWh|electric|0|125|2021-|a|r|3;77 kWh AWD|electric|0|239|2021-|a|a|3
+hyundai-palisade	Hyundai	Palisade	2018		suv:100	NAM:8,KOR:12,MEA:8	8	0	3.8 V6|petrol|3778|217|2018-|a|fa|7;2.2 CRDi|diesel|2199|147|2018-|a|a|3|KOR
+hyundai-grandeur	Hyundai	Grandeur	1990		sedan:100	KOR:20,MEA:6,NAM:3	5	0	3.0 V6|petrol|2999|184|2005-|a|f|5;2.5|petrol|2497|146|2019-|a|f|4;3.0 LPi|lpg|2999|173|2011-|a|f|2;2.4 Hybrid|hybrid|2359|149|2013-|a|f|2
+hyundai-starex	Hyundai	H-1	1997	2021	van:100	KOR:10,MEA:6,AFR:6,CIS:4,EUR:2	9	0	2.5 CRDi|diesel|2497|125|1997-2021|ma|r|7;2.4|petrol|2359|127|2007-2021|a|r|3
+hyundai-avante	Hyundai	Avante	1995		sedan:100	KOR:24	5	0	1.6|petrol|1591|94|1995-|a|f|7;1.6 LPi|lpg|1591|88|2009-|a|f|1;1.6 Hybrid|hybrid|1580|104|2020-|a|f|2
+hyundai-hb20	Hyundai	HB20	2012		hatchback:80,sedan:20	MER:30	5	0	1.0|petrol|998|59|2012-|ma|f|6;1.6|petrol|1591|94|2012-2019|ma|f|3;1.0 T-GDi|petrol|998|88|2019-|ma|f|2
+hyundai-getz	Hyundai	Getz	2002	2011	hatchback:100	EUR:8,AFR:8,LAM:6,OCE:6,CIS:6,MEA:6	5	0	1.1|petrol|1086|49|2002-2011|m|f|4;1.4|petrol|1399|71|2002-2011|ma|f|5;1.5 CRDi|diesel|1493|65|2003-2011|m|f|2|EUR
+kia-sportage	Kia	Sportage	1993		suv:100	EUR:18,NAM:12,KOR:12,CIS:14,MEA:12,LAM:10,AFR:8,OCE:8,TR:8,CHN:6	5	1	2.0|petrol|1998|105|1993-|ma|fa|7;2.4|petrol|2359|135|2010-2022|a|fa|2|NAM,MEA;1.6 T-GDi|petrol|1591|130|2016-|a|fa|3;1.7 CRDi|diesel|1685|85|2010-2021|m|f|2|EUR,TR;2.0 CRDi|diesel|1995|100|2004-|ma|a|3|EUR,KOR,CIS,AFR;Hybrid|hybrid|1598|169|2021-|a|fa|2|EUR,NAM,KOR
+kia-rio	Kia	Rio	2000		sedan:60,hatchback:40	CIS:22,LAM:14,NAM:6,EUR:10,MEA:12,AFR:8,CHN:6,OCE:4	5	1	1.4|petrol|1396|79|2005-|ma|f|6;1.6|petrol|1591|90|2005-|ma|f|5;1.3|petrol|1343|60|2000-2005|m|f|2;1.0 T-GDi|petrol|998|74|2017-|ma|f|2|EUR;1.4 CRDi|diesel|1396|66|2011-2020|m|f|1|EUR
+kia-picanto	Kia	Picanto	2004		hatchback:100	EUR:12,KOR:12,LAM:12,AFR:10,MEA:6,SEA:6,OCE:4	5	1	1.0|petrol|998|49|2004-|ma|f|8;1.2|petrol|1248|62|2011-|ma|f|3
+kia-ceed	Kia	Ceed	2006		hatchback:60,wagon:40	EUR:14,CIS:6,TR:4	5	0	1.4|petrol|1396|73|2006-|ma|f|3;1.6|petrol|1591|94|2006-2018|ma|f|4;1.0 T-GDi|petrol|998|88|2018-|m|f|3;1.6 CRDi|diesel|1582|85|2006-|ma|f|4
+kia-sorento	Kia	Sorento	2002		suv:100	NAM:10,KOR:14,MEA:8,CIS:8,EUR:4,OCE:6,AFR:4	7	0	2.4|petrol|2359|129|2009-2020|a|fa|4;3.5 V6|petrol|3497|143|2002-2009|ma|a|2;2.5 T-GDi|petrol|2497|206|2021-|a|a|2;2.2 CRDi|diesel|2199|147|2009-|a|a|5|KOR,EUR,CIS,OCE,AFR;Hybrid|hybrid|1598|169|2020-|a|a|2
+kia-cerato	Kia	Cerato	2003		sedan:85,hatchback:15	CIS:10,MEA:14,LAM:10,OCE:8,AFR:6,CHN:6,NAM:10	5	1	1.6|petrol|1591|94|2003-|ma|f|6;2.0|petrol|1999|112|2003-|a|f|5
+kia-seltos	Kia	Seltos	2019		suv:100	IND:16,NAM:6,KOR:6,SEA:6,MEA:6,CIS:4,OCE:4,LAM:4	5	0	1.5|petrol|1497|85|2019-|ma|f|5;1.4 T-GDi|petrol|1353|103|2019-|a|f|2;1.5 CRDi|diesel|1493|85|2019-|ma|f|3|IND
+kia-sonet	Kia	Sonet	2020		suv:100	IND:14,SEA:4,MEA:4,AFR:4	5	0	1.2|petrol|1197|61|2020-|m|f|4;1.0 T-GDi|petrol|998|88|2020-|ma|f|4;1.5 CRDi|diesel|1493|85|2020-|ma|f|3|IND
+kia-carnival	Kia	Carnival	1998		van:100	KOR:14,NAM:6,MEA:4,IND:2,OCE:2	8	0	3.5 V6|petrol|3470|201|2006-|a|f|4;2.2 CRDi|diesel|2199|147|2014-|a|f|5|KOR,IND,OCE
+kia-k5	Kia	K5	2010		sedan:100	KOR:16,NAM:8,MEA:6	5	0	2.0|petrol|1999|117|2010-|a|f|5;1.6 T-GDi|petrol|1598|132|2020-|a|f|3;2.0 LPi|lpg|1999|108|2010-|a|f|3|KOR
+kia-niro	Kia	Niro	2016		suv:100	EUR:8,KOR:8,NAM:4	5	0	Hybrid|hybrid|1580|104|2016-|a|f|5;EV|electric|0|150|2018-|a|f|3;PHEV|plug_in|1580|132|2017-|a|f|1
+kia-ev6	Kia	EV6	2021		suv:100	EUR:4,NAM:4,KOR:4	5	0	77 kWh|electric|0|168|2021-|a|r|3;AWD|electric|0|239|2021-|a|a|2
+kia-morning	Kia	Morning	2004		hatchback:100	KOR:16	5	0	1.0|petrol|998|56|2004-|a|f|7;1.0 LPi|lpg|998|50|2008-|a|f|2
+kia-pride	Kia	Pride	1990	2000	hatchback:60,sedan:40	KOR:10,AFR:3	5	0	1.3|petrol|1323|47|1990-2000|m|f|8
+genesis-g80	Genesis	G80	2016		sedan:100	KOR:20,NAM:6,MEA:4	5	0	2.5 T|petrol|2497|224|2020-|a|ra|5;3.3 T|petrol|3342|272|2016-|a|a|3;Electrified|electric|0|272|2021-|a|a|1
+genesis-gv80	Genesis	GV80	2020		suv:100	KOR:20,NAM:8,MEA:6	7	0	2.5 T|petrol|2497|224|2020-|a|a|5;3.5 T|petrol|3470|279|2020-|a|a|3;3.0 D|diesel|2959|204|2020-2023|a|a|1|KOR
+daewoo-matiz	Daewoo	Matiz	1998	2015	hatchback:100	KOR:10,UZ:30,CIS:10,EUR:6,IND:3	5	1	0.8|petrol|796|38|1998-2015|ma|f|8;1.0|petrol|995|47|2005-2015|m|f|2
+daewoo-nexia	Daewoo	Nexia	1995	2016	sedan:100	UZ:30,CIS:16,EUR:4	5	0	1.5|petrol|1498|55|1995-2016|m|f|8;1.6|petrol|1598|80|2008-2016|m|f|2
+daewoo-lanos	Daewoo	Lanos	1997	2010	sedan:70,hatchback:30	CIS:14,UA:20,EUR:6,KOR:6	5	0	1.5|petrol|1498|63|1997-2010|m|f|7;1.6|petrol|1598|78|1997-2010|m|f|3
+daewoo-nubira	Daewoo	Nubira	1997	2004	sedan:70,wagon:30	KOR:6,EUR:4,CIS:4	5	0	1.6|petrol|1598|78|1997-2004|ma|f|8
+ssangyong-rexton	SsangYong	Rexton	2001		suv:100	KOR:20,EUR:4,CIS:4,OCE:4,AFR:3	7	0	2.7 Xdi|diesel|2696|121|2001-2017|a|a|5;2.2 e-XDi|diesel|2157|133|2017-|a|ra|5;2.0 GDi-T|petrol|1998|165|2017-|a|ra|2
+ssangyong-tivoli	SsangYong	Tivoli	2015		suv:100	KOR:20,EUR:6	5	0	1.6|petrol|1597|94|2015-|ma|fa|5;1.5 T-GDi|petrol|1497|120|2019-|a|f|3;1.6 e-XDi|diesel|1597|85|2015-|ma|fa|2
+renaultkorea-sm6	Renault Korea	SM6	2016		sedan:100	KOR:20	5	0	2.0 LPe|lpg|1998|103|2016-|a|f|4;1.3 TCe|petrol|1332|116|2020-|a|f|4
+renaultkorea-qm6	Renault Korea	QM6	2016		suv:100	KOR:30	5	0	2.0 LPe|lpg|1998|103|2019-|a|f|5;2.0 GDe|petrol|1998|106|2016-|a|fa|4
+byd-atto3	BYD	Atto 3	2022		suv:100	CHN:12,EUR:10,OCE:12,SEA:14,MEA:6,IND:6,LAM:6,AFR:4	5	1	60 kWh|electric|0|150|2022-|a|f|8
+byd-song	BYD	Song	2016		suv:100	CHN:30,LAM:6,MER:6,SEA:4	5	1	DM-i|plug_in|1498|145|2021-|a|f|6;EV|electric|0|160|2019-|a|f|3;1.5 T|petrol|1497|112|2016-2021|ma|f|2
+byd-qin	BYD	Qin	2014		sedan:100	CHN:30,LAM:4	5	1	DM-i|plug_in|1498|132|2014-|a|f|6;EV|electric|0|100|2016-|a|f|4;1.5|petrol|1497|80|2014-2019|ma|f|1
+byd-han	BYD	Han	2020		sedan:100	CHN:12,LAM:4,MEA:2	5	0	EV|electric|0|180|2020-|a|fa|5;DM-i|plug_in|1498|160|2020-|a|f|4
+byd-tang	BYD	Tang	2015		suv:100	CHN:8,EUR:2,LAM:3	7	0	DM|plug_in|1998|230|2015-|a|a|5;EV|electric|0|380|2018-|a|a|3
+byd-dolphin	BYD	Dolphin	2021		hatchback:100	CHN:20,EUR:6,SEA:8,LAM:8,MER:10,OCE:6	5	0	44 kWh|electric|0|70|2021-|a|f|5;60 kWh|electric|0|150|2022-|a|f|4
+byd-seal	BYD	Seal	2022		sedan:100	CHN:10,EUR:4,SEA:6,OCE:4	5	0	RWD|electric|0|230|2022-|a|r|5;AWD|electric|0|390|2022-|a|a|2
+byd-f3	BYD	F3	2005	2016	sedan:100	CHN:20,LAM:4,AFR:2	5	0	1.5|petrol|1488|73|2005-2016|ma|f|8
+geely-emgrand	Geely	Emgrand	2009		sedan:85,hatchback:15	CHN:30,CIS:10,MEA:10,LAM:6,AFR:6	5	1	1.5|petrol|1498|84|2009-|ma|f|8;1.8|petrol|1792|102|2009-2018|ma|f|2
+geely-boyue	Geely	Atlas	2016		suv:100	CHN:20,CIS:12,MEA:8,LAM:4	5	0	1.8 T|petrol|1799|135|2016-|a|fa|5;2.0|petrol|1997|102|2016-|ma|f|4
+geely-coolray	Geely	Coolray	2018		suv:100	CHN:14,CIS:14,SEA:8,MEA:6,LAM:6	5	0	1.5 T|petrol|1477|130|2018-|a|f|8
+geely-geometry	Geely	Geometry E	2022		suv:100	CHN:10	5	0	EV|electric|0|60|2022-|a|f|5
+geely-monjaro	Geely	Monjaro	2021		suv:100	CHN:8,CIS:10,MEA:4	5	0	2.0 T|petrol|1969|175|2021-|a|a|6
+chery-tiggo7	Chery	Tiggo 7	2016		suv:100	CHN:16,CIS:16,MEA:10,LAM:6,AFR:6,MER:4,SEA:4	5	1	1.5 T|petrol|1498|115|2016-|ma|f|7;1.6 T|petrol|1598|145|2020-|a|f|3
+chery-tiggo4	Chery	Tiggo 4	2017		suv:100	CHN:14,CIS:12,MEA:10,LAM:8,AFR:6	5	0	1.5|petrol|1497|85|2017-|ma|f|5;1.5 T|petrol|1498|108|2017-|ma|f|4
+chery-arrizo	Chery	Arrizo 5	2016		sedan:100	CHN:20,MEA:10,CIS:4,LAM:4	5	0	1.5|petrol|1497|85|2016-|ma|f|6;1.5 T|petrol|1498|115|2016-|a|f|3
+chery-qq	Chery	QQ	2003	2021	hatchback:100	CHN:20,MEA:8,AFR:8,LAM:6	4	0	0.8|petrol|812|38|2003-2021|m|f|6;1.0|petrol|1010|50|2006-2021|m|f|4
+chery-tiggo8	Chery	Tiggo 8	2018		suv:100	CHN:10,CIS:10,MEA:6,LAM:4	7	0	1.6 T|petrol|1598|145|2018-|a|f|6;2.0 T|petrol|1998|187|2022-|a|fa|2
+haval-h6	Haval	H6	2011		suv:100	CHN:40,CIS:20,MEA:12,OCE:6,AFR:8,LAM:6,SEA:6	5	1	1.5 T|petrol|1497|124|2011-|ma|fa|7;2.0 T|petrol|1967|165|2017-|a|fa|2;HEV|hybrid|1497|179|2021-|a|f|2
+haval-jolion	Haval	Jolion	2020		suv:100	CHN:20,CIS:14,MEA:6,OCE:6,AFR:6,SEA:6	5	0	1.5 T|petrol|1497|110|2020-|a|f|6;HEV|hybrid|1497|139|2021-|a|f|2
+greatwall-wingle	Great Wall	Wingle	2006		pickup:100	CHN:20,AFR:8,LAM:6,MEA:4,CIS:2	5	0	2.0 D|diesel|1996|105|2010-|m|ra|5;2.4|petrol|2378|100|2006-|m|ra|4
+greatwall-poer	Great Wall	Poer	2019		pickup:100	CHN:12,AFR:6,OCE:4,LAM:4,MEA:4,SEA:4	5	0	2.0 D|diesel|1996|120|2019-|ma|ra|6;2.0 T|petrol|1967|140|2019-|a|ra|3
+changan-cs75	Changan	CS75	2014		suv:100	CHN:30,MEA:10,CIS:6,LAM:4	5	0	1.5 T|petrol|1494|131|2014-|ma|f|7;1.8 T|petrol|1756|130|2014-2020|a|fa|2
+changan-cs35	Changan	CS35	2012		suv:100	CHN:20,MEA:8,LAM:6,CIS:4	5	0	1.6|petrol|1598|92|2012-|ma|f|5;1.4 T|petrol|1395|115|2018-|a|f|4
+changan-eado	Changan	Eado	2012		sedan:100	CHN:20,MEA:6	5	0	1.6|petrol|1598|92|2012-|ma|f|5;1.4 T|petrol|1395|115|2018-|a|f|3;EV|electric|0|100|2018-|a|f|1
+changan-alsvin	Changan	Alsvin	2008		sedan:100	CHN:12,MEA:10,LAM:4	5	0	1.4|petrol|1372|73|2008-|ma|f|6;1.5|petrol|1499|79|2018-|ma|f|4
+wuling-hongguang	Wuling	Hongguang	2010		van:100	CHN:30,SEA:6	7	1	1.5|petrol|1485|73|2010-|m|r|7;1.2|petrol|1206|60|2010-|m|r|3
+wuling-miniev	Wuling	Hongguang Mini EV	2020		hatchback:100	CHN:30,SEA:4	4	1	9.2 kWh|electric|0|20|2020-|a|r|5;13.9 kWh|electric|0|20|2020-|a|r|4
+wuling-confero	Wuling	Confero	2017		van:100	SEA:10	7	0	1.5|petrol|1485|79|2017-|m|f|8
+mg-zs	MG	ZS	2017		suv:100	EUR:16,OCE:20,IND:8,MEA:14,SEA:10,LAM:10,AFR:6,CHN:6,GB:20	5	1	1.5|petrol|1498|78|2017-|ma|f|5;1.0 T|petrol|999|82|2019-|ma|f|3;EV|electric|0|130|2019-|a|f|4
+mg-hs	MG	HS	2018		suv:100	EUR:12,OCE:14,MEA:12,SEA:6,LAM:6,CHN:10,GB:16	5	0	1.5 T|petrol|1490|119|2018-|ma|f|6;2.0 T|petrol|1997|170|2018-|a|f|2;Plug-in|plug_in|1490|190|2020-|a|f|2|EUR,OCE,GB
+mg-4	MG	4	2022		hatchback:100	EUR:12,OCE:8,SEA:6,CHN:6,GB:14	5	0	Standard|electric|0|125|2022-|a|r|5;Long Range|electric|0|150|2022-|a|r|3
+mg-5	MG	5	2012		sedan:70,wagon:30	CHN:12,MEA:12,LAM:8,SEA:6,EUR:2	5	0	1.5|petrol|1498|84|2012-|ma|f|8;EV|electric|0|115|2020-|a|f|2|EUR
+mg-3	MG	3	2011		hatchback:100	EUR:6,OCE:14,MEA:6,SEA:6,GB:12	5	0	1.5|petrol|1498|78|2011-|ma|f|6;Hybrid+|hybrid|1498|143|2024-|a|f|2|EUR,GB,OCE
+mg-rover25	MG	ZR	2001	2005	hatchback:100	GB:20	5	0	1.4|petrol|1396|76|2001-2005|m|f|8
+rover-75	Rover	75	1999	2005	sedan:80,wagon:20	GB:20,EUR:2	5	0	1.8|petrol|1796|88|1999-2005|ma|f|6;2.0 CDT|diesel|1951|85|1999-2005|ma|f|4
+rover-200	Rover	200	1990	1999	hatchback:100	GB:24,EUR:2	5	0	1.4|petrol|1396|76|1990-1999|m|f|8
+rover-metro	Rover	Metro	1990	1998	hatchback:100	GB:20	5	0	1.1|petrol|1120|44|1990-1998|m|f|8
+hongqi-h5	Hongqi	H5	2017		sedan:100	CHN:20	5	0	1.8 T|petrol|1798|135|2017-|a|f|6;2.0 T|petrol|1984|165|2022-|a|f|3
+hongqi-hs5	Hongqi	HS5	2019		suv:100	CHN:20	5	0	2.0 T|petrol|1989|165|2019-|a|fa|8
+nio-es6	NIO	ES6	2019		suv:100	CHN:20,EUR:1	5	0	75 kWh|electric|0|320|2019-|a|a|6
+li-l7	Li Auto	L7	2023		suv:100	CHN:20	5	0	Pro|plug_in|1496|330|2023-|a|a|8
+li-one	Li Auto	ONE	2019	2022	suv:100	CHN:20	6	0	EREV|plug_in|1196|240|2019-2022|a|a|8
+xpeng-p7	XPeng	P7	2020		sedan:100	CHN:20,EUR:1	5	0	RWD|electric|0|203|2020-|a|r|6;AWD|electric|0|348|2020-|a|a|2
+gac-gs4	GAC	Trumpchi GS4	2015		suv:100	CHN:30,MEA:6,LAM:4	5	0	1.5 T|petrol|1499|125|2015-|ma|f|8
+aion-y	GAC	Aion Y	2021		suv:100	CHN:20,SEA:4	5	0	EV|electric|0|150|2021-|a|f|8
+jac-s3	JAC	S3	2014		suv:100	CHN:20,LAM:10,MEA:6,CIS:4	5	0	1.6|petrol|1590|83|2014-|ma|f|8
+dongfeng-aeolus	Dongfeng	Aeolus AX7	2015		suv:100	CHN:20,MEA:6,CIS:4,AFR:4	5	0	1.6 T|petrol|1598|145|2015-|a|f|5;2.0|petrol|1997|110|2015-|ma|f|4
+baojun-510	Baojun	510	2017		suv:100	CHN:30	5	0	1.5|petrol|1485|82|2017-|ma|f|8
+xiali-n5	Xiali	N5	2009	2015	sedan:100	CHN:10	5	0	1.3|petrol|1342|63|2009-2015|m|f|8
+maruti-swift	Maruti Suzuki	Swift	2005		hatchback:100	IND:30,NP:20,BT:20,LK:10	5	1	1.2|petrol|1197|61|2005-|ma|f|7;1.3 DDiS|diesel|1248|55|2007-2020|m|f|3|IND;1.2 CNG|cng|1197|57|2023-|m|f|1|IND
+maruti-dzire	Maruti Suzuki	Dzire	2008		sedan:100	IND:30,NP:10	5	1	1.2|petrol|1197|61|2008-|ma|f|6;1.3 DDiS|diesel|1248|55|2008-2020|ma|f|3;1.2 CNG|cng|1197|57|2018-|m|f|2
+maruti-alto	Maruti Suzuki	Alto	2000		hatchback:100	IND:30,NP:20,BT:16,LK:12	5	1	0.8|petrol|796|35|2000-|m|f|7;0.8 CNG|cng|796|30|2010-|m|f|2;1.0 K10|petrol|998|50|2010-|ma|f|3
+maruti-800	Maruti Suzuki	800	1990	2014	hatchback:100	IND:30,NP:10	4	1	0.8|petrol|796|28|1990-2014|m|f|8
+maruti-wagonr	Maruti Suzuki	Wagon R	1999		hatchback:100	IND:30,NP:12	5	1	1.0|petrol|998|50|1999-|ma|f|7;1.0 CNG|cng|998|42|2010-|m|f|3;1.2|petrol|1197|61|2019-|ma|f|2
+maruti-baleno	Maruti Suzuki	Baleno	2015		hatchback:100	IND:24,AFR:6,MEA:4	5	1	1.2|petrol|1197|61|2015-|ma|f|8;1.3 DDiS|diesel|1248|55|2015-2020|m|f|2;1.2 CNG|cng|1197|57|2022-|m|f|1
+maruti-ertiga	Maruti Suzuki	Ertiga	2012		van:100	IND:18	7	0	1.5|petrol|1462|77|2018-|ma|f|5;1.4|petrol|1373|68|2012-2018|m|f|2;1.3 DDiS|diesel|1248|66|2012-2020|m|f|3;1.5 CNG|cng|1462|65|2018-|m|f|2
+maruti-brezza	Maruti Suzuki	Brezza	2016		suv:100	IND:20	5	0	1.5|petrol|1462|77|2020-|ma|f|6;1.3 DDiS|diesel|1248|66|2016-2020|m|f|4
+maruti-omni	Maruti Suzuki	Omni	1990	2019	van:100	IND:16	8	0	0.8|petrol|796|25|1990-2019|m|r|8
+maruti-celerio	Maruti Suzuki	Celerio	2014		hatchback:100	IND:14	5	0	1.0|petrol|998|50|2014-|ma|f|7;1.0 CNG|cng|998|42|2014-|m|f|3
+maruti-esteem	Maruti Suzuki	Esteem	1994	2008	sedan:100	IND:12	5	0	1.3|petrol|1298|63|1994-2008|m|f|8
+tata-nexon	Tata	Nexon	2017		suv:100	IND:30	5	1	1.2 Turbo|petrol|1199|88|2017-|ma|f|5;1.5 Revotorq|diesel|1497|81|2017-|ma|f|3;EV|electric|0|95|2020-|a|f|2
+tata-indica	Tata	Indica	1998	2018	hatchback:100	IND:30,ZA:2	5	1	1.4|petrol|1405|63|1998-2018|m|f|5;1.4 D|diesel|1405|39|1998-2018|m|f|5
+tata-tiago	Tata	Tiago	2016		hatchback:100	IND:24	5	0	1.2|petrol|1199|63|2016-|ma|f|7;1.2 CNG|cng|1199|54|2022-|m|f|2;EV|electric|0|55|2022-|a|f|1
+tata-punch	Tata	Punch	2021		suv:100	IND:20	5	0	1.2|petrol|1199|63|2021-|ma|f|7;1.2 CNG|cng|1199|54|2023-|m|f|2;EV|electric|0|60|2024-|a|f|1
+tata-nano	Tata	Nano	2009	2018	hatchback:100	IND:10	4	0	0.6|petrol|624|28|2009-2018|ma|r|8
+mahindra-scorpio	Mahindra	Scorpio	2002		suv:100	IND:30,NP:10,AFR:4	7	1	2.2 mHawk|diesel|2179|103|2006-|ma|ra|8;2.6 CRDe|diesel|2609|80|2002-2009|m|ra|2;2.0 mStallion|petrol|1997|149|2022-|ma|r|1
+mahindra-bolero	Mahindra	Bolero	2000		suv:100	IND:30,NP:10,AFR:4	7	0	1.5 mHawk|diesel|1493|56|2016-|m|r|7;2.5 D|diesel|2523|47|2000-2016|m|r|3
+mahindra-xuv500	Mahindra	XUV700	2011		suv:100	IND:20	7	0	2.2 mHawk|diesel|2179|114|2011-|ma|fa|7;2.0 mStallion|petrol|1997|147|2021-|ma|f|3
+mahindra-thar	Mahindra	Thar	2010		suv:100	IND:14	4	0	2.2 mHawk|diesel|2184|97|2020-|ma|ra|5;2.5 CRDe|diesel|2498|78|2010-2020|m|a|3;2.0 mStallion|petrol|1997|112|2020-|ma|r|2
+hindustan-ambassador	Hindustan	Ambassador	1990	2014	sedan:100	IND:20	5	0	1.5 D|diesel|1489|28|1990-2014|m|r|6;1.8|petrol|1817|55|1993-2014|m|r|4
+proton-saga	Proton	Saga	1990		sedan:100	SEA:16,MY:40	5	1	1.3|petrol|1299|69|1990-|ma|f|6;1.5|petrol|1468|66|1990-2008|m|f|4
+proton-x70	Proton	X70	2018		suv:100	MY:30	5	0	1.8 TGDi|petrol|1799|135|2018-|a|f|6;1.5 TGDi|petrol|1477|130|2020-|a|f|4
+proton-persona	Proton	Persona	2007		sedan:60,hatchback:40	MY:30	5	0	1.6|petrol|1597|82|2007-2016|ma|f|5;1.6|petrol|1597|80|2016-|ma|f|5
+proton-wira	Proton	Wira	1993	2009	sedan:60,hatchback:40	MY:30,SEA:4	5	0	1.5|petrol|1468|66|1993-2009|ma|f|8
+perodua-myvi	Perodua	Myvi	2005		hatchback:100	MY:40	5	1	1.3|petrol|1298|64|2005-|ma|f|6;1.5|petrol|1496|76|2011-|a|f|4
+perodua-axia	Perodua	Axia	2014		hatchback:100	MY:40	5	0	1.0|petrol|998|50|2014-|ma|f|8
+perodua-bezza	Perodua	Bezza	2016		sedan:100	MY:30	5	0	1.0|petrol|998|50|2016-|ma|f|5;1.3|petrol|1329|70|2016-|a|f|5
+perodua-kancil	Perodua	Kancil	1994	2009	hatchback:100	MY:30	4	0	0.66|petrol|659|26|1994-2009|m|f|5;0.85|petrol|847|31|1998-2009|ma|f|5
+perodua-ativa	Perodua	Ativa	2021		suv:100	MY:20	5	0	1.0 T|petrol|998|72|2021-|a|f|8
+ikco-samand	Iran Khodro	Samand	2001		sedan:100	IR:30,AZ:4,SY:4	5	1	1.8|petrol|1761|74|2001-|m|f|6;1.7 EF7|cng|1645|83|2008-|m|f|4
+ikco-peugeot405	Iran Khodro	Peugeot Pars	1990		sedan:100	IR:40	5	1	1.8|petrol|1761|74|1990-|m|f|7;1.8 Dual-fuel|cng|1761|70|2007-|m|f|3
+ikco-dena	Iran Khodro	Dena	2011		sedan:100	IR:30	5	1	1.7 EF7|petrol|1645|83|2011-|m|f|7;1.7 EF7 Turbo|petrol|1645|110|2016-|ma|f|3
+ikco-paykan	Iran Khodro	Paykan	1990	2005	sedan:100	IR:30	5	0	1.6|petrol|1592|46|1990-2005|m|r|8
+ikco-tara	Iran Khodro	Tara	2021		sedan:100	IR:20	5	0	1.6 TU5|petrol|1587|85|2021-|ma|f|8
+saipa-pride	Saipa	Pride	1993	2020	sedan:70,hatchback:30	IR:50	5	1	1.3|petrol|1323|47|1993-2020|m|f|7;1.3 CNG|cng|1323|43|2008-2020|m|f|3
+saipa-tiba	Saipa	Tiba	2009		sedan:70,hatchback:30	IR:30	5	1	1.5|petrol|1498|62|2009-|m|f|8
+saipa-quick	Saipa	Quick	2017		hatchback:100	IR:20	5	0	1.5|petrol|1498|62|2017-|ma|f|8
+saipa-shahin	Saipa	Shahin	2020		sedan:100	IR:20	5	0	1.5 T|petrol|1498|110|2020-|ma|f|8
+vinfast-vf8	VinFast	VF 8	2022		suv:100	VN:20,NAM:1	5	0	Eco|electric|0|260|2022-|a|a|8
+vinfast-fadil	VinFast	Fadil	2019	2022	hatchback:100	VN:30	5	0	1.4|petrol|1399|73|2019-2022|a|f|8
+vinfast-vf5	VinFast	VF 5	2023		suv:100	VN:30,SEA:2	5	0	Plus|electric|0|100|2023-|a|f|8
+polestar-2	Polestar	2	2020		hatchback:100	EUR:6,NAM:2,CHN:1,OCE:2	5	0	Standard Range|electric|0|165|2020-|a|fr|5;Long Range Dual Motor|electric|0|300|2020-|a|a|3

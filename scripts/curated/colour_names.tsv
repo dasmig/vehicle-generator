@@ -1,0 +1,316 @@
+# Curated: the makers' names for colours of each family, with the model years they were offered (empty: open), from the makers' colour charts. Make * holds generic names for makes without their own.
+make	family	name	weight	from	to
+*	white	White	3
+*	white	Pearl White	1	2005
+*	black	Black	3
+*	black	Metallic Black	1
+*	grey	Grey	2
+*	grey	Dark Grey Metallic	2
+*	silver	Silver Metallic	3
+*	silver	Light Silver	1
+*	blue	Blue	2
+*	blue	Dark Blue Metallic	2
+*	red	Red	3
+*	red	Dark Red Metallic	1
+*	brown	Brown Metallic	1
+*	brown	Beige	1
+*	green	Green	2
+*	green	Dark Green Metallic	1
+*	yellow	Yellow	1
+*	orange	Orange	1
+*	other	Purple	1
+*	other	Gold Metallic	1
+Volkswagen	white	Candy White	3		2016
+Volkswagen	white	Pure White	3	2012
+Volkswagen	white	Oryx White	1	2008
+Volkswagen	black	Deep Black Pearl	3
+Volkswagen	black	Black	1
+Volkswagen	grey	Urano Grey	2	2010
+Volkswagen	grey	Indium Grey	1	2008	2019
+Volkswagen	grey	Moonstone Grey	2	2020
+Volkswagen	silver	Reflex Silver	3
+Volkswagen	silver	Tungsten Silver	1	2008
+Volkswagen	blue	Atlantic Blue	1	2014
+Volkswagen	blue	Lapiz Blue	1	2016
+Volkswagen	blue	Shadow Blue	1		2010
+Volkswagen	red	Tornado Red	3
+Volkswagen	red	Kings Red	1	2016
+Volkswagen	brown	Toffee Brown	1	2008
+Volkswagen	yellow	Kurkuma Yellow	1	2020
+Audi	white	Ibis White	2
+Audi	white	Glacier White	2	2008
+Audi	black	Mythos Black	2
+Audi	black	Brilliant Black	1
+Audi	grey	Daytona Grey	2	2008
+Audi	grey	Nardo Grey	1	2014
+Audi	grey	Chronos Grey	1	2020
+Audi	silver	Floret Silver	2	2010
+Audi	silver	Light Silver	2		2010
+Audi	blue	Navarra Blue	2	2015
+Audi	blue	Scuba Blue	1	2010	2018
+Audi	red	Tango Red	2	2010
+Audi	red	Misano Red	1	2008
+Skoda	white	Candy White	2
+Skoda	white	Moon White	2	2008
+Skoda	black	Magic Black	2
+Skoda	grey	Steel Grey	1	2015
+Skoda	grey	Quartz Grey	2	2008
+Skoda	silver	Brilliant Silver	3
+Skoda	blue	Race Blue	2	2012
+Skoda	blue	Energy Blue	1	2010
+Skoda	red	Velvet Red	1	2015
+Skoda	red	Corrida Red	2
+Seat	white	Nevada White	2
+Seat	black	Midnight Black	2
+Seat	grey	Magnetic Grey	2
+Seat	silver	Urban Silver	2
+Seat	blue	Mystery Blue	1
+Seat	red	Desire Red	2
+BMW	white	Alpine White	3
+BMW	white	Mineral White	2	2010
+BMW	black	Black Sapphire	3
+BMW	black	Jet Black	1
+BMW	black	Carbon Black	1	2008
+BMW	grey	Mineral Grey	2	2010
+BMW	grey	Brooklyn Grey	1	2020
+BMW	grey	Space Grey	1	2005	2015
+BMW	grey	Sophisto Grey	1	2017
+BMW	silver	Titanium Silver	2		2012
+BMW	silver	Glacier Silver	2	2012
+BMW	blue	Estoril Blue	2
+BMW	blue	Portimao Blue	2	2019
+BMW	red	Melbourne Red	1	2012
+BMW	red	Imola Red	1
+BMW	orange	Sakhir Orange	1	2014
+Mini	white	Pepper White	3
+Mini	black	Midnight Black	2
+Mini	grey	Moonwalk Grey	2	2014
+Mini	silver	White Silver	2
+Mini	blue	Island Blue	1	2018
+Mini	red	Chili Red	3
+Mini	green	British Racing Green	2
+Mercedes-Benz	white	Polar White	3
+Mercedes-Benz	white	Diamond White	2	2008
+Mercedes-Benz	black	Obsidian Black	3
+Mercedes-Benz	black	Black	1
+Mercedes-Benz	grey	Selenite Grey	2	2014
+Mercedes-Benz	grey	Graphite Grey	1	2015
+Mercedes-Benz	grey	Tenorite Grey	1	2008	2014
+Mercedes-Benz	silver	Iridium Silver	3
+Mercedes-Benz	silver	High-Tech Silver	2	2020
+Mercedes-Benz	blue	Cavansite Blue	2	2014
+Mercedes-Benz	blue	Lapis Blue	1		2010
+Mercedes-Benz	red	Jupiter Red	1	2008
+Mercedes-Benz	red	Hyacinth Red	1	2014
+Opel	white	Summit White	2
+Opel	white	Jade White	1	2017
+Opel	black	Carbon Flash	2
+Opel	black	Mineral Black	1
+Opel	grey	Cosmic Grey	2	2016
+Opel	grey	Satin Steel Grey	1	2012
+Opel	silver	Sovereign Silver	2
+Opel	blue	Royal Blue	1
+Opel	blue	Lagoon Blue	1	2015
+Opel	red	Power Red	1
+Opel	red	Ruby Red	1
+Vauxhall	white	Summit White	2
+Vauxhall	black	Carbon Flash	2
+Vauxhall	grey	Cosmic Grey	2	2016
+Vauxhall	silver	Sovereign Silver	2
+Vauxhall	blue	Royal Blue	1
+Vauxhall	red	Power Red	2
+Peugeot	white	Banquise White	2
+Peugeot	white	Pearl White	2	2008
+Peugeot	black	Perla Nera Black	3
+Peugeot	grey	Platinum Grey	2	2008
+Peugeot	grey	Artense Grey	2	2018
+Peugeot	silver	Aluminium Grey	2
+Peugeot	blue	Vertigo Blue	1	2019
+Peugeot	blue	Bourrasque Blue	1		2010
+Peugeot	red	Ultimate Red	1	2016
+Peugeot	red	Elixir Red	1	2019
+Citroen	white	Polar White	2
+Citroen	white	Pearl White	2	2010
+Citroen	black	Perla Nera Black	3
+Citroen	grey	Platinum Grey	2	2010
+Citroen	silver	Aluminium Grey	2
+Citroen	blue	Teal Blue	1	2010
+Citroen	red	Ruby Red	1
+Renault	white	Glacier White	3
+Renault	white	Pearl White	1	2010
+Renault	black	Starry Black	2	2005
+Renault	black	Black	1
+Renault	grey	Titanium Grey	2
+Renault	grey	Highland Grey	1	2015
+Renault	grey	Platinum Grey	1	2010
+Renault	silver	Platinum Silver	2
+Renault	blue	Iron Blue	1	2015
+Renault	blue	Cosmos Blue	1	2010
+Renault	red	Flame Red	2	2010
+Renault	orange	Valencia Orange	1	2016
+Dacia	white	Glacier White	3
+Dacia	black	Pearl Black	2
+Dacia	grey	Comet Grey	2
+Dacia	grey	Highland Grey	1	2015
+Dacia	silver	Platinum Silver	2
+Dacia	blue	Cosmos Blue	1
+Dacia	red	Fusion Red	1
+Dacia	brown	Dune Beige	1	2020
+Dacia	orange	Arizona Orange	1	2020
+Fiat	white	Gelato White	3	2008
+Fiat	white	Bossa Nova White	1
+Fiat	black	Black	2
+Fiat	grey	Moda Grey	1	2015
+Fiat	grey	Colosseo Grey	1	2015
+Fiat	silver	Silverstone Grey	2
+Fiat	blue	Italia Blue	1	2015
+Fiat	red	Passione Red	3
+Fiat	yellow	Pasodoble Yellow	1	2015
+Volvo	white	Ice White	2
+Volvo	white	Crystal White Pearl	2	2010
+Volvo	black	Onyx Black	3
+Volvo	grey	Osmium Grey	2	2010
+Volvo	grey	Thunder Grey	1	2020
+Volvo	silver	Bright Silver	2
+Volvo	blue	Denim Blue	2	2016
+Volvo	red	Fusion Red	1	2016
+Toyota	white	Super White	3
+Toyota	white	Pearl White	2	2005
+Toyota	black	Attitude Black	2
+Toyota	black	Eclipse Black	1	2016
+Toyota	grey	Magnetic Grey	3
+Toyota	grey	Celestial Grey	1	2016
+Toyota	silver	Classic Silver	3
+Toyota	silver	Silver Metallic	1
+Toyota	blue	Blue Crush	1	2015
+Toyota	blue	Nautical Blue	1	2005
+Toyota	red	Barcelona Red	2	2005
+Toyota	red	Supersonic Red	1	2017
+Toyota	brown	Dark Brown Mica	1
+Lexus	white	Sonic White	2	2010
+Lexus	white	Starfire Pearl	2
+Lexus	black	Obsidian	3
+Lexus	grey	Sonic Titanium	2	2014
+Lexus	silver	Sonic Silver	1	2016
+Lexus	silver	Silver Lining	2
+Lexus	blue	Nightfall Mica	1
+Lexus	red	Matador Red	1	2010
+Honda	white	Taffeta White	3
+Honda	white	Platinum White Pearl	2	2010
+Honda	black	Crystal Black Pearl	3
+Honda	grey	Modern Steel	2	2010
+Honda	grey	Polished Metal	1		2015
+Honda	silver	Lunar Silver	2	2010
+Honda	silver	Alabaster Silver	1		2012
+Honda	blue	Aegean Blue	1	2015
+Honda	red	Rallye Red	2
+Honda	red	Radiant Red	1	2016
+Nissan	white	Aspen White	2	2013
+Nissan	white	Pearl White	2
+Nissan	black	Super Black	3
+Nissan	grey	Gun Metallic	3
+Nissan	silver	Brilliant Silver	3
+Nissan	blue	Caspian Blue	1	2015
+Nissan	red	Scarlet Ember	1	2016
+Nissan	red	Burning Red	1		2016
+Mazda	white	Snowflake White Pearl	3	2012
+Mazda	white	Arctic White	2
+Mazda	black	Jet Black	3
+Mazda	grey	Machine Grey	2	2016
+Mazda	grey	Polymetal Grey	1	2019
+Mazda	silver	Sonic Silver	2
+Mazda	blue	Deep Crystal Blue	2	2013
+Mazda	red	Soul Red	1	2012	2016
+Mazda	red	Soul Red Crystal	3	2017
+Mazda	red	Velocity Red	1		2012
+Mitsubishi	white	White Pearl	2
+Mitsubishi	black	Amethyst Black	2
+Mitsubishi	grey	Titanium Grey	2
+Mitsubishi	silver	Sterling Silver	2
+Mitsubishi	red	Red Diamond	2	2016
+Subaru	white	Crystal White Pearl	3
+Subaru	black	Crystal Black Silica	3
+Subaru	grey	Magnetite Grey	2	2017
+Subaru	silver	Ice Silver	3
+Subaru	blue	WR Blue Pearl	1
+Subaru	green	Autumn Green	1	2019
+Suzuki	white	Pearl Arctic White	2
+Suzuki	white	Superior White	2
+Suzuki	black	Midnight Black	2
+Suzuki	grey	Magma Grey	2
+Suzuki	silver	Silky Silver	3
+Suzuki	blue	Speedy Blue	1
+Suzuki	red	Fire Red	2
+Maruti Suzuki	white	Pearl Arctic White	3
+Maruti Suzuki	white	Superior White	2
+Maruti Suzuki	black	Midnight Black	1
+Maruti Suzuki	grey	Magma Grey	2
+Maruti Suzuki	silver	Silky Silver	3
+Maruti Suzuki	blue	Speedy Blue	1
+Maruti Suzuki	red	Fire Red	2
+Hyundai	white	Polar White	3
+Hyundai	white	Atlas White	1	2018
+Hyundai	black	Phantom Black	3
+Hyundai	grey	Amazon Grey	1	2020
+Hyundai	grey	Titan Grey	2
+Hyundai	silver	Shimmering Silver	2	2010
+Hyundai	silver	Sleek Silver	2
+Hyundai	blue	Intense Blue	2	2016
+Hyundai	red	Fiery Red	1
+Kia	white	Clear White	3
+Kia	white	Snow White Pearl	2	2010
+Kia	black	Aurora Black	3
+Kia	grey	Gravity Grey	2	2015
+Kia	silver	Silky Silver	2
+Kia	silver	Sparkling Silver	1
+Kia	blue	Gravity Blue	1	2018
+Kia	red	Runway Red	2
+Ford	white	Frozen White	3
+Ford	white	Oxford White	2
+Ford	black	Shadow Black	2
+Ford	black	Agate Black	2
+Ford	grey	Magnetic	2	2011
+Ford	grey	Carbonized Grey	1	2019
+Ford	silver	Moondust Silver	2
+Ford	silver	Ingot Silver	2	2010
+Ford	blue	Deep Impact Blue	1	2010
+Ford	blue	Blue Metallic	1
+Ford	red	Race Red	3
+Ford	red	Ruby Red	1	2010
+Chevrolet	white	Summit White	3
+Chevrolet	black	Mosaic Black	2	2016
+Chevrolet	black	Black	2
+Chevrolet	grey	Satin Steel	2
+Chevrolet	silver	Silver Ice	3
+Chevrolet	blue	Northsky Blue	1	2017
+Chevrolet	red	Cherry Red	1	2017
+Chevrolet	red	Victory Red	2
+Tesla	white	Pearl White Multi-Coat	3
+Tesla	black	Solid Black	3
+Tesla	grey	Midnight Silver Metallic	2		2023
+Tesla	grey	Stealth Grey	2	2024
+Tesla	silver	Quicksilver	1	2024
+Tesla	silver	Silver Metallic	1		2016
+Tesla	blue	Deep Blue Metallic	2
+Tesla	red	Red Multi-Coat	1		2023
+Tesla	red	Ultra Red	1	2024
+Jeep	white	Bright White	3
+Jeep	black	Diamond Black	3
+Jeep	grey	Granite Crystal	2
+Jeep	silver	Billet Silver	2
+Jeep	red	Firecracker Red	1
+Jeep	green	Sarge Green	1	2020
+Lada	white	Glacier White	3
+Lada	black	Panther Black	1
+Lada	grey	Platinum Grey	2
+Lada	silver	Silver Metallic	2
+Lada	blue	Ocean Blue	1
+Lada	red	Kalina Red	1
+Lada	green	Cypress Green	1
+Lada	brown	Coriander Brown	1
+BYD	white	Snow White	3
+BYD	black	Cosmos Black	2
+BYD	grey	Harbour Grey	2
+BYD	silver	Arctic Silver	1
+BYD	blue	Surf Blue	1
+BYD	green	Ink Green	1

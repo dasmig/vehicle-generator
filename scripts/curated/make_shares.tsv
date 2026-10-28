@@ -1,0 +1,244 @@
+# Curated: the makes of each country's car fleet, as Make:weight with an optional /trend (relative change per year). The weight is the make's share of new cars of model year 2025; the trend carries it back to older model years (weight x (1 + trend)^(year - 2025)). Rounded from national registration statistics, public sales rankings (ACEA, OICA, Focus2Move, national associations) and, for small markets, their import mix. A make keeps weight in a model year only if it sold a model there that year.
+country	makes
+AD	Volkswagen:10;Peugeot:8;Renault:8;Toyota:7;BMW:7;Mercedes-Benz:7;Audi:6;Citroen:5;Seat:5;Dacia:4/0.05;Hyundai:4;Kia:4;Nissan:4;Opel:3;Ford:3;Fiat:3;Land Rover:2;Tesla:2/0.3;Skoda:3;Volvo:2
+AE	Toyota:28;Nissan:14;Mitsubishi:6;Hyundai:7;Kia:6;Lexus:5;Ford:3;Chevrolet:5/-0.03;GMC:3;Honda:3;Mercedes-Benz:3;BMW:2;Land Rover:2;Mazda:2;MG:3/0.2;Jeep:2;Dodge:2;Infiniti:1;Geely:2/0.25;Chery:2/0.25;Changan:2/0.25;Tesla:1/0.3
+AF	Toyota:65;Lexus:4;Nissan:5;Honda:3;Hyundai:5;Kia:3;Suzuki:5;Mercedes-Benz:3;Mitsubishi:3;Mazda:2
+AG	Toyota:28;Nissan:12;Honda:10;Hyundai:8;Kia:8;Suzuki:8;Mitsubishi:6;Mazda:5;Ford:4;Subaru:3;Jeep:3;Mercedes-Benz:2;BMW:2
+AI	Toyota:28;Nissan:12;Honda:10;Hyundai:8;Kia:8;Suzuki:8;Mitsubishi:6;Mazda:5;Ford:5;Jeep:4;Mercedes-Benz:2;BMW:2
+AL	Volkswagen:22;Mercedes-Benz:18;Audi:8;Fiat:6/-0.05;Opel:6;Toyota:6;Ford:5;BMW:5;Hyundai:5;Kia:4;Peugeot:3;Renault:3;Dacia:3;Skoda:3;Land Rover:2
+AM	Toyota:18;Lada:15/-0.08;Nissan:8;Hyundai:8;Kia:8;Mercedes-Benz:8;BMW:5;Opel:4;Volkswagen:4;Lexus:4;Mitsubishi:3;Honda:3;Chery:3/0.3;Geely:3/0.3;Changan:3/0.3;BYD:2/0.4
+AO	Toyota:35;Hyundai:12;Kia:10;Mitsubishi:6;Nissan:6;Suzuki:6;Volkswagen:5;Ford:4;Mercedes-Benz:4;Land Rover:3;Chery:3/0.2;Renault:3;Isuzu:3
+AR	Toyota:18;Volkswagen:14;Fiat:13;Peugeot:10;Renault:10/-0.03;Chevrolet:10/-0.03;Ford:9/-0.02;Citroen:4;Jeep:4;Nissan:4;Honda:2;Hyundai:1
+AS	Toyota:22;Nissan:10;Hyundai:10;Kia:10;Ford:10;Chevrolet:8;Honda:8;Mitsubishi:6;Jeep:5;Dodge:4;Mazda:4;Ram:3
+AT	Volkswagen:16;Skoda:12;Seat:6;Audi:6;BMW:6;Mercedes-Benz:6;Hyundai:5;Kia:4;Toyota:5;Ford:4/-0.04;Renault:4/-0.02;Dacia:4/0.04;Peugeot:3;Opel:3/-0.04;Mazda:3;Cupra:3/0.3;Fiat:2/-0.06;Tesla:2/0.3;Volvo:2;Suzuki:2;Citroen:2;Mini:1;BYD:1/0.6;MG:1/0.4;Porsche:1;Nissan:2;Land Rover:1
+AU	Toyota:22;Mazda:9;Ford:8;Kia:7/0.03;Hyundai:7;Mitsubishi:6;MG:5/0.2;Tesla:3/0.3;Subaru:4;Nissan:4;Isuzu:4/0.05;Volkswagen:4;Haval:3/0.25;BYD:3/0.6;Holden:2/-0.5;Suzuki:2;Mercedes-Benz:2;BMW:2;Honda:2/-0.05;Audi:1;Lexus:1;Land Rover:1;Jeep:1;Chery:1/0.6
+AW	Toyota:20;Hyundai:12;Kia:12;Nissan:10;Suzuki:8;Honda:6;Ford:5;Jeep:5;Chevrolet:4;Mitsubishi:4;Mazda:4;Mercedes-Benz:3;BMW:2
+AX	Toyota:18;Volkswagen:14;Skoda:8;Volvo:8;Kia:5;Mercedes-Benz:5;BMW:5;Ford:4;Audi:4;Nissan:4;Hyundai:4;Peugeot:3;Mazda:3;Tesla:3/0.3;Opel:3;Renault:3
+AZ	Hyundai:15;Kia:10;Toyota:14;Lada:12/-0.08;Chevrolet:5;Mercedes-Benz:8;Nissan:5;Lexus:4;BMW:4;Mitsubishi:3;Opel:3;Volkswagen:3;Chery:3/0.3;BYD:3/0.5;Changan:2/0.3;Geely:2/0.3
+BA	Volkswagen:25;Skoda:8;Mercedes-Benz:10;Audi:7;Opel:6;Renault:5;Peugeot:5;Fiat:4/-0.04;Ford:4;BMW:4;Toyota:4;Dacia:4;Hyundai:4;Kia:3;Seat:3;Zastava:2/-0.3
+BB	Toyota:24;Suzuki:12;Nissan:10;Honda:10;Hyundai:8;Kia:8;Mazda:8;Mitsubishi:5;BMW:3;Mercedes-Benz:3;Volkswagen:3
+BD	Toyota:68;Honda:6;Nissan:5;Mitsubishi:6;Suzuki:5;Hyundai:3;Mazda:2;Proton:1;Kia:2;Tata:2
+BE	Volkswagen:9;BMW:9;Mercedes-Benz:6;Peugeot:6;Audi:6;Renault:5/-0.02;Toyota:5;Dacia:4/0.04;Volvo:5;Skoda:5;Citroen:4;Kia:4;Hyundai:3;Ford:3/-0.05;Opel:3/-0.04;Tesla:3/0.3;Mini:2;Seat:2;Cupra:2/0.3;MG:2/0.3;Fiat:2/-0.05;Nissan:2/-0.05;Mazda:2;BYD:1/0.6;Suzuki:1;Land Rover:1;Porsche:1
+BF	Toyota:40;Peugeot:8;Renault:8;Mercedes-Benz:8;Nissan:6;Hyundai:6;Kia:4;Mitsubishi:5;Suzuki:4;Volkswagen:4;Ford:3;Isuzu:3
+BG	Volkswagen:14;Opel:8;Toyota:8;Skoda:7;Dacia:6/0.04;Renault:6;Ford:6;Peugeot:5;Mercedes-Benz:5;BMW:5;Audi:5;Hyundai:5;Kia:4;Citroen:4;Fiat:3/-0.04;Nissan:3;Mazda:2;Seat:2;Suzuki:2;MG:1/0.4
+BH	Toyota:30;Nissan:12;Hyundai:8;Kia:6;Mitsubishi:6;Lexus:5;Honda:4;Chevrolet:4;GMC:3;Ford:3;Mercedes-Benz:3;BMW:3;Land Rover:2;MG:3/0.2;Geely:2/0.3;Changan:2/0.3;Chery:2/0.3;Jeep:2
+BI	Toyota:65;Nissan:6;Mitsubishi:6;Suzuki:5;Hyundai:5;Mercedes-Benz:3;Isuzu:3;Volkswagen:3;Honda:2;Subaru:2
+BJ	Toyota:38;Peugeot:7;Mercedes-Benz:8;Ford:6;Honda:6;Nissan:6;Hyundai:6;Kia:4;Volkswagen:5;Renault:4;Mitsubishi:3;Lexus:3
+BL	Peugeot:16;Renault:14;Citroen:10;Toyota:8;Volkswagen:8;Dacia:6;Suzuki:6;Fiat:5;Kia:5;Hyundai:5;Mini:4;Jeep:4;Nissan:4;Smart:3
+BM	Toyota:25;Nissan:15;Honda:12;Suzuki:10;Hyundai:8;Kia:8;Mazda:6;Mercedes-Benz:4;BMW:3;Mitsubishi:4;Daihatsu:3;Tesla:2/0.3
+BN	Toyota:35;Honda:12;Nissan:8;Hyundai:8;Kia:6;Mitsubishi:6;Mazda:5;Suzuki:5;BMW:3;Mercedes-Benz:3;Lexus:3;Ford:3;Isuzu:3
+BO	Toyota:45;Nissan:8;Suzuki:7;Hyundai:7;Kia:5;Mitsubishi:5;Chevrolet:5;Volkswagen:3;Honda:3;Mazda:3;Chery:3/0.2;Changan:3/0.2;BYD:2/0.4;JAC:2/0.2
+BQ	Toyota:20;Hyundai:12;Kia:12;Nissan:10;Suzuki:10;Honda:6;Ford:5;Jeep:5;Chevrolet:4;Mitsubishi:4;Mazda:4;Volkswagen:4
+BR	Volkswagen:16;Fiat:18;Chevrolet:15;Toyota:8;Hyundai:8;Renault:7/-0.02;Jeep:5/0.03;Honda:5;Nissan:3;Ford:5/-0.15;Peugeot:2;Citroen:2;BYD:3/0.8;Chery:1/0.1
+BS	Toyota:22;Nissan:14;Honda:12;Hyundai:10;Kia:10;Suzuki:8;Ford:6;Mazda:5;Mitsubishi:4;Jeep:4;Chevrolet:3;Dodge:2
+BT	Maruti Suzuki:30;Hyundai:14;Toyota:20;Mahindra:10;Tata:6;Nissan:4;Kia:3;Honda:3;Suzuki:5;BYD:2/0.6
+BW	Toyota:35;Volkswagen:12;Nissan:7;Ford:7;Hyundai:6;Kia:4;Mazda:4;Honda:4;Isuzu:4;Mercedes-Benz:3;BMW:3;Suzuki:3;Mitsubishi:3;Haval:2/0.25
+BY	Volkswagen:14;Renault:8/-0.05;Lada:8/-0.05;Geely:8/0.25;Opel:6;Audi:6;Toyota:5;Ford:5;Hyundai:6;Kia:5;Mercedes-Benz:4;BMW:4;Peugeot:3;Nissan:3;Chery:3/0.3;Haval:3/0.3;Skoda:3;Mazda:2;Citroen:2
+BZ	Toyota:22;Nissan:14;Ford:10;Chevrolet:8;Honda:8;Hyundai:8;Kia:6;Mitsubishi:6;Isuzu:4;Suzuki:5;Mazda:4;Jeep:3
+CA	Toyota:15;Ford:12;Honda:9;Hyundai:8;Chevrolet:8/-0.01;Nissan:6;Kia:6/0.03;Ram:6;Mazda:5;Subaru:4;Volkswagen:4/-0.02;Jeep:4;GMC:4;Dodge:3/-0.05;Tesla:3/0.3;BMW:2;Mercedes-Benz:2;Lexus:2;Mitsubishi:2;Audi:2;Acura:1;Buick:1;Chrysler:1/-0.05;Cadillac:1;Lincoln:1
+CC	Toyota:25;Mitsubishi:12;Ford:12;Nissan:10;Holden:8;Isuzu:8;Suzuki:8;Hyundai:8;Mazda:8
+CD	Toyota:58;Nissan:6;Mitsubishi:6;Mercedes-Benz:5;Hyundai:5;Suzuki:5;Land Rover:3;Isuzu:3;Volkswagen:3;Lexus:3;Honda:3
+CF	Toyota:50;Peugeot:8;Renault:6;Nissan:6;Mitsubishi:6;Mercedes-Benz:6;Hyundai:5;Isuzu:5;Suzuki:4;Land Rover:4
+CG	Toyota:40;Peugeot:8;Renault:6;Hyundai:8;Kia:5;Nissan:6;Mitsubishi:5;Mercedes-Benz:6;Suzuki:5;Volkswagen:4;Land Rover:3;Lexus:4
+CH	Volkswagen:11;Skoda:8;BMW:7;Mercedes-Benz:7;Audi:7;Toyota:6;Tesla:3/0.3;Seat:3;Cupra:3/0.3;Ford:3/-0.04;Volvo:3;Hyundai:3;Kia:3;Renault:3/-0.03;Dacia:2/0.05;Peugeot:3;Opel:2/-0.04;Mini:2;Porsche:2;Fiat:2/-0.05;Mazda:2;Subaru:2;Suzuki:2;Citroen:2;Nissan:2;Land Rover:1;MG:1/0.4;BYD:1/0.6
+CI	Toyota:35;Peugeot:8;Hyundai:8;Kia:6;Renault:6;Mercedes-Benz:6;Nissan:6;Suzuki:6;Mitsubishi:5;Ford:4;Volkswagen:4;Isuzu:3;Chery:3/0.2
+CK	Toyota:30;Nissan:12;Mazda:10;Suzuki:10;Honda:8;Mitsubishi:8;Hyundai:8;Kia:6;Subaru:4;Ford:4
+CM	Toyota:35;Hyundai:8;Peugeot:7;Mercedes-Benz:8;Nissan:6;Renault:6;Kia:5;Mitsubishi:5;Suzuki:5;Volkswagen:5;Honda:4;Ford:3;Isuzu:3;Land Rover:2
+CL	Chevrolet:10/-0.03;Toyota:11;Hyundai:10;Kia:9;Suzuki:8;Nissan:7;Peugeot:5;Mazda:5;Ford:5;MG:5/0.15;Chery:5/0.3;Changan:4/0.3;Mitsubishi:4;Volkswagen:4;Renault:4;Haval:3/0.3;Great Wall:3/0.2;Subaru:2;Honda:2;BYD:2/0.6;Citroen:2;JAC:2/0.2;Geely:1/0.3
+CN	BYD:16/0.45;Volkswagen:11/-0.06;Toyota:8/-0.04;Geely:7/0.15;Honda:5/-0.08;Changan:5/0.06;Chery:4/0.1;Nissan:4/-0.08;Tesla:4/0.3;Wuling:4/0.05;Buick:3/-0.08;BMW:3;Mercedes-Benz:3;Audi:3;Haval:3/0.04;Li Auto:2/0.6;GAC:2/0.1;Hongqi:2/0.25;Hyundai:1/-0.2;Kia:1/-0.2;MG:1;Chevrolet:1/-0.15;Baojun:1;Ford:1/-0.1;Mazda:1/-0.1;NIO:1/0.5;XPeng:1/0.5;JAC:1;Dongfeng:1;Cadillac:1;Lexus:1;Porsche:0.5;Xiali:0.5/-0.4;Great Wall:1;Mitsubishi:0.5/-0.15;Volvo:1;Land Rover:0.3
+CO	Renault:16/-0.02;Chevrolet:15/-0.04;Kia:13;Mazda:10;Toyota:9;Suzuki:6;Nissan:5;Hyundai:5;Volkswagen:4;Ford:4;BYD:3/0.6;Chery:2/0.3;Mitsubishi:3;Peugeot:2;Honda:2;Jeep:1;MG:2/0.3
+CR	Toyota:22;Hyundai:14;Nissan:10;Suzuki:8;Kia:8;Mitsubishi:6;Chevrolet:5;Honda:5;Mazda:5;BYD:3/0.6;Geely:2/0.3;Chery:2/0.3;Ford:3;Isuzu:2;Volkswagen:2
+CU	Lada:30/-0.1;Peugeot:10;Hyundai:10;Kia:8;Geely:12/0.15;Chevrolet:8/-0.1;Mercedes-Benz:5;Toyota:5;Fiat:5;Moskvich:4/-0.2;Renault:3
+CV	Toyota:22;Renault:10;Peugeot:10;Hyundai:8;Kia:6;Volkswagen:8;Mercedes-Benz:6;Nissan:6;Fiat:5;Suzuki:5;Citroen:4;Opel:4;Dacia:3
+CW	Toyota:20;Kia:14;Hyundai:14;Nissan:10;Suzuki:8;Honda:6;Ford:5;Jeep:5;Chevrolet:4;Mitsubishi:4;Mazda:4;Volkswagen:4
+CX	Toyota:25;Mitsubishi:12;Ford:12;Nissan:10;Holden:8;Isuzu:8;Suzuki:8;Hyundai:8;Mazda:8
+CY	Toyota:20;Nissan:10;Mercedes-Benz:9;BMW:6;Kia:6;Hyundai:6;Mazda:5;Honda:5;Volkswagen:5;Suzuki:4;Peugeot:3;Audi:3;Mitsubishi:3;Ford:3;Opel:2;Skoda:2;Land Rover:2;Tesla:1/0.3;MG:2/0.3;Renault:2
+CZ	Skoda:35;Volkswagen:9;Hyundai:7;Toyota:5;Ford:5/-0.04;Kia:4;Renault:4;Peugeot:4;Dacia:3/0.04;Opel:4/-0.03;BMW:3;Mercedes-Benz:3;Audi:3;Seat:2;Cupra:1/0.3;Citroen:2;Mazda:2;Suzuki:2;Fiat:2/-0.05;Volvo:1;MG:1/0.4;Tesla:1/0.3
+DE	Volkswagen:20;Mercedes-Benz:9;BMW:8;Audi:7;Skoda:7;Opel:5/-0.04;Ford:5/-0.05;Seat:3;Cupra:3/0.3;Hyundai:4;Toyota:4;Renault:3/-0.02;Kia:3;Mazda:2;Fiat:2/-0.05;Dacia:2/0.05;Tesla:2/0.3;Peugeot:2;Volvo:2;Mini:2;Citroen:2;Smart:1;Porsche:1;Nissan:1/-0.06;Suzuki:1;Mitsubishi:1;Land Rover:0.5;Jeep:0.5;MG:1/0.4;BYD:0.5/0.8;Polestar:0.3/0.4;Alfa Romeo:0.3;Subaru:0.3;Honda:0.4/-0.05
+DJ	Toyota:60;Nissan:7;Mitsubishi:6;Suzuki:5;Hyundai:5;Land Rover:4;Mercedes-Benz:4;Isuzu:4;Peugeot:3;Renault:2
+DK	Volkswagen:12;Toyota:8;Skoda:7;Tesla:6/0.3;Peugeot:5;Kia:5;Audi:5;BMW:5;Hyundai:5;Mercedes-Benz:4;Ford:4/-0.05;Citroen:4/-0.03;Renault:3;Volvo:4;Opel:3/-0.04;Nissan:3/-0.04;Mazda:2;Suzuki:2;Dacia:2;Cupra:2/0.3;Seat:2;MG:2/0.4;BYD:1/0.6;Polestar:1/0.4;Fiat:1
+DM	Toyota:28;Nissan:14;Honda:10;Suzuki:10;Hyundai:8;Kia:6;Mitsubishi:6;Mazda:6;Isuzu:4;Subaru:3;Jeep:2;Ford:3
+DO	Toyota:20;Hyundai:16;Kia:14;Honda:10;Nissan:6;Mitsubishi:5;Suzuki:5;Jeep:3;Ford:4;Chevrolet:4;Mazda:3;Changan:3/0.3;Isuzu:2;Lexus:2;BYD:2/0.5;Chery:1/0.3
+DZ	Renault:22/-0.03;Hyundai:14;Peugeot:10;Volkswagen:8;Toyota:8;Kia:6;Chevrolet:6/-0.05;Dacia:4;Fiat:5/0.05;Citroen:3;Suzuki:3;Nissan:3;Seat:3;Chery:3/0.2;Skoda:2
+EC	Chevrolet:20/-0.03;Kia:14;Hyundai:10;Toyota:10;Suzuki:6;Chery:5/0.3;Great Wall:4/0.2;Nissan:5;Mazda:4;Renault:4;Volkswagen:3;JAC:3/0.2;BYD:2/0.6;Ford:3;Mitsubishi:3;Changan:2/0.3;Haval:2/0.3
+EE	Toyota:18;Skoda:12;Volkswagen:9;BMW:5;Volvo:5;Kia:5;Hyundai:4;Audi:4;Mercedes-Benz:4;Ford:4/-0.04;Opel:4/-0.04;Nissan:3;Peugeot:3;Renault:3;Mazda:3;Honda:2;Tesla:2/0.3;Lexus:2;Suzuki:2;Seat:1;Mitsubishi:2;MG:1/0.4;BYD:1/0.6
+EG	Hyundai:20;Chevrolet:10/-0.04;Nissan:10;Kia:8;Toyota:8;Renault:6;MG:5/0.2;Mitsubishi:4;Fiat:4;Peugeot:3;Skoda:3;Chery:5/0.2;Suzuki:4;BYD:2/0.4;Geely:2/0.3;Mercedes-Benz:3;BMW:2;Opel:2;Jeep:1;Changan:2/0.3;Daewoo:2/-0.2
+EH	Renault:16;Dacia:14;Peugeot:10;Hyundai:8;Toyota:12;Mercedes-Benz:10;Volkswagen:6;Fiat:6;Kia:5;Citroen:4;Ford:3;Nissan:3;Mitsubishi:3
+ER	Toyota:45;Fiat:10;Nissan:8;Mitsubishi:6;Suzuki:6;Hyundai:5;Isuzu:5;Volkswagen:5;Mercedes-Benz:5;Land Rover:5
+ES	Toyota:9;Seat:7;Volkswagen:7;Dacia:6/0.04;Kia:6;Hyundai:6;Peugeot:6;Renault:6/-0.02;Citroen:5/-0.02;Ford:4/-0.05;Opel:4/-0.04;Nissan:4/-0.03;BMW:4;Mercedes-Benz:4;Audi:4;Skoda:3;MG:3/0.4;Fiat:2/-0.04;Mazda:2;Cupra:2/0.3;Tesla:2/0.3;Suzuki:2;Volvo:2;Mini:1;Jeep:1;BYD:1/0.6;Honda:1;Mitsubishi:1;Land Rover:0.5;Lexus:0.5
+ET	Toyota:55;Hyundai:8;Suzuki:7;Nissan:5;Mitsubishi:5;Volkswagen:5;Isuzu:4;Mercedes-Benz:4;BYD:3/0.6;Kia:2;Land Rover:2
+FI	Toyota:18;Skoda:9;Volkswagen:9;Mercedes-Benz:5;BMW:5;Volvo:6;Kia:5;Ford:4/-0.05;Nissan:4;Hyundai:4;Audi:4;Peugeot:3;Opel:3/-0.04;Renault:3;Mazda:3;Tesla:3/0.3;Seat:2;Cupra:2/0.3;Dacia:2;Suzuki:2;Citroen:2;Mitsubishi:2;MG:1/0.4;BYD:1/0.6;Lexus:1;Honda:1;Subaru:1;Polestar:1/0.4
+FJ	Toyota:40;Nissan:10;Mazda:8;Mitsubishi:8;Honda:6;Suzuki:6;Hyundai:6;Isuzu:5;Ford:4;Kia:4;Subaru:3
+FK	Land Rover:30;Toyota:20;Mitsubishi:12;Nissan:8;Suzuki:8;Isuzu:6;Ford:6;Volkswagen:5;Subaru:5
+FM	Toyota:30;Nissan:14;Honda:10;Mitsubishi:8;Mazda:8;Hyundai:6;Kia:6;Suzuki:6;Ford:6;Isuzu:3;Subaru:3
+FO	Toyota:16;Volkswagen:14;Skoda:10;Peugeot:6;Kia:6;Hyundai:6;Ford:6;Mercedes-Benz:5;Volvo:5;BMW:4;Nissan:4;Suzuki:4;Tesla:3/0.3;Mazda:3;Renault:3;Citroen:3
+FR	Renault:16/-0.02;Peugeot:16;Citroen:9/-0.02;Dacia:7/0.04;Toyota:8;Volkswagen:6;Ford:3/-0.05;Opel:3/-0.03;Mercedes-Benz:3;BMW:3;Audi:3;Fiat:3/-0.05;Kia:3;Hyundai:3;Tesla:2/0.3;Nissan:2/-0.04;Skoda:2;Seat:1;DS:1;Suzuki:1;Mini:1;MG:1/0.4;Jeep:1;Volvo:1;Cupra:1/0.3;Smart:0.5;Mazda:0.5;BYD:0.5/0.6;Alfa Romeo:0.3;Land Rover:0.3
+GA	Toyota:40;Hyundai:10;Kia:6;Nissan:6;Mitsubishi:6;Peugeot:5;Renault:5;Mercedes-Benz:5;Suzuki:5;Isuzu:4;Land Rover:4;Lexus:4
+GB	Ford:9/-0.04;Volkswagen:9;Vauxhall:6/-0.04;BMW:7;Audi:7;Toyota:6;Kia:6/0.04;Mercedes-Benz:6;Nissan:5;Hyundai:5;Peugeot:4;Skoda:4;Land Rover:3;Volvo:3;Mini:3;MG:3/0.3;Tesla:2/0.3;Renault:2/-0.03;Citroen:2/-0.03;Seat:2;Honda:2/-0.04;Mazda:2;Suzuki:2;Dacia:2/0.05;Cupra:1/0.3;Fiat:1/-0.05;Jaguar:1/-0.15;Lexus:1;Porsche:1;BYD:1/0.8;Polestar:0.5/0.4;Rover:0.5/-0.5;Jeep:0.3;Alfa Romeo:0.2;Mitsubishi:0.5;Subaru:0.3;Smart:0.3;DS:0.2;Saab:0.2/-0.3
+GD	Toyota:28;Nissan:14;Honda:10;Suzuki:10;Hyundai:8;Kia:6;Mitsubishi:6;Mazda:6;Isuzu:4;Ford:4;Jeep:3
+GE	Toyota:24;Mercedes-Benz:12;Hyundai:10;Lexus:6;Ford:6;Nissan:5;Honda:5;Subaru:5;Chevrolet:4;BMW:4;Kia:4;Mitsubishi:3;Volkswagen:3;Opel:3;BYD:3/0.6;Tesla:2/0.3;Chery:2/0.3
+GF	Renault:18;Peugeot:16;Citroen:10;Toyota:12;Dacia:8;Hyundai:6;Kia:6;Nissan:5;Volkswagen:5;Fiat:4;Suzuki:4;Ford:3;Mitsubishi:3
+GG	Volkswagen:10;Ford:8;Toyota:8;Vauxhall:5;BMW:7;Audi:6;Mercedes-Benz:6;Kia:6;Nissan:6;Hyundai:5;Peugeot:4;Honda:4;Suzuki:4;Mini:4;Land Rover:4;Tesla:3/0.3;Mazda:3;Fiat:2
+GH	Toyota:35;Hyundai:12;Kia:8;Honda:7;Nissan:6;Mercedes-Benz:5;Ford:5;Volkswagen:5;Mitsubishi:4;Suzuki:4;Lexus:3;Chevrolet:3;Isuzu:3
+GI	Volkswagen:12;Toyota:10;Ford:8;Kia:7;Hyundai:7;Mercedes-Benz:7;Peugeot:6;Seat:6;BMW:6;Fiat:5;Nissan:5;Vauxhall:4;Renault:4;Mini:3;Suzuki:3;Tesla:2/0.3
+GL	Toyota:30;Volkswagen:15;Skoda:8;Suzuki:8;Ford:8;Nissan:6;Hyundai:6;Kia:6;Mitsubishi:5;Peugeot:4;Tesla:2/0.3
+GM	Toyota:35;Mercedes-Benz:12;Nissan:7;Hyundai:7;Kia:5;Honda:5;Peugeot:5;Volkswagen:5;Ford:5;Mitsubishi:5;Isuzu:3;Opel:3;Land Rover:3
+GN	Toyota:35;Peugeot:8;Mercedes-Benz:10;Hyundai:8;Renault:6;Nissan:6;Kia:5;Mitsubishi:5;Volkswagen:5;Suzuki:4;Isuzu:4;Ford:4
+GP	Renault:18;Peugeot:16;Citroen:10;Toyota:10;Dacia:8;Volkswagen:6;Hyundai:6;Kia:6;Nissan:5;Fiat:4;Suzuki:4;Ford:3;Mini:2;Tesla:2/0.3
+GQ	Toyota:45;Hyundai:10;Mitsubishi:8;Nissan:7;Mercedes-Benz:6;Kia:5;Land Rover:5;Lexus:5;Suzuki:5;Isuzu:4
+GR	Toyota:15;Peugeot:7;Volkswagen:6;Hyundai:6;Kia:5;Fiat:5/-0.05;Opel:5/-0.04;Suzuki:6;Nissan:5;Citroen:4;Skoda:4;Renault:4;Dacia:3/0.05;Seat:3;Ford:3/-0.05;BMW:3;Mercedes-Benz:3;Audi:2;Mazda:2;Mitsubishi:2;Mini:1;Jeep:1;Cupra:1/0.3;Tesla:1/0.3;Volvo:1;MG:1/0.4;Honda:1;Daihatsu:0.5/-0.2;Alfa Romeo:0.3
+GT	Toyota:22;Hyundai:12;Kia:12;Nissan:10;Mitsubishi:8;Suzuki:8;Honda:6;Mazda:5;Isuzu:3;Ford:3;Chevrolet:3;Jeep:2;Volkswagen:2;BYD:2/0.5;Changan:2/0.3
+GU	Toyota:28;Nissan:12;Hyundai:10;Kia:10;Honda:8;Mitsubishi:6;Ford:6;Mazda:5;Jeep:4;Chevrolet:4;Lexus:3;Ram:2;Dodge:2
+GW	Toyota:35;Peugeot:10;Mercedes-Benz:12;Renault:8;Hyundai:6;Nissan:6;Mitsubishi:6;Volkswagen:6;Opel:4;Suzuki:4;Kia:3
+GY	Toyota:50;Honda:8;Nissan:8;Mitsubishi:6;Suzuki:6;Mazda:5;Hyundai:5;Kia:4;Isuzu:4;Subaru:2;Ford:2
+HK	Toyota:28;Tesla:8/0.3;Honda:8;Mercedes-Benz:8;BMW:6;Lexus:5;Nissan:5;Mazda:4;Volkswagen:4;Audi:3;Porsche:2;Mitsubishi:2;Kia:2;Hyundai:2;Volvo:2;BYD:4/0.8;Mini:2;Land Rover:1;Subaru:1;Suzuki:1;Daihatsu:1;MG:1
+HN	Toyota:24;Nissan:12;Hyundai:12;Kia:10;Mitsubishi:8;Honda:6;Suzuki:6;Isuzu:4;Mazda:4;Ford:4;Chevrolet:4;BYD:2/0.5;Changan:2/0.3;Jeep:2
+HR	Volkswagen:14;Skoda:10;Renault:7;Opel:6/-0.04;Toyota:6;Peugeot:6;Hyundai:5;Kia:4;Dacia:5/0.04;Ford:4;BMW:4;Mercedes-Benz:4;Audi:4;Citroen:3;Seat:3;Fiat:3/-0.05;Suzuki:3;Mazda:2;Nissan:2;Cupra:1/0.3;MG:1/0.4
+HT	Toyota:40;Nissan:10;Mitsubishi:8;Hyundai:8;Kia:6;Honda:6;Suzuki:5;Isuzu:5;Ford:4;Mazda:4;Lexus:2;Land Rover:2
+HU	Suzuki:12;Skoda:12;Toyota:8;Volkswagen:8;Opel:7/-0.04;Ford:6/-0.04;Kia:6;Hyundai:5;Renault:4;Dacia:4/0.04;BMW:4;Mercedes-Benz:5;Audi:3;Peugeot:3;Citroen:2;Mazda:2;Seat:2;Fiat:2/-0.05;Nissan:2;Honda:1;Volvo:1;Tesla:1/0.3;MG:1/0.4;BYD:1/0.6;Daewoo:0.5/-0.2;Lada:0.3/-0.3
+ID	Toyota:30;Daihatsu:18;Honda:12;Mitsubishi:9;Suzuki:8;Hyundai:3/0.05;Wuling:3;Isuzu:2;Nissan:2/-0.1;BYD:2/0.8;Kia:1;Mazda:1;Chery:1/0.3;Mercedes-Benz:1;BMW:1
+IE	Toyota:13;Volkswagen:11;Hyundai:9;Skoda:8;Kia:7;Ford:6/-0.04;Nissan:5/-0.03;Renault:4;Peugeot:4;BMW:4;Audi:4;Mercedes-Benz:4;Opel:2/-0.05;Dacia:3/0.04;Volvo:2;Mazda:2;Citroen:2;Seat:2;Honda:1;Tesla:2/0.3;MG:1/0.4;Cupra:1/0.3;BYD:1/0.6;Suzuki:1;Mini:1;Land Rover:1;Lexus:0.5
+IL	Hyundai:15;Kia:13;Toyota:13;Skoda:6;Mitsubishi:5;Mazda:5;Suzuki:4;Chevrolet:3/-0.05;Tesla:3/0.3;Seat:3;Volkswagen:3;Renault:3;Nissan:3;Peugeot:3;Geely:3/0.4;BYD:3/0.6;Chery:2/0.4;MG:2/0.3;Ford:2;Honda:2;Mercedes-Benz:2;BMW:2;Audi:1;Subaru:1;Lexus:1;Citroen:1;Opel:1;Dacia:1;Jeep:1
+IM	Volkswagen:10;Ford:8;Toyota:8;Vauxhall:5;BMW:7;Audi:6;Mercedes-Benz:6;Kia:6;Nissan:6;Hyundai:5;Peugeot:4;Honda:4;Skoda:4;Mini:4;Land Rover:4;Tesla:2/0.3;Mazda:3;Fiat:2;Volvo:2
+IN	Maruti Suzuki:41;Hyundai:14;Tata:13/0.06;Mahindra:11/0.06;Toyota:6;Kia:6/0.1;Honda:3/-0.05;Renault:2;Skoda:1;Volkswagen:1;MG:1/0.2;Nissan:0.5/-0.1;Ford:0.5/-0.4;Jeep:0.5;Mercedes-Benz:0.5;BMW:0.4;Audi:0.3;Hindustan:0.3/-0.5;Chevrolet:0.3/-0.5;Fiat:0.2/-0.4;BYD:0.3/0.8
+IQ	Kia:16;Hyundai:16;Toyota:15;Nissan:6;Chevrolet:6/-0.04;Mitsubishi:4;Changan:5/0.2;Chery:4/0.25;Geely:4/0.25;Mercedes-Benz:3;BMW:2;Ford:3;Jeep:2;GMC:2;Lexus:2;Dodge:2;Saipa:3/-0.2;Iran Khodro:2/-0.15;Haval:2/0.25;Peugeot:1
+IR	Iran Khodro:42;Saipa:35;Kia:4/-0.1;Hyundai:4/-0.1;Toyota:3/-0.1;Peugeot:4/-0.1;Renault:3/-0.1;Chery:3;MG:1;Nissan:1/-0.1
+IS	Toyota:20;Kia:10;Hyundai:8;Tesla:8/0.3;Volkswagen:7;Skoda:5;Nissan:4;Suzuki:4;Mitsubishi:4;Dacia:4;Land Rover:3;Subaru:3;BMW:3;Mercedes-Benz:3;Volvo:3;Ford:2;Renault:2;Audi:2;Polestar:2/0.3;MG:2/0.3;BYD:1/0.6
+IT	Fiat:14/-0.04;Volkswagen:8;Toyota:8;Dacia:6/0.04;Renault:5/-0.02;Peugeot:5;Ford:5/-0.04;Jeep:4/0.04;Citroen:4;Opel:4/-0.03;Hyundai:4;Kia:4;BMW:3;Audi:3;Mercedes-Benz:3;Lancia:2/-0.1;Alfa Romeo:2/-0.04;Nissan:2/-0.04;Skoda:2;Suzuki:2;MG:2/0.4;Seat:1;Cupra:1/0.3;Volvo:1;Mini:1;Mazda:1;Land Rover:1;DS:0.3;Tesla:1/0.3;BYD:0.5/0.6;Smart:1;Porsche:0.5;Honda:0.4;Mitsubishi:0.4;Subaru:0.2
+JE	Volkswagen:10;Ford:8;Toyota:8;Vauxhall:5;BMW:7;Audi:6;Mercedes-Benz:6;Kia:6;Nissan:6;Hyundai:5;Peugeot:4;Honda:4;Suzuki:4;Mini:4;Land Rover:4;Tesla:3/0.3;Mazda:3;Fiat:2
+JM	Toyota:40;Honda:10;Nissan:10;Suzuki:6;Mitsubishi:6;Mazda:6;Hyundai:5;Kia:5;Subaru:3;Isuzu:3;Mercedes-Benz:2;BMW:2;Ford:2
+JO	Hyundai:20;Kia:16;Toyota:12;Mitsubishi:5;Nissan:4;Chevrolet:4;Ford:4;Mercedes-Benz:4;BMW:3;Honda:2;Tesla:4/0.4;BYD:4/0.6;Geely:3/0.4;Changan:3/0.3;Chery:2/0.3;Jeep:2;Lexus:2
+JP	Toyota:33;Honda:10;Suzuki:11;Daihatsu:10;Nissan:8/-0.03;Mazda:4;Subaru:3;Mitsubishi:2;Lexus:3;Mercedes-Benz:1.5;BMW:1;Volkswagen:1/-0.05;Audi:0.5;Mini:0.5;Volvo:0.3;Jeep:0.2;Tesla:0.2/0.3;Porsche:0.2;BYD:0.1/0.8;Isuzu:0.1
+KE	Toyota:58;Nissan:9;Subaru:5;Mazda:5;Mitsubishi:5;Honda:4;Volkswagen:3;Mercedes-Benz:3;Isuzu:3;Suzuki:2;Land Rover:2;Lexus:1
+KG	Toyota:20;Lexus:6;Honda:10;Hyundai:8;Kia:5;Mercedes-Benz:8;Lada:8/-0.1;Daewoo:4/-0.2;Chevrolet:4;BMW:3;Audi:3;Volkswagen:3;Opel:3;Subaru:3;Mitsubishi:2;BYD:4/0.6;Chery:3/0.4;Changan:3/0.4
+KH	Toyota:35;Lexus:12;Hyundai:8;Kia:5;Ford:6;Honda:5;Mitsubishi:4;Nissan:4;Mazda:4;Isuzu:4;BYD:4/0.6;Mercedes-Benz:3;BMW:2;Land Rover:2;Geely:2/0.4;Chery:2/0.4
+KI	Toyota:35;Nissan:15;Mazda:10;Mitsubishi:10;Honda:8;Suzuki:8;Hyundai:6;Isuzu:4;Subaru:4
+KM	Toyota:40;Peugeot:8;Renault:6;Nissan:8;Mitsubishi:8;Suzuki:6;Hyundai:6;Isuzu:4;Mercedes-Benz:4;Honda:4;Mazda:4
+KN	Toyota:28;Nissan:14;Honda:10;Suzuki:10;Hyundai:8;Kia:8;Mitsubishi:6;Mazda:6;Isuzu:4;Ford:4
+KP	Toyota:20;Mercedes-Benz:12;Nissan:10;Hyundai:6;Chery:15/0.1;Geely:10/0.1;Lada:10/-0.1;Mitsubishi:8;Volkswagen:5;BYD:4/0.2
+KR	Hyundai:40;Kia:32;Genesis:6/0.08;Mercedes-Benz:5;BMW:5;Renault Korea:2/-0.05;SsangYong:2/-0.05;Chevrolet:3/-0.05;Daewoo:1/-0.5;Audi:1;Volkswagen:1;Tesla:2/0.3;Volvo:1;Toyota:0.5;Lexus:0.5;Porsche:0.5;Mini:0.5;Ford:0.3;Jeep:0.2;Land Rover:0.2;Honda:0.2;Polestar:0.2/0.4;BYD:0.2/0.8
+KW	Toyota:30;Nissan:10;Lexus:6;Hyundai:6;Kia:5;GMC:6;Chevrolet:6;Ford:4;Mitsubishi:4;Honda:3;Mercedes-Benz:3;BMW:2;Land Rover:2;Dodge:2;Jeep:2;Changan:2/0.3;Geely:2/0.3;MG:2/0.3;Cadillac:1
+KY	Toyota:22;Honda:12;Nissan:10;Hyundai:10;Kia:8;Ford:7;Jeep:6;Mazda:5;Mercedes-Benz:4;BMW:4;Land Rover:4;Tesla:3/0.3;Suzuki:3
+KZ	Toyota:16;Hyundai:14;Lada:15/-0.08;Kia:10;Chevrolet:7/0.05;Volkswagen:4;Mercedes-Benz:4;Nissan:4;Lexus:4;Mitsubishi:3;Audi:3;Haval:4/0.3;Chery:4/0.4;Geely:3/0.3;Changan:2/0.4;Daewoo:3/-0.2;Renault:2;Skoda:2;Honda:2;BMW:2;Opel:2;JAC:1/0.2
+LA	Toyota:35;Hyundai:12;Kia:8;Ford:8;Isuzu:6;Mitsubishi:5;Honda:5;Nissan:4;Mazda:4;BYD:4/0.6;Chery:3/0.4;Geely:2/0.4;Changan:2/0.4;Haval:2/0.3
+LB	Kia:16;Hyundai:14;Toyota:12;Nissan:6;Mercedes-Benz:7;BMW:6;Chevrolet:4;Mitsubishi:4;Honda:3;Volkswagen:3;Peugeot:3;Renault:3;Ford:3;Jeep:3;Land Rover:2;Chery:2/0.3;Geely:2/0.3;BYD:2/0.5;Audi:2
+LC	Toyota:28;Nissan:14;Honda:10;Suzuki:10;Hyundai:8;Kia:8;Mitsubishi:6;Mazda:6;Isuzu:4;Ford:4
+LI	Volkswagen:12;Skoda:8;BMW:8;Mercedes-Benz:8;Audi:8;Toyota:6;Porsche:4;Tesla:4/0.3;Seat:3;Cupra:3/0.3;Volvo:3;Hyundai:3;Kia:3;Ford:3;Mini:3;Land Rover:2;Subaru:3;Mazda:2;Renault:2;Peugeot:2;Fiat:2
+LK	Toyota:30;Suzuki:14;Honda:10;Nissan:8;Maruti Suzuki:6;Mitsubishi:5;Hyundai:5;Kia:4;Mazda:3;Perodua:3;Daihatsu:3;Mahindra:3;Tata:2;BMW:2;Mercedes-Benz:2
+LR	Toyota:35;Hyundai:10;Nissan:8;Honda:8;Kia:6;Mitsubishi:6;Ford:6;Mercedes-Benz:5;Chevrolet:4;Lexus:4;Jeep:4;Isuzu:4
+LS	Toyota:30;Volkswagen:15;Nissan:10;Hyundai:6;Ford:7;Mazda:5;Honda:4;Isuzu:5;Kia:4;Mercedes-Benz:3;BMW:3;Suzuki:4;Haval:2/0.3;Renault:2
+LT	Toyota:14;Volkswagen:12;Skoda:7;BMW:6;Audi:6;Mercedes-Benz:5;Opel:5/-0.04;Ford:5/-0.04;Volvo:5;Peugeot:4;Renault:4;Citroen:3;Kia:4;Hyundai:4;Nissan:3;Mazda:3;Dacia:2;Seat:2;Honda:2;Lexus:1;Tesla:1/0.3;Fiat:2;MG:1/0.4
+LU	Volkswagen:12;BMW:9;Mercedes-Benz:9;Audi:8;Peugeot:5;Renault:5;Tesla:5/0.3;Skoda:5;Toyota:4;Volvo:4;Hyundai:3;Kia:3;Citroen:3;Ford:3;Opel:3;Mini:2;Porsche:2;Cupra:2/0.3;Seat:2;Dacia:2;Land Rover:1;Fiat:1;Mazda:1;Nissan:1;Polestar:1/0.4;BYD:1/0.6
+LV	Toyota:15;Volkswagen:13;Skoda:9;BMW:6;Audi:6;Mercedes-Benz:5;Volvo:5;Opel:5/-0.04;Ford:4/-0.04;Kia:4;Hyundai:4;Peugeot:3;Renault:3;Nissan:3;Honda:2;Mazda:3;Dacia:2;Lexus:1;Seat:1;Tesla:1/0.3;Citroen:2
+LY	Hyundai:18;Kia:14;Toyota:14;Nissan:6;Chevrolet:5;Mitsubishi:5;Peugeot:4;Renault:4;Mercedes-Benz:5;Volkswagen:4;Daewoo:3/-0.2;Chery:4/0.3;Geely:3/0.3;Changan:3/0.3;Ford:2;Fiat:2;Opel:2;BMW:2
+MA	Dacia:28/0.02;Renault:12/-0.02;Hyundai:7;Peugeot:7;Toyota:6;Volkswagen:5;Citroen:4;Fiat:4/-0.04;Kia:4;Skoda:3;Ford:3;Mercedes-Benz:3;Seat:3;Opel:2;Suzuki:2;Nissan:2;MG:2/0.3;Chery:2/0.3;BMW:1;Audi:1;Jeep:1
+MC	Mercedes-Benz:12;BMW:10;Audi:7;Volkswagen:7;Porsche:6;Tesla:6/0.3;Land Rover:6;Mini:5;Fiat:5;Peugeot:5;Renault:5;Smart:4;Toyota:4;Citroen:3;Volvo:2;Jaguar:2;Lexus:2
+MD	Dacia:12/0.03;Volkswagen:11;Toyota:9;Renault:6;Skoda:6;Mercedes-Benz:6;Opel:5;BMW:4;Ford:4;Hyundai:5;Kia:4;Audi:3;Lada:4/-0.1;Peugeot:3;Nissan:3;Lexus:2;Chevrolet:2;Mitsubishi:2;Chery:2/0.3;BYD:2/0.6
+ME	Volkswagen:20;Mercedes-Benz:10;Audi:7;Opel:6;Peugeot:5;Renault:5;Skoda:5;Toyota:5;BMW:5;Hyundai:5;Kia:4;Fiat:4;Dacia:4;Ford:4;Seat:3;Zastava:2/-0.3;Citroen:3
+MF	Peugeot:16;Renault:14;Citroen:10;Toyota:10;Hyundai:8;Kia:8;Dacia:6;Volkswagen:6;Suzuki:6;Nissan:5;Fiat:5;Jeep:3;Mini:3
+MG	Toyota:22;Peugeot:12;Renault:10;Hyundai:8;Kia:6;Nissan:6;Mitsubishi:6;Mercedes-Benz:5;Citroen:5;Suzuki:5;Isuzu:4;Volkswagen:4;Ford:3;Land Rover:3
+MH	Toyota:30;Nissan:14;Honda:10;Mitsubishi:8;Mazda:8;Hyundai:6;Kia:6;Ford:6;Suzuki:6;Isuzu:3;Jeep:3
+MK	Volkswagen:20;Opel:8;Renault:7;Skoda:7;Mercedes-Benz:7;Audi:5;Peugeot:5;Ford:5;Toyota:5;Hyundai:5;Kia:4;Fiat:4/-0.04;Dacia:4;BMW:4;Citroen:3;Seat:3;Zastava:1/-0.3;Chevrolet:1;Mazda:2
+ML	Toyota:40;Mercedes-Benz:10;Peugeot:6;Renault:5;Nissan:7;Hyundai:6;Mitsubishi:6;Kia:4;Suzuki:4;Volkswagen:4;Isuzu:4;Land Rover:4
+MM	Toyota:60;Honda:6;Nissan:6;Suzuki:6;Mitsubishi:5;Mazda:4;Hyundai:3;Kia:2;Lexus:2;BYD:4/0.6;Changan:2/0.4
+MN	Toyota:55;Lexus:8;Hyundai:8;Nissan:5;Kia:4;Honda:4;Subaru:3;Mitsubishi:3;Mercedes-Benz:3;Land Rover:2;Chevrolet:2;BYD:3/0.6
+MO	Toyota:28;Honda:10;Mercedes-Benz:8;BMW:7;Nissan:7;Lexus:5;Mazda:5;Tesla:5/0.3;Volkswagen:4;Mitsubishi:3;Kia:3;Hyundai:3;Audi:3;Porsche:2;Suzuki:2;BYD:4/0.6;Mini:1
+MP	Toyota:30;Nissan:12;Hyundai:10;Kia:10;Honda:8;Mitsubishi:6;Ford:6;Mazda:5;Jeep:4;Chevrolet:4;Lexus:3;Dodge:2
+MQ	Renault:18;Peugeot:16;Citroen:10;Toyota:10;Dacia:8;Volkswagen:6;Hyundai:6;Kia:6;Nissan:5;Fiat:4;Suzuki:4;Ford:3;Mini:2;Tesla:2/0.3
+MR	Toyota:45;Mercedes-Benz:12;Hyundai:7;Peugeot:6;Nissan:6;Renault:5;Kia:4;Mitsubishi:4;Suzuki:4;Isuzu:4;Volkswagen:3
+MS	Toyota:30;Nissan:14;Honda:10;Suzuki:10;Mitsubishi:8;Mazda:8;Hyundai:6;Kia:6;Isuzu:4;Subaru:4
+MT	Toyota:16;Kia:10;Hyundai:8;Volkswagen:8;Peugeot:6;Nissan:6;Suzuki:6;Renault:5;Mercedes-Benz:5;BMW:4;Fiat:4;Mazda:4;Ford:3;Honda:3;Daihatsu:2;Citroen:2;MG:2/0.3;Audi:2;Mitsubishi:2;Opel:2;BYD:1/0.6;Tesla:1/0.3
+MU	Toyota:22;Nissan:12;Suzuki:12;Hyundai:8;Kia:7;Mitsubishi:6;Honda:6;Mazda:5;Isuzu:4;Peugeot:4;Volkswagen:4;Mercedes-Benz:3;BMW:3;Renault:2;BYD:2/0.6
+MV	Toyota:30;Hyundai:12;Suzuki:12;Honda:8;Nissan:8;Kia:8;Mitsubishi:6;BYD:4/0.6;Ford:4;Mazda:4;Isuzu:4
+MW	Toyota:60;Nissan:8;Mazda:5;Mitsubishi:5;Honda:5;Isuzu:4;Volkswagen:4;Subaru:3;Mercedes-Benz:3;Hyundai:3
+MX	Nissan:18/-0.02;Chevrolet:13/-0.03;Volkswagen:11;Toyota:9;Kia:7/0.04;Mazda:5;Honda:5;Hyundai:4;MG:4/0.3;Ford:4/-0.04;Suzuki:4;Renault:2/-0.05;Jeep:2;Ram:2;Dodge:2/-0.05;Chery:2/0.4;BYD:1/0.8;Seat:2;Mitsubishi:2;BMW:1;Mercedes-Benz:1;Audi:1;Peugeot:1;GMC:1;Changan:1/0.4
+MY	Perodua:42;Proton:22/0.03;Toyota:12;Honda:10;Nissan:2/-0.1;Mazda:2;Mitsubishi:2;BMW:1;Mercedes-Benz:1;Hyundai:1;Kia:1;BYD:1/0.8;Chery:1/0.4;Isuzu:1;Volkswagen:1;Ford:0.5;Suzuki:0.5;Tesla:0.5/0.3
+MZ	Toyota:58;Nissan:8;Mazda:5;Mitsubishi:6;Honda:5;Isuzu:4;Volkswagen:4;Ford:3;Hyundai:3;Mercedes-Benz:2;Land Rover:2
+NA	Toyota:35;Volkswagen:14;Nissan:7;Ford:7;Hyundai:6;Kia:4;Mazda:4;Isuzu:4;Mercedes-Benz:3;BMW:3;Suzuki:3;Honda:3;Mitsubishi:3;Haval:2/0.3;Renault:2
+NC	Toyota:14;Renault:10;Peugeot:10;Dacia:8;Kia:8;Hyundai:8;Suzuki:6;Mitsubishi:6;Nissan:6;Volkswagen:5;Isuzu:4;Ford:4;Citroen:4;Fiat:3;MG:2/0.3;BYD:2/0.6
+NE	Toyota:45;Peugeot:8;Mercedes-Benz:10;Nissan:7;Renault:5;Hyundai:5;Mitsubishi:5;Kia:4;Volkswagen:4;Isuzu:4;Suzuki:3
+NF	Toyota:25;Mitsubishi:12;Ford:12;Nissan:10;Holden:8;Isuzu:8;Suzuki:8;Hyundai:8;Mazda:8
+NG	Toyota:40;Lexus:6;Honda:9;Hyundai:6;Kia:5;Nissan:4;Mercedes-Benz:6;Ford:4;Volkswagen:3;Peugeot:3;Mitsubishi:2;Acura:2;Chevrolet:2;Mazda:2;Land Rover:2;Chery:1/0.3;Jeep:1;BMW:1;GAC:1/0.3
+NI	Toyota:28;Hyundai:12;Nissan:12;Kia:10;Mitsubishi:6;Suzuki:6;Honda:5;Isuzu:5;Mazda:4;Ford:4;Chevrolet:4;BYD:2/0.5;Changan:2/0.3
+NL	Kia:10/0.04;Volkswagen:9;Toyota:8;Peugeot:7;Skoda:6;Renault:6;Hyundai:6;Opel:5/-0.04;Ford:4/-0.04;Volvo:4;Tesla:4/0.3;BMW:4;Audi:4;Citroen:4;Mercedes-Benz:3;Seat:2;Fiat:2/-0.05;Nissan:3/-0.03;Suzuki:2;Mazda:2;Dacia:2/0.05;Mini:2;MG:1/0.4;BYD:1/0.6;Cupra:1/0.3;Polestar:1/0.4;Mitsubishi:1;Honda:1;Smart:0.5;DS:0.3
+NO	Tesla:18/0.25;Volkswagen:14;Toyota:12;BMW:5;Skoda:5;Audi:5;Volvo:5;Hyundai:5;Nissan:4/-0.04;Mercedes-Benz:4;Kia:4;Ford:3/-0.05;Peugeot:2;Mazda:2;Polestar:2/0.3;MG:2/0.3;BYD:2/0.6;Subaru:1;Mitsubishi:1;Opel:1/-0.05;Citroen:1;Renault:1;Cupra:1/0.3;Porsche:1;Suzuki:1;Land Rover:0.5;Honda:0.3;Lexus:0.3
+NP	Maruti Suzuki:20;Hyundai:18;Tata:12;Mahindra:10;Toyota:8;Kia:5;BYD:5/0.6;Nissan:3;Honda:3;MG:4/0.3;Changan:2/0.4;Suzuki:3;Renault:2;Ford:1;Chery:2/0.3
+NR	Toyota:35;Nissan:15;Mazda:10;Mitsubishi:10;Honda:8;Suzuki:8;Hyundai:6;Isuzu:4;Subaru:4
+NU	Toyota:35;Nissan:15;Mazda:10;Mitsubishi:10;Honda:8;Suzuki:8;Hyundai:6;Isuzu:4;Subaru:4
+NZ	Toyota:30;Mazda:8;Nissan:9;Ford:7;Honda:6;Mitsubishi:6;Suzuki:5;Hyundai:5;Kia:4;Subaru:4;Volkswagen:4;Holden:2/-0.5;MG:2/0.3;BMW:2;Mercedes-Benz:2;Tesla:1/0.3;BYD:1/0.6;Audi:1;Isuzu:1;Lexus:1;Haval:1/0.3
+OM	Toyota:34;Nissan:12;Hyundai:8;Kia:6;Mitsubishi:6;Lexus:5;Ford:4;Chevrolet:4;GMC:3;Honda:3;Mercedes-Benz:3;Land Rover:2;MG:3/0.2;Geely:2/0.3;Changan:2/0.3;Jeep:2;Mazda:1
+PA	Toyota:24;Hyundai:12;Kia:12;Nissan:10;Suzuki:6;Mitsubishi:5;Honda:5;Mazda:5;Chevrolet:4;Ford:4;Jeep:3;Isuzu:2;BYD:2/0.5;Changan:2/0.3;Geely:2/0.3;JAC:1/0.3
+PE	Toyota:28;Hyundai:12;Kia:10;Nissan:6;Suzuki:6;Chevrolet:5;Mitsubishi:4;Changan:4/0.3;Volkswagen:3;Mazda:3;Chery:3/0.3;Great Wall:3/0.2;Honda:2;Renault:2;JAC:2/0.2;Haval:2/0.3;BYD:1/0.6;Subaru:1;Ford:2
+PF	Toyota:16;Peugeot:10;Renault:10;Kia:8;Hyundai:8;Suzuki:8;Nissan:7;Mitsubishi:6;Dacia:5;Volkswagen:4;Ford:4;Isuzu:4;Citroen:4;Fiat:3
+PG	Toyota:55;Nissan:8;Mitsubishi:8;Isuzu:7;Mazda:5;Ford:5;Hyundai:4;Kia:3;Suzuki:3;Land Rover:2
+PH	Toyota:40;Mitsubishi:15;Ford:6;Nissan:7;Suzuki:6;Honda:5;Hyundai:4;Isuzu:4;Kia:2;Geely:2/0.3;Chery:1/0.3;MG:1/0.3;BYD:2/0.6;Mazda:2;Chevrolet:1;Subaru:1
+PK	Suzuki:45;Toyota:22;Honda:14;Kia:5/0.1;Hyundai:3/0.1;Changan:3/0.2;MG:2/0.2;Haval:1/0.3;Daihatsu:3/-0.1;Nissan:2/-0.1;Mitsubishi:1
+PL	Toyota:20;Skoda:10;Volkswagen:8;Kia:6;Hyundai:5;Dacia:4/0.04;Renault:4;Opel:5/-0.04;Ford:4/-0.05;BMW:4;Mercedes-Benz:4;Audi:4;Peugeot:3;Seat:2;Cupra:1/0.3;Mazda:2;Nissan:2/-0.04;Fiat:2/-0.06;Citroen:2;Volvo:2;Suzuki:2;Honda:1;MG:1/0.4;Mitsubishi:1;Lexus:1;Jeep:0.5;Tesla:0.5/0.3;Daewoo:0.5/-0.3;Chevrolet:0.3/-0.3;BYD:0.5/0.7
+PM	Peugeot:14;Renault:14;Toyota:10;Ford:10;Citroen:8;Volkswagen:8;Dacia:6;Kia:6;Hyundai:6;Nissan:6;Jeep:4;Chevrolet:4;Suzuki:4
+PR	Toyota:20;Hyundai:12;Kia:10;Nissan:8;Mitsubishi:6;Jeep:5;Ford:5;Honda:5;Chevrolet:4;Mazda:4;BMW:3;Mercedes-Benz:3;Ram:2;Dodge:2;Volkswagen:2;Lexus:2;Subaru:2;Tesla:1/0.3;Audi:1
+PS	Hyundai:14;Kia:14;Skoda:10;Volkswagen:10;Toyota:8;Seat:6;Mercedes-Benz:5;Mitsubishi:4;Opel:4;Peugeot:3;Renault:3;Chevrolet:3;Ford:3;Nissan:3;Suzuki:3;BMW:2;Audi:2;Chery:2/0.3;Geely:2/0.3;BYD:2/0.5
+PT	Peugeot:10;Renault:9/-0.02;Mercedes-Benz:6;Volkswagen:6;BMW:6;Citroen:5;Toyota:6;Dacia:5/0.04;Seat:4;Fiat:4/-0.05;Opel:4/-0.04;Tesla:3/0.3;Nissan:3/-0.04;Ford:3/-0.05;Kia:3;Hyundai:3;Audi:3;Skoda:2;Mazda:1;Volvo:2;Mini:2;MG:2/0.4;Cupra:1/0.3;BYD:1/0.7;Smart:1;Honda:1;Mitsubishi:1;Land Rover:0.5;Suzuki:1;Jeep:1
+PW	Toyota:30;Nissan:14;Honda:10;Mitsubishi:8;Mazda:8;Hyundai:6;Kia:6;Ford:6;Suzuki:6;Isuzu:3;Subaru:3
+PY	Toyota:20;Volkswagen:10;Hyundai:10;Kia:10;Nissan:7;Chevrolet:6;Suzuki:5;Fiat:4;Mitsubishi:4;Ford:3;Chery:4/0.3;JAC:2/0.2;Changan:2/0.3;BYD:2/0.6;Honda:2;Mazda:2;Peugeot:2;Renault:2;Haval:2/0.3
+QA	Toyota:30;Nissan:14;Lexus:8;Hyundai:6;Kia:5;GMC:5;Chevrolet:4;Mitsubishi:4;Land Rover:4;Mercedes-Benz:4;BMW:3;Ford:3;Honda:2;Jeep:2;Dodge:2;Porsche:1;Geely:2/0.3;Changan:2/0.3;MG:2/0.3;Cadillac:1;Infiniti:1
+RE	Renault:17/-0.02;Peugeot:15;Citroen:9;Toyota:9;Dacia:9;Volkswagen:6;Kia:5;Hyundai:5;Nissan:5;Suzuki:4;Fiat:4;Ford:3;Mini:2;Tesla:2/0.3;BMW:2;Mercedes-Benz:2;BYD:1/0.6;MG:1/0.3
+RO	Dacia:30;Volkswagen:9;Renault:7/-0.02;Skoda:6;Ford:5/-0.03;Toyota:5;Hyundai:5;Opel:4/-0.04;BMW:3;Mercedes-Benz:3;Audi:3;Peugeot:3;Kia:3;Citroen:2;Suzuki:2;Seat:1;Mazda:1;Nissan:1;Fiat:1;Tesla:1/0.3;MG:1/0.4;BYD:0.5/0.7
+RS	Volkswagen:15;Skoda:9;Fiat:8/-0.04;Opel:7/-0.04;Renault:6;Peugeot:5;Zastava:5/-0.25;Toyota:5;Hyundai:5;Dacia:4;Ford:4;Kia:4;Mercedes-Benz:4;Audi:4;BMW:3;Citroen:3;Seat:2;Chery:1/0.3;Suzuki:2;Mazda:1;Lada:1/-0.2
+RU	Lada:25/-0.04;Haval:6/0.4;Chery:6/0.4;Geely:5/0.4;Kia:7/-0.1;Hyundai:7/-0.1;Toyota:7/-0.08;Renault:5/-0.15;Volkswagen:5/-0.15;Skoda:4/-0.15;Nissan:4/-0.15;Changan:3/0.5;Mitsubishi:2/-0.1;Mercedes-Benz:2/-0.05;BMW:2/-0.05;Chevrolet:2/-0.15;Daewoo:1/-0.2;Ford:2/-0.2;Mazda:2/-0.1;Lexus:1;UAZ:1/-0.05;Audi:1/-0.1;Honda:1/-0.1;Subaru:1/-0.1;Opel:1/-0.2;Peugeot:0.5/-0.2;GAZ:0.5/-0.3;Moskvich:0.3/-0.3;Land Rover:0.5/-0.1;Infiniti:0.5/-0.1
+RW	Toyota:55;Suzuki:6;Nissan:6;Mitsubishi:6;Hyundai:6;Volkswagen:6;Isuzu:4;Mercedes-Benz:3;Land Rover:3;Kia:3;BYD:2/0.6
+SA	Toyota:28;Hyundai:14;Nissan:7;Kia:6;Lexus:5;Chevrolet:4/-0.03;GMC:4;Ford:3;Mitsubishi:3;Honda:3;Mazda:2;Mercedes-Benz:2;BMW:2;Changan:4/0.3;Geely:4/0.3;MG:4/0.25;Chery:2/0.3;Haval:2/0.3;Jeep:1;Land Rover:1;Dodge:1;Cadillac:1;Infiniti:1
+SB	Toyota:50;Nissan:10;Mitsubishi:8;Isuzu:6;Mazda:6;Suzuki:5;Hyundai:5;Honda:5;Ford:5
+SC	Toyota:25;Kia:12;Hyundai:12;Suzuki:10;Nissan:8;Mitsubishi:6;Honda:6;Mazda:5;Isuzu:4;Volkswagen:4;BYD:3/0.6;Ford:3
+SD	Toyota:30;Hyundai:16;Kia:10;Nissan:7;Mitsubishi:6;Suzuki:6;Chery:5/0.2;Mercedes-Benz:5;Isuzu:4;Land Rover:3;Geely:3/0.2;Daewoo:3/-0.2
+SE	Volvo:16;Volkswagen:12;Toyota:9;Kia:7;BMW:6;Audi:5;Tesla:5/0.3;Mercedes-Benz:5;Skoda:5;Hyundai:4;Ford:3/-0.05;Peugeot:3;Renault:2;Polestar:2/0.3;Nissan:2/-0.05;Mazda:2;Seat:2;Cupra:2/0.3;Opel:2/-0.05;Citroen:2;Dacia:2;Saab:1/-0.4;Subaru:1;Suzuki:1;Mitsubishi:1;MG:1/0.4;BYD:1/0.6;Mini:1;Porsche:0.5;Honda:0.5
+SG	Toyota:22;Honda:12;Mercedes-Benz:10;BMW:8;BYD:10/0.6;Hyundai:6;Kia:5;Mazda:4;Nissan:4;Tesla:4/0.3;Lexus:3;Volkswagen:3;Audi:3;Mitsubishi:2;Porsche:1;Volvo:1;Mini:1;Subaru:1
+SH	Land Rover:20;Toyota:20;Ford:12;Mitsubishi:10;Nissan:10;Suzuki:8;Isuzu:8;Volkswagen:6;Subaru:6
+SI	Volkswagen:13;Renault:10/-0.02;Skoda:9;Toyota:6;Dacia:6/0.04;Peugeot:5;Hyundai:5;Kia:4;Audi:4;BMW:4;Mercedes-Benz:4;Ford:4/-0.04;Opel:4/-0.04;Citroen:3;Seat:3;Fiat:3/-0.05;Mazda:2;Nissan:2;Suzuki:2;Cupra:1/0.3;Volvo:1;Tesla:1/0.3;MG:1/0.4
+SJ	Toyota:30;Volkswagen:15;Tesla:10/0.3;Nissan:10;Mitsubishi:8;Suzuki:8;Skoda:7;Ford:6;Subaru:6
+SK	Skoda:22;Volkswagen:11;Hyundai:9;Kia:8;Toyota:6;Dacia:4/0.04;Peugeot:4;Ford:3/-0.04;Renault:3;Opel:3/-0.04;Suzuki:3;Mercedes-Benz:3;BMW:3;Audi:3;Citroen:2;Mazda:2;Seat:2;Fiat:2/-0.05;Cupra:1/0.3;Volvo:1;Nissan:1;MG:1/0.4;Tesla:0.5/0.3
+SL	Toyota:40;Mercedes-Benz:10;Nissan:8;Hyundai:6;Kia:5;Honda:5;Mitsubishi:5;Land Rover:4;Isuzu:4;Volkswagen:4;Ford:3;Lexus:3
+SM	Fiat:20;Volkswagen:10;Toyota:8;Mercedes-Benz:8;BMW:8;Audi:7;Jeep:5;Renault:5;Peugeot:5;Alfa Romeo:4;Lancia:4;Ford:4;Opel:4;Dacia:3;Land Rover:2;Mini:2;Kia:3;Hyundai:3
+SN	Toyota:35;Peugeot:10;Hyundai:8;Renault:7;Mercedes-Benz:8;Nissan:6;Kia:5;Suzuki:5;Mitsubishi:4;Volkswagen:4;Ford:3;Isuzu:3;Citroen:3
+SO	Toyota:70;Nissan:6;Suzuki:5;Mitsubishi:5;Isuzu:4;Honda:3;Hyundai:3;Mercedes-Benz:2;Land Rover:2
+SR	Toyota:45;Nissan:10;Suzuki:8;Hyundai:7;Kia:6;Mitsubishi:6;Honda:5;Mazda:5;Isuzu:3;Daihatsu:3;Chery:2/0.3
+SS	Toyota:55;Nissan:8;Mitsubishi:6;Hyundai:6;Land Rover:5;Isuzu:5;Suzuki:4;Mercedes-Benz:4;Kia:3;Volkswagen:3;Ford:3
+ST	Toyota:25;Renault:10;Peugeot:10;Mercedes-Benz:8;Hyundai:8;Kia:6;Nissan:6;Volkswagen:6;Fiat:5;Suzuki:5;Mitsubishi:5;Opel:3;Citroen:3
+SV	Toyota:22;Nissan:12;Hyundai:12;Kia:10;Mitsubishi:8;Suzuki:6;Honda:5;Mazda:5;Isuzu:4;Ford:4;Chevrolet:4;BYD:2/0.5;Changan:2/0.3;Jeep:2;Volkswagen:2
+SX	Toyota:20;Kia:14;Hyundai:14;Nissan:10;Suzuki:8;Honda:6;Ford:5;Jeep:5;Chevrolet:4;Mitsubishi:4;Mazda:4;Volkswagen:4
+SY	Kia:16;Hyundai:16;Toyota:12;Chery:8/0.1;Saipa:6/-0.1;Iran Khodro:4/-0.1;Peugeot:4;Mercedes-Benz:5;Nissan:4;Mitsubishi:4;Daewoo:4/-0.2;Geely:4/0.1;Opel:3;Volkswagen:3;Lada:2/-0.2;Changan:3/0.1;BYD:2/0.2
+SZ	Toyota:35;Volkswagen:12;Nissan:8;Ford:8;Hyundai:6;Mazda:5;Isuzu:5;Kia:4;Honda:4;Mercedes-Benz:3;BMW:3;Suzuki:4;Haval:2/0.3;Renault:2
+TC	Toyota:22;Honda:12;Nissan:12;Hyundai:10;Kia:10;Ford:8;Jeep:6;Mazda:5;Suzuki:5;Mitsubishi:5;Land Rover:3;Tesla:2/0.3
+TD	Toyota:55;Mercedes-Benz:8;Nissan:7;Peugeot:6;Hyundai:5;Mitsubishi:5;Isuzu:5;Land Rover:4;Suzuki:3;Renault:2
+TG	Toyota:35;Peugeot:8;Mercedes-Benz:10;Hyundai:8;Renault:6;Nissan:6;Kia:5;Ford:5;Volkswagen:5;Mitsubishi:4;Honda:4;Suzuki:4
+TH	Toyota:36;Isuzu:14;Honda:12;Mitsubishi:6;Nissan:5/-0.05;Mazda:5;Ford:5;Suzuki:3;MG:3/0.1;BYD:4/0.8;Mercedes-Benz:2;BMW:1;Haval:2/0.3;Chevrolet:1/-0.3;Hyundai:1;Kia:0.5;GAC:1/0.6;Changan:1/0.6;Tesla:0.5/0.3;Wuling:0.5/0.3
+TJ	Toyota:18;Opel:12;Mercedes-Benz:10;Hyundai:10;Lada:8/-0.1;Daewoo:6/-0.1;Chevrolet:6;Kia:6;Volkswagen:5;Lexus:4;Honda:3;BYD:4/0.6;Chery:4/0.4;Changan:3/0.4;Ford:3
+TK	Toyota:35;Nissan:15;Mazda:10;Mitsubishi:10;Honda:8;Suzuki:8;Hyundai:6;Isuzu:4;Subaru:4
+TL	Toyota:45;Mitsubishi:10;Nissan:8;Isuzu:8;Hyundai:6;Kia:5;Suzuki:5;Honda:5;Mazda:4;Ford:4
+TM	Toyota:30;Lexus:10;Hyundai:12;Kia:8;Chevrolet:8;Nissan:6;Mercedes-Benz:6;Ford:4;Honda:4;Lada:4/-0.1;Mitsubishi:3;Chery:3/0.3;BMW:2
+TN	Volkswagen:12;Peugeot:12;Renault:10;Kia:8;Hyundai:8;Citroen:6;Toyota:5;Fiat:6;Suzuki:5;Mercedes-Benz:4;Seat:3;Chery:3/0.3;Ford:3;Dacia:3;Opel:3;BMW:2;Skoda:2;MG:2/0.3;Isuzu:2
+TO	Toyota:40;Nissan:12;Mazda:8;Mitsubishi:8;Honda:8;Suzuki:6;Hyundai:6;Isuzu:5;Ford:4;Subaru:3
+TR	Renault:14/-0.02;Fiat:13/-0.03;Toyota:9;Volkswagen:9;Hyundai:7;Ford:6;Peugeot:6;Opel:5/-0.03;Citroen:4;Dacia:4;Honda:2;Skoda:3;Seat:2;Mercedes-Benz:3;BMW:3;Audi:2;Nissan:2;Kia:1;Togg:2/1.0;Tesla:1/0.4;BYD:1/0.8;Chery:1/0.6;MG:1/0.3;Volvo:1;Jeep:0.5;Cupra:0.5/0.3;Suzuki:0.5;Mazda:0.3;Mini:0.3;Alfa Romeo:0.2;Lancia:0.2/-0.2
+TT	Toyota:26;Nissan:14;Hyundai:10;Kia:8;Suzuki:8;Mazda:7;Honda:7;Mitsubishi:6;Isuzu:3;Mercedes-Benz:3;BMW:3;Ford:3;Chery:1/0.3;Volkswagen:1
+TV	Toyota:35;Nissan:15;Mazda:10;Mitsubishi:10;Honda:8;Suzuki:8;Hyundai:6;Isuzu:4;Subaru:4
+TW	Toyota:32;Lexus:7;Honda:7;Mitsubishi:5;Nissan:6;Mazda:4;Mercedes-Benz:6;BMW:6;Ford:4;Hyundai:4;Kia:3;Volkswagen:3;Tesla:2/0.3;Audi:2;Skoda:2;Suzuki:2;Volvo:2;Subaru:2;Porsche:1;MG:1/0.4;Mini:1;Land Rover:0.5
+TZ	Toyota:62;Nissan:8;Mitsubishi:6;Subaru:3;Mazda:3;Honda:3;Suzuki:3;Isuzu:3;Mercedes-Benz:3;Land Rover:2;Volkswagen:2;BMW:1
+UA	Toyota:10;Volkswagen:12;Skoda:8;Renault:7;Hyundai:6;Kia:5;Daewoo:5/-0.2;ZAZ:3/-0.2;Lada:4/-0.25;Chevrolet:3/-0.1;Opel:5;Ford:4;Nissan:4;Audi:4;BMW:4;Mercedes-Benz:4;Mazda:3;Peugeot:3;Mitsubishi:2;Honda:2;Tesla:2/0.3;BYD:2/0.8;Citroen:2;Lexus:1;Chery:1/0.2;Geely:1/0.2;Suzuki:1;Subaru:1;Seat:1;Fiat:1;Dacia:1
+UG	Toyota:65;Nissan:6;Mitsubishi:5;Subaru:3;Mazda:3;Honda:3;Isuzu:3;Mercedes-Benz:3;Suzuki:3;Volkswagen:2;Land Rover:2;Lexus:2
+US	Toyota:14;Ford:13/-0.01;Chevrolet:12/-0.01;Honda:9;Nissan:6/-0.03;Hyundai:5/0.03;Kia:5/0.04;Jeep:4;Subaru:4;GMC:4;Ram:4;Tesla:4/0.3;Mazda:2.5;Volkswagen:2;BMW:2;Mercedes-Benz:2;Lexus:2;Dodge:2/-0.05;Buick:1.3/-0.03;Audi:1.2;Cadillac:1;Acura:1;Chrysler:1/-0.06;Mitsubishi:0.6;Volvo:0.8;Lincoln:0.7;Infiniti:0.5/-0.06;Land Rover:0.5;Mini:0.3;Porsche:0.5;Genesis:0.4/0.2;Rivian:0.3/0.4;Alfa Romeo:0.1;Fiat:0.1/-0.2;Jaguar:0.1/-0.1;Polestar:0.1/0.3;Saab:0.1/-0.4
+UY	Volkswagen:12;Chevrolet:11;Fiat:8;Renault:8;Peugeot:7;Toyota:7;Hyundai:7;Suzuki:6;Kia:5;Nissan:4;Chery:4/0.3;BYD:5/0.7;Ford:3;Citroen:3;Geely:2/0.3;JAC:2/0.3;Great Wall:2/0.3;Honda:1;Changan:2/0.4
+UZ	Chevrolet:58/-0.01;Daewoo:14/-0.25;Kia:6/0.2;Hyundai:5/0.1;BYD:5/0.8;Chery:3/0.4;Toyota:3;Lada:3/-0.2;Haval:1/0.4;Mercedes-Benz:1;Changan:1/0.5
+VA	Fiat:20;Volkswagen:15;Mercedes-Benz:12;Toyota:10;Renault:10;Ford:8;Lancia:8;Alfa Romeo:6;Peugeot:6;Dacia:5
+VC	Toyota:28;Nissan:14;Honda:10;Suzuki:10;Hyundai:8;Kia:6;Mitsubishi:6;Mazda:6;Isuzu:4;Ford:4;Jeep:3
+VE	Toyota:22;Chevrolet:20/-0.05;Ford:12/-0.05;Hyundai:7;Mitsubishi:5;Renault:5;Fiat:4;Nissan:4;Kia:5;Jeep:4;Chery:4/0.3;Dodge:2;Honda:2;Mazda:2;Volkswagen:2
+VG	Toyota:22;Honda:12;Nissan:12;Hyundai:10;Kia:10;Ford:8;Jeep:6;Mazda:5;Suzuki:5;Mitsubishi:5;Land Rover:3
+VI	Toyota:22;Nissan:12;Hyundai:10;Kia:10;Honda:8;Ford:8;Jeep:6;Mitsubishi:5;Mazda:5;Chevrolet:5;Subaru:3;Dodge:2
+VN	Toyota:16;Hyundai:16;Kia:10;Mitsubishi:8;Mazda:8;Ford:7;Honda:6;VinFast:10/0.35;Suzuki:3;Mercedes-Benz:3;BYD:2/0.8;Nissan:2;Isuzu:2;Chevrolet:1/-0.2;Lexus:1;BMW:1;MG:2/0.3;Peugeot:1
+VU	Toyota:40;Nissan:12;Mitsubishi:10;Isuzu:7;Mazda:6;Suzuki:6;Hyundai:6;Honda:5;Ford:5;Kia:3
+WF	Peugeot:16;Renault:14;Toyota:14;Citroen:8;Dacia:8;Hyundai:8;Kia:8;Suzuki:6;Nissan:6;Mitsubishi:6;Isuzu:4
+WS	Toyota:40;Nissan:12;Mitsubishi:10;Mazda:8;Honda:8;Hyundai:6;Isuzu:6;Suzuki:6;Ford:4
+XK	Volkswagen:24;Mercedes-Benz:14;Audi:10;BMW:7;Opel:6;Skoda:5;Ford:4;Renault:4;Peugeot:4;Toyota:4;Hyundai:4;Kia:3;Seat:3;Fiat:3;Dacia:3;Citroen:2;Land Rover:2
+YE	Toyota:55;Hyundai:8;Kia:6;Nissan:6;Mitsubishi:5;Lexus:4;Land Rover:3;Mercedes-Benz:3;Chevrolet:3;GMC:3;Isuzu:2;Daewoo:2/-0.2
+YT	Renault:20;Peugeot:16;Citroen:10;Toyota:10;Dacia:8;Hyundai:6;Kia:6;Nissan:6;Volkswagen:5;Fiat:4;Suzuki:5;Mitsubishi:4
+ZA	Toyota:24;Volkswagen:16;Suzuki:10/0.12;Hyundai:6;Ford:7/-0.02;Nissan:5/-0.05;Renault:4;Kia:4;Isuzu:3;Mahindra:3/0.08;Mercedes-Benz:3;BMW:3;Haval:3/0.25;Chery:2/0.4;Mazda:2;Honda:2;Audi:1;Chevrolet:1/-0.3;Opel:1/-0.1;Land Rover:1;Mitsubishi:1;Tata:0.5/-0.1;Jeep:0.5;Citroen:0.3;Peugeot:0.5;Fiat:0.3/-0.1;Mini:0.3;Volvo:0.3;BYD:0.3/0.8;Great Wall:1;Proton:0.1
+ZM	Toyota:62;Nissan:8;Mitsubishi:6;Honda:4;Mazda:4;Subaru:3;Isuzu:3;Mercedes-Benz:3;Land Rover:2;Volkswagen:2;Hyundai:2;Suzuki:1
+ZW	Toyota:55;Nissan:8;Honda:6;Mazda:5;Mitsubishi:5;Isuzu:4;Ford:4;Volkswagen:3;Mercedes-Benz:3;Hyundai:3;Land Rover:2;Haval:1/0.3;Suzuki:1

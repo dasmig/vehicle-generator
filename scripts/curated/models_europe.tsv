@@ -1,0 +1,189 @@
+# Curated: models of the European makers. Production years (for the market's model years), bodies with their shares, the markets that sold the model with its relative popularity within the make, and trims (label|fuel|engine cc|power kW|years|gearboxes m/a|drives f/r/a, first preferred|weight|markets, empty for all). From the makers' specifications and public sales rankings; see doc/data.md.
+key	make	model	from	to	bodies	markets	seats	lite	trims
+vw-golf	Volkswagen	Golf	1990		hatchback:85,wagon:15	EUR:30,TR:10,CIS:8,AFR:12,LAM:4,NAM:6,JDM:2,OCE:6,MEA:3	5	1	1.4|petrol|1390|55|1990-2008|ma|f|4;1.6|petrol|1595|74|1990-2012|ma|f|4;1.0 TSI|petrol|999|81|2017-|ma|f|3;1.4 TSI|petrol|1395|90|2008-2020|ma|f|4;1.5 eTSI|hybrid|1498|110|2020-|a|f|3|EUR;1.5 TSI|petrol|1498|110|2017-|ma|f|3;1.9 TDI|diesel|1896|77|1993-2009|ma|f|5|EUR,TR,CIS,AFR;2.0 TDI|diesel|1968|110|2008-|ma|f|5|EUR,TR,CIS,AFR,OCE;GTI|petrol|1984|169|1990-|ma|f|1;e-Golf|electric|0|100|2014-2020|a|f|1|EUR,NAM;1.4 eHybrid|plug_in|1395|150|2015-|a|f|1|EUR
+vw-polo	Volkswagen	Polo	1990		hatchback:90,sedan:10	EUR:25,TR:8,AFR:25,IND:10,LAM:10,CIS:15,OCE:5,MEA:4	5	1	1.0 MPI|petrol|999|48|2014-|m|f|4;1.2|petrol|1198|51|2001-2014|ma|f|4;1.4|petrol|1390|55|1994-2009|ma|f|3;1.0 TSI|petrol|999|70|2017-|ma|f|4;1.6|petrol|1598|77|2010-|ma|f|2|AFR,LAM,IND,CIS;1.4 TDI|diesel|1422|55|2001-2017|m|f|2|EUR,TR,AFR;1.6 TDI|diesel|1598|66|2009-2021|m|f|2|EUR,TR,IND
+vw-passat	Volkswagen	Passat	1990		sedan:55,wagon:45	EUR:15,TR:6,CIS:8,NAM:10,CHN:8,MEA:6,AFR:4	5	1	1.8|petrol|1781|92|1990-2005|ma|f|3;2.0 TSI|petrol|1984|140|2006-|a|fa|3;1.4 TSI|petrol|1395|110|2010-|ma|f|2;1.9 TDI|diesel|1896|85|1996-2010|ma|f|5|EUR,TR,CIS,AFR;2.0 TDI|diesel|1968|110|2005-|ma|fa|7|EUR,TR,CIS,AFR;GTE|plug_in|1395|160|2015-|a|f|1|EUR
+vw-jetta	Volkswagen	Jetta	1990		sedan:100	NAM:30,LAM:25,CHN:10,EUR:3,CIS:6,MEA:4	5	1	2.0|petrol|1984|85|1990-2010|ma|f|4;1.4 TSI|petrol|1395|110|2011-|ma|f|3;1.5 TSI|petrol|1498|117|2022-|ma|f|2|NAM,LAM;2.5|petrol|2480|125|2005-2014|ma|f|2|NAM,LAM;1.9 TDI|diesel|1896|77|1995-2006|ma|f|1|NAM,EUR
+vw-tiguan	Volkswagen	Tiguan	2007		suv:100	EUR:22,NAM:20,CHN:15,CIS:10,TR:8,OCE:8,AFR:5,MEA:5,LAM:6	5	1	1.4 TSI|petrol|1395|110|2007-2020|ma|fa|3;2.0 TSI|petrol|1984|132|2007-|a|af|4;1.5 TSI|petrol|1498|110|2020-|ma|f|3;2.0 TDI|diesel|1968|110|2007-|ma|fa|5|EUR,TR,CIS,OCE,AFR;eHybrid|plug_in|1395|180|2021-|a|f|1|EUR
+vw-touran	Volkswagen	Touran	2003		van:100	EUR:6,CHN:2	7	0	1.4 TSI|petrol|1395|103|2006-|ma|f|3;1.9 TDI|diesel|1896|77|2003-2010|ma|f|3;2.0 TDI|diesel|1968|110|2010-|ma|f|3
+vw-up	Volkswagen	up!	2011	2023	hatchback:100	EUR:8	4	0	1.0 MPI|petrol|999|44|2011-2023|ma|f|8;e-up!|electric|0|61|2013-2023|a|f|1
+vw-tcross	Volkswagen	T-Cross	2019		suv:100	EUR:12,LAM:10,MER:12,TR:6	5	0	1.0 TSI|petrol|999|81|2019-|ma|f|6;1.5 TSI|petrol|1498|110|2019-|a|f|2
+vw-troc	Volkswagen	T-Roc	2017		suv:100	EUR:16,CHN:5,TR:4	5	1	1.0 TSI|petrol|999|81|2017-|m|f|4;1.5 TSI|petrol|1498|110|2017-|ma|f|4;2.0 TDI|diesel|1968|110|2017-|ma|fa|2|EUR,TR
+vw-id3	Volkswagen	ID.3	2020		hatchback:100	EUR:8,CHN:3	5	0	Pro|electric|0|150|2020-|a|r|5;Pro S|electric|0|170|2021-|a|r|2
+vw-id4	Volkswagen	ID.4	2021		suv:100	EUR:8,NAM:5,CHN:6	5	0	Pro|electric|0|150|2021-|a|r|4;GTX|electric|0|220|2021-|a|a|1
+vw-gol	Volkswagen	Gol	1990	2022	hatchback:85,wagon:15	MER:30,LAM:20	5	1	1.0|petrol|999|52|1994-2022|m|f|6;1.6|petrol|1598|74|1990-2022|ma|f|4
+vw-voyage	Volkswagen	Voyage	2008	2023	sedan:100	MER:12,LAM:6	5	0	1.0|petrol|999|56|2008-2023|m|f|4;1.6|petrol|1598|74|2008-2023|ma|f|4
+vw-fox	Volkswagen	Fox	2003	2021	hatchback:100	MER:10,EUR:2	5	0	1.0|petrol|999|50|2003-2015|m|f|4;1.6|petrol|1598|74|2003-2021|m|f|4
+vw-amarok	Volkswagen	Amarok	2010		pickup:100	MER:10,AFR:8,OCE:6,EUR:2	5	0	2.0 TDI|diesel|1968|132|2010-|ma|ra|5;3.0 V6 TDI|diesel|2967|165|2016-|a|a|3
+vw-beetle	Volkswagen	Beetle	1998	2019	hatchback:80,convertible:20	NAM:6,LAM:6,EUR:2	4	0	2.0|petrol|1984|85|1998-2010|ma|f|4;1.8 TSI|petrol|1798|125|2011-2019|ma|f|3;1.6|petrol|1598|75|1998-2005|m|f|2|LAM,EUR
+vw-sharan	Volkswagen	Sharan	1995	2022	van:100	EUR:4	7	0	2.0|petrol|1984|85|1995-2010|ma|f|3;1.9 TDI|diesel|1896|85|1995-2010|ma|f|4;2.0 TDI|diesel|1968|103|2010-2022|ma|f|4
+vw-touareg	Volkswagen	Touareg	2002		suv:100	EUR:3,CIS:4,NAM:2,MEA:4	5	0	3.6 V6|petrol|3597|206|2002-2018|a|a|3;3.0 V6 TDI|diesel|2967|180|2004-|a|a|5|EUR,CIS,MEA
+vw-atlas	Volkswagen	Atlas	2017		suv:100	NAM:14,CHN:4,MEA:2	7	0	2.0 TSI|petrol|1984|175|2017-|a|fa|3;3.6 V6|petrol|3597|206|2017-|a|a|3
+vw-virtus	Volkswagen	Virtus	2018		sedan:100	MER:8,IND:6,LAM:6	5	0	1.0 TSI|petrol|999|85|2018-|ma|f|4;1.6 MSI|petrol|1598|82|2018-|ma|f|2
+vw-lavida	Volkswagen	Lavida	2008		sedan:100	CHN:30	5	1	1.6|petrol|1598|81|2008-|ma|f|5;1.5|petrol|1498|83|2018-|ma|f|4;1.4 TSI|petrol|1395|96|2013-2022|a|f|2
+vw-sagitar	Volkswagen	Sagitar	2006		sedan:100	CHN:18	5	0	1.6|petrol|1598|81|2006-2018|ma|f|3;1.4 TSI|petrol|1395|110|2012-|a|f|4;1.5 TSI|petrol|1498|118|2022-|a|f|2
+vw-santana	Volkswagen	Santana	1990		sedan:100	CHN:15	5	0	1.8|petrol|1781|72|1990-2012|m|f|5;1.5|petrol|1498|83|2013-|ma|f|4
+audi-a3	Audi	A3	1996		hatchback:60,sedan:35,convertible:5	EUR:20,NAM:10,CHN:10,OCE:6,MEA:4	5	1	1.6|petrol|1595|75|1996-2012|ma|f|3;1.4 TFSI|petrol|1395|92|2008-2020|ma|f|4;35 TFSI|petrol|1498|110|2018-|a|f|3;2.0 TDI|diesel|1968|110|2003-|ma|fa|5|EUR,OCE;1.9 TDI|diesel|1896|77|1996-2010|ma|f|3|EUR
+audi-a4	Audi	A4	1995		sedan:60,wagon:40	EUR:20,NAM:14,CHN:20,CIS:6,MEA:6	5	1	1.8 T|petrol|1781|110|1995-2008|ma|fa|3;2.0 TFSI|petrol|1984|140|2008-|a|fa|5;2.0 TDI|diesel|1968|105|2004-|ma|fa|6|EUR,CIS;1.9 TDI|diesel|1896|85|1995-2004|ma|f|3|EUR
+audi-a6	Audi	A6	1994		sedan:60,wagon:40	EUR:14,CHN:20,NAM:8,CIS:6,MEA:6	5	1	2.4|petrol|2393|125|1997-2005|ma|fa|2;2.0 TFSI|petrol|1984|140|2011-|a|fa|4;3.0 TFSI|petrol|2995|250|2011-|a|a|2;2.0 TDI|diesel|1968|120|2005-|a|f|5|EUR,CIS;3.0 TDI|diesel|2967|180|2004-|a|a|4|EUR,CIS
+audi-a1	Audi	A1	2010		hatchback:100	EUR:10	5	0	1.0 TFSI|petrol|999|70|2015-|ma|f|4;1.4 TFSI|petrol|1390|90|2010-2018|ma|f|3;1.6 TDI|diesel|1598|66|2010-2018|m|f|2
+audi-q3	Audi	Q3	2011		suv:100	EUR:16,CHN:10,NAM:8,OCE:5	5	0	1.4 TFSI|petrol|1395|110|2014-2018|ma|f|3;35 TFSI|petrol|1498|110|2018-|a|f|4;2.0 TFSI|petrol|1984|132|2011-|a|a|3;2.0 TDI|diesel|1968|110|2011-|ma|fa|4|EUR,OCE
+audi-q5	Audi	Q5	2008		suv:100	EUR:14,NAM:16,CHN:16,CIS:5,MEA:4	5	1	2.0 TFSI|petrol|1984|165|2008-|a|a|6;2.0 TDI|diesel|1968|130|2008-|a|a|6|EUR,CIS;55 TFSI e|plug_in|1984|270|2020-|a|a|1|EUR,NAM
+audi-q7	Audi	Q7	2006		suv:100	EUR:5,NAM:6,CIS:5,MEA:6,CHN:4	7	0	3.0 TFSI|petrol|2995|245|2010-|a|a|4;3.0 TDI|diesel|2967|183|2006-|a|a|5|EUR,CIS,MEA
+audi-etron	Audi	Q8 e-tron	2019		suv:100	EUR:4,NAM:2	5	0	55|electric|0|300|2019-|a|a|3
+skoda-octavia	Skoda	Octavia	1996		hatchback:55,wagon:45	EUR:30,CIS:12,TR:6,IND:4,CHN:3	5	1	1.6|petrol|1595|75|1996-2012|ma|f|4;1.4 TSI|petrol|1395|110|2008-2020|ma|f|4;1.0 TSI|petrol|999|81|2019-|m|f|2;1.5 TSI|petrol|1498|110|2019-|ma|f|3;1.9 TDI|diesel|1896|77|1996-2010|m|f|5|EUR,CIS,TR;2.0 TDI|diesel|1968|110|2010-|ma|fa|6|EUR,CIS,TR;1.4 G-TEC|cng|1395|81|2013-2019|m|f|1|EUR
+skoda-fabia	Skoda	Fabia	1999		hatchback:80,wagon:20	EUR:25,CIS:8,IND:3	5	1	1.2|petrol|1198|51|2002-2014|m|f|5;1.0 MPI|petrol|999|48|2014-|m|f|4;1.0 TSI|petrol|999|70|2017-|ma|f|3;1.4 TDI|diesel|1422|59|2003-2017|m|f|3|EUR
+skoda-superb	Skoda	Superb	2001		sedan:55,wagon:45	EUR:10,CIS:4,CHN:4	5	0	1.8 TSI|petrol|1798|118|2008-2015|ma|f|3;2.0 TSI|petrol|1984|140|2015-|a|fa|3;2.0 TDI|diesel|1968|110|2008-|ma|fa|6|EUR,CIS;iV|plug_in|1395|160|2019-|a|f|1|EUR
+skoda-kodiaq	Skoda	Kodiaq	2016		suv:100	EUR:12,CIS:8,TR:3	7	0	1.5 TSI|petrol|1498|110|2017-|ma|f|3;2.0 TSI|petrol|1984|140|2016-|a|a|2;2.0 TDI|diesel|1968|110|2016-|ma|fa|5|EUR,CIS
+skoda-karoq	Skoda	Karoq	2017		suv:100	EUR:10,CIS:4	5	0	1.0 TSI|petrol|999|85|2017-|m|f|3;1.5 TSI|petrol|1498|110|2017-|ma|f|4;2.0 TDI|diesel|1968|110|2017-|ma|fa|3
+skoda-rapid	Skoda	Rapid	2012	2022	hatchback:50,sedan:50	EUR:6,CIS:14,IND:6	5	0	1.6 MPI|petrol|1598|81|2012-2022|ma|f|5;1.2 TSI|petrol|1197|77|2012-2019|ma|f|3;1.6 TDI|diesel|1598|77|2012-2019|m|f|2|EUR,IND
+skoda-felicia	Skoda	Felicia	1994	2001	hatchback:80,wagon:20	EUR:20	5	0	1.3|petrol|1289|40|1994-2001|m|f|6;1.9 D|diesel|1896|47|1995-2001|m|f|2
+skoda-enyaq	Skoda	Enyaq	2021		suv:100	EUR:6	5	0	80|electric|0|150|2021-|a|r|4;85x|electric|0|210|2023-|a|a|1
+seat-ibiza	Seat	Ibiza	1993		hatchback:100	EUR:30,MEA:4,LAM:4	5	1	1.4|petrol|1390|55|1993-2010|m|f|5;1.0 TSI|petrol|999|81|2017-|ma|f|4;1.2 TSI|petrol|1197|77|2010-2017|m|f|3;1.9 TDI|diesel|1896|74|1996-2009|m|f|4|EUR;1.6 TDI|diesel|1598|66|2009-2020|m|f|2|EUR
+seat-leon	Seat	Leon	1999		hatchback:75,wagon:25	EUR:28,LAM:5,MEA:3	5	1	1.6|petrol|1595|75|1999-2012|m|f|4;1.4 TSI|petrol|1395|92|2012-2020|ma|f|4;1.5 TSI|petrol|1498|110|2020-|ma|f|3;1.9 TDI|diesel|1896|77|1999-2010|m|f|4|EUR;2.0 TDI|diesel|1968|110|2010-|ma|f|4|EUR
+seat-arona	Seat	Arona	2017		suv:100	EUR:16	5	0	1.0 TSI|petrol|999|81|2017-|ma|f|8;1.6 TDI|diesel|1598|70|2017-2021|m|f|1
+seat-ateca	Seat	Ateca	2016		suv:100	EUR:12,MEA:3	5	0	1.5 TSI|petrol|1498|110|2016-|ma|f|5;2.0 TDI|diesel|1968|110|2016-|ma|fa|3
+seat-cordoba	Seat	Cordoba	1993	2009	sedan:80,wagon:20	EUR:10,LAM:4	5	0	1.6|petrol|1595|74|1993-2009|m|f|4;1.9 TDI|diesel|1896|74|1996-2009|m|f|3
+seat-altea	Seat	Altea	2004	2015	van:100	EUR:8	5	0	1.6|petrol|1595|75|2004-2015|m|f|3;1.9 TDI|diesel|1896|77|2004-2010|m|f|3;1.6 TDI|diesel|1598|77|2010-2015|m|f|2
+cupra-formentor	Cupra	Formentor	2020		suv:100	EUR:10	5	0	1.5 TSI|petrol|1498|110|2020-|ma|f|4;VZ 2.0 TSI|petrol|1984|228|2020-|a|a|1;e-Hybrid|plug_in|1395|150|2021-|a|f|2
+cupra-born	Cupra	Born	2021		hatchback:100	EUR:4	5	0	58 kWh|electric|0|150|2021-|a|r|3
+porsche-cayenne	Porsche	Cayenne	2002		suv:100	EUR:5,NAM:5,CHN:8,CIS:4,MEA:6	5	0	3.0 V6|petrol|2995|250|2010-|a|a|4;4.8 V8|petrol|4806|294|2002-2017|a|a|2;E-Hybrid|plug_in|2995|340|2014-|a|a|1
+porsche-macan	Porsche	Macan	2014		suv:100	EUR:5,NAM:5,CHN:8	5	0	2.0|petrol|1984|185|2014-|a|a|5;S|petrol|2995|260|2014-|a|a|2;Electric|electric|0|300|2024-|a|a|1
+porsche-911	Porsche	911	1990		coupe:80,convertible:20	EUR:3,NAM:4,CHN:2,MEA:2	4	0	Carrera|petrol|2981|283|1990-|ma|r|4;Carrera 4S|petrol|2981|331|1995-|a|a|2
+porsche-taycan	Porsche	Taycan	2019		sedan:100	EUR:2,NAM:2,CHN:2	4	0	4S|electric|0|390|2019-|a|a|3
+bmw-3	BMW	3 Series	1990		sedan:70,wagon:25,coupe:5	EUR:30,NAM:24,CHN:22,CIS:8,MEA:6,OCE:6,AFR:8,JDM:6	5	1	318i|petrol|1796|85|1990-2005|ma|r|4;320i|petrol|1997|135|2005-|ma|ra|5;330i|petrol|1998|190|2015-|a|ra|3;320d|diesel|1995|135|1998-|ma|ra|7|EUR,CIS,OCE;330e|plug_in|1998|215|2016-|a|r|1|EUR,NAM
+bmw-5	BMW	5 Series	1990		sedan:75,wagon:25	EUR:18,NAM:12,CHN:22,CIS:8,MEA:6	5	1	520i|petrol|1997|135|1990-|a|r|5;530i|petrol|1998|185|2016-|a|ra|3;520d|diesel|1995|140|2000-|a|ra|7|EUR,CIS;530d|diesel|2993|210|1998-|a|ra|3|EUR,CIS;530e|plug_in|1998|215|2017-|a|r|1|EUR,NAM,CHN;i5 eDrive40|electric|0|250|2023-|a|r|1|EUR,NAM
+bmw-1	BMW	1 Series	2004		hatchback:100	EUR:14,OCE:4	5	0	116i|petrol|1598|90|2004-2019|ma|r|5;118i|petrol|1499|103|2015-|ma|rf|4;118d|diesel|1995|105|2004-|ma|rf|5|EUR
+bmw-x1	BMW	X1	2009		suv:100	EUR:14,NAM:6,CHN:12,OCE:4	5	1	sDrive18i|petrol|1499|100|2015-|ma|f|4;xDrive20i|petrol|1998|140|2009-|a|a|3;sDrive18d|diesel|1995|110|2009-|ma|fa|4|EUR;iX1|electric|0|200|2022-|a|a|1|EUR
+bmw-x3	BMW	X3	2003		suv:100	EUR:14,NAM:14,CHN:14,CIS:6,MEA:5,OCE:4	5	1	xDrive20i|petrol|1998|135|2010-|a|a|4;xDrive30i|petrol|1998|185|2017-|a|a|3;xDrive20d|diesel|1995|140|2004-|a|a|6|EUR,CIS,OCE;iX3|electric|0|210|2021-|a|r|1|EUR,CHN
+bmw-x5	BMW	X5	1999		suv:100	EUR:8,NAM:14,CHN:8,CIS:10,MEA:10	5	0	xDrive35i|petrol|2979|225|2007-2018|a|a|3;4.4i|petrol|4398|210|1999-2006|a|a|2;xDrive40i|petrol|2998|250|2018-|a|a|3;xDrive30d|diesel|2993|180|2003-|a|a|5|EUR,CIS,MEA;xDrive45e|plug_in|2998|290|2019-|a|a|1|EUR,NAM
+bmw-7	BMW	7 Series	1990		sedan:100	EUR:3,NAM:3,CHN:6,CIS:5,MEA:6	5	0	740i|petrol|2998|240|1994-|a|r|5;730d|diesel|2993|190|2002-|a|ra|4|EUR,CIS;i7|electric|0|400|2022-|a|a|1
+mini-hatch	Mini	Cooper	2001		hatchback:85,convertible:15	EUR:12,NAM:6,JDM:4,OCE:3,CHN:2	4	1	One|petrol|1598|66|2001-2014|ma|f|4;Cooper|petrol|1499|100|2014-|ma|f|5;Cooper S|petrol|1998|141|2001-|ma|f|3;Cooper D|diesel|1496|85|2007-2023|m|f|2|EUR;Cooper SE|electric|0|135|2020-|a|f|1
+mini-countryman	Mini	Countryman	2010		suv:100	EUR:6,NAM:4,CHN:2	5	0	Cooper|petrol|1499|100|2010-|ma|fa|4;Cooper D|diesel|1995|110|2010-|ma|fa|3|EUR;SE ALL4|plug_in|1499|165|2017-|a|a|1
+mercedes-c	Mercedes-Benz	C-Class	1993		sedan:70,wagon:25,coupe:5	EUR:22,NAM:14,CHN:18,CIS:8,MEA:8,AFR:12,OCE:5,JDM:4	5	1	C 180|petrol|1595|115|1993-|a|r|5;C 200|petrol|1991|150|1993-|a|ra|5;C 300|petrol|1991|190|2015-|a|ra|3|NAM,CHN,MEA;C 220 d|diesel|2143|125|1997-|ma|ra|6|EUR,CIS,AFR;C 300 e|plug_in|1999|230|2015-|a|r|1|EUR
+mercedes-e	Mercedes-Benz	E-Class	1990		sedan:70,wagon:30	EUR:16,NAM:10,CHN:16,CIS:8,MEA:8,AFR:12	5	1	E 200|petrol|1991|135|1990-|a|r|5;E 350|petrol|2996|220|2005-|a|ra|3;E 220 d|diesel|2143|125|1995-|a|r|7|EUR,CIS,AFR,MEA;E 300 de|plug_in|1950|225|2019-|a|r|1|EUR
+mercedes-a	Mercedes-Benz	A-Class	1997		hatchback:80,sedan:20	EUR:18,NAM:3,CHN:8,OCE:4,MEA:3	5	0	A 160|petrol|1598|75|1997-2012|ma|f|4;A 180|petrol|1332|100|2012-|ma|f|5;A 200|petrol|1332|120|2018-|a|f|3;A 180 d|diesel|1461|80|2012-|ma|f|4|EUR;A 250 e|plug_in|1332|160|2019-|a|f|1|EUR
+mercedes-glc	Mercedes-Benz	GLC	2015		suv:100	EUR:14,NAM:14,CHN:14,CIS:5,MEA:6,OCE:4	5	1	GLC 200|petrol|1991|150|2015-|a|ra|4;GLC 300|petrol|1991|190|2015-|a|a|5;GLC 220 d|diesel|1950|143|2015-|a|a|5|EUR,CIS;GLC 300 e|plug_in|1999|235|2019-|a|a|1|EUR
+mercedes-gla	Mercedes-Benz	GLA	2014		suv:100	EUR:8,NAM:4,CHN:6	5	0	GLA 200|petrol|1332|120|2014-|a|f|5;GLA 200 d|diesel|1950|110|2014-|a|fa|3|EUR
+mercedes-gle	Mercedes-Benz	GLE	1997		suv:100	EUR:5,NAM:12,CHN:6,CIS:10,MEA:10	5	0	ML 350|petrol|3498|200|1997-2015|a|a|4;GLE 450|petrol|2999|270|2015-|a|a|4;ML 350 CDI|diesel|2987|190|2005-|a|a|4|EUR,CIS,MEA
+mercedes-s	Mercedes-Benz	S-Class	1991		sedan:100	EUR:3,NAM:3,CHN:6,CIS:6,MEA:8	5	0	S 500|petrol|4966|225|1991-2005|a|r|2;S 450|petrol|2999|270|2017-|a|ra|4;S 350 d|diesel|2925|210|2006-|a|ra|3|EUR,CIS
+mercedes-vito	Mercedes-Benz	V-Class	1996		van:100	EUR:4,CIS:4,CHN:4	7	0	V 220 d|diesel|2143|120|1996-|ma|r|6;V 250|petrol|1991|155|2014-|a|r|1|CHN
+mercedes-eqc	Mercedes-Benz	EQA	2021		suv:100	EUR:5,CHN:2	5	0	EQA 250|electric|0|140|2021-|a|f|3
+mercedes-w190	Mercedes-Benz	190	1990	1993	sedan:100	EUR:6,AFR:10,MEA:4	5	0	190 E|petrol|1997|90|1990-1993|ma|r|5;190 D|diesel|1997|55|1990-1993|m|r|5
+smart-fortwo	Smart	Fortwo	1998		hatchback:100	EUR:10,NAM:1	2	0	1.0|petrol|999|52|2007-2019|a|r|5;0.7|petrol|698|45|1998-2007|a|r|3;EQ|electric|0|60|2017-2024|a|r|2
+opel-corsa	Opel	Corsa	1993		hatchback:100	EUR:30,TR:10,CIS:4,AFR:6	5	1	1.2|petrol|1199|55|1993-2019|m|f|6;1.4|petrol|1398|66|2006-2019|ma|f|3;1.2 Turbo|petrol|1199|74|2019-|ma|f|4;1.3 CDTI|diesel|1248|55|2003-2019|m|f|3|EUR,TR;Corsa-e|electric|0|100|2020-|a|f|1|EUR
+opel-astra	Opel	Astra	1991		hatchback:60,wagon:30,sedan:10	EUR:28,TR:12,CIS:8,AFR:4	5	1	1.4|petrol|1389|66|1991-2015|m|f|5;1.6|petrol|1598|85|1991-2015|ma|f|4;1.4 Turbo|petrol|1364|103|2010-2022|ma|f|3;1.2 Turbo|petrol|1199|96|2021-|ma|f|2;1.7 CDTI|diesel|1686|74|2003-2015|m|f|4|EUR,TR;1.6 CDTI|diesel|1598|100|2015-2022|m|f|2|EUR,TR
+opel-vectra	Opel	Vectra	1990	2008	sedan:60,wagon:40	EUR:14,TR:6,CIS:6,AFR:4	5	0	1.8|petrol|1796|90|1990-2008|ma|f|5;2.2|petrol|2198|108|2001-2008|ma|f|2;1.9 CDTI|diesel|1910|88|2004-2008|m|f|3|EUR,TR;2.0 DTI|diesel|1995|74|1997-2003|m|f|2|EUR
+opel-insignia	Opel	Insignia	2008		sedan:55,wagon:45	EUR:12,TR:4	5	0	1.6 Turbo|petrol|1598|125|2008-|ma|f|3;2.0 CDTI|diesel|1956|125|2008-|ma|fa|6
+opel-zafira	Opel	Zafira	1999	2019	van:100	EUR:10,TR:4	7	0	1.8|petrol|1796|92|1999-2014|m|f|4;1.6 CNG|cng|1598|69|2005-2019|m|f|1|EUR;1.9 CDTI|diesel|1910|88|2005-2011|m|f|3;2.0 CDTI|diesel|1956|96|2011-2019|m|f|2
+opel-mokka	Opel	Mokka	2012		suv:100	EUR:12,TR:4,CIS:3	5	0	1.4 Turbo|petrol|1364|103|2012-2019|ma|fa|5;1.2 Turbo|petrol|1199|96|2020-|ma|f|3;1.6 CDTI|diesel|1598|100|2015-2019|m|f|2|EUR;Mokka-e|electric|0|100|2021-|a|f|1|EUR
+opel-crossland	Opel	Crossland	2017	2024	suv:100	EUR:8	5	0	1.2|petrol|1199|61|2017-2024|m|f|4;1.2 Turbo|petrol|1199|81|2017-2024|ma|f|4
+opel-kadett	Opel	Kadett	1990	1991	hatchback:70,wagon:30	EUR:12,AFR:4	5	0	1.3|petrol|1297|44|1990-1991|m|f|5;1.6 D|diesel|1598|40|1990-1991|m|f|2
+opel-omega	Opel	Omega	1990	2003	sedan:60,wagon:40	EUR:6	5	0	2.0|petrol|1998|85|1990-2003|ma|r|4;2.5 TD|diesel|2497|96|1994-2003|ma|r|3
+vauxhall-corsa	Vauxhall	Corsa	1993		hatchback:100	GB:40	5	0	1.2|petrol|1199|55|1993-2019|m|f|6;1.4|petrol|1398|66|2006-2019|ma|f|3;1.2 Turbo|petrol|1199|74|2019-|ma|f|4;1.3 CDTi|diesel|1248|55|2003-2019|m|f|3;Corsa-e|electric|0|100|2020-|a|f|1
+vauxhall-astra	Vauxhall	Astra	1991		hatchback:70,wagon:30	GB:35	5	0	1.4|petrol|1389|66|1991-2015|m|f|5;1.6|petrol|1598|85|1991-2015|ma|f|4;1.4 Turbo|petrol|1364|103|2010-2022|ma|f|3;1.2 Turbo|petrol|1199|96|2021-|ma|f|2;1.7 CDTi|diesel|1686|74|2003-2015|m|f|4
+vauxhall-insignia	Vauxhall	Insignia	2008		sedan:60,wagon:40	GB:12	5	0	1.6 Turbo|petrol|1598|125|2008-|ma|f|3;2.0 CDTi|diesel|1956|125|2008-|ma|f|6
+vauxhall-mokka	Vauxhall	Mokka	2012		suv:100	GB:14	5	0	1.4 Turbo|petrol|1364|103|2012-2019|ma|f|5;1.2 Turbo|petrol|1199|96|2020-|ma|f|3;Mokka-e|electric|0|100|2021-|a|f|1
+peugeot-208	Peugeot	208	2012		hatchback:100	EUR:28,TR:6,MER:10,AFR:6,LAM:4	5	1	1.2 PureTech|petrol|1199|60|2012-|ma|f|8;1.6 HDi|diesel|1560|68|2012-2019|m|f|3|EUR,TR,AFR;1.5 BlueHDi|diesel|1499|75|2019-|m|f|2|EUR,TR;e-208|electric|0|100|2019-|a|f|2|EUR
+peugeot-206	Peugeot	206	1998	2012	hatchback:85,sedan:10,convertible:5	EUR:25,MEA:10,MER:10,AFR:15,IR:15,LAM:6	5	1	1.1|petrol|1124|44|1998-2012|m|f|4;1.4|petrol|1360|55|1998-2012|ma|f|6;1.4 HDi|diesel|1398|50|2001-2012|m|f|4|EUR,AFR
+peugeot-207	Peugeot	207	2006	2014	hatchback:85,wagon:15	EUR:20,MER:6,AFR:6	5	0	1.4|petrol|1360|54|2006-2014|m|f|5;1.6 VTi|petrol|1598|88|2006-2014|ma|f|3;1.4 HDi|diesel|1398|50|2006-2012|m|f|3|EUR;1.6 HDi|diesel|1560|66|2006-2014|m|f|3|EUR
+peugeot-308	Peugeot	308	2007		hatchback:70,wagon:30	EUR:18,TR:4,AFR:4,MER:4,CHN:2	5	1	1.6 VTi|petrol|1598|88|2007-2014|ma|f|4;1.2 PureTech|petrol|1199|96|2014-|ma|f|5;1.6 HDi|diesel|1560|82|2007-2017|m|f|5|EUR,TR,AFR;1.5 BlueHDi|diesel|1499|96|2017-|ma|f|3|EUR,TR;Hybrid|plug_in|1598|132|2021-|a|f|1|EUR
+peugeot-2008	Peugeot	2008	2013		suv:100	EUR:20,TR:6,MER:8,AFR:4	5	1	1.2 PureTech|petrol|1199|96|2013-|ma|f|8;1.5 BlueHDi|diesel|1499|96|2019-|m|f|2|EUR,TR;1.6 HDi|diesel|1560|68|2013-2019|m|f|2|EUR,TR;e-2008|electric|0|100|2020-|a|f|1|EUR
+peugeot-3008	Peugeot	3008	2009		suv:100	EUR:18,TR:4,AFR:4,MEA:3,CHN:3	5	1	1.6 THP|petrol|1598|115|2009-2016|ma|f|3;1.2 PureTech|petrol|1199|96|2016-|ma|f|4;2.0 BlueHDi|diesel|1997|110|2016-|a|f|3|EUR,TR;1.6 HDi|diesel|1560|82|2009-2016|m|f|3|EUR;Hybrid4|plug_in|1598|220|2019-|a|a|1|EUR
+peugeot-405	Peugeot	405	1990	1997	sedan:80,wagon:20	EUR:15,AFR:12,MEA:6	5	0	1.6|petrol|1580|65|1990-1997|m|f|4;1.9 D|diesel|1905|51|1990-1997|m|f|4
+peugeot-406	Peugeot	406	1995	2004	sedan:70,wagon:30	EUR:12,AFR:8	5	0	1.8|petrol|1761|81|1995-2004|ma|f|4;2.0 HDi|diesel|1997|80|1998-2004|m|f|5
+peugeot-407	Peugeot	407	2004	2011	sedan:70,wagon:30	EUR:8,AFR:4	5	0	1.8|petrol|1749|85|2004-2011|ma|f|3;2.0 HDi|diesel|1997|100|2004-2011|ma|f|6
+peugeot-306	Peugeot	306	1993	2002	hatchback:80,sedan:10,wagon:10	EUR:16,AFR:6	5	0	1.4|petrol|1360|55|1993-2002|m|f|5;1.9 D|diesel|1868|51|1993-2002|m|f|4
+peugeot-205	Peugeot	205	1990	1998	hatchback:100	EUR:12,AFR:8	5	0	1.1|petrol|1124|40|1990-1998|m|f|5;1.8 D|diesel|1769|44|1990-1998|m|f|3
+peugeot-partner	Peugeot	Partner Tepee	1996		van:100	EUR:6,AFR:4,TR:3	5	0	1.6|petrol|1587|80|1996-2018|m|f|3;1.6 HDi|diesel|1560|66|2002-|m|f|6|EUR,TR,AFR
+peugeot-301	Peugeot	301	2012	2023	sedan:100	TR:10,MEA:6,AFR:8,CIS:4	5	0	1.2 VTi|petrol|1199|60|2012-2023|m|f|4;1.6 VTi|petrol|1587|85|2012-2023|ma|f|4;1.6 HDi|diesel|1560|68|2012-2023|m|f|3
+citroen-c3	Citroen	C3	2002		hatchback:100	EUR:25,TR:6,MER:6,AFR:6,IND:4	5	1	1.4|petrol|1360|54|2002-2016|ma|f|5;1.2 PureTech|petrol|1199|60|2016-|m|f|5;1.4 HDi|diesel|1398|50|2002-2016|m|f|3|EUR,TR;1.5 BlueHDi|diesel|1499|75|2019-|m|f|2|EUR;e-C3|electric|0|83|2024-|a|f|1|EUR,IND
+citroen-c4	Citroen	C4	2004		hatchback:80,sedan:20	EUR:14,TR:3,CHN:3,MER:4	5	0	1.6|petrol|1587|80|2004-2015|ma|f|4;1.2 PureTech|petrol|1199|96|2015-|ma|f|3;1.6 HDi|diesel|1560|80|2004-2018|m|f|5|EUR,TR;e-C4|electric|0|100|2020-|a|f|1|EUR
+citroen-c3aircross	Citroen	C3 Aircross	2017		suv:100	EUR:12,MER:4	5	0	1.2 PureTech|petrol|1199|81|2017-|ma|f|6;1.5 BlueHDi|diesel|1499|75|2017-|m|f|2|EUR
+citroen-berlingo	Citroen	Berlingo	1996		van:100	EUR:10,TR:3,AFR:4	5	0	1.4|petrol|1360|55|1996-2010|m|f|3;1.6 HDi|diesel|1560|66|2002-2018|m|f|6;1.5 BlueHDi|diesel|1499|75|2018-|ma|f|3
+citroen-xsara	Citroen	Xsara	1997	2006	hatchback:80,wagon:20	EUR:14,AFR:4	5	0	1.4|petrol|1360|55|1997-2006|m|f|5;1.9 D|diesel|1868|51|1997-2006|m|f|3;2.0 HDi|diesel|1997|66|1999-2006|m|f|3
+citroen-saxo	Citroen	Saxo	1996	2003	hatchback:100	EUR:10	5	0	1.1|petrol|1124|44|1996-2003|m|f|6;1.5 D|diesel|1527|42|1996-2003|m|f|2
+citroen-c5	Citroen	C5	2001	2017	sedan:60,wagon:40	EUR:8,CHN:3	5	0	1.8|petrol|1749|85|2001-2017|ma|f|3;2.0 HDi|diesel|1997|100|2001-2017|ma|f|6
+citroen-c5aircross	Citroen	C5 Aircross	2018		suv:100	EUR:8,CHN:3	5	0	1.2 PureTech|petrol|1199|96|2018-|ma|f|4;1.5 BlueHDi|diesel|1499|96|2018-|a|f|3|EUR;Hybrid|plug_in|1598|165|2020-|a|f|1|EUR
+ds-7	DS	DS 7	2017		suv:100	EUR:4,CHN:1	5	0	1.6 PureTech|petrol|1598|132|2017-|a|f|3;2.0 BlueHDi|diesel|1997|130|2017-|a|f|3;E-Tense|plug_in|1598|221|2019-|a|a|2
+ds-3	DS	DS 3	2010		hatchback:50,suv:50	EUR:5	5	0	1.2 PureTech|petrol|1199|81|2015-|ma|f|4;1.6 VTi|petrol|1598|88|2010-2015|ma|f|3;1.6 HDi|diesel|1560|68|2010-2019|m|f|3
+renault-clio	Renault	Clio	1990		hatchback:90,wagon:10	EUR:28,TR:12,AFR:10,LAM:6,MEA:4	5	1	1.2|petrol|1149|43|1990-2012|m|f|7;1.4|petrol|1390|55|1990-2008|ma|f|3;0.9 TCe|petrol|898|66|2012-2020|m|f|4;1.0 TCe|petrol|999|67|2019-|m|f|4;1.5 dCi|diesel|1461|66|2001-|m|f|6|EUR,TR,AFR;E-Tech|hybrid|1598|105|2020-|a|f|1|EUR
+renault-megane	Renault	Megane	1995		hatchback:60,sedan:20,wagon:20	EUR:18,TR:12,LAM:4,AFR:4,CIS:3	5	1	1.6|petrol|1598|81|1995-2016|ma|f|5;1.3 TCe|petrol|1332|103|2018-|ma|f|3;1.5 dCi|diesel|1461|81|2002-|m|f|7|EUR,TR,AFR;E-Tech Electric|electric|0|160|2022-|a|f|1|EUR
+renault-captur	Renault	Captur	2013		suv:100	EUR:20,TR:6,LAM:4,CIS:4	5	1	0.9 TCe|petrol|898|66|2013-2019|m|f|5;1.3 TCe|petrol|1332|103|2019-|ma|f|4;1.5 dCi|diesel|1461|66|2013-|m|f|3|EUR,TR;E-Tech|plug_in|1598|117|2020-|a|f|1|EUR
+renault-kadjar	Renault	Kadjar	2015	2022	suv:100	EUR:10,CHN:2	5	0	1.3 TCe|petrol|1332|103|2015-2022|ma|f|5;1.5 dCi|diesel|1461|81|2015-2022|ma|f|5
+renault-twingo	Renault	Twingo	1993	2024	hatchback:100	EUR:12,LAM:4	4	0	1.2|petrol|1149|43|1993-2014|m|f|7;1.0 SCe|petrol|999|52|2014-2024|m|r|3;Electric|electric|0|60|2020-2024|a|r|1
+renault-scenic	Renault	Scenic	1996		van:85,suv:15	EUR:14,TR:3	5	0	1.6|petrol|1598|82|1996-2016|ma|f|5;1.5 dCi|diesel|1461|78|2003-2022|m|f|5;E-Tech Electric|electric|0|160|2024-|a|f|1
+renault-kangoo	Renault	Kangoo	1997		van:100	EUR:10,AFR:4,MER:4	5	0	1.2|petrol|1149|43|1997-2008|m|f|3;1.5 dCi|diesel|1461|63|2001-|m|f|6
+renault-laguna	Renault	Laguna	1994	2015	sedan:60,wagon:40	EUR:10	5	0	1.8|petrol|1783|79|1994-2007|ma|f|4;1.9 dCi|diesel|1870|88|2001-2007|m|f|4;2.0 dCi|diesel|1995|110|2007-2015|ma|f|3
+renault-19	Renault	19	1990	1996	hatchback:70,sedan:30	EUR:12,TR:10,MER:6	5	0	1.4|petrol|1390|58|1990-1996|m|f|6;1.9 D|diesel|1870|47|1990-1996|m|f|3
+renault-austral	Renault	Austral	2022		suv:100	EUR:6	5	0	1.3 TCe|petrol|1332|103|2022-|ma|f|3;E-Tech|hybrid|1199|147|2022-|a|f|3
+renault-arkana	Renault	Arkana	2019		suv:100	EUR:6,CIS:6	5	0	1.3 TCe|petrol|1332|103|2019-|a|fa|4;E-Tech|hybrid|1598|105|2021-|a|f|2|EUR
+renault-sandero	Renault	Sandero	2008		hatchback:100	MER:16,LAM:6,AFR:14,CIS:12,MEA:6	5	0	1.0 SCe|petrol|999|58|2016-|m|f|4;1.6|petrol|1598|62|2008-|ma|f|6;1.6 SCe|petrol|1598|84|2016-|ma|f|3
+renault-logan	Renault	Logan	2004		sedan:100	MER:12,LAM:6,AFR:10,CIS:20,MEA:6	5	0	1.6|petrol|1598|61|2004-|ma|f|8;1.4|petrol|1390|55|2004-2012|m|f|3
+renault-duster	Renault	Duster	2010		suv:100	MER:14,LAM:8,IND:6,CIS:20,AFR:10,MEA:6	5	0	1.6|petrol|1598|84|2010-|ma|fa|7;2.0|petrol|1998|105|2010-|ma|fa|3;1.5 dCi|diesel|1461|80|2010-|m|fa|3|IND,CIS,AFR
+renault-kwid	Renault	Kwid	2015		hatchback:100	IND:10,MER:10,LAM:4	5	0	0.8|petrol|799|40|2015-|m|f|5;1.0|petrol|999|50|2016-|ma|f|5
+renault-symbol	Renault	Symbol	1999	2021	sedan:100	TR:16,LAM:4,AFR:6	5	0	1.4|petrol|1390|55|1999-2012|m|f|6;1.5 dCi|diesel|1461|55|2008-2021|m|f|4
+renault-fluence	Renault	Fluence	2009	2017	sedan:100	TR:12,LAM:4,MEA:4	5	0	1.6|petrol|1598|81|2009-2017|ma|f|5;1.5 dCi|diesel|1461|81|2009-2017|ma|f|5
+dacia-sandero	Dacia	Sandero	2008		hatchback:100	EUR:40,TR:10,AFR:6	5	1	1.4 MPI|petrol|1390|55|2008-2012|m|f|4;1.0 SCe|petrol|999|54|2016-|m|f|5;0.9 TCe|petrol|898|66|2012-2020|m|f|4;1.0 TCe|petrol|999|67|2020-|ma|f|4;1.0 TCe LPG|lpg|999|74|2016-|m|f|3;1.5 dCi|diesel|1461|55|2008-2021|m|f|3
+dacia-logan	Dacia	Logan	2004		sedan:70,wagon:30	EUR:22,AFR:8	5	1	1.4 MPI|petrol|1390|55|2004-2012|m|f|5;1.6 MPI|petrol|1598|64|2004-2012|m|f|3;1.0 SCe|petrol|999|54|2016-|m|f|3;1.5 dCi|diesel|1461|55|2005-2021|m|f|5;1.0 TCe LPG|lpg|999|74|2016-|m|f|2
+dacia-duster	Dacia	Duster	2010		suv:100	EUR:30,TR:12,AFR:6	5	1	1.6 SCe|petrol|1598|84|2010-2020|m|fa|4;1.3 TCe|petrol|1332|96|2018-|ma|fa|4;1.0 TCe LPG|lpg|999|74|2019-|m|f|2;1.5 dCi|diesel|1461|80|2010-|m|fa|5
+dacia-jogger	Dacia	Jogger	2022		wagon:100	EUR:6	7	0	1.0 TCe|petrol|999|81|2022-|m|f|4;1.6 Hybrid|hybrid|1598|103|2023-|a|f|2;1.0 TCe LPG|lpg|999|74|2022-|m|f|2
+dacia-spring	Dacia	Spring	2021		hatchback:100	EUR:5	4	0	Electric 45|electric|0|33|2021-|a|f|4
+dacia-1300	Dacia	1310	1990	2004	sedan:80,wagon:20	EUR:30	5	0	1.4|petrol|1397|46|1990-2004|m|r|5
+fiat-panda	Fiat	Panda	1990		hatchback:100	EUR:30,TR:2	5	1	1.1|petrol|1108|40|1990-2012|m|f|5;1.2|petrol|1242|51|2003-|m|fa|6;0.9 TwinAir|petrol|875|63|2012-|m|fa|2;Natural Power|cng|875|59|2006-2022|m|f|2|EUR;1.3 Multijet|diesel|1248|55|2004-2018|m|fa|3|EUR;1.0 Hybrid|hybrid|999|51|2020-|m|f|3|EUR
+fiat-500	Fiat	500	2007		hatchback:85,convertible:15	EUR:25,NAM:6,LAM:4,TR:3	4	1	1.2|petrol|1242|51|2007-|ma|f|7;0.9 TwinAir|petrol|875|63|2010-2020|ma|f|2;1.0 Hybrid|hybrid|999|51|2020-|m|f|3|EUR;500e|electric|0|87|2013-|a|f|1|EUR,NAM
+fiat-punto	Fiat	Punto	1993	2018	hatchback:100	EUR:25,TR:8,MER:6,AFR:4	5	1	1.2|petrol|1242|44|1993-2018|m|f|7;1.4|petrol|1368|57|2005-2018|ma|f|3;1.3 Multijet|diesel|1248|55|2003-2018|m|f|5|EUR,TR
+fiat-tipo	Fiat	Tipo	1990		hatchback:40,sedan:45,wagon:15	EUR:10,TR:30,MEA:6	5	1	1.4|petrol|1372|70|1990-1995|m|f|3;1.4 Fire|petrol|1368|70|2015-|m|f|4;1.6 E-Torq|petrol|1598|81|2015-|a|f|2|TR;1.3 Multijet|diesel|1248|70|2015-|m|f|4;1.6 Multijet|diesel|1598|88|2015-|ma|f|4
+fiat-uno	Fiat	Uno	1990	2021	hatchback:100	MER:30,LAM:6,EUR:6,AFR:4	5	1	1.0 Fire|petrol|999|48|1990-2021|m|f|8;1.4|petrol|1368|62|1990-2014|m|f|2
+fiat-palio	Fiat	Palio	1996	2017	hatchback:75,wagon:25	MER:30,LAM:8,TR:6,IND:4,AFR:6	5	1	1.0 Fire|petrol|999|48|1996-2017|m|f|6;1.4|petrol|1368|62|1996-2017|m|f|4;1.6|petrol|1581|74|1996-2010|m|f|2
+fiat-siena	Fiat	Siena	1997	2016	sedan:100	MER:16,LAM:6,TR:4	5	0	1.0 Fire|petrol|999|48|1997-2016|m|f|5;1.4|petrol|1368|62|1997-2016|m|f|5
+fiat-strada	Fiat	Strada	1996		pickup:100	MER:24,LAM:4	2	0	1.4|petrol|1368|62|1996-|m|f|7;1.3|petrol|1332|74|2020-|ma|f|3
+fiat-argo	Fiat	Argo	2017		hatchback:100	MER:16,LAM:6	5	0	1.0|petrol|999|56|2017-|m|f|6;1.3|petrol|1332|74|2017-|ma|f|4
+fiat-mobi	Fiat	Mobi	2016		hatchback:100	MER:12	5	0	1.0|petrol|999|55|2016-|m|f|6
+fiat-cronos	Fiat	Cronos	2018		sedan:100	MER:12,LAM:4	5	0	1.3|petrol|1332|74|2018-|ma|f|6;1.8|petrol|1747|99|2018-2021|ma|f|2
+fiat-bravo	Fiat	Bravo	1995	2014	hatchback:100	EUR:10,TR:3	5	0	1.4|petrol|1368|66|1995-2014|m|f|5;1.9 JTD|diesel|1910|77|1998-2014|m|f|5
+fiat-doblo	Fiat	Doblo	2000		van:100	EUR:6,TR:10,MER:4	5	0	1.4|petrol|1368|57|2000-|m|f|4;1.6 Multijet|diesel|1598|77|2010-|m|f|5|EUR,TR;1.3 Multijet|diesel|1248|66|2005-2015|m|f|2|EUR,TR
+fiat-linea	Fiat	Linea	2007	2016	sedan:100	TR:12,MER:4,IND:2	5	0	1.4|petrol|1368|57|2007-2016|m|f|5;1.3 Multijet|diesel|1248|66|2007-2016|m|f|5
+fiat-500x	Fiat	500X	2014		suv:100	EUR:8,NAM:2	5	0	1.0 FireFly|petrol|999|88|2018-|m|f|4;1.4 MultiAir|petrol|1368|103|2014-2018|ma|fa|3;1.6 Multijet|diesel|1598|88|2014-|ma|f|3|EUR
+fiat-seicento	Fiat	Seicento	1998	2010	hatchback:100	EUR:10	4	0	1.1|petrol|1108|40|1998-2010|m|f|8
+fiat-ducato	Fiat	Doblo Cargo	2005	2015	van:100	EUR:1	2	0	1.3 Multijet|diesel|1248|62|2005-2015|m|f|5
+alfa-giulietta	Alfa Romeo	Giulietta	2010	2020	hatchback:100	EUR:8	5	0	1.4 TB|petrol|1368|88|2010-2020|ma|f|5;2.0 JTDm|diesel|1956|110|2010-2020|ma|f|5
+alfa-147	Alfa Romeo	147	2000	2010	hatchback:100	EUR:10	5	0	1.6 TS|petrol|1598|77|2000-2010|m|f|5;1.9 JTD|diesel|1910|85|2001-2010|m|f|5
+alfa-stelvio	Alfa Romeo	Stelvio	2017		suv:100	EUR:4,NAM:4	5	0	2.0|petrol|1995|206|2017-|a|a|5;2.2 JTD|diesel|2143|154|2017-|a|ra|3|EUR
+alfa-giulia	Alfa Romeo	Giulia	2016		sedan:100	EUR:4,NAM:3	5	0	2.0|petrol|1995|206|2016-|a|ra|5;2.2 JTD|diesel|2143|132|2016-|a|r|3|EUR
+alfa-tonale	Alfa Romeo	Tonale	2022		suv:100	EUR:4	5	0	1.5 Hybrid|hybrid|1469|118|2022-|a|f|4;Plug-in Q4|plug_in|1332|206|2022-|a|a|1
+lancia-ypsilon	Lancia	Ypsilon	1996		hatchback:100	EUR:8	5	0	1.2|petrol|1242|51|1996-2023|m|f|7;1.0 Hybrid|hybrid|999|51|2020-|m|f|3;0.9 TwinAir|petrol|875|63|2011-2020|m|f|2
+volvo-xc60	Volvo	XC60	2008		suv:100	EUR:20,NAM:16,CHN:16,OCE:5	5	1	T5|petrol|1969|187|2008-|a|fa|4;B5|hybrid|1969|184|2020-|a|a|3;D4|diesel|1969|140|2008-2021|a|fa|5|EUR;T8 Recharge|plug_in|1969|287|2017-|a|a|2|EUR,NAM,CHN
+volvo-xc90	Volvo	XC90	2002		suv:100	EUR:8,NAM:12,CHN:6,OCE:3,MEA:4	7	0	T6|petrol|1969|235|2015-|a|a|4;3.2|petrol|3192|175|2006-2014|a|a|3;D5|diesel|2400|136|2002-2021|a|a|5|EUR;T8 Recharge|plug_in|1969|300|2015-|a|a|2
+volvo-xc40	Volvo	XC40	2017		suv:100	EUR:18,NAM:8,CHN:6,OCE:3	5	0	T3|petrol|1477|120|2017-|ma|f|4;B4|hybrid|1969|145|2020-|a|f|3;D3|diesel|1969|110|2017-2021|ma|f|2|EUR;Recharge|electric|0|170|2020-|a|fa|2
+volvo-v40	Volvo	V40	1995	2019	hatchback:70,wagon:30	EUR:12	5	0	1.8|petrol|1783|85|1995-2004|ma|f|3;T3|petrol|1498|112|2012-2019|ma|f|3;D2|diesel|1560|84|2012-2019|m|f|4;D4|diesel|1969|140|2012-2019|ma|f|2
+volvo-v70	Volvo	V70	1996	2016	wagon:100	EUR:14,NAM:4	5	0	2.4|petrol|2435|125|1996-2016|ma|f|4;D5|diesel|2400|136|2001-2016|a|fa|6
+volvo-s60	Volvo	S60	2000		sedan:100	EUR:6,NAM:8,CHN:6	5	0	T5|petrol|1969|187|2000-|a|f|5;D4|diesel|1969|140|2010-2021|a|f|3|EUR
+volvo-940	Volvo	940	1990	1998	sedan:40,wagon:60	EUR:12,NAM:4	5	0	2.3|petrol|2316|97|1990-1998|ma|r|6;2.4 TD|diesel|2383|90|1990-1998|ma|r|3
+saab-93	Saab	9-3	1998	2014	sedan:60,wagon:25,convertible:15	EUR:10,NAM:4	5	0	2.0 T|petrol|1998|129|1998-2014|ma|f|6;1.9 TiD|diesel|1910|110|2004-2011|ma|f|4|EUR
+saab-95	Saab	9-5	1997	2011	sedan:60,wagon:40	EUR:6,NAM:3	5	0	2.3 T|petrol|2290|136|1997-2011|ma|f|6;1.9 TiD|diesel|1910|110|2005-2011|ma|f|3|EUR
+landrover-rangerover	Land Rover	Range Rover	1990		suv:100	EUR:5,NAM:5,MEA:12,CIS:6,CHN:3,AFR:5	5	0	4.6 V8|petrol|4554|165|1994-2002|a|a|3;5.0 V8|petrol|4999|375|2009-|a|a|3;3.0 TDV6|diesel|2993|190|2012-|a|a|4|EUR,CIS,AFR;P440e|plug_in|2996|324|2022-|a|a|1|EUR
+landrover-evoque	Land Rover	Range Rover Evoque	2011		suv:100	EUR:8,NAM:3,CHN:4,MEA:4	5	0	2.0 Si4|petrol|1999|177|2011-|a|a|5;2.0 TD4|diesel|1999|110|2011-|ma|fa|5|EUR
+landrover-discovery	Land Rover	Discovery	1990		suv:100	EUR:5,NAM:3,MEA:6,AFR:8,OCE:3	7	0	3.9 V8|petrol|3946|134|1990-2004|ma|a|3;3.0 SDV6|diesel|2993|190|2009-|a|a|4|EUR,AFR,OCE;Sport P250|petrol|1997|184|2014-|a|a|3
+landrover-defender	Land Rover	Defender	1990		suv:100	EUR:3,AFR:8,MEA:4,NAM:2,OCE:2	5	0	Td5|diesel|2495|90|1998-2007|m|a|4;2.4 TDCi|diesel|2402|90|2007-2016|m|a|3;P400|petrol|2996|294|2020-|a|a|3;D250|diesel|2997|183|2020-|a|a|3
+landrover-sport	Land Rover	Range Rover Sport	2005		suv:100	EUR:4,NAM:4,MEA:10,CIS:5,CHN:3	5	0	5.0 V8|petrol|4999|375|2009-|a|a|3;3.0 SDV6|diesel|2993|215|2005-|a|a|5|EUR,CIS;P400e|plug_in|1997|297|2018-|a|a|1
+jaguar-xf	Jaguar	XF	2007		sedan:100	EUR:4,NAM:3,CHN:3,MEA:2	5	0	2.0 i4|petrol|1997|184|2015-|a|ra|4;2.2 D|diesel|2179|147|2007-2015|a|r|3|EUR;2.0 D|diesel|1999|132|2015-|a|ra|3|EUR
+jaguar-fpace	Jaguar	F-Pace	2016		suv:100	EUR:4,NAM:3,CHN:2,MEA:3	5	0	P250|petrol|1997|184|2016-|a|a|5;D180|diesel|1999|132|2016-|a|a|4|EUR
+lada-2107	Lada	2107	1990	2012	sedan:100	CIS:30,EUR:4,AFR:2	5	1	1.5|petrol|1452|53|1990-2012|m|r|8;1.6|petrol|1568|55|2004-2012|m|r|4
+lada-niva	Lada	Niva	1990		suv:100	CIS:25,EUR:4,LAM:2	5	1	1.7|petrol|1690|59|1993-|m|a|8;1.6|petrol|1568|54|1990-1993|m|a|2
+lada-samara	Lada	Samara	1990	2013	hatchback:70,sedan:30	CIS:25,EUR:3	5	0	1.5|petrol|1499|52|1990-2013|m|f|7;1.6|petrol|1596|60|2004-2013|m|f|3
+lada-priora	Lada	Priora	2007	2018	sedan:70,hatchback:15,wagon:15	CIS:22	5	0	1.6|petrol|1596|72|2007-2018|m|f|8
+lada-granta	Lada	Granta	2011		sedan:60,hatchback:25,wagon:15	CIS:35	5	1	1.6 8V|petrol|1596|64|2011-|m|f|8;1.6 16V|petrol|1596|78|2011-|ma|f|4
+lada-vesta	Lada	Vesta	2015		sedan:70,wagon:30	CIS:28	5	1	1.6|petrol|1596|78|2015-|ma|f|7;1.8|petrol|1774|90|2017-|ma|f|3;1.6 CNG|cng|1596|78|2017-|m|f|1
+lada-kalina	Lada	Kalina	2004	2018	hatchback:60,sedan:20,wagon:20	CIS:18	5	0	1.6|petrol|1596|60|2004-2018|m|f|8
+lada-largus	Lada	Largus	2012		wagon:70,van:30	CIS:10	7	0	1.6|petrol|1598|62|2012-|m|f|8
+lada-2110	Lada	110	1995	2009	sedan:70,hatchback:15,wagon:15	CIS:16	5	0	1.5|petrol|1499|55|1995-2009|m|f|6;1.6|petrol|1596|60|2004-2009|m|f|4
+lada-2105	Lada	2105	1990	2010	sedan:100	CIS:14	5	0	1.3|petrol|1294|47|1990-2010|m|r|6;1.5|petrol|1452|53|1990-2010|m|r|4
+uaz-patriot	UAZ	Patriot	2005		suv:100	CIS:20	5	0	2.7|petrol|2693|99|2005-|m|a|8;2.3 D|diesel|2235|84|2007-2016|m|a|2
+uaz-hunter	UAZ	Hunter	2003		suv:100	CIS:10	5	0	2.7|petrol|2693|94|2003-|m|a|8
+gaz-volga	GAZ	Volga	1990	2010	sedan:100	CIS:10	5	0	2.4|petrol|2445|74|1990-2010|m|r|8
+zaz-sens	ZAZ	Sens	2002	2017	sedan:70,hatchback:30	UA:20	5	0	1.3|petrol|1299|51|2002-2017|m|f|8
+moskvich-2141	Moskvich	2141	1990	2001	hatchback:100	CIS:6	5	0	1.7|petrol|1699|62|1990-2001|m|f|8
+togg-t10x	Togg	T10X	2023		suv:100	TR:10	5	0	V1 RWD|electric|0|160|2023-|a|r|5;V2 Long Range|electric|0|160|2023-|a|r|3
+zastava-yugo	Zastava	Koral	1990	2008	hatchback:100	RS:20,BA:10,ME:2	5	0	1.1|petrol|1116|41|1990-2008|m|f|8
+zastava-10	Zastava	10	2005	2008	hatchback:100	RS:20	5	0	1.2|petrol|1242|44|2005-2008|m|f|8
