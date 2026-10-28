@@ -26,6 +26,17 @@ int main()
         std::cout << "  " << v << "\n    VIN " << v.vin << ", " << v.colour << ", " << v.transmission << '\n';
     }
 
+    std::cout << "\nMotorcycles in Vietnam, Italy and India:\n";
+    for (const auto* country : {"VN", "IT", "IN"})
+    {
+        dasmig::vehicle_request request;
+        request.country = country;
+        request.kind = dasmig::vehicle_kind::motorcycle;
+        const auto v = gen.get_vehicle(request);
+        std::cout << "  " << v << "\n    " << dasmig::to_string(v.body) << ", " << v.engine_cc << " cc, "
+                  << v.transmission << ", " << v.drive << " drive\n";
+    }
+
     std::cout << "\nA new electric car in Norway, with a plate and VIN nobody holds:\n";
     dasmig::vehicle_request norway;
     norway.country = "NO";

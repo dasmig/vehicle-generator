@@ -10,6 +10,7 @@ This guide covers every feature of the vehicle-generator library. For a quick ov
 <li><a href="#installation">Installation</a></li>
 <li><a href="#loading-resources">Loading Resources</a></li>
 <li><a href="#generating">Generating</a></li>
+<li><a href="#cars-and-motorcycles">Cars and Motorcycles</a></li>
 <li><a href="#seeding-and-deterministic-generation">Seeding and Deterministic Generation</a></li>
 <li><a href="#extending-data">Extending Data</a></li>
 <li><a href="#replay-and-json">Replay and JSON</a></li>
@@ -59,12 +60,13 @@ Each `load` replaces the data and every layer loaded before.
 
 | Field | Meaning |
 | --- | --- |
-| `country` | ISO 3166-1 alpha-2, any case. Unset: drawn by passenger cars in use. |
+| `country` | ISO 3166-1 alpha-2, any case. Unset: drawn by vehicles in use (of the kind, when one is requested or implied). |
+| `kind` | `vehicle_kind::car` or `vehicle_kind::motorcycle`. Unset: implied by `model` or `body`, else drawn by the country's cars and motorcycles in use. |
 | `region` | A plate region of the country (`plate_regions(country)`): a US state, Canadian province or Australian state (which picks that jurisdiction's plates), or a district or province code where plates carry one (`"M"` for Munich). Without `country`, the country is drawn among those that have the region. |
-| `make`, `model` | A make as `makes()` lists it, or a model key (`models(make)`), which implies its make. |
-| `body`, `fuel` | `vehicle_body` and `vehicle_fuel` values. |
+| `make`, `model` | A make as `makes()` lists it, or a model key (`models(make)`), which implies its make and kind. |
+| `body`, `fuel` | `vehicle_body` and `vehicle_fuel` values; a body implies its kind (`kind_of(body)`). |
 | `min_age`, `max_age` | Completed years since the model year at the reference date. |
-| `owner_age` | The owner's age; younger owners have older cars and more hatchbacks, older owners newer cars and more sedans. |
+| `owner_age` | The owner's age; younger owners have older cars, more hatchbacks, more motorcycles and more sport bikes; older owners newer cars, more sedans, fewer motorcycles and more tourers. |
 | `reference_date` | The day the vehicle is seen, from 2000-01-01 to 2050-12-31 (default 2023-07-01). |
 | `units` | `distance_units::country` (miles in the US, UK, Liberia and Myanmar), `metric` or `imperial`. |
 | `safe` | Plate and VIN from series nobody holds; `reserved` is then set. |
@@ -84,21 +86,45 @@ The result:
 
 | Field | Example |
 | --- | --- |
-| `country_code`, `make`, `model`, `model_key`, `trim` | `"DE"`, `"Volkswagen"`, `"Golf"`, `"vw-golf"`, `"1.5 TSI"` |
+| `country_code`, `kind` | `"DE"`, `vehicle_kind::car` |
+| `make`, `model`, `model_key`, `trim` | `"Volkswagen"`, `"Golf"`, `"vw-golf"`, `"1.5 TSI"` |
 | `body`, `fuel` | `vehicle_body::hatchback`, `vehicle_fuel::petrol` (`to_string()` gives their names) |
 | `model_year`, `first_registration` | `2019`, `2019-04-11` |
 | `engine_cc`, `power_kw` | `1498`, `96` (`engine_cc` is 0 for electric cars) |
-| `transmission`, `drive` | `"manual"` or `"automatic"`; `"fwd"`, `"rwd"` or `"awd"` |
-| `doors`, `seats` | `5`, `5` |
+| `transmission`, `drive` | `"manual"`, `"automatic"` or (motorcycles) `"semi-automatic"`; `"fwd"`, `"rwd"` or `"awd"`, or (motorcycles) `"chain"`, `"belt"`, `"shaft"` or `"hub"` |
+| `doors`, `seats` | `5`, `5` (a motorcycle has 0 doors) |
 | `colour`, `colour_family` | `"Reflex Silver"`, `"silver"` |
 | `odometer`, `odometer_unit` | `54300`, `"km"` |
 | `plate`, `plate_region`, `plate_format` | `"B-KX 4821"`, `"B"`, `"de"` |
 | `vin`, `wmi` | `"WVWZZZJY9KH761457"`, `"WVW"` |
 | `reserved` | `true` for safe plates and VINs |
 
-Queries: `countries()`, `makes(country)` (sold there; every make without a country), `models(make)` (keys), `plate_regions(country)`.
+Queries: `countries(kind)`, `makes(country, kind)` (sold there; every make without a country), `models(make, kind)` (keys), `plate_regions(country)`. The kind is optional everywhere and narrows the answer to cars or motorcycles.
 
 Japanese and Chinese plates are UTF-8 in their scripts (`福岡 331 な ・317`, `京A·12345`). The [data guide](data.md) explains every draw.
+
+## Cars and Motorcycles
+
+Every country has a motorcycle fleet next to its car fleet: motorcycles and scooters per 1,000 people, their age, makes, fuel mix, colours and yearly distance. A request without a kind draws one by the vehicles in use, so most vehicles drawn in Vietnam, Indonesia or Taiwan are two-wheelers and few in the United States are.
+
+```cpp
+dasmig::vehicle_request r;
+r.country = "IN";
+r.kind = dasmig::vehicle_kind::motorcycle;
+auto v = gen.get_vehicle(r);  // 2022 Honda Activa 110, petrol, yellow, 12,490 km, TN 70 T 1716
+v.body;                       // vehicle_body::scooter
+dasmig::kind_of(v.body);      // vehicle_kind::motorcycle
+
+r.kind.reset();
+r.body = dasmig::vehicle_body::cruiser; // implies a motorcycle
+r.model = "vw-golf";                    // throws: vw-golf is a car, not a motorcycle
+```
+
+- **Bodies.** Motorcycles are `scooter`, `underbone` (step-through such as the Honda Wave and Super Cub), `standard`, `sport`, `touring`, `cruiser`, `adventure` and `offroad`.
+- **Summaries.** A motorcycle's trim usually names its model (`CBR600RR` of the `CBR`), and the summary then gives the trim alone: `2019 Honda CBR600RR`.
+- **Plates.** Where a country gives motorcycles their own series (Italy from July 1999, Vietnam, Japan, Greece, Colombia, Argentina), motorcycles get it; elsewhere they carry the country's general format.
+- **Seeds.** The kind is drawn on its own stream right after the country, so fixing the country and the kind of a result replays it unchanged. The country itself is drawn by the fleet of the requested kind, so fixing the kind alone can change it.
+- **Not drawn.** Mopeds of 50 cc and under, three-wheelers and quadricycles.
 
 ## Seeding and Deterministic Generation
 
@@ -180,5 +206,5 @@ gen.for_each_vehicle(request, {.count = 1'000'000, .threads = 0}, 42, lines);
 | Exception | When |
 |-----------|------|
 | `std::runtime_error` | Any generation call before data is loaded |
-| `std::invalid_argument` | A reference date outside 2000-01-01 to 2050-12-31 or invalid; an unknown country (`Unknown country code: XX`), make, model or plate region; `min_age` above `max_age`; a combination nobody sells in the country and age range (the message names it); a layer that leaves the tables inconsistent |
+| `std::invalid_argument` | A reference date outside 2000-01-01 to 2050-12-31 or invalid; an unknown country (`Unknown country code: XX`), make, model or plate region; `min_age` above `max_age`; a combination nobody sells in the country and age range (the message names it); a model or body of the other kind than the one requested; a layer that leaves the tables inconsistent |
 | `dasmig::core::tsv_error` | A malformed table or layer (message gives file, line and column); the data is unchanged |

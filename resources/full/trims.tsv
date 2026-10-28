@@ -1,4 +1,4 @@
-# Trims of each model: label, fuel, engine (cc, 0 for electric), power (kW), model years, gearboxes (m manual, a automatic), drives (f, r, a; the first is the usual one), weight and the markets that got it (empty: all). Curated from the makers' specifications.
+# Trims of each model: label, fuel, engine (cc, 0 for electric), power (kW), model years, gearboxes (m manual, a automatic, s semi-automatic), drives (cars f, r, a; motorcycles c chain, b belt, s shaft, h hub; the first is the usual one), weight and the markets that got it (empty: all). Curated from the makers' specifications.
 model	label	fuel	engine_cc	power_kw	from_year	to_year	transmissions	drives	weight	markets
 ford-f150	4.6 V8	petrol	4601	172	1997	2010	a	ra	4	
 ford-f150	5.0 V8	petrol	4951	268	2011		a	ra	5	
@@ -1517,3 +1517,533 @@ isuzu-mux	3.0 TD	diesel	2999	130	2013		a	ra	6
 isuzu-mux	1.9 Ddi	diesel	1898	110	2017		a	r	3	
 isuzu-trooper	3.2 V6	petrol	3165	130	1992	2002	ma	a	5	
 isuzu-trooper	3.1 TD	diesel	3059	84	1990	2002	m	a	4	
+honda-cg	CG 125	petrol	124	8	1990	2017	m	c	5	
+honda-cg	CG 150 Titan	petrol	149	10	2004	2015	m	c	5	MER,LAM
+honda-cg	CG 150 Titan Mix	flex	149	10	2009	2015	m	c	5	BR
+honda-cg	CG 160 Titan	flex	163	11	2016		m	c	6	BR
+honda-cg	CG 160	petrol	163	11	2016		m	c	4	MER,LAM,AFR,MEA
+honda-cd70	CD 70	petrol	72	4	1990		m	c	1	
+honda-wave	Dream 100	petrol	97	5	1990	2000	s	c	5	
+honda-wave	Wave 100	petrol	97	5	1995	2012	s	c	5	
+honda-wave	Wave 110	petrol	109	6	2008		s	c	6	
+honda-wave	Wave 125	petrol	124	7	2003		s	c	3	
+honda-supercub	Super Cub 90	petrol	85	5	1990	2012	s	c	5	
+honda-supercub	Super Cub 110	petrol	109	6	2009		s	c	6	
+honda-supercub	Super Cub C125	petrol	124	7	2018		s	c	3	
+honda-pcx	PCX 125	petrol	125	9	2010		a	b	6	
+honda-pcx	PCX 150	petrol	153	10	2012	2020	a	b	4	SEA,LAM,MER,JPN,TR,KOR
+honda-pcx	PCX 160	petrol	157	12	2021		a	b	4	SEA,LAM,MER,JPN,TR,KOR
+honda-pcx	PCX e:HEV	hybrid	125	9	2018	2021	a	b	1	JPN,TH
+honda-vario	Vario 110	petrol	108	7	2006		a	b	5	
+honda-vario	Vario 125	petrol	125	8	2012		a	b	5	
+honda-vario	Vario 150	petrol	149	10	2015	2021	a	b	3	
+honda-vario	Vario 160	petrol	157	11	2022		a	b	3	
+honda-beat	BeAT	petrol	110	7	2008		a	b	1	
+honda-activa	Activa	petrol	102	5	2001	2008	a	b	3	
+honda-activa	Activa 110	petrol	110	6	2008		a	b	6	
+honda-activa	Activa 125	petrol	125	6	2014		a	b	3	
+honda-activa	Activa e	electric	0	4	2025		a	h	1	IN
+honda-shine	CB Shine 125	petrol	125	8	2006		m	c	5	
+honda-shine	Shine 100	petrol	98	5	2023		m	c	2	IN
+honda-unicorn	Unicorn 150	petrol	149	10	2004	2016	m	c	1	
+honda-unicorn	Unicorn 160	petrol	163	10	2017		m	c	1	
+honda-cbr	CBR600F	petrol	599	74	1990	2006	m	c	5	
+honda-cbr	CBR600RR	petrol	599	88	2003	2024	m	c	5	
+honda-cbr	CBR650F	petrol	649	64	2014	2018	m	c	3	EUR,OCE,SEA,JPN
+honda-cbr	CBR650R	petrol	649	70	2019		m	c	4	EUR,OCE,SEA,JPN,LAM
+honda-fireblade	CBR900RR Fireblade	petrol	893	91	1992	1999	m	c	1	
+honda-fireblade	CBR929RR Fireblade	petrol	929	112	2000	2001	m	c	1	
+honda-fireblade	CBR954RR Fireblade	petrol	954	113	2002	2003	m	c	1	
+honda-fireblade	CBR1000RR Fireblade	petrol	998	128	2004	2019	m	c	2	
+honda-fireblade	CBR1000RR-R Fireblade	petrol	1000	160	2020		m	c	1	
+honda-cb500	CB500	petrol	499	42	1994	2003	m	c	1	
+honda-cb500	CB500F	petrol	471	35	2013	2023	m	c	2	
+honda-cb500	CB500 Hornet	petrol	471	35	2024		m	c	1	
+honda-hornet	CB600F Hornet	petrol	599	70	1998	2013	m	c	3	
+honda-hornet	CB650F	petrol	649	64	2014	2018	m	c	1	
+honda-hornet	CB650R	petrol	649	70	2019		m	c	2	
+honda-hornet	CB750 Hornet	petrol	755	67	2023		m	c	1	
+honda-cb125f	CBF125	petrol	125	8	2009	2014	m	c	1	
+honda-cb125f	CB125F	petrol	125	8	2015		m	c	1	
+honda-goldwing	Gold Wing GL1500	petrol	1520	74	1990	2000	m	s	1	
+honda-goldwing	Gold Wing GL1800	petrol	1832	87	2001	2017	m	s	1	
+honda-goldwing	Gold Wing	petrol	1833	93	2018		ma	s	1	
+honda-africatwin	Africa Twin XRV750	petrol	742	44	1990	2003	m	c	1	
+honda-africatwin	Africa Twin CRF1000L	petrol	998	70	2016	2019	ma	c	1	
+honda-africatwin	Africa Twin CRF1100L	petrol	1084	75	2020		ma	c	1	
+honda-nc750x	NC700X	petrol	670	35	2012	2013	ma	c	1	
+honda-nc750x	NC750X	petrol	745	40	2014		ma	c	3	
+honda-transalp	Transalp XL600V	petrol	583	38	1990	1999	m	c	1	
+honda-transalp	Transalp XL650V	petrol	647	39	2000	2007	m	c	1	
+honda-transalp	Transalp XL700V	petrol	680	44	2008	2012	m	c	1	
+honda-transalp	Transalp XL750	petrol	755	67	2023		m	c	1	
+honda-shadow	Shadow VT600C	petrol	583	29	1990	2007	m	c	1	
+honda-shadow	Shadow VT750C	petrol	745	33	1997	2020	m	s	2	
+honda-rebel	Rebel 300	petrol	286	20	2017		m	c	1	
+honda-rebel	Rebel 500	petrol	471	34	2017		m	c	2	
+honda-rebel	Rebel 1100	petrol	1084	64	2021		ma	c	1	
+honda-xr	XR200R	petrol	195	13	1990	2002	m	c	1	
+honda-xr	XR125L	petrol	124	8	2003	2019	m	c	2	
+honda-xr	XR150L	petrol	149	9	2014		m	c	3	
+honda-xr	XR190L	petrol	184	11	2020		m	c	1	LAM
+honda-bros	NXR 125 Bros	petrol	124	9	2003	2008	m	c	1	
+honda-bros	NXR 150 Bros	petrol	149	10	2006	2015	m	c	1	
+honda-bros	NXR 150 Bros Mix	flex	149	10	2009	2015	m	c	1	BR
+honda-bros	NXR 160 Bros	flex	163	11	2015		m	c	2	BR
+honda-biz	Biz 100	petrol	97	5	1998	2005	s	c	1	
+honda-biz	Biz 125	petrol	125	7	2005		s	c	2	
+honda-biz	Biz 125 Flex	flex	125	7	2016		s	c	2	BR
+honda-pop	Pop 100	petrol	97	4	2007	2015	s	c	1	
+honda-pop	Pop 110i	petrol	110	6	2016		s	c	1	
+honda-twister	CBX 250 Twister	petrol	249	18	2001	2008	m	c	1	
+honda-twister	CB 300R	petrol	291	19	2009	2015	m	c	1	
+honda-twister	CB 250F Twister	flex	250	17	2016		m	c	1	BR
+honda-xre	XRE 300	petrol	291	19	2009	2015	m	c	1	
+honda-xre	XRE 300	flex	291	19	2016		m	c	1	BR
+honda-sh	SH125	petrol	125	9	2001		a	b	4	
+honda-sh	SH150	petrol	153	11	2001		a	b	2	EUR,VN
+honda-sh	SH300	petrol	279	19	2007	2020	a	b	1	EUR
+honda-sh	SH350	petrol	330	22	2021		a	b	1	EUR
+honda-forza	Forza 250	petrol	249	15	2000	2017	a	b	1	JPN,SEA,KOR
+honda-forza	Forza 300	petrol	279	19	2013	2020	a	b	1	EUR,SEA
+honda-forza	Forza 125	petrol	125	11	2015		a	b	2	EUR
+honda-forza	Forza 350	petrol	330	22	2021		a	b	2	
+honda-cb400sf	CB400 Super Four	petrol	399	41	1992	2022	m	c	1	
+yamaha-ybr	YB 125	petrol	123	7	1990	2004	m	c	3	
+yamaha-ybr	YBR 125	petrol	124	7	2005		m	c	5	
+yamaha-ybr	YBR 125 Factor	petrol	124	8	2009		m	c	3	MER
+yamaha-ybr	Factor 150	flex	149	9	2016		m	c	2	BR
+yamaha-jupiter	Crypton 105	petrol	102	5	1990	2004	s	c	3	
+yamaha-jupiter	Jupiter Z	petrol	110	7	2004		s	c	4	
+yamaha-jupiter	Jupiter MX 135	petrol	135	8	2005		m	c	2	SEA
+yamaha-jupiter	Sirius 110	petrol	110	6	2006		s	c	3	VN,AFR
+yamaha-mio	Mio 115	petrol	113	6	2003		a	b	3	
+yamaha-mio	Mio 125	petrol	125	7	2012		a	b	2	
+yamaha-nmax	NMAX 125	petrol	125	9	2015		a	b	3	
+yamaha-nmax	NMAX 155	petrol	155	11	2015		a	b	3	SEA,LAM,MER,JPN,TR
+yamaha-aerox	Aerox 155	petrol	155	11	2016		a	b	1	
+yamaha-fz	FZ16	petrol	153	10	2008	2013	m	c	1	
+yamaha-fz	FZ-S FI	petrol	149	9	2014		m	c	2	
+yamaha-r15	YZF-R15	petrol	150	12	2008	2017	m	c	1	
+yamaha-r15	YZF-R15 V3	petrol	155	14	2018		m	c	1	
+yamaha-r1	YZF-R1	petrol	998	110	1998	2014	m	c	2	
+yamaha-r1	YZF-R1	petrol	998	147	2015		m	c	1	
+yamaha-r6	YZF-R6	petrol	599	88	1999	2020	m	c	1	
+yamaha-mt07	MT-07	petrol	689	54	2014		m	c	1	
+yamaha-mt09	MT-09	petrol	847	85	2014	2020	m	c	1	
+yamaha-mt09	MT-09	petrol	889	87	2021		m	c	1	
+yamaha-diversion	XJ600S Diversion	petrol	598	45	1992	2003	m	c	1	
+yamaha-diversion	XJ900S Diversion	petrol	892	66	1995	2003	m	s	1	
+yamaha-fazer	FZS600 Fazer	petrol	599	70	2000	2003	m	c	1	
+yamaha-fazer	FZ6 Fazer	petrol	600	72	2004	2010	m	c	2	
+yamaha-fazer	XJ6 Diversion	petrol	600	57	2009	2016	m	c	2	
+yamaha-tmax	TMAX 500	petrol	499	30	2001	2011	a	b	2	
+yamaha-tmax	TMAX 530	petrol	530	34	2012	2019	a	b	2	
+yamaha-tmax	TMAX 560	petrol	562	35	2020		a	b	2	
+yamaha-xmax	XMAX 125	petrol	125	10	2006		a	b	3	EUR,TR
+yamaha-xmax	XMAX 250	petrol	249	15	2006		a	b	2	
+yamaha-xmax	XMAX 300	petrol	292	21	2017		a	b	3	
+yamaha-xmax	XMAX 400	petrol	395	24	2013	2020	a	b	1	EUR
+yamaha-virago	XV535 Virago	petrol	535	33	1990	2003	m	s	2	
+yamaha-virago	XV750 Virago	petrol	748	40	1990	1997	m	s	1	
+yamaha-dragstar	XVS650 Drag Star	petrol	649	30	1997	2016	m	s	2	
+yamaha-dragstar	XVS1100 Drag Star	petrol	1063	46	1999	2009	m	s	1	
+yamaha-bolt	XV950 Bolt	petrol	942	40	2014		m	b	1	
+yamaha-tenere	XT600E	petrol	595	33	1990	2003	m	c	1	
+yamaha-tenere	XTZ750 Super Ténéré	petrol	749	51	1990	1997	m	c	1	
+yamaha-tenere	XT660Z Ténéré	petrol	660	35	2008	2016	m	c	1	
+yamaha-tenere	XT1200Z Super Ténéré	petrol	1199	82	2010	2021	m	s	1	
+yamaha-tenere	Ténéré 700	petrol	689	54	2019		m	c	2	
+yamaha-xtz	XTZ 125	petrol	124	8	2002		m	c	3	
+yamaha-xtz	XTZ 250 Lander	petrol	249	15	2006		m	c	1	MER,LAM
+yamaha-xtz	XTZ 150 Crosser	flex	149	9	2014		m	c	2	BR
+yamaha-dt	DT 125	petrol	123	10	1990	2006	m	c	3	
+yamaha-dt	DT 175	petrol	171	12	1990	2000	m	c	1	LAM,AFR
+yamaha-rx	RX 100	petrol	98	8	1990	1996	m	c	1	IND
+yamaha-rx	RX-King	petrol	132	10	1990	2008	m	c	1	SEA
+yamaha-sr400	SR400	petrol	399	19	1990	2021	m	c	1	
+yamaha-serow	XT225 Serow	petrol	223	14	1990	2004	m	c	1	
+yamaha-serow	XT250 Serow	petrol	249	13	2005	2020	m	c	1	
+suzuki-gn	GN 125	petrol	124	8	1990		m	c	3	
+suzuki-gn	GD 110	petrol	113	6	2014		m	c	2	PK
+suzuki-gn	GS 150	petrol	150	9	2005		m	c	1	PK
+suzuki-ax100	AX100	petrol	99	7	1990	2017	m	c	1	
+suzuki-gsxr	GSX-R750	petrol	749	88	1990	2023	m	c	2	
+suzuki-gsxr	GSX-R1100	petrol	1074	100	1990	1998	m	c	1	
+suzuki-gsxr	GSX-R600	petrol	599	85	1997	2024	m	c	3	
+suzuki-gsxr	GSX-R1000	petrol	999	136	2001		m	c	2	
+suzuki-sv650	SV650	petrol	645	52	1999		m	c	1	
+suzuki-vstrom	V-Strom 1000	petrol	996	72	2002	2019	m	c	1	
+suzuki-vstrom	V-Strom 650	petrol	645	50	2004		m	c	3	
+suzuki-vstrom	V-Strom 250	petrol	248	18	2017		m	c	1	JPN,SEA,LAM,IND
+suzuki-vstrom	V-Strom 1050	petrol	1037	79	2020		m	c	1	
+suzuki-vstrom	V-Strom 800DE	petrol	776	62	2023		m	c	1	
+suzuki-burgman	Burgman 400	petrol	400	24	1998		a	b	2	
+suzuki-burgman	Burgman 650	petrol	638	40	2002	2022	a	b	1	EUR,NAM,JPN,OCE
+suzuki-burgman	Burgman 125	petrol	125	9	2002		a	b	2	EUR,JPN
+suzuki-burgman	Burgman Street 125	petrol	124	6	2018		a	b	3	IND
+suzuki-access	Access 125	petrol	124	6	2007		a	b	1	
+suzuki-intruder	Intruder VS800	petrol	805	39	1990	2004	m	s	1	
+suzuki-intruder	Intruder VS1400	petrol	1360	46	1990	2004	m	s	1	
+suzuki-intruder	Boulevard C50	petrol	805	38	2005	2019	m	s	2	
+suzuki-intruder	Boulevard M109R	petrol	1783	93	2006	2019	m	s	1	
+suzuki-smash	Shogun 110	petrol	110	6	1995	2003	s	c	1	
+suzuki-smash	Smash 110	petrol	110	6	2002	2019	s	c	2	
+suzuki-smash	Smash 115	petrol	113	7	2019		s	c	1	
+suzuki-raider	Raider J 110	petrol	109	6	1997	2016	s	c	1	
+suzuki-raider	Raider 150	petrol	147	13	2004		m	c	2	
+suzuki-bandit	GSF600 Bandit	petrol	599	57	1995	2004	m	c	2	
+suzuki-bandit	GSF650 Bandit	petrol	656	62	2005	2016	m	c	2	
+suzuki-bandit	GSF1200 Bandit	petrol	1157	72	1996	2006	m	c	1	
+suzuki-bandit	GSF1250 Bandit	petrol	1255	72	2007	2016	m	c	1	
+suzuki-dr	DR200	petrol	199	15	1990		m	c	1	
+suzuki-dr	DR650	petrol	644	32	1990		m	c	1	
+suzuki-dr	DR-Z400	petrol	398	29	2000		m	c	1	
+kawasaki-ninja	GPX250R	petrol	248	25	1990	2007	m	c	1	
+kawasaki-ninja	Ninja 250R	petrol	249	24	2008	2012	m	c	1	
+kawasaki-ninja	Ninja 250	petrol	249	24	2013		m	c	2	SEA,JPN,LAM,MER
+kawasaki-ninja	Ninja 300	petrol	296	29	2013	2017	m	c	1	
+kawasaki-ninja	Ninja 400	petrol	399	33	2018		m	c	2	
+kawasaki-zx	ZZR600	petrol	599	72	1990	2008	m	c	2	
+kawasaki-zx	Ninja ZX-9R	petrol	899	105	1994	2003	m	c	1	
+kawasaki-zx	Ninja ZX-6R	petrol	636	95	1995		m	c	3	
+kawasaki-zx	Ninja ZX-10R	petrol	998	147	2004		m	c	2	
+kawasaki-z	Zephyr 750	petrol	738	50	1990	1999	m	c	1	
+kawasaki-z	ZR-7	petrol	738	56	1999	2003	m	c	1	
+kawasaki-z	Z1000	petrol	1043	104	2003	2020	m	c	1	
+kawasaki-z	Z750	petrol	748	78	2004	2012	m	c	2	
+kawasaki-z	Z800	petrol	806	83	2013	2016	m	c	2	
+kawasaki-z	Z900	petrol	948	92	2017		m	c	3	
+kawasaki-z	Z650	petrol	649	50	2017		m	c	2	
+kawasaki-z	Z900RS	petrol	948	82	2018		m	c	1	
+kawasaki-er6	ER-6	petrol	649	53	2006	2016	m	c	1	
+kawasaki-er6	Ninja 650	petrol	649	50	2017		m	c	1	
+kawasaki-vulcan	Vulcan VN800	petrol	805	42	1995	2006	m	s	1	
+kawasaki-vulcan	Vulcan VN1500	petrol	1470	48	1990	2008	m	s	1	
+kawasaki-vulcan	Vulcan 900	petrol	903	37	2006		m	b	2	
+kawasaki-vulcan	Vulcan S	petrol	649	45	2015		m	c	1	
+kawasaki-klr	KLR650	petrol	651	31	1990		m	c	1	
+kawasaki-klx	KLX250	petrol	249	16	1993		m	c	1	
+kawasaki-klx	KLX150	petrol	144	9	2009		m	c	2	SEA
+kawasaki-versys	Versys 650	petrol	649	51	2007		m	c	2	
+kawasaki-versys	Versys 1000	petrol	1043	88	2012		m	c	1	
+harley-sportster	Sportster 883	petrol	883	39	1990	2022	m	b	3	
+harley-sportster	Sportster 1200	petrol	1202	50	1990	2022	m	b	2	
+harley-sportster	Sportster S	petrol	1252	90	2021		m	b	1	
+harley-sportster	Nightster	petrol	975	66	2022		m	b	1	
+harley-softail	Fat Boy	petrol	1340	45	1990	1999	m	b	1	
+harley-softail	Fat Boy	petrol	1450	50	2000	2006	m	b	1	
+harley-softail	Fat Boy	petrol	1584	55	2007	2011	m	b	1	
+harley-softail	Fat Boy	petrol	1690	60	2012	2017	m	b	1	
+harley-softail	Fat Boy 114	petrol	1868	69	2018		m	b	1	
+harley-softail	Heritage Softail Classic	petrol	1340	45	1990	1999	m	b	1	
+harley-softail	Heritage Softail Classic	petrol	1450	50	2000	2006	m	b	1	
+harley-softail	Heritage Softail Classic	petrol	1584	55	2007	2011	m	b	1	
+harley-softail	Heritage Softail Classic	petrol	1690	60	2012	2017	m	b	1	
+harley-softail	Heritage Classic 114	petrol	1868	69	2018		m	b	1	
+harley-softail	Street Bob	petrol	1746	64	2018		m	b	1	
+harley-dyna	Dyna Super Glide	petrol	1340	45	1991	1998	m	b	1	
+harley-dyna	Dyna Super Glide	petrol	1450	50	1999	2005	m	b	1	
+harley-dyna	Dyna Street Bob	petrol	1450	50	2006	2006	m	b	1	
+harley-dyna	Dyna Street Bob	petrol	1584	55	2007	2011	m	b	1	
+harley-dyna	Dyna Street Bob	petrol	1690	60	2012	2017	m	b	1	
+harley-touring	Electra Glide	petrol	1340	45	1990	1998	m	b	1	
+harley-touring	Electra Glide	petrol	1450	50	1999	2006	m	b	1	
+harley-touring	Road King	petrol	1584	55	2007	2016	m	b	1	
+harley-touring	Street Glide	petrol	1746	66	2017	2023	m	b	2	
+harley-touring	Road Glide	petrol	1868	74	2017		m	b	1	
+harley-touring	Street Glide	petrol	1923	79	2024		m	b	1	
+harley-street	Street 750	petrol	749	40	2014	2020	m	b	1	
+harley-street	Street 500	petrol	494	28	2014	2020	m	b	1	IND,SEA
+harley-panamerica	Pan America 1250	petrol	1252	112	2021		m	c	1	
+indian-chief	Chief	petrol	1811	68	2014	2021	m	b	1	
+indian-chief	Chief	petrol	1890	71	2022		m	b	1	
+indian-scout	Scout	petrol	1133	74	2015	2024	m	b	2	
+indian-scout	Scout Bobber	petrol	1133	74	2018	2024	m	b	1	
+indian-scout	Scout	petrol	1250	78	2025		m	b	1	
+bmw-gs	R 100 GS	petrol	980	44	1990	1996	m	s	1	
+bmw-gs	R 1100 GS	petrol	1085	59	1994	1999	m	s	1	
+bmw-gs	R 1150 GS	petrol	1130	62	1999	2004	m	s	1	
+bmw-gs	R 1200 GS	petrol	1170	92	2004	2018	m	s	3	
+bmw-gs	R 1250 GS	petrol	1254	100	2019	2023	m	s	2	
+bmw-gs	R 1300 GS	petrol	1300	107	2024		ma	s	1	
+bmw-fgs	F 650 GS	petrol	652	37	2000	2007	m	c	1	
+bmw-fgs	F 800 GS	petrol	798	63	2008	2018	m	c	2	
+bmw-fgs	F 650 GS Twin	petrol	798	52	2008	2012	m	c	1	
+bmw-fgs	F 750 GS	petrol	853	57	2018	2023	m	c	1	
+bmw-fgs	F 850 GS	petrol	853	70	2018	2023	m	c	1	
+bmw-fgs	F 800 GS	petrol	895	64	2024		m	c	1	
+bmw-fgs	F 900 GS	petrol	895	77	2024		m	c	1	
+bmw-rt	K 75 RT	petrol	740	37	1990	1996	m	s	1	
+bmw-rt	K 1100 LT	petrol	1092	74	1991	1999	m	s	1	
+bmw-rt	R 850 RT	petrol	848	51	1996	2000	m	s	1	
+bmw-rt	R 1100 RT	petrol	1085	66	1996	2001	m	s	1	
+bmw-rt	R 1150 RT	petrol	1130	70	2001	2005	m	s	1	
+bmw-rt	R 1200 RT	petrol	1170	81	2005	2018	m	s	3	
+bmw-rt	R 1250 RT	petrol	1254	100	2019		m	s	2	
+bmw-g310	G 310	petrol	313	25	2016		m	c	1	
+bmw-s1000rr	S 1000 RR	petrol	999	142	2009		m	c	1	
+bmw-c	C 600 Sport	petrol	647	44	2012	2015	a	b	1	
+bmw-c	C 650 GT	petrol	647	44	2012	2020	a	b	1	
+bmw-c	C 400 X	petrol	350	25	2018		a	b	2	
+bmw-c	C 400 GT	petrol	350	25	2019		a	b	2	
+bmw-ce04	CE 04	electric	0	31	2022		a	b	1	
+bmw-ninet	R nineT	petrol	1170	81	2014	2024	m	s	2	
+bmw-ninet	R nineT Pure	petrol	1170	81	2017	2024	m	s	1	
+bmw-ninet	R nineT Scrambler	petrol	1170	81	2016	2024	m	s	1	
+ducati-monster	Monster 600	petrol	583	40	1993	2001	m	c	1	
+ducati-monster	Monster 900	petrol	904	53	1993	2002	m	c	1	
+ducati-monster	Monster 620	petrol	618	46	2002	2006	m	c	1	
+ducati-monster	Monster 695	petrol	695	54	2006	2008	m	c	1	
+ducati-monster	Monster 696	petrol	696	59	2008	2014	m	c	2	
+ducati-monster	Monster 821	petrol	821	80	2014	2020	m	c	2	
+ducati-monster	Monster 1200	petrol	1198	108	2014	2021	m	c	1	
+ducati-monster	Monster	petrol	937	82	2021		m	c	2	
+ducati-superbike	851	petrol	851	74	1990	1992	m	c	1	
+ducati-superbike	888	petrol	888	78	1991	1994	m	c	1	
+ducati-superbike	916	petrol	916	84	1994	1998	m	c	1	
+ducati-superbike	996	petrol	996	83	1999	2001	m	c	1	
+ducati-superbike	998	petrol	998	91	2002	2004	m	c	1	
+ducati-superbike	999	petrol	999	91	2003	2006	m	c	1	
+ducati-superbike	1098	petrol	1099	118	2007	2008	m	c	1	
+ducati-superbike	1198	petrol	1198	125	2009	2011	m	c	1	
+ducati-superbike	Panigale 1199	petrol	1198	143	2012	2014	m	c	1	
+ducati-superbike	Panigale 899	petrol	898	110	2014	2015	m	c	1	
+ducati-superbike	Panigale 1299	petrol	1285	151	2015	2017	m	c	1	
+ducati-superbike	Panigale 959	petrol	955	116	2016	2019	m	c	1	
+ducati-superbike	Panigale V4	petrol	1103	158	2018		m	c	2	
+ducati-superbike	Panigale V2	petrol	955	114	2020		m	c	1	
+ducati-multistrada	Multistrada 1000DS	petrol	992	62	2003	2006	m	c	1	
+ducati-multistrada	Multistrada 1100	petrol	1078	70	2007	2009	m	c	1	
+ducati-multistrada	Multistrada 1200	petrol	1198	110	2010	2017	m	c	2	
+ducati-multistrada	Multistrada 950	petrol	937	83	2017		m	c	2	
+ducati-multistrada	Multistrada 1260	petrol	1262	116	2018	2020	m	c	1	
+ducati-multistrada	Multistrada V4	petrol	1158	125	2021		m	c	2	
+ducati-scrambler	Scrambler 800	petrol	803	55	2015		m	c	3	
+ducati-scrambler	Scrambler 1100	petrol	1079	63	2018	2022	m	c	1	
+ducati-supersport	900 SS	petrol	904	55	1990	2002	m	c	2	
+ducati-supersport	750 SS	petrol	748	43	1991	2002	m	c	1	
+ducati-supersport	SuperSport 1000DS	petrol	992	62	2003	2007	m	c	1	
+ducati-supersport	SuperSport 950	petrol	937	81	2017		m	c	1	
+ktm-duke	620 Duke	petrol	609	37	1994	1998	m	c	1	
+ktm-duke	640 Duke	petrol	625	40	1999	2006	m	c	1	
+ktm-duke	690 Duke	petrol	690	48	2008	2019	m	c	1	
+ktm-duke	125 Duke	petrol	125	11	2011		m	c	3	EUR,IND,SEA,LAM
+ktm-duke	200 Duke	petrol	199	19	2012		m	c	3	IND,SEA,LAM,MER
+ktm-duke	390 Duke	petrol	373	32	2013		m	c	3	
+ktm-duke	990 Super Duke	petrol	999	88	2005	2013	m	c	1	
+ktm-duke	1290 Super Duke R	petrol	1301	132	2014		m	c	1	
+ktm-duke	790 Duke	petrol	799	77	2018	2023	m	c	1	
+ktm-duke	890 Duke	petrol	889	85	2021		m	c	1	
+ktm-rc	RC 125	petrol	125	11	2014		m	c	1	EUR,SEA
+ktm-rc	RC 200	petrol	199	19	2014		m	c	1	IND,SEA,LAM
+ktm-rc	RC 390	petrol	373	32	2014		m	c	1	
+ktm-adventure	950 Adventure	petrol	942	72	2003	2006	m	c	1	
+ktm-adventure	990 Adventure	petrol	999	78	2006	2013	m	c	1	
+ktm-adventure	1190 Adventure	petrol	1195	110	2013	2016	m	c	1	
+ktm-adventure	1290 Super Adventure	petrol	1301	118	2015		m	c	1	
+ktm-adventure	1090 Adventure	petrol	1050	92	2017	2019	m	c	1	
+ktm-adventure	790 Adventure	petrol	799	70	2019	2022	m	c	1	
+ktm-adventure	890 Adventure	petrol	889	77	2021		m	c	1	
+ktm-adventure	390 Adventure	petrol	373	32	2020		m	c	2	
+ktm-exc	250 EXC	petrol	249	33	1990		m	c	1	
+ktm-exc	300 EXC	petrol	293	38	1990		m	c	1	
+ktm-exc	450 EXC	petrol	449	40	2003		m	c	1	
+ktm-exc	690 Enduro	petrol	690	48	2008		m	c	1	
+triumph-bonneville	Bonneville	petrol	790	46	2001	2006	m	c	1	
+triumph-bonneville	Bonneville	petrol	865	50	2007	2015	m	c	2	
+triumph-bonneville	Bonneville T100	petrol	900	40	2016		m	c	2	
+triumph-bonneville	Bonneville T120	petrol	1200	59	2016		m	c	2	
+triumph-bonneville	Thruxton	petrol	865	51	2004	2015	m	c	1	
+triumph-bonneville	Speed Twin	petrol	1200	74	2019		m	c	1	
+triumph-streettriple	Street Triple	petrol	675	79	2007	2016	m	c	2	
+triumph-streettriple	Street Triple 765	petrol	765	90	2017		m	c	2	
+triumph-speedtriple	Speed Triple	petrol	885	72	1994	1996	m	c	1	
+triumph-speedtriple	Speed Triple	petrol	955	79	1997	2004	m	c	1	
+triumph-speedtriple	Speed Triple	petrol	1050	97	2005	2020	m	c	2	
+triumph-speedtriple	Speed Triple 1200	petrol	1160	132	2021		m	c	1	
+triumph-tiger	Tiger 900	petrol	885	63	1993	1998	m	c	1	
+triumph-tiger	Tiger 955i	petrol	955	77	1999	2006	m	c	1	
+triumph-tiger	Tiger 1050	petrol	1050	84	2007	2013	m	c	1	
+triumph-tiger	Tiger 800	petrol	799	70	2011	2019	m	c	2	
+triumph-tiger	Tiger Explorer 1200	petrol	1215	101	2012	2021	m	s	1	
+triumph-tiger	Tiger 900	petrol	888	70	2020		m	c	2	
+triumph-tiger	Tiger 1200	petrol	1160	110	2022		m	s	1	
+triumph-tiger	Tiger Sport 660	petrol	660	60	2022		m	c	1	
+triumph-trident	Trident 900	petrol	885	73	1991	1998	m	c	1	
+triumph-trident	Trident 660	petrol	660	60	2021		m	c	2	
+triumph-speed400	Speed 400	petrol	398	29	2023		m	c	2	
+triumph-speed400	Scrambler 400 X	petrol	398	29	2024		m	c	1	
+triumph-rocket	Rocket III	petrol	2294	105	2004	2018	m	s	1	
+triumph-rocket	Rocket 3	petrol	2458	123	2020		m	s	1	
+piaggio-vespa	Vespa ET4 125	petrol	124	7	1996	2005	a	b	1	
+piaggio-vespa	Vespa LX 125	petrol	124	8	2005	2013	a	b	2	
+piaggio-vespa	Vespa GTS 125	petrol	124	11	2003		a	b	2	EUR
+piaggio-vespa	Vespa GTS 300	petrol	278	16	2008		a	b	2	EUR,OCE,NAM,JPN,KOR
+piaggio-vespa	Vespa Primavera 125	petrol	124	8	2014		a	b	3	
+piaggio-vespa	Vespa Sprint 150	petrol	155	9	2014		a	b	1	SEA,VN,IND,LAM
+piaggio-vespa	Vespa VXL 125	petrol	125	7	2012		a	b	2	IND
+piaggio-vespa	Vespa Elettrica	electric	0	4	2019		a	h	1	EUR
+piaggio-liberty	Liberty 125	petrol	124	8	1997		a	b	2	
+piaggio-liberty	Liberty 150	petrol	155	9	2010		a	b	1	EUR,VN,SEA,TR
+piaggio-beverly	Beverly 125	petrol	124	10	2001		a	b	1	
+piaggio-beverly	Beverly 200	petrol	198	14	2001	2004	a	b	1	
+piaggio-beverly	Beverly 250	petrol	244	16	2005	2009	a	b	1	
+piaggio-beverly	Beverly 300	petrol	278	18	2010		a	b	1	
+piaggio-beverly	Beverly 400	petrol	399	26	2021		a	b	1	
+aprilia-rs	RS 125	petrol	125	11	1992	2021	m	c	3	
+aprilia-rs	RS 250	petrol	249	46	1995	2002	m	c	1	
+aprilia-rs	RS 660	petrol	659	74	2021		m	c	1	
+aprilia-rsv	RSV Mille	petrol	998	94	1998	2009	m	c	1	
+aprilia-rsv	RSV4	petrol	999	132	2009		m	c	1	
+aprilia-tuono	Tuono 1000 R	petrol	998	98	2002	2010	m	c	1	
+aprilia-tuono	Tuono V4	petrol	1077	129	2011		m	c	1	
+aprilia-sr	SR 125	petrol	125	7	2016		a	b	1	IND
+aprilia-sr	SR 160	petrol	160	8	2017		a	b	1	IND
+aprilia-sr	SR GT 125	petrol	125	11	2022		a	b	1	EUR
+guzzi-v7	V7	petrol	744	36	2008	2020	m	s	2	
+guzzi-v7	V7	petrol	853	48	2021		m	s	2	
+guzzi-california	California 1000	petrol	949	45	1990	1993	m	s	1	
+guzzi-california	California 1100	petrol	1064	55	1994	2012	m	s	2	
+guzzi-california	California 1400	petrol	1380	71	2013	2020	m	s	1	
+guzzi-v85	V85 TT	petrol	853	59	2019		m	s	1	
+peugeot-satelis	Satelis 125	petrol	125	11	2006	2013	a	b	1	
+peugeot-satelis	Satelis 250	petrol	244	16	2006	2013	a	b	1	
+peugeot-tweet	Tweet 125	petrol	125	7	2010		a	b	1	
+peugeot-django	Django 125	petrol	125	7	2014		a	b	2	
+peugeot-django	Django 150	petrol	150	8	2014	2020	a	b	1	
+peugeot-metropolis	Metropolis 400	petrol	399	26	2013		a	b	1	
+benelli-tnt	TNT 1130	petrol	1131	99	2004	2016	m	c	1	EUR
+benelli-tnt	TNT 125	petrol	125	8	2016		m	c	3	
+benelli-tnt	TNT 300	petrol	300	28	2014		m	c	2	
+benelli-tnt	TNT 600	petrol	600	60	2013		m	c	2	
+benelli-trk	TRK 502	petrol	500	35	2017		m	c	3	
+benelli-trk	TRK 702	petrol	698	56	2023		m	c	1	
+benelli-leoncino	Leoncino 500	petrol	500	35	2017		m	c	1	
+benelli-leoncino	Leoncino 250	petrol	249	19	2019		m	c	1	
+re-bullet	Bullet 350	petrol	346	13	1990		m	c	4	
+re-bullet	Bullet 500	petrol	499	20	1990	2020	m	c	1	
+re-classic	Classic 350	petrol	346	15	2009		m	c	5	
+re-classic	Classic 500	petrol	499	20	2009	2020	m	c	1	
+re-thunderbird	Thunderbird 350	petrol	346	15	2002	2020	m	c	1	
+re-thunderbird	Thunderbird 500	petrol	499	20	2012	2020	m	c	1	
+re-himalayan	Himalayan	petrol	411	18	2016	2023	m	c	2	
+re-himalayan	Himalayan 450	petrol	452	30	2024		m	c	2	
+re-interceptor	Interceptor 650	petrol	648	35	2018		m	c	2	
+re-interceptor	Continental GT 650	petrol	648	35	2018		m	c	1	
+re-meteor	Meteor 350	petrol	349	15	2020		m	c	1	
+re-hunter	Hunter 350	petrol	349	15	2022		m	c	1	
+hero-cd100	CD 100	petrol	97	5	1990	2005	m	c	2	
+hero-cd100	CD 100 SS	petrol	97	5	1991	2005	m	c	1	
+hero-cd100	Sleek	petrol	97	5	1996	2005	m	c	1	
+hero-splendor	Splendor	petrol	97	5	1994	2014	m	c	3	
+hero-splendor	Splendor Plus	petrol	97	6	2004		m	c	5	
+hero-splendor	Super Splendor	petrol	125	8	2005		m	c	2	
+hero-passion	Passion	petrol	97	5	2001	2015	m	c	1	
+hero-passion	Passion Pro	petrol	110	7	2008		m	c	1	
+hero-hf	HF Dawn	petrol	97	5	2004	2018	m	c	1	
+hero-hf	HF Deluxe	petrol	97	6	2005		m	c	3	
+hero-glamour	Glamour	petrol	125	7	2005		m	c	1	
+hero-pleasure	Pleasure	petrol	102	5	2006	2018	a	b	1	
+hero-pleasure	Pleasure+ 110	petrol	110	6	2019		a	b	1	
+hero-maestro	Maestro Edge 110	petrol	110	6	2012		a	b	1	
+hero-xpulse	Xpulse 200	petrol	200	14	2019		m	c	1	
+hero-vida	Vida V1	electric	0	6	2022		a	b	1	
+bajaj-boxer	Boxer	petrol	100	6	1997	2005	m	c	1	
+bajaj-boxer	Boxer BM 100	petrol	100	6	2005		m	c	3	
+bajaj-boxer	Boxer BM 150	petrol	145	9	2011		m	c	3	AFR,LAM
+bajaj-ct100	CT 100	petrol	100	6	2004		m	c	1	
+bajaj-platina	Platina 100	petrol	102	6	2006		m	c	2	
+bajaj-platina	Platina 110	petrol	115	6	2019		m	c	1	
+bajaj-pulsar	Pulsar 150	petrol	149	11	2001		m	c	5	
+bajaj-pulsar	Pulsar 180	petrol	178	12	2001	2019	m	c	1	
+bajaj-pulsar	Pulsar 220F	petrol	220	15	2007		m	c	2	
+bajaj-pulsar	Pulsar NS200	petrol	199	18	2012		m	c	3	
+bajaj-pulsar	Pulsar 125	petrol	125	9	2019		m	c	2	IND
+bajaj-discover	Discover 100	petrol	94	6	2009	2019	m	c	1	
+bajaj-discover	Discover 125	petrol	125	8	2004	2019	m	c	1	
+bajaj-avenger	Avenger 220	petrol	220	14	2005		m	c	1	
+bajaj-avenger	Avenger 160	petrol	160	11	2018		m	c	1	
+bajaj-dominar	Dominar 400	petrol	373	29	2017		m	c	1	
+bajaj-dominar	Dominar 250	petrol	248	20	2020		m	c	1	
+bajaj-chetak	Chetak	electric	0	4	2020		a	h	1	
+tvs-xl	XL Super	petrol	70	3	1990	2014	s	c	1	
+tvs-xl	XL100	petrol	99	3	2015		s	c	2	
+tvs-star	Star City	petrol	110	6	2003		m	c	3	
+tvs-star	HLX 125	petrol	125	7	2013		m	c	3	AFR,LAM
+tvs-star	HLX 150	petrol	150	9	2016		m	c	2	AFR
+tvs-apache	Apache RTR 160	petrol	160	11	2006		m	c	4	
+tvs-apache	Apache RTR 180	petrol	177	13	2009	2022	m	c	1	
+tvs-apache	Apache RTR 200 4V	petrol	198	15	2016		m	c	2	
+tvs-apache	Apache RR 310	petrol	313	25	2017		m	c	1	
+tvs-scooty	Scooty	petrol	60	2	1994	2004	a	b	1	
+tvs-scooty	Scooty Pep+	petrol	87	4	2005		a	b	2	
+tvs-scooty	Scooty Zest 110	petrol	110	6	2015		a	b	1	
+tvs-jupiter	Jupiter	petrol	110	6	2013		a	b	3	
+tvs-jupiter	Jupiter 125	petrol	124	6	2021		a	b	1	
+tvs-ntorq	Ntorq 125	petrol	124	7	2018		a	b	1	
+tvs-iqube	iQube	electric	0	4	2020		a	h	1	
+tvs-raider	Raider 125	petrol	124	8	2021		m	c	1	
+haojue-hj	HJ125	petrol	124	7	1995		m	c	4	
+haojue-hj	HJ150	petrol	149	9	2005		m	c	2	
+haojue-hj	DR160	petrol	162	11	2017		m	c	1	
+haojue-uhr	UHR 150	petrol	150	9	2015		a	b	1	
+loncin-lx	LX125	petrol	124	7	1995		m	c	3	
+loncin-lx	LX150	petrol	149	9	2003		m	c	2	
+loncin-lx	LX200	petrol	197	11	2008		m	c	1	
+loncin-voge	Voge 300R	petrol	292	21	2018		m	c	1	
+loncin-voge	Voge 500DS	petrol	471	35	2019		m	c	1	
+zongshen-zs	ZS125	petrol	124	7	1995		m	c	3	
+zongshen-zs	ZS150	petrol	149	9	2003		m	c	2	
+zongshen-cyclone	Cyclone RX3	petrol	249	19	2015		m	c	1	
+lifan-lf	LF125	petrol	124	7	1997		m	c	3	
+lifan-lf	LF150	petrol	149	9	2003		m	c	2	
+lifan-lf	KPR 200	petrol	198	13	2013		m	c	1	
+dayang-dy	DY100	petrol	97	5	1995		m	c	2	
+dayang-dy	DY125	petrol	124	7	1998		m	c	3	
+dayang-dy	DY150	petrol	149	9	2005		m	c	1	
+shineray-xy	XY125	petrol	124	7	2000		m	c	2	
+shineray-xy	XY150	petrol	149	9	2005		m	c	1	
+jincheng-jc	JC100	petrol	97	5	1995		m	c	2	
+jincheng-jc	JC125	petrol	124	7	1998		m	c	2	
+cfmoto-nk	150NK	petrol	149	9	2010		m	c	1	
+cfmoto-nk	650NK	petrol	649	45	2012		m	c	2	
+cfmoto-nk	250NK	petrol	249	20	2017		m	c	1	
+cfmoto-nk	300NK	petrol	292	21	2019		m	c	1	
+cfmoto-nk	800NK	petrol	799	70	2023		m	c	1	
+cfmoto-mt	650MT	petrol	649	45	2012		m	c	2	
+cfmoto-mt	800MT	petrol	799	70	2022		m	c	1	
+cfmoto-sr	300SR	petrol	292	21	2020		m	c	1	
+cfmoto-sr	450SR	petrol	450	37	2022		m	c	1	
+yadea-g5	G5	electric	0	3	2016		a	h	1	
+niu-nqi	NQi	electric	0	2	2015		a	h	2	
+niu-nqi	NQi GT	electric	0	3	2018		a	h	1	
+niu-mqi	MQi+	electric	0	2	2016		a	h	1	
+kymco-agility	Agility 125	petrol	125	6	2005		a	b	2	
+kymco-agility	Agility City 125	petrol	125	7	2008		a	b	1	
+kymco-people	People 125	petrol	125	8	1999		a	b	1	
+kymco-people	People S 200	petrol	163	10	2006		a	b	1	
+kymco-gdink	Grand Dink 125	petrol	125	8	1998	2015	a	b	1	
+kymco-gdink	Grand Dink 250	petrol	249	14	2001	2012	a	b	1	
+kymco-downtown	Downtown 125i	petrol	125	11	2009		a	b	1	
+kymco-downtown	Downtown 350i	petrol	321	20	2015		a	b	1	
+kymco-xciting	Xciting 500	petrol	499	28	2005	2017	a	b	1	
+kymco-xciting	Xciting 400i	petrol	399	26	2013		a	b	1	
+kymco-many	Many 110	petrol	110	6	2007		a	b	1	
+kymco-gp	GP 125	petrol	125	7	2007		a	b	1	
+kymco-ionex	Ionex i-One	electric	0	3	2019		a	h	1	
+sym-jet	Jet 100	petrol	102	5	1999	2008	a	b	1	
+sym-jet	Jet Power 125	petrol	125	7	2009		a	b	1	
+sym-jet	Jet SL 125	petrol	125	9	2019		a	b	1	
+sym-symphony	Symphony 125	petrol	125	7	2009		a	b	1	
+sym-symphony	Symphony ST 125	petrol	125	8	2019		a	b	1	
+sym-attila	Attila 125	petrol	125	7	1999		a	b	1	
+sym-joymax	Joymax 125	petrol	125	10	2009		a	b	1	
+sym-joymax	Joymax 300	petrol	278	18	2013		a	b	1	
+sym-fiddle	Fiddle 125	petrol	125	7	2008		a	b	1	
+daelim-citi	Citi 100	petrol	97	5	1990		s	c	1	
+hyosung-gt	GT125	petrol	125	11	2003	2017	m	c	1	
+hyosung-gt	GT250	petrol	249	21	2003	2017	m	c	2	
+hyosung-gt	GT650	petrol	647	59	2004	2017	m	c	1	
+hyosung-aquila	GV250 Aquila	petrol	249	20	2000		m	c	1	
+hyosung-aquila	GV650 Aquila	petrol	647	59	2005	2017	m	b	1	

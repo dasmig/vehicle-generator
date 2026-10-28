@@ -1,0 +1,244 @@
+# Curated: the makes of each country's motorcycle fleet, as Make:weight with an optional /trend (as in make_shares.tsv). Rounded from national registration statistics and industry associations (ACEM, MCIA, SIAM, ABRACICLO, AISI, VAMM, the Thai and Japanese makers' associations); countries without published figures share their region's mix. Makes without curated models here (Italika, Gogoro, VinFast, Ola, Ather, AKT, Motomel, Modenas and others) are left out, so their share goes to the makes listed.
+country	makes
+AD	Honda:20;Yamaha:14;Kymco:8;SYM:8;Piaggio:7;BMW:6;Kawasaki:5;KTM:4;Suzuki:4;Triumph:3;Harley-Davidson:2;Ducati:2;Benelli:2;Royal Enfield:1;CFMoto:1/0.15;Peugeot:1;Yadea:1
+AE	Honda:15;Yamaha:10;Harley-Davidson:10;BMW:8;Suzuki:8;Bajaj:10;TVS:6;Hero:5;Haojue:5;Kawasaki:5;KTM:4;Triumph:3;Ducati:3;Royal Enfield:4
+AF	Honda:45;Suzuki:12;Yamaha:10;Loncin:8;Zongshen:8;Lifan:7;Dayang:5;Haojue:5
+AG	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+AI	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+AL	Honda:16;Yamaha:13;KTM:8;BMW:9;Kawasaki:7;Suzuki:5;Triumph:4;Piaggio:4;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Benelli:3;CFMoto:3/0.15;Royal Enfield:2;Loncin:2;Zongshen:2
+AM	Honda:12;Yamaha:10;Suzuki:6;Kawasaki:6;BMW:6;KTM:5;Loncin:10;Zongshen:8;Lifan:8;Haojue:5;CFMoto:6/0.1;Harley-Davidson:3;Benelli:3;Triumph:2
+AO	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+AR	Honda:25;Yamaha:15;Zongshen:10;Haojue:8;Loncin:8;Bajaj:6;Shineray:5;Lifan:5;Benelli:4;Suzuki:4;CFMoto:2;Kawasaki:2
+AS	Harley-Davidson:20;Honda:20;Yamaha:15;Kawasaki:12;Suzuki:10;Indian:5;KTM:4;BMW:4;Triumph:3;Piaggio:3
+AT	KTM:25;BMW:12;Honda:10;Yamaha:9;Kawasaki:6;Harley-Davidson:4;Triumph:5;Ducati:4;Suzuki:4;Piaggio:5;Kymco:3;SYM:2;Aprilia:1;CFMoto:2/0.15
+AU	Honda:18;Yamaha:15;Kawasaki:12;Harley-Davidson:8;KTM:10;Suzuki:7;BMW:6;Triumph:5;Ducati:3;Royal Enfield:3/0.08;CFMoto:3/0.15;Indian:2;Piaggio:2
+AW	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+AX	Honda:14;Yamaha:12;BMW:10;KTM:8;Kawasaki:7;Triumph:6;Suzuki:5;Piaggio:7;Harley-Davidson:4;Ducati:4;Kymco:4;SYM:3;Royal Enfield:2/0.08;CFMoto:3/0.15;Benelli:2;Aprilia:2;Moto Guzzi:1;Peugeot:2;NIU:1;Yadea:0.5;Loncin:1;Indian:1
+AZ	Honda:12;Yamaha:10;Suzuki:6;Kawasaki:6;BMW:6;KTM:5;Loncin:10;Zongshen:8;Lifan:8;Haojue:5;CFMoto:6/0.1;Harley-Davidson:3;Benelli:3;Triumph:2
+BA	Honda:16;Yamaha:13;KTM:8;BMW:9;Kawasaki:7;Suzuki:5;Triumph:4;Piaggio:4;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Benelli:3;CFMoto:3/0.15;Royal Enfield:2;Loncin:2;Zongshen:2
+BB	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+BD	Bajaj:30;Hero:15;TVS:12;Honda:12;Yamaha:12;Suzuki:8;Lifan:4;Haojue:3
+BE	Honda:14;Yamaha:12;BMW:10;KTM:8;Kawasaki:7;Triumph:6;Suzuki:5;Piaggio:7;Harley-Davidson:4;Ducati:4;Kymco:4;SYM:3;Royal Enfield:2/0.08;CFMoto:3/0.15;Benelli:2;Aprilia:2;Moto Guzzi:1;Peugeot:2;NIU:1;Yadea:0.5;Loncin:1;Indian:1
+BF	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+BG	Honda:16;Yamaha:13;KTM:8;BMW:9;Kawasaki:7;Suzuki:5;Triumph:4;Piaggio:4;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Benelli:3;CFMoto:3/0.15;Royal Enfield:2;Loncin:2;Zongshen:2
+BH	Honda:15;Yamaha:10;Harley-Davidson:10;BMW:8;Suzuki:8;Bajaj:10;TVS:6;Hero:5;Haojue:5;Kawasaki:5;KTM:4;Triumph:3;Ducati:3;Royal Enfield:4
+BI	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+BJ	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+BL	Yamaha:18;Honda:16;Peugeot:10;Piaggio:8;Kymco:8;SYM:8;Suzuki:6;Kawasaki:5;BMW:4;KTM:3
+BM	Harley-Davidson:20;Honda:20;Yamaha:15;Kawasaki:12;Suzuki:10;Indian:5;KTM:4;BMW:4;Triumph:3;Piaggio:3
+BN	Honda:30;Yamaha:25;Suzuki:10;Kawasaki:8;BMW:5;KTM:5;Triumph:3;Harley-Davidson:3;Ducati:2;Piaggio:4;Kymco:2;SYM:2
+BO	Bajaj:18;Honda:18;Yamaha:15;Suzuki:10;TVS:8;Hero:6;Haojue:6;Loncin:5;Zongshen:5;Lifan:5;KTM:3;Kawasaki:2
+BQ	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+BR	Honda:70;Yamaha:16;Shineray:4;Haojue:3;Suzuki:1;Kawasaki:1;BMW:1;Triumph:1;Harley-Davidson:1;Royal Enfield:1;Bajaj:1
+BS	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+BT	Bajaj:20;Honda:18;Hero:15;Yamaha:15;TVS:12;Royal Enfield:8;Suzuki:5;KTM:3
+BW	Honda:12;Yamaha:10;Suzuki:6;Bajaj:20;TVS:10;Haojue:8;Lifan:8;Jincheng:8;Dayang:5;BMW:3;KTM:3;Hero:4
+BY	Honda:12;Yamaha:10;Suzuki:6;Kawasaki:6;BMW:6;KTM:5;Loncin:10;Zongshen:8;Lifan:8;Haojue:5;CFMoto:6/0.1;Harley-Davidson:3;Benelli:3;Triumph:2
+BZ	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Hero:6;Haojue:8;Loncin:5;Zongshen:5;Lifan:5;Kawasaki:2;KTM:2
+CA	Harley-Davidson:25/-0.02;Honda:18;Yamaha:12;Kawasaki:12;Indian:8;Suzuki:6;KTM:5;BMW:5;Triumph:4;Ducati:3;Royal Enfield:2/0.1;CFMoto:1/0.15;Piaggio:1
+CC	Honda:18;Yamaha:15;Kawasaki:12;Harley-Davidson:8;KTM:10;Suzuki:7;BMW:6;Triumph:5;Ducati:3;Royal Enfield:3/0.08;CFMoto:3/0.15;Indian:2;Piaggio:2
+CD	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+CF	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+CG	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+CH	BMW:18;Honda:11;Yamaha:10;KTM:9;Kawasaki:8;Triumph:6;Harley-Davidson:5;Ducati:5;Suzuki:5;Piaggio:4;Kymco:3;SYM:2;Royal Enfield:2/0.08;CFMoto:2/0.15;Benelli:2;Aprilia:1;Moto Guzzi:1;Indian:1;NIU:1
+CI	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+CK	Honda:30;Yamaha:25;Suzuki:15;Haojue:5;Lifan:5;Kawasaki:5;Harley-Davidson:3;Bajaj:4;TVS:4
+CL	Bajaj:18;Honda:18;Yamaha:15;Suzuki:10;TVS:8;Hero:6;Haojue:6;Loncin:5;Zongshen:5;Lifan:5;KTM:3;Kawasaki:2
+CM	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+CN	Yadea:25/0.2;NIU:4/0.2;Haojue:12;Loncin:10;Zongshen:10;Lifan:6;Dayang:8;CFMoto:4/0.1;Benelli:5;Honda:6;Yamaha:4;Suzuki:4;Shineray:2;Jincheng:2
+CO	Bajaj:18;Honda:18;Yamaha:15;Suzuki:10;TVS:8;Hero:6;Haojue:6;Loncin:5;Zongshen:5;Lifan:5;KTM:3;Kawasaki:2
+CR	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Hero:6;Haojue:8;Loncin:5;Zongshen:5;Lifan:5;Kawasaki:2;KTM:2
+CU	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+CV	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+CW	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+CX	Honda:18;Yamaha:15;Kawasaki:12;Harley-Davidson:8;KTM:10;Suzuki:7;BMW:6;Triumph:5;Ducati:3;Royal Enfield:3/0.08;CFMoto:3/0.15;Indian:2;Piaggio:2
+CY	Honda:18;Yamaha:10;Triumph:10;BMW:8;KTM:6;Kawasaki:6;Royal Enfield:5/0.08;Suzuki:5;Harley-Davidson:4;Ducati:4;Piaggio:5;Kymco:3;SYM:3;Indian:1;CFMoto:1/0.15
+CZ	Honda:16;Yamaha:13;KTM:8;BMW:9;Kawasaki:7;Suzuki:5;Triumph:4;Piaggio:4;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Benelli:3;CFMoto:3/0.15;Royal Enfield:2;Loncin:2;Zongshen:2
+DE	BMW:18;Honda:11;Yamaha:10;KTM:9;Kawasaki:8;Triumph:6;Harley-Davidson:5;Ducati:5;Suzuki:5;Piaggio:4;Kymco:3;SYM:2;Royal Enfield:2/0.08;CFMoto:2/0.15;Benelli:2;Aprilia:1;Moto Guzzi:1;Indian:1;NIU:1
+DJ	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+DK	Honda:14;Yamaha:12;BMW:10;KTM:8;Kawasaki:7;Triumph:6;Suzuki:5;Piaggio:7;Harley-Davidson:4;Ducati:4;Kymco:4;SYM:3;Royal Enfield:2/0.08;CFMoto:3/0.15;Benelli:2;Aprilia:2;Moto Guzzi:1;Peugeot:2;NIU:1;Yadea:0.5;Loncin:1;Indian:1
+DM	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+DO	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+DZ	Haojue:10;Loncin:10;Zongshen:8;Lifan:8;Peugeot:10;Honda:8;Yamaha:8;Suzuki:6;Bajaj:8;SYM:6;Kymco:6;Piaggio:5
+EC	Bajaj:18;Honda:18;Yamaha:15;Suzuki:10;TVS:8;Hero:6;Haojue:6;Loncin:5;Zongshen:5;Lifan:5;KTM:3;Kawasaki:2
+EE	Honda:14;Yamaha:12;BMW:10;KTM:8;Kawasaki:7;Triumph:6;Suzuki:5;Piaggio:7;Harley-Davidson:4;Ducati:4;Kymco:4;SYM:3;Royal Enfield:2/0.08;CFMoto:3/0.15;Benelli:2;Aprilia:2;Moto Guzzi:1;Peugeot:2;NIU:1;Yadea:0.5;Loncin:1;Indian:1
+EG	Bajaj:30;TVS:15;Haojue:10;Loncin:8;Zongshen:6;Lifan:6;Honda:6;Yamaha:4;Suzuki:5;Hero:5;Dayang:5
+EH	Haojue:10;Loncin:10;Zongshen:8;Lifan:8;Peugeot:10;Honda:8;Yamaha:8;Suzuki:6;Bajaj:8;SYM:6;Kymco:6;Piaggio:5
+ER	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+ES	Honda:20;Yamaha:14;Kymco:8;SYM:8;Piaggio:7;BMW:6;Kawasaki:5;KTM:4;Suzuki:4;Triumph:3;Harley-Davidson:2;Ducati:2;Benelli:2;Royal Enfield:1;CFMoto:1/0.15;Peugeot:1;Yadea:1
+ET	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+FI	Honda:14;Yamaha:12;BMW:10;KTM:8;Kawasaki:7;Triumph:6;Suzuki:5;Piaggio:7;Harley-Davidson:4;Ducati:4;Kymco:4;SYM:3;Royal Enfield:2/0.08;CFMoto:3/0.15;Benelli:2;Aprilia:2;Moto Guzzi:1;Peugeot:2;NIU:1;Yadea:0.5;Loncin:1;Indian:1
+FJ	Honda:30;Yamaha:25;Suzuki:15;Haojue:5;Lifan:5;Kawasaki:5;Harley-Davidson:3;Bajaj:4;TVS:4
+FK	Honda:18;Yamaha:10;Triumph:10;BMW:8;KTM:6;Kawasaki:6;Royal Enfield:5/0.08;Suzuki:5;Harley-Davidson:4;Ducati:4;Piaggio:5;Kymco:3;SYM:3;Indian:1;CFMoto:1/0.15
+FM	Honda:30;Yamaha:25;Suzuki:15;Haojue:5;Lifan:5;Kawasaki:5;Harley-Davidson:3;Bajaj:4;TVS:4
+FO	Honda:14;Yamaha:12;BMW:10;KTM:8;Kawasaki:7;Triumph:6;Suzuki:5;Piaggio:7;Harley-Davidson:4;Ducati:4;Kymco:4;SYM:3;Royal Enfield:2/0.08;CFMoto:3/0.15;Benelli:2;Aprilia:2;Moto Guzzi:1;Peugeot:2;NIU:1;Yadea:0.5;Loncin:1;Indian:1
+FR	Yamaha:18;Honda:14;BMW:9;Piaggio:7;Kawasaki:7;Peugeot:6;KTM:5;Triumph:5;Suzuki:5;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Royal Enfield:2/0.08;Benelli:1;Aprilia:1;CFMoto:1/0.15;NIU:1
+GA	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+GB	Honda:18;Yamaha:10;Triumph:10;BMW:8;KTM:6;Kawasaki:6;Royal Enfield:5/0.08;Suzuki:5;Harley-Davidson:4;Ducati:4;Piaggio:5;Kymco:3;SYM:3;Indian:1;CFMoto:1/0.15
+GD	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+GE	Honda:12;Yamaha:10;Suzuki:6;Kawasaki:6;BMW:6;KTM:5;Loncin:10;Zongshen:8;Lifan:8;Haojue:5;CFMoto:6/0.1;Harley-Davidson:3;Benelli:3;Triumph:2
+GF	Yamaha:18;Honda:16;Peugeot:10;Piaggio:8;Kymco:8;SYM:8;Suzuki:6;Kawasaki:5;BMW:4;KTM:3
+GG	Honda:18;Yamaha:10;Triumph:10;BMW:8;KTM:6;Kawasaki:6;Royal Enfield:5/0.08;Suzuki:5;Harley-Davidson:4;Ducati:4;Piaggio:5;Kymco:3;SYM:3;Indian:1;CFMoto:1/0.15
+GH	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+GI	Honda:18;Yamaha:10;Triumph:10;BMW:8;KTM:6;Kawasaki:6;Royal Enfield:5/0.08;Suzuki:5;Harley-Davidson:4;Ducati:4;Piaggio:5;Kymco:3;SYM:3;Indian:1;CFMoto:1/0.15
+GL	Honda:14;Yamaha:12;BMW:10;KTM:8;Kawasaki:7;Triumph:6;Suzuki:5;Piaggio:7;Harley-Davidson:4;Ducati:4;Kymco:4;SYM:3;Royal Enfield:2/0.08;CFMoto:3/0.15;Benelli:2;Aprilia:2;Moto Guzzi:1;Peugeot:2;NIU:1;Yadea:0.5;Loncin:1;Indian:1
+GM	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+GN	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+GP	Yamaha:18;Honda:16;Peugeot:10;Piaggio:8;Kymco:8;SYM:8;Suzuki:6;Kawasaki:5;BMW:4;KTM:3
+GQ	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+GR	Honda:20;Yamaha:16;Piaggio:8;Kymco:7;SYM:7;Suzuki:5;BMW:5;Kawasaki:5;KTM:4;Benelli:3;Triumph:3;Ducati:2;Harley-Davidson:2;Royal Enfield:1;CFMoto:1/0.15;Peugeot:1
+GT	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Hero:6;Haojue:8;Loncin:5;Zongshen:5;Lifan:5;Kawasaki:2;KTM:2
+GU	Harley-Davidson:20;Honda:20;Yamaha:15;Kawasaki:12;Suzuki:10;Indian:5;KTM:4;BMW:4;Triumph:3;Piaggio:3
+GW	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+GY	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+HK	Honda:30;Yamaha:25;Suzuki:10;Kawasaki:8;BMW:5;KTM:5;Triumph:3;Harley-Davidson:3;Ducati:2;Piaggio:4;Kymco:2;SYM:2
+HN	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Hero:6;Haojue:8;Loncin:5;Zongshen:5;Lifan:5;Kawasaki:2;KTM:2
+HR	Honda:16;Yamaha:13;KTM:8;BMW:9;Kawasaki:7;Suzuki:5;Triumph:4;Piaggio:4;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Benelli:3;CFMoto:3/0.15;Royal Enfield:2;Loncin:2;Zongshen:2
+HT	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+HU	Honda:16;Yamaha:13;KTM:8;BMW:9;Kawasaki:7;Suzuki:5;Triumph:4;Piaggio:4;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Benelli:3;CFMoto:3/0.15;Royal Enfield:2;Loncin:2;Zongshen:2
+ID	Honda:78;Yamaha:20;Suzuki:1;Kawasaki:1
+IE	Honda:18;Yamaha:10;Triumph:10;BMW:8;KTM:6;Kawasaki:6;Royal Enfield:5/0.08;Suzuki:5;Harley-Davidson:4;Ducati:4;Piaggio:5;Kymco:3;SYM:3;Indian:1;CFMoto:1/0.15
+IL	Honda:15;Yamaha:10;Harley-Davidson:10;BMW:8;Suzuki:8;Bajaj:10;TVS:6;Hero:5;Haojue:5;Kawasaki:5;KTM:4;Triumph:3;Ducati:3;Royal Enfield:4
+IM	Honda:18;Yamaha:10;Triumph:10;BMW:8;KTM:6;Kawasaki:6;Royal Enfield:5/0.08;Suzuki:5;Harley-Davidson:4;Ducati:4;Piaggio:5;Kymco:3;SYM:3;Indian:1;CFMoto:1/0.15
+IN	Hero:30/-0.01;Honda:25;TVS:18;Bajaj:12;Suzuki:5;Yamaha:4;Royal Enfield:5/0.05;KTM:1;Triumph:0.3;Harley-Davidson:0.2
+IQ	Honda:15;Yamaha:12;Suzuki:10;Bajaj:12;TVS:6;Haojue:8;Loncin:6;Zongshen:6;Lifan:6;Kymco:4;SYM:4;Kawasaki:3;BMW:3;KTM:2;Harley-Davidson:2
+IR	Honda:30;Bajaj:25;Haojue:10;Loncin:8;Zongshen:8;Lifan:8;Yamaha:5;Suzuki:6
+IS	Honda:14;Yamaha:12;BMW:10;KTM:8;Kawasaki:7;Triumph:6;Suzuki:5;Piaggio:7;Harley-Davidson:4;Ducati:4;Kymco:4;SYM:3;Royal Enfield:2/0.08;CFMoto:3/0.15;Benelli:2;Aprilia:2;Moto Guzzi:1;Peugeot:2;NIU:1;Yadea:0.5;Loncin:1;Indian:1
+IT	Honda:22;Piaggio:18;Yamaha:10;BMW:7;Kymco:6;SYM:5;Ducati:5;Benelli:5;Kawasaki:4;KTM:3;Aprilia:3;Suzuki:3;Triumph:3;Moto Guzzi:2;Harley-Davidson:2;Royal Enfield:1;CFMoto:1/0.15
+JE	Honda:18;Yamaha:10;Triumph:10;BMW:8;KTM:6;Kawasaki:6;Royal Enfield:5/0.08;Suzuki:5;Harley-Davidson:4;Ducati:4;Piaggio:5;Kymco:3;SYM:3;Indian:1;CFMoto:1/0.15
+JM	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+JO	Honda:15;Yamaha:12;Suzuki:10;Bajaj:12;TVS:6;Haojue:8;Loncin:6;Zongshen:6;Lifan:6;Kymco:4;SYM:4;Kawasaki:3;BMW:3;KTM:2;Harley-Davidson:2
+JP	Honda:45;Yamaha:25;Suzuki:13;Kawasaki:10;Harley-Davidson:2;BMW:2;Triumph:1;Ducati:1;KTM:1
+KE	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+KG	Loncin:15;Zongshen:15;Lifan:12;Haojue:12;Honda:8;Yamaha:6;Suzuki:6;CFMoto:5;Dayang:6;Jincheng:4
+KH	Honda:50;Yamaha:15;Suzuki:5;Haojue:6;Lifan:6;Dayang:5;Zongshen:4
+KI	Honda:30;Yamaha:25;Suzuki:15;Haojue:5;Lifan:5;Kawasaki:5;Harley-Davidson:3;Bajaj:4;TVS:4
+KM	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+KN	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+KP	Haojue:15;Loncin:15;Zongshen:12;Lifan:12;Dayang:8;Honda:8;Yamaha:6;Suzuki:6;CFMoto:3;Jincheng:5
+KR	Daelim:30;Honda:30;Yamaha:10;Hyosung:8;Suzuki:3;BMW:3;Harley-Davidson:3;Kymco:4;SYM:4;Piaggio:3;Kawasaki:2
+KW	Honda:15;Yamaha:10;Harley-Davidson:10;BMW:8;Suzuki:8;Bajaj:10;TVS:6;Hero:5;Haojue:5;Kawasaki:5;KTM:4;Triumph:3;Ducati:3;Royal Enfield:4
+KY	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+KZ	Loncin:15;Zongshen:15;Lifan:12;Haojue:12;Honda:8;Yamaha:6;Suzuki:6;CFMoto:5;Dayang:6;Jincheng:4
+LA	Honda:50;Yamaha:15;Suzuki:5;Haojue:6;Lifan:6;Dayang:5;Zongshen:4
+LB	Honda:15;Yamaha:12;Suzuki:10;Bajaj:12;TVS:6;Haojue:8;Loncin:6;Zongshen:6;Lifan:6;Kymco:4;SYM:4;Kawasaki:3;BMW:3;KTM:2;Harley-Davidson:2
+LC	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+LI	KTM:25;BMW:12;Honda:10;Yamaha:9;Kawasaki:6;Harley-Davidson:4;Triumph:5;Ducati:4;Suzuki:4;Piaggio:5;Kymco:3;SYM:2;Aprilia:1;CFMoto:2/0.15
+LK	Bajaj:30;Honda:20;TVS:15;Hero:12;Yamaha:10;Suzuki:5;Royal Enfield:3
+LR	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+LS	Honda:12;Yamaha:10;Suzuki:6;Bajaj:20;TVS:10;Haojue:8;Lifan:8;Jincheng:8;Dayang:5;BMW:3;KTM:3;Hero:4
+LT	Honda:14;Yamaha:12;BMW:10;KTM:8;Kawasaki:7;Triumph:6;Suzuki:5;Piaggio:7;Harley-Davidson:4;Ducati:4;Kymco:4;SYM:3;Royal Enfield:2/0.08;CFMoto:3/0.15;Benelli:2;Aprilia:2;Moto Guzzi:1;Peugeot:2;NIU:1;Yadea:0.5;Loncin:1;Indian:1
+LU	Honda:14;Yamaha:12;BMW:10;KTM:8;Kawasaki:7;Triumph:6;Suzuki:5;Piaggio:7;Harley-Davidson:4;Ducati:4;Kymco:4;SYM:3;Royal Enfield:2/0.08;CFMoto:3/0.15;Benelli:2;Aprilia:2;Moto Guzzi:1;Peugeot:2;NIU:1;Yadea:0.5;Loncin:1;Indian:1
+LV	Honda:14;Yamaha:12;BMW:10;KTM:8;Kawasaki:7;Triumph:6;Suzuki:5;Piaggio:7;Harley-Davidson:4;Ducati:4;Kymco:4;SYM:3;Royal Enfield:2/0.08;CFMoto:3/0.15;Benelli:2;Aprilia:2;Moto Guzzi:1;Peugeot:2;NIU:1;Yadea:0.5;Loncin:1;Indian:1
+LY	Haojue:10;Loncin:10;Zongshen:8;Lifan:8;Peugeot:10;Honda:8;Yamaha:8;Suzuki:6;Bajaj:8;SYM:6;Kymco:6;Piaggio:5
+MA	Haojue:10;Loncin:10;Zongshen:8;Lifan:8;Peugeot:10;Honda:8;Yamaha:8;Suzuki:6;Bajaj:8;SYM:6;Kymco:6;Piaggio:5
+MC	Yamaha:18;Honda:14;BMW:9;Piaggio:7;Kawasaki:7;Peugeot:6;KTM:5;Triumph:5;Suzuki:5;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Royal Enfield:2/0.08;Benelli:1;Aprilia:1;CFMoto:1/0.15;NIU:1
+MD	Honda:12;Yamaha:10;Suzuki:6;Kawasaki:6;BMW:6;KTM:5;Loncin:10;Zongshen:8;Lifan:8;Haojue:5;CFMoto:6/0.1;Harley-Davidson:3;Benelli:3;Triumph:2
+ME	Honda:16;Yamaha:13;KTM:8;BMW:9;Kawasaki:7;Suzuki:5;Triumph:4;Piaggio:4;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Benelli:3;CFMoto:3/0.15;Royal Enfield:2;Loncin:2;Zongshen:2
+MF	Yamaha:18;Honda:16;Peugeot:10;Piaggio:8;Kymco:8;SYM:8;Suzuki:6;Kawasaki:5;BMW:4;KTM:3
+MG	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+MH	Honda:30;Yamaha:25;Suzuki:15;Haojue:5;Lifan:5;Kawasaki:5;Harley-Davidson:3;Bajaj:4;TVS:4
+MK	Honda:16;Yamaha:13;KTM:8;BMW:9;Kawasaki:7;Suzuki:5;Triumph:4;Piaggio:4;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Benelli:3;CFMoto:3/0.15;Royal Enfield:2;Loncin:2;Zongshen:2
+ML	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+MM	Honda:50;Yamaha:15;Suzuki:5;Haojue:6;Lifan:6;Dayang:5;Zongshen:4
+MN	Haojue:15;Loncin:15;Zongshen:12;Lifan:12;Dayang:8;Honda:8;Yamaha:6;Suzuki:6;CFMoto:3;Jincheng:5
+MO	Kymco:30;SYM:25;Yamaha:20;Piaggio:2;Honda:5;Suzuki:3
+MP	Harley-Davidson:20;Honda:20;Yamaha:15;Kawasaki:12;Suzuki:10;Indian:5;KTM:4;BMW:4;Triumph:3;Piaggio:3
+MQ	Yamaha:18;Honda:16;Peugeot:10;Piaggio:8;Kymco:8;SYM:8;Suzuki:6;Kawasaki:5;BMW:4;KTM:3
+MR	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+MS	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+MT	Honda:18;Yamaha:10;Triumph:10;BMW:8;KTM:6;Kawasaki:6;Royal Enfield:5/0.08;Suzuki:5;Harley-Davidson:4;Ducati:4;Piaggio:5;Kymco:3;SYM:3;Indian:1;CFMoto:1/0.15
+MU	Hero:30/-0.01;Honda:25;TVS:18;Bajaj:12;Suzuki:5;Yamaha:4;Royal Enfield:5/0.05;KTM:1;Triumph:0.3;Harley-Davidson:0.2
+MV	Bajaj:30;Honda:20;TVS:15;Hero:12;Yamaha:10;Suzuki:5;Royal Enfield:3
+MW	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+MX	Honda:20;Yamaha:15;Suzuki:10;Bajaj:12;TVS:6;Haojue:6;Loncin:6;Zongshen:5;Lifan:5;Hero:4;Kawasaki:3;KTM:3;Benelli:3
+MY	Honda:35;Yamaha:35;Suzuki:4;Kawasaki:6;SYM:4;Benelli:3;Kymco:2
+MZ	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+NA	Honda:12;Yamaha:10;Suzuki:6;Bajaj:20;TVS:10;Haojue:8;Lifan:8;Jincheng:8;Dayang:5;BMW:3;KTM:3;Hero:4
+NC	Yamaha:18;Honda:16;Peugeot:10;Piaggio:8;Kymco:8;SYM:8;Suzuki:6;Kawasaki:5;BMW:4;KTM:3
+NE	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+NF	Honda:18;Yamaha:15;Kawasaki:12;Harley-Davidson:8;KTM:10;Suzuki:7;BMW:6;Triumph:5;Ducati:3;Royal Enfield:3/0.08;CFMoto:3/0.15;Indian:2;Piaggio:2
+NG	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+NI	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Hero:6;Haojue:8;Loncin:5;Zongshen:5;Lifan:5;Kawasaki:2;KTM:2
+NL	Honda:14;Yamaha:12;BMW:10;KTM:8;Kawasaki:7;Triumph:6;Suzuki:5;Piaggio:7;Harley-Davidson:4;Ducati:4;Kymco:4;SYM:3;Royal Enfield:2/0.08;CFMoto:3/0.15;Benelli:2;Aprilia:2;Moto Guzzi:1;Peugeot:2;NIU:1;Yadea:0.5;Loncin:1;Indian:1
+NO	Honda:14;Yamaha:12;BMW:10;KTM:8;Kawasaki:7;Triumph:6;Suzuki:5;Piaggio:7;Harley-Davidson:4;Ducati:4;Kymco:4;SYM:3;Royal Enfield:2/0.08;CFMoto:3/0.15;Benelli:2;Aprilia:2;Moto Guzzi:1;Peugeot:2;NIU:1;Yadea:0.5;Loncin:1;Indian:1
+NP	Bajaj:20;Honda:18;Hero:15;Yamaha:15;TVS:12;Royal Enfield:8;Suzuki:5;KTM:3
+NR	Honda:30;Yamaha:25;Suzuki:15;Haojue:5;Lifan:5;Kawasaki:5;Harley-Davidson:3;Bajaj:4;TVS:4
+NU	Honda:30;Yamaha:25;Suzuki:15;Haojue:5;Lifan:5;Kawasaki:5;Harley-Davidson:3;Bajaj:4;TVS:4
+NZ	Honda:18;Yamaha:15;Kawasaki:12;Harley-Davidson:8;KTM:10;Suzuki:7;BMW:6;Triumph:5;Ducati:3;Royal Enfield:3/0.08;CFMoto:3/0.15;Indian:2;Piaggio:2
+OM	Honda:15;Yamaha:10;Harley-Davidson:10;BMW:8;Suzuki:8;Bajaj:10;TVS:6;Hero:5;Haojue:5;Kawasaki:5;KTM:4;Triumph:3;Ducati:3;Royal Enfield:4
+PA	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Hero:6;Haojue:8;Loncin:5;Zongshen:5;Lifan:5;Kawasaki:2;KTM:2
+PE	Bajaj:18;Honda:18;Yamaha:15;Suzuki:10;TVS:8;Hero:6;Haojue:6;Loncin:5;Zongshen:5;Lifan:5;KTM:3;Kawasaki:2
+PF	Yamaha:18;Honda:16;Peugeot:10;Piaggio:8;Kymco:8;SYM:8;Suzuki:6;Kawasaki:5;BMW:4;KTM:3
+PG	Honda:30;Yamaha:25;Suzuki:15;Haojue:5;Lifan:5;Kawasaki:5;Harley-Davidson:3;Bajaj:4;TVS:4
+PH	Honda:45;Yamaha:30;Suzuki:12;Kawasaki:6;TVS:2;Bajaj:2;Kymco:1
+PK	Honda:45;Suzuki:12;Yamaha:10;Loncin:8;Zongshen:8;Lifan:7;Dayang:5;Haojue:5
+PL	Honda:16;Yamaha:13;KTM:8;BMW:9;Kawasaki:7;Suzuki:5;Triumph:4;Piaggio:4;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Benelli:3;CFMoto:3/0.15;Royal Enfield:2;Loncin:2;Zongshen:2
+PM	Yamaha:18;Honda:16;Peugeot:10;Piaggio:8;Kymco:8;SYM:8;Suzuki:6;Kawasaki:5;BMW:4;KTM:3
+PR	Harley-Davidson:20;Honda:20;Yamaha:15;Kawasaki:12;Suzuki:10;Indian:5;KTM:4;BMW:4;Triumph:3;Piaggio:3
+PS	Honda:15;Yamaha:12;Suzuki:10;Bajaj:12;TVS:6;Haojue:8;Loncin:6;Zongshen:6;Lifan:6;Kymco:4;SYM:4;Kawasaki:3;BMW:3;KTM:2;Harley-Davidson:2
+PT	Honda:20;Yamaha:14;Kymco:8;SYM:8;Piaggio:7;BMW:6;Kawasaki:5;KTM:4;Suzuki:4;Triumph:3;Harley-Davidson:2;Ducati:2;Benelli:2;Royal Enfield:1;CFMoto:1/0.15;Peugeot:1;Yadea:1
+PW	Honda:30;Yamaha:25;Suzuki:15;Haojue:5;Lifan:5;Kawasaki:5;Harley-Davidson:3;Bajaj:4;TVS:4
+PY	Honda:25;Yamaha:15;Zongshen:10;Haojue:8;Loncin:8;Bajaj:6;Shineray:5;Lifan:5;Benelli:4;Suzuki:4;CFMoto:2;Kawasaki:2
+QA	Honda:15;Yamaha:10;Harley-Davidson:10;BMW:8;Suzuki:8;Bajaj:10;TVS:6;Hero:5;Haojue:5;Kawasaki:5;KTM:4;Triumph:3;Ducati:3;Royal Enfield:4
+RE	Yamaha:18;Honda:16;Peugeot:10;Piaggio:8;Kymco:8;SYM:8;Suzuki:6;Kawasaki:5;BMW:4;KTM:3
+RO	Honda:16;Yamaha:13;KTM:8;BMW:9;Kawasaki:7;Suzuki:5;Triumph:4;Piaggio:4;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Benelli:3;CFMoto:3/0.15;Royal Enfield:2;Loncin:2;Zongshen:2
+RS	Honda:16;Yamaha:13;KTM:8;BMW:9;Kawasaki:7;Suzuki:5;Triumph:4;Piaggio:4;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Benelli:3;CFMoto:3/0.15;Royal Enfield:2;Loncin:2;Zongshen:2
+RU	Honda:12;Yamaha:10;Suzuki:6;Kawasaki:6;BMW:6;KTM:5;Loncin:10;Zongshen:8;Lifan:8;Haojue:5;CFMoto:6/0.1;Harley-Davidson:3;Benelli:3;Triumph:2
+RW	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+SA	Honda:15;Yamaha:10;Harley-Davidson:10;BMW:8;Suzuki:8;Bajaj:10;TVS:6;Hero:5;Haojue:5;Kawasaki:5;KTM:4;Triumph:3;Ducati:3;Royal Enfield:4
+SB	Honda:30;Yamaha:25;Suzuki:15;Haojue:5;Lifan:5;Kawasaki:5;Harley-Davidson:3;Bajaj:4;TVS:4
+SC	Hero:30/-0.01;Honda:25;TVS:18;Bajaj:12;Suzuki:5;Yamaha:4;Royal Enfield:5/0.05;KTM:1;Triumph:0.3;Harley-Davidson:0.2
+SD	Bajaj:30;TVS:15;Haojue:10;Loncin:8;Zongshen:6;Lifan:6;Honda:6;Yamaha:4;Suzuki:5;Hero:5;Dayang:5
+SE	Honda:14;Yamaha:12;BMW:10;KTM:8;Kawasaki:7;Triumph:6;Suzuki:5;Piaggio:7;Harley-Davidson:4;Ducati:4;Kymco:4;SYM:3;Royal Enfield:2/0.08;CFMoto:3/0.15;Benelli:2;Aprilia:2;Moto Guzzi:1;Peugeot:2;NIU:1;Yadea:0.5;Loncin:1;Indian:1
+SG	Honda:30;Yamaha:25;Suzuki:10;Kawasaki:8;BMW:5;KTM:5;Triumph:3;Harley-Davidson:3;Ducati:2;Piaggio:4;Kymco:2;SYM:2
+SH	Honda:18;Yamaha:10;Triumph:10;BMW:8;KTM:6;Kawasaki:6;Royal Enfield:5/0.08;Suzuki:5;Harley-Davidson:4;Ducati:4;Piaggio:5;Kymco:3;SYM:3;Indian:1;CFMoto:1/0.15
+SI	Honda:16;Yamaha:13;KTM:8;BMW:9;Kawasaki:7;Suzuki:5;Triumph:4;Piaggio:4;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Benelli:3;CFMoto:3/0.15;Royal Enfield:2;Loncin:2;Zongshen:2
+SJ	Honda:14;Yamaha:12;BMW:10;KTM:8;Kawasaki:7;Triumph:6;Suzuki:5;Piaggio:7;Harley-Davidson:4;Ducati:4;Kymco:4;SYM:3;Royal Enfield:2/0.08;CFMoto:3/0.15;Benelli:2;Aprilia:2;Moto Guzzi:1;Peugeot:2;NIU:1;Yadea:0.5;Loncin:1;Indian:1
+SK	Honda:16;Yamaha:13;KTM:8;BMW:9;Kawasaki:7;Suzuki:5;Triumph:4;Piaggio:4;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Benelli:3;CFMoto:3/0.15;Royal Enfield:2;Loncin:2;Zongshen:2
+SL	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+SM	Honda:22;Piaggio:18;Yamaha:10;BMW:7;Kymco:6;SYM:5;Ducati:5;Benelli:5;Kawasaki:4;KTM:3;Aprilia:3;Suzuki:3;Triumph:3;Moto Guzzi:2;Harley-Davidson:2;Royal Enfield:1;CFMoto:1/0.15
+SN	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+SO	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+SR	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+SS	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+ST	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+SV	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Hero:6;Haojue:8;Loncin:5;Zongshen:5;Lifan:5;Kawasaki:2;KTM:2
+SX	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+SY	Honda:15;Yamaha:12;Suzuki:10;Bajaj:12;TVS:6;Haojue:8;Loncin:6;Zongshen:6;Lifan:6;Kymco:4;SYM:4;Kawasaki:3;BMW:3;KTM:2;Harley-Davidson:2
+SZ	Honda:12;Yamaha:10;Suzuki:6;Bajaj:20;TVS:10;Haojue:8;Lifan:8;Jincheng:8;Dayang:5;BMW:3;KTM:3;Hero:4
+TC	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+TD	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+TG	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+TH	Honda:78;Yamaha:15;Suzuki:2;Kawasaki:2;Ducati:0.5;Triumph:0.5;BMW:0.5;Royal Enfield:0.5
+TJ	Loncin:15;Zongshen:15;Lifan:12;Haojue:12;Honda:8;Yamaha:6;Suzuki:6;CFMoto:5;Dayang:6;Jincheng:4
+TK	Honda:30;Yamaha:25;Suzuki:15;Haojue:5;Lifan:5;Kawasaki:5;Harley-Davidson:3;Bajaj:4;TVS:4
+TL	Honda:50;Yamaha:15;Suzuki:5;Haojue:6;Lifan:6;Dayang:5;Zongshen:4
+TM	Loncin:15;Zongshen:15;Lifan:12;Haojue:12;Honda:8;Yamaha:6;Suzuki:6;CFMoto:5;Dayang:6;Jincheng:4
+TN	Haojue:10;Loncin:10;Zongshen:8;Lifan:8;Peugeot:10;Honda:8;Yamaha:8;Suzuki:6;Bajaj:8;SYM:6;Kymco:6;Piaggio:5
+TO	Honda:30;Yamaha:25;Suzuki:15;Haojue:5;Lifan:5;Kawasaki:5;Harley-Davidson:3;Bajaj:4;TVS:4
+TR	Honda:20;Yamaha:15;Kymco:5;SYM:5;Bajaj:8;Haojue:4;CFMoto:4/0.15;Lifan:4;Loncin:4;Suzuki:4;BMW:4;KTM:4;Kawasaki:3;Benelli:4;Piaggio:3;TVS:4
+TT	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+TV	Honda:30;Yamaha:25;Suzuki:15;Haojue:5;Lifan:5;Kawasaki:5;Harley-Davidson:3;Bajaj:4;TVS:4
+TW	Kymco:30;SYM:25;Yamaha:20;Piaggio:2;Honda:5;Suzuki:3
+TZ	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+UA	Honda:12;Yamaha:10;Suzuki:6;Kawasaki:6;BMW:6;KTM:5;Loncin:10;Zongshen:8;Lifan:8;Haojue:5;CFMoto:6/0.1;Harley-Davidson:3;Benelli:3;Triumph:2
+UG	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+US	Harley-Davidson:25/-0.02;Honda:18;Yamaha:12;Kawasaki:12;Indian:8;Suzuki:6;KTM:5;BMW:5;Triumph:4;Ducati:3;Royal Enfield:2/0.1;CFMoto:1/0.15;Piaggio:1
+UY	Honda:25;Yamaha:15;Zongshen:10;Haojue:8;Loncin:8;Bajaj:6;Shineray:5;Lifan:5;Benelli:4;Suzuki:4;CFMoto:2;Kawasaki:2
+UZ	Loncin:15;Zongshen:15;Lifan:12;Haojue:12;Honda:8;Yamaha:6;Suzuki:6;CFMoto:5;Dayang:6;Jincheng:4
+VA	Honda:22;Piaggio:18;Yamaha:10;BMW:7;Kymco:6;SYM:5;Ducati:5;Benelli:5;Kawasaki:4;KTM:3;Aprilia:3;Suzuki:3;Triumph:3;Moto Guzzi:2;Harley-Davidson:2;Royal Enfield:1;CFMoto:1/0.15
+VC	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+VE	Bajaj:18;Honda:18;Yamaha:15;Suzuki:10;TVS:8;Hero:6;Haojue:6;Loncin:5;Zongshen:5;Lifan:5;KTM:3;Kawasaki:2
+VG	Honda:20;Yamaha:15;Suzuki:12;Bajaj:12;TVS:8;Haojue:8;Loncin:5;Jincheng:5;Kawasaki:3;Harley-Davidson:3
+VI	Harley-Davidson:20;Honda:20;Yamaha:15;Kawasaki:12;Suzuki:10;Indian:5;KTM:4;BMW:4;Triumph:3;Piaggio:3
+VN	Honda:80;Yamaha:10;Piaggio:3;SYM:3;Suzuki:1;Yadea:3/0.2
+VU	Honda:30;Yamaha:25;Suzuki:15;Haojue:5;Lifan:5;Kawasaki:5;Harley-Davidson:3;Bajaj:4;TVS:4
+WF	Yamaha:18;Honda:16;Peugeot:10;Piaggio:8;Kymco:8;SYM:8;Suzuki:6;Kawasaki:5;BMW:4;KTM:3
+WS	Honda:30;Yamaha:25;Suzuki:15;Haojue:5;Lifan:5;Kawasaki:5;Harley-Davidson:3;Bajaj:4;TVS:4
+XK	Honda:16;Yamaha:13;KTM:8;BMW:9;Kawasaki:7;Suzuki:5;Triumph:4;Piaggio:4;Kymco:4;SYM:3;Harley-Davidson:3;Ducati:3;Benelli:3;CFMoto:3/0.15;Royal Enfield:2;Loncin:2;Zongshen:2
+YE	Honda:15;Yamaha:12;Suzuki:10;Bajaj:12;TVS:6;Haojue:8;Loncin:6;Zongshen:6;Lifan:6;Kymco:4;SYM:4;Kawasaki:3;BMW:3;KTM:2;Harley-Davidson:2
+YT	Yamaha:18;Honda:16;Peugeot:10;Piaggio:8;Kymco:8;SYM:8;Suzuki:6;Kawasaki:5;BMW:4;KTM:3
+ZA	Honda:15;Yamaha:12;BMW:12;KTM:10;Kawasaki:8;Suzuki:6;Harley-Davidson:4;Triumph:4;Royal Enfield:3;Bajaj:6;TVS:4;Lifan:4;Jincheng:3;Haojue:4
+ZM	Bajaj:30;TVS:15;Haojue:10;Lifan:8;Jincheng:8;Dayang:6;Loncin:6;Zongshen:4;Honda:6;Yamaha:4;Suzuki:3;Hero:5
+ZW	Honda:12;Yamaha:10;Suzuki:6;Bajaj:20;TVS:10;Haojue:8;Lifan:8;Jincheng:8;Dayang:5;BMW:3;KTM:3;Hero:4

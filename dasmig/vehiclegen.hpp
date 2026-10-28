@@ -30,8 +30,8 @@
 #endif
 
 /// @file vehiclegen.hpp
-/// @brief Vehicle Generator library — vehicles with make, model, fuel, colour, mileage, licence plate and VIN that
-///        fit their country and date for C++23.
+/// @brief Vehicle Generator library — cars and motorcycles with make, model, fuel, colour, mileage, licence plate
+///        and VIN that fit their country and date for C++23.
 /// @author Diego Dasso Migotto (diegomigotto at hotmail dot com)
 /// @see See doc/usage.md for the narrative tutorial.
 
@@ -40,18 +40,42 @@ DASMIG_CORE_REQUIRE(1, 1);
 namespace dasmig
 {
 
-/// @brief Body style of a vehicle.
+/// @brief What kind of vehicle it is.
+enum class vehicle_kind : std::uint8_t
+{
+    car,       ///< Passenger car (with SUVs, pickups and vans used as cars).
+    motorcycle ///< Motorcycle or scooter on two wheels (petrol mopeds of 50 cc and under are not drawn).
+};
+
+/// @brief Body style of a vehicle. The first eight are cars' (see kind_of()),
+///        the rest motorcycles'.
 enum class vehicle_body : std::uint8_t
 {
-    hatchback,  ///< Hatchback.
-    sedan,      ///< Sedan (saloon).
-    wagon,      ///< Station wagon (estate).
-    suv,        ///< Sport utility vehicle or crossover.
-    pickup,     ///< Pickup truck used as a passenger car.
-    van,        ///< Passenger van or MPV.
-    coupe,      ///< Coupe.
-    convertible ///< Convertible.
+    hatchback,   ///< Hatchback.
+    sedan,       ///< Sedan (saloon).
+    wagon,       ///< Station wagon (estate).
+    suv,         ///< Sport utility vehicle or crossover.
+    pickup,      ///< Pickup truck used as a passenger car.
+    van,         ///< Passenger van or MPV.
+    coupe,       ///< Coupe.
+    convertible, ///< Convertible.
+    scooter,     ///< Scooter, with a step-through floor and an automatic gearbox.
+    underbone,   ///< Step-through underbone (Super Cub, Wave), usually semi-automatic.
+    standard,    ///< Standard or naked motorcycle, from commuters to roadsters.
+    sport,       ///< Sport bike with a fairing.
+    touring,     ///< Touring or sport-touring motorcycle.
+    cruiser,     ///< Cruiser.
+    adventure,   ///< Adventure or dual-sport motorcycle.
+    offroad      ///< Trail, enduro or off-road motorcycle with road registration.
 };
+
+/// @brief The kind of vehicle a body style belongs to.
+/// @param b The body.
+/// @return vehicle_kind::motorcycle for scooter and the bodies after it.
+[[nodiscard]] constexpr vehicle_kind kind_of(vehicle_body b) noexcept
+{
+    return b >= vehicle_body::scooter ? vehicle_kind::motorcycle : vehicle_kind::car;
+}
 
 /// @brief What a vehicle runs on.
 enum class vehicle_fuel : std::uint8_t
@@ -74,13 +98,23 @@ enum class distance_units : std::uint8_t
     imperial ///< Miles.
 };
 
-/// @brief Name of a body style ("hatchback", "suv", ...).
+/// @brief Name of a kind ("car", "motorcycle").
+/// @param k The kind.
+/// @return Its name, as in the data.
+[[nodiscard]] constexpr std::string_view to_string(vehicle_kind k) noexcept
+{
+    constexpr std::array<std::string_view, 2> names{"car", "motorcycle"};
+    return names.at(static_cast<std::size_t>(k));
+}
+
+/// @brief Name of a body style ("hatchback", "suv", "scooter", ...).
 /// @param b The body.
 /// @return Its name, as in the data.
 [[nodiscard]] constexpr std::string_view to_string(vehicle_body b) noexcept
 {
-    constexpr std::array<std::string_view, 8> names{"hatchback", "sedan", "wagon", "suv",
-                                                    "pickup",    "van",   "coupe", "convertible"};
+    constexpr std::array<std::string_view, 16> names{
+        "hatchback", "sedan",    "wagon", "suv",     "pickup",  "van",     "coupe",     "convertible",
+        "scooter",   "underbone", "standard", "sport", "touring", "cruiser", "adventure", "offroad"};
     return names.at(static_cast<std::size_t>(b));
 }
 
@@ -111,11 +145,12 @@ struct vehicle_request
     static constexpr std::chrono::year_month_day latest_reference_date{std::chrono::year{2050},
                                                                        std::chrono::month{12}, std::chrono::day{31}};
 
-    std::optional<std::string> country{};  ///< ISO 3166-1 alpha-2, any case; unset: drawn by cars in use.
+    std::optional<std::string> country{};  ///< ISO 3166-1 alpha-2, any case; unset: drawn by vehicles in use.
+    std::optional<vehicle_kind> kind{};    ///< Car or motorcycle; unset: drawn by the country's vehicles in use.
     std::optional<std::string> region{};   ///< Plate region: a US state, German district, ... (see plate_regions()).
     std::optional<std::string> make{};     ///< A make, as makes() lists it ("Volkswagen").
-    std::optional<std::string> model{};    ///< A model key ("vw-golf"); implies its make.
-    std::optional<vehicle_body> body{};    ///< Body style.
+    std::optional<std::string> model{};    ///< A model key ("vw-golf"); implies its make and kind.
+    std::optional<vehicle_body> body{};    ///< Body style; implies its kind.
     std::optional<vehicle_fuel> fuel{};    ///< Fuel.
     std::optional<unsigned> min_age{};     ///< Youngest age, in completed years since the model year.
     std::optional<unsigned> max_age{};     ///< Oldest age.
@@ -134,6 +169,7 @@ class vehicle
 {
   public:
     std::string country_code; ///< ISO 3166-1 alpha-2.
+    vehicle_kind kind{vehicle_kind::car}; ///< Car or motorcycle.
     std::string make;         ///< "Volkswagen".
     std::string model;        ///< "Golf".
     std::string model_key;    ///< "vw-golf".
@@ -144,10 +180,10 @@ class vehicle
     std::chrono::year_month_day first_registration{}; ///< First registration.
     unsigned engine_cc{0};    ///< Engine displacement; 0 for electric.
     unsigned power_kw{0};     ///< Power.
-    std::string transmission; ///< "manual" or "automatic".
-    std::string drive;        ///< "fwd", "rwd" or "awd".
-    unsigned doors{0};        ///< Doors.
-    unsigned seats{0};        ///< Seats.
+    std::string transmission; ///< "manual", "automatic" or (motorcycles) "semi-automatic".
+    std::string drive;        ///< Cars: "fwd", "rwd" or "awd"; motorcycles' final drive: "chain", "belt", "shaft" or "hub".
+    unsigned doors{0};        ///< Doors; 0 for motorcycles.
+    unsigned seats{0};        ///< Seats (riders on a motorcycle).
     std::string colour;       ///< The maker's colour name ("Reflex Silver").
     std::string colour_family; ///< "silver".
     unsigned odometer{0};     ///< Odometer reading, rounded to 10.
@@ -172,9 +208,13 @@ class vehicle
     /// @brief Human-readable summary string.
     /// @return For example
     ///   `2019 Volkswagen Golf 1.5 TSI, petrol, silver, 54,300 km, B-KX 4821`.
+    ///   A motorcycle's trim usually names the model (`CBR600RR` of the
+    ///   `CBR`); the summary then gives the trim alone:
+    ///   `2019 Honda CBR600RR, petrol, red, 12,400 km, AB 12345`.
     [[nodiscard]] std::string to_string() const
     {
-        std::string s = std::to_string(model_year) + " " + make + " " + model;
+        std::string s = std::to_string(model_year) + " " + make;
+        if (kind == vehicle_kind::car || !trim.contains(model)) s += " " + model;
         if (!trim.empty()) s += " " + trim;
         s += ", ";
         s += dasmig::to_string(fuel);
@@ -190,6 +230,7 @@ class vehicle
     {
         w.begin_object()
             .field("country_code", country_code)
+            .field("kind", dasmig::to_string(kind))
             .field("make", make)
             .field("model", model)
             .field("model_key", model_key)
@@ -273,29 +314,33 @@ class vehicle
 ///        directory and can be extended with layers (see doc/data.md).
 enum class vehicle_table : std::uint8_t
 {
-    countries,     ///< `countries.tsv`: population, cars per 1,000, units, markets.
-    ages,          ///< `ages.tsv`: fleet share by age band.
+    countries,     ///< `countries.tsv`: population, cars and motorcycles per 1,000, units, markets.
+    ages,          ///< `ages.tsv`: car fleet share by age band.
     fuel_shares,   ///< `fuel_shares.tsv`: fuel mix of new cars by model year.
-    make_shares,   ///< `make_shares.tsv`: makes by country, with a yearly trend.
-    models,        ///< `models.tsv`: models, production years, bodies, markets.
+    make_shares,   ///< `make_shares.tsv`: car makes by country, with a yearly trend.
+    models,        ///< `models.tsv`: car and motorcycle models, production years, bodies, markets.
     trims,         ///< `trims.tsv`: engines, power, gearboxes and drives of each model.
-    transmission,  ///< `transmission.tsv`: automatic share by country and model year.
-    colours,       ///< `colours.tsv`: colour families by market and model year.
+    transmission,  ///< `transmission.tsv`: automatic share of new cars by country and model year.
+    colours,       ///< `colours.tsv`: car colour families by market and model year.
     colour_names,  ///< `colour_names.tsv`: the makers' colour names.
     mileage,       ///< `mileage.tsv`: yearly distance and fuel factors.
-    plate_formats, ///< `plate_formats.tsv`: licence plate formats by country and date.
+    plate_formats, ///< `plate_formats.tsv`: licence plate formats by country, date and kind.
     plate_series,  ///< `plate_series.tsv`: anchors of sequential plate systems.
     plate_regions, ///< `plate_regions.tsv`: region codes plates carry.
     wmis,          ///< `wmis.tsv`: world manufacturer identifiers nobody holds (for safe VINs).
-    factories,     ///< `factories.tsv`: where each make builds for each market, with WMIs.
-    owner_factors  ///< `owner_factors.tsv`: how the owner's age shifts age and body.
+    factories,     ///< `factories.tsv`: where each car make builds for each market, with WMIs.
+    owner_factors, ///< `owner_factors.tsv`: how the owner's age shifts kind, age and body.
+    motorcycle_fuel_shares, ///< `motorcycle_fuel_shares.tsv`: fuel mix of new motorcycles (columns of fuel_shares).
+    motorcycle_make_shares, ///< `motorcycle_make_shares.tsv`: motorcycle makes by country (columns of make_shares).
+    motorcycle_colours,     ///< `motorcycle_colours.tsv`: motorcycle colour families (columns of colours).
+    motorcycle_factories    ///< `motorcycle_factories.tsv`: where motorcycle makes build (columns of factories).
 };
 
-/// @brief Vehicle Generator: vehicles whose make, model, fuel, colour,
-///        mileage, licence plate and VIN fit their country and date.
+/// @brief Vehicle Generator: cars and motorcycles whose make, model, fuel,
+///        colour, mileage, licence plate and VIN fit their country and date.
 ///
 /// A call draws, from streams split from the call seed: the country
-/// (`"country"`), the plate jurisdiction or region (`"region"`), the age
+/// (`"country"`), the kind (`"kind"`), the plate jurisdiction or region (`"region"`), the age
 /// (`"age"`), the first registration (`"registration"`), the fuel
 /// (`"fuel"`), the make (`"make"`), the model (`"model"`), the body
 /// (`"body"`), the trim, gearbox and drive (`"trim"`), the colour
@@ -365,18 +410,20 @@ class vhg
         v.country_code = c.code;
         if (request.region && !has_region_(c, *request.region))
             throw std::invalid_argument("vehicle-generator: " + *request.region + " is not a plate region of " + c.code);
+        v.kind = draw_kind_(c, ctx, request, call);
+        const fleet_rec& fl = c.fleet(v.kind);
         const std::string jurisdiction = draw_jurisdiction_(c, request, call);
 
-        const auto supply = supply_(c, ctx);
-        const int age = draw_age_(c, ctx, supply, request, call);
+        const auto supply = supply_(fl, ctx);
+        const int age = draw_age_(c, fl, ctx, supply, request, call);
         const int model_year = ctx.year - age;
         v.model_year = model_year;
         const int registered = draw_registration_(model_year, ctx.day, call);
         v.first_registration = ymd_(registered);
 
-        const vehicle_fuel fuel = draw_fuel_(c, ctx, supply, model_year, request, call);
+        const vehicle_fuel fuel = draw_fuel_(fl, ctx, supply, model_year, request, call);
         v.fuel = fuel;
-        const make_entry& mk = draw_make_(c, ctx, fuel, model_year, request, call);
+        const make_entry& mk = draw_make_(fl, ctx, fuel, model_year, request, call);
         v.make = mk.make;
         const model_rec& mdl = _model.models[draw_model_(mk, ctx, fuel, model_year, request, call)];
         v.model = mdl.name;
@@ -385,8 +432,8 @@ class vhg
         v.doors = doors_(v.body);
         v.seats = mdl.seats;
         apply_trim_(v, c, mdl, fuel, model_year, request, call);
-        apply_colour_(v, c, model_year, request, call);
-        apply_odometer_(v, c, registered, ctx.day, request, call);
+        apply_colour_(v, fl, model_year, request, call);
+        apply_odometer_(v, c, fl, registered, ctx.day, request, call);
         apply_plate_(v, c, jurisdiction, age, registered, ctx.day, request, call);
         apply_vin_(v, c, mdl, request, call);
         return v;
@@ -465,36 +512,54 @@ class vhg
     // -- Queries ----------------------------------------------------------
 
     /// @brief The countries vehicles can be drawn in.
+    /// @param kind Only countries with vehicles of this kind; unset for any.
     /// @return Alpha-2 codes, in data order.
-    [[nodiscard]] std::vector<std::string> countries() const
+    [[nodiscard]] std::vector<std::string> countries(std::optional<vehicle_kind> kind = {}) const
     {
         std::vector<std::string> out;
         for (const auto& c : _model.countries)
-            if (c.drawable) out.push_back(c.code);
+            if (kind ? c.fleet(*kind).drawable : c.drawable) out.push_back(c.code);
         return out;
     }
 
     /// @brief The makes sold in a country, or every make.
     /// @param country Alpha-2 code (any case); empty for every make.
-    /// @return Make names: in the country's data order, or sorted for all.
+    /// @param kind Only makes of this kind; unset for both.
+    /// @return Make names: in the country's data order (cars first), or sorted for all.
     /// @throws std::invalid_argument If the country is unknown.
-    [[nodiscard]] std::vector<std::string> makes(std::string_view country = {}) const
+    [[nodiscard]] std::vector<std::string> makes(std::string_view country = {},
+                                                 std::optional<vehicle_kind> kind = {}) const
     {
-        if (country.empty()) return _model.make_names;
         std::vector<std::string> out;
-        for (const auto& m : country_or_throw_(country).makes)
-            if (m.weight > 0.0 && !m.models.empty()) out.push_back(m.make);
+        if (country.empty())
+        {
+            for (const auto& name : _model.make_names)
+                if (!kind || std::ranges::any_of(_model.models, [&](const model_rec& m) {
+                        return m.make == name && m.kind == *kind;
+                    }))
+                    out.push_back(name);
+            return out;
+        }
+        const auto& c = country_or_throw_(country);
+        for (const auto k : kinds_)
+        {
+            if (kind && *kind != k) continue;
+            for (const auto& m : c.fleet(k).makes)
+                if (m.weight > 0.0 && !m.models.empty() && std::ranges::find(out, m.make) == out.end())
+                    out.push_back(m.make);
+        }
         return out;
     }
 
     /// @brief The model keys of a make.
     /// @param make Make name, as makes() lists it.
+    /// @param kind Only models of this kind; unset for both.
     /// @return Model keys in data order; empty for an unknown make.
-    [[nodiscard]] std::vector<std::string> models(std::string_view make) const
+    [[nodiscard]] std::vector<std::string> models(std::string_view make, std::optional<vehicle_kind> kind = {}) const
     {
         std::vector<std::string> out;
         for (const auto& m : _model.models)
-            if (m.make == make) out.push_back(m.key);
+            if (m.make == make && (!kind || m.kind == *kind)) out.push_back(m.key);
         return out;
     }
 
@@ -676,12 +741,14 @@ class vhg
     // -- Tables -----------------------------------------------------------
 
     static constexpr std::string_view library_name_ = "vehicle-generator";
-    static constexpr std::size_t table_count_ = 16;
+    static constexpr std::size_t table_count_ = 20;
     static constexpr std::array<table, table_count_> all_tables_{
         table::countries,    table::ages,          table::fuel_shares,  table::make_shares,
         table::models,       table::trims,         table::transmission, table::colours,
         table::colour_names, table::mileage,       table::plate_formats, table::plate_series,
-        table::plate_regions, table::wmis,         table::factories,    table::owner_factors};
+        table::plate_regions, table::wmis,         table::factories,    table::owner_factors,
+        table::motorcycle_fuel_shares, table::motorcycle_make_shares, table::motorcycle_colours,
+        table::motorcycle_factories};
 
     using documents = std::array<std::optional<core::tsv_document>, table_count_>;
     using tables = std::array<core::layered_table, table_count_>;
@@ -694,18 +761,33 @@ class vhg
             "countries.tsv",    "ages.tsv",          "fuel_shares.tsv",  "make_shares.tsv",
             "models.tsv",       "trims.tsv",         "transmission.tsv", "colours.tsv",
             "colour_names.tsv", "mileage.tsv",       "plate_formats.tsv", "plate_series.tsv",
-            "plate_regions.tsv", "wmis.tsv",         "factories.tsv",    "owner_factors.tsv"};
+            "plate_regions.tsv", "wmis.tsv",         "factories.tsv",    "owner_factors.tsv",
+            "motorcycle_fuel_shares.tsv", "motorcycle_make_shares.tsv", "motorcycle_colours.tsv",
+            "motorcycle_factories.tsv"};
         return names.at(index_(t));
+    }
+
+    // The car table a motorcycle table has the columns of; any other table itself.
+    static constexpr table columns_of_(table t)
+    {
+        switch (t)
+        {
+        case table::motorcycle_fuel_shares: return table::fuel_shares;
+        case table::motorcycle_make_shares: return table::make_shares;
+        case table::motorcycle_colours: return table::colours;
+        case table::motorcycle_factories: return table::factories;
+        default: return t;
+        }
     }
 
     static core::table_schema schema_(table t)
     {
-        switch (t)
+        switch (columns_of_(t))
         {
         case table::countries:
             return {.key = {"country_code"},
                     .required = {"population", "cars_per_1000", "mean_age", "units", "driving_side", "markets"},
-                    .optional = {}};
+                    .optional = {"motorcycles_per_1000", "motorcycle_mean_age"}};
         case table::ages: return {.key = {"country", "band"}, .required = {"share"}, .optional = {}};
         case table::fuel_shares:
             return {.key = {"country", "year"},
@@ -715,7 +797,7 @@ class vhg
         case table::models:
             return {.key = {"key"},
                     .required = {"make", "model", "from_year", "bodies", "markets", "seats"},
-                    .optional = {"to_year"}};
+                    .optional = {"to_year", "kind"}};
         case table::trims:
             return {.key = {"model", "label", "fuel", "from_year"},
                     .required = {"engine_cc", "power_kw", "transmissions", "drives", "weight"},
@@ -728,16 +810,18 @@ class vhg
                                  "orange", "other"},
                     .optional = {}};
         case table::colour_names:
-            return {.key = {"make", "family", "name"}, .required = {"weight"}, .optional = {"from_year", "to_year"}};
+            return {.key = {"make", "family", "name"},
+                    .required = {"weight"},
+                    .optional = {"from_year", "to_year", "kind"}};
         case table::mileage:
             return {.key = {"country"},
                     .required = {"annual_km"},
-                    .optional = {"diesel", "hybrid", "plug_in", "electric", "lpg", "cng", "flex"}};
+                    .optional = {"diesel", "hybrid", "plug_in", "electric", "lpg", "cng", "flex", "motorcycle_km"}};
         case table::plate_formats:
             return {.key = {"key"},
                     .required = {"country", "region", "kind", "pattern", "letters"},
                     .optional = {"from", "until", "regions", "fuels", "min_age", "weight", "exclude", "max_chars",
-                                 "reissue"}};
+                                 "reissue", "kinds"}};
         case table::plate_series: return {.key = {"format", "date"}, .required = {"plate"}, .optional = {}};
         case table::plate_regions:
             return {.key = {"set", "code"}, .required = {"label", "weight"}, .optional = {"sub", "reserved"}};
@@ -747,6 +831,7 @@ class vhg
                     .required = {"weight", "wmi", "plants", "vds"},
                     .optional = {"wmi_suv", "wmi_truck"}};
         case table::owner_factors: return {.key = {"owner_age", "target"}, .required = {"factor"}, .optional = {}};
+        default: break;
         }
         return {};
     }
@@ -760,7 +845,30 @@ class vhg
                 core::layered_table{schema_(table::colour_names)}, core::layered_table{schema_(table::mileage)},
                 core::layered_table{schema_(table::plate_formats)}, core::layered_table{schema_(table::plate_series)},
                 core::layered_table{schema_(table::plate_regions)}, core::layered_table{schema_(table::wmis)},
-                core::layered_table{schema_(table::factories)},    core::layered_table{schema_(table::owner_factors)}};
+                core::layered_table{schema_(table::factories)},    core::layered_table{schema_(table::owner_factors)},
+                core::layered_table{schema_(table::motorcycle_fuel_shares)},
+                core::layered_table{schema_(table::motorcycle_make_shares)},
+                core::layered_table{schema_(table::motorcycle_colours)},
+                core::layered_table{schema_(table::motorcycle_factories)}};
+    }
+
+    // The kind-specific tables of a kind.
+    struct kind_tables
+    {
+        table fuel_shares, make_shares, colours, factories;
+    };
+
+    static constexpr kind_tables tables_of_(vehicle_kind k)
+    {
+        if (k == vehicle_kind::motorcycle)
+            return {.fuel_shares = table::motorcycle_fuel_shares,
+                    .make_shares = table::motorcycle_make_shares,
+                    .colours = table::motorcycle_colours,
+                    .factories = table::motorcycle_factories};
+        return {.fuel_shares = table::fuel_shares,
+                .make_shares = table::make_shares,
+                .colours = table::colours,
+                .factories = table::factories};
     }
 
     // -- Constants ----------------------------------------------------------
@@ -770,8 +878,13 @@ class vhg
     static constexpr int max_age_ = 45;        // oldest age drawn (the 20+ band's tail)
     static constexpr int trend_year_ = 2025;   // make weights are those of model year 2025
     static constexpr std::size_t fuel_count_ = 8;
+    static constexpr std::size_t kind_count_ = 2;
+    static constexpr std::size_t body_count_ = 16;
     static constexpr std::size_t family_count_ = 11;
     static constexpr std::size_t band_count_ = 5;
+    static constexpr double motorcycle_km_share_ = 0.4;  // a motorcycle's yearly distance where mileage.tsv has none
+    static constexpr double dual_clutch_share_ = 0.4;    // motorcycles bought with the automatic where both are offered
+    static constexpr std::array<vehicle_kind, kind_count_> kinds_{vehicle_kind::car, vehicle_kind::motorcycle};
     static constexpr std::array<std::string_view, family_count_> families_{
         "white", "black", "grey", "silver", "blue", "red", "brown", "green", "yellow", "orange", "other"};
     static constexpr std::array<std::string_view, band_count_> bands_{"0-1", "2-4", "5-9", "10-19", "20+"};
@@ -811,6 +924,7 @@ class vhg
         int to{std::numeric_limits<int>::max()};
         bool manual{false};
         bool automatic{false};
+        bool semi{false};  // semi-automatic (motorcycles)
         std::string drives;
         double weight{1.0};
         std::vector<std::string> markets;
@@ -819,6 +933,7 @@ class vhg
     struct model_rec
     {
         std::string key, make, name;
+        vehicle_kind kind{vehicle_kind::car};
         int from{0};
         int to{std::numeric_limits<int>::max()};
         std::vector<std::pair<vehicle_body, double>> bodies;
@@ -881,6 +996,7 @@ class vhg
         std::vector<std::string> exclude;
         std::size_t max_chars{0};
         double reissue{0.0};
+        unsigned kinds{0};  // bit per kind; 0: every kind
         std::vector<std::pair<std::size_t, std::uint64_t>> layout;  // item, radix; most significant first
         double capacity{0.0};
         std::vector<std::pair<int, double>> anchors;  // day, index
@@ -908,31 +1024,48 @@ class vhg
     struct owner_band
     {
         unsigned lo{0}, hi{0};
+        std::array<double, kind_count_> kind{1.0, 1.0};
         std::array<double, band_count_> age{1.0, 1.0, 1.0, 1.0, 1.0};
-        std::array<double, 8> body{1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0};
+        std::array<double, body_count_> body{1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+                                             1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0};
+    };
+
+    // One kind's vehicles in a country.
+    struct fleet_rec
+    {
+        double size{0.0};  // vehicles in use
+        std::array<double, max_age_ + 1> ages{};
+        std::vector<std::array<double, fuel_count_>> fuels;  // by year slot
+        std::vector<double> automatic;                       // by year slot (cars)
+        double annual_km{12000.0};
+        std::vector<make_entry> makes;
+        fuel_masks supply{};    // model years some make offers each fuel in
+        fuel_masks positive{};  // model years each fuel has a positive share
+        std::size_t colours{npos_};
+        bool drawable{false};
     };
 
     struct country_rec
     {
         std::string code;
-        double cars{0.0};
         bool miles{false};
         std::vector<std::string> markets;
-        std::array<double, max_age_ + 1> ages{};
-        std::vector<std::array<double, fuel_count_>> fuels;  // by year slot
-        std::vector<double> automatic;                       // by year slot
-        double annual_km{12000.0};
         std::array<double, fuel_count_> mileage{1.0, 1.35, 1.1, 0.9, 0.85, 1.3, 1.3, 1.0};
-        std::vector<make_entry> makes;
-        fuel_masks supply{};    // model years some make offers each fuel in
-        fuel_masks positive{};  // model years each fuel has a positive share
-        std::size_t colours{npos_};
+        std::array<fleet_rec, kind_count_> fleets;
         std::vector<std::size_t> formats;
         std::string jurisdictions;  // region set of the formats' regions (US states), or empty
-        bool drawable{false};
+        bool drawable{false};       // some kind is
+
+        [[nodiscard]] const fleet_rec& fleet(vehicle_kind k) const { return fleets.at(static_cast<std::size_t>(k)); }
     };
 
     static constexpr std::size_t npos_ = std::numeric_limits<std::size_t>::max();
+
+    struct colour_table
+    {
+        std::vector<std::string> markets;
+        std::vector<std::vector<family_weights>> weights;  // by market, by year slot
+    };
 
     struct model
     {
@@ -943,11 +1076,10 @@ class vhg
         std::vector<std::string> make_names;  // sorted
         std::vector<plate_format> formats;
         std::unordered_map<std::string, region_set> region_sets;
-        std::unordered_map<std::string, std::vector<factory_rec>> factories;  // by make
+        std::array<std::unordered_map<std::string, std::vector<factory_rec>>, kind_count_> factories;  // by make
         std::vector<std::string> reserved_wmis;
-        std::vector<std::string> colour_markets;
-        std::vector<std::vector<family_weights>> colours;  // by market, by year slot
-        std::unordered_map<std::string, colour_names_by_family> colour_names;
+        std::array<colour_table, kind_count_> colours;
+        std::array<std::unordered_map<std::string, colour_names_by_family>, kind_count_> colour_names;
         std::vector<owner_band> owners;
     };
 
@@ -1059,10 +1191,26 @@ class vhg
 
     static std::optional<vehicle_body> body_of_(std::string_view text)
     {
-        for (std::size_t i = 0; i < 8; ++i)
+        for (std::size_t i = 0; i < body_count_; ++i)
             if (dasmig::to_string(static_cast<vehicle_body>(i)) == text) return static_cast<vehicle_body>(i);
         return std::nullopt;
     }
+
+    static std::optional<vehicle_kind> kind_named_(std::string_view text)
+    {
+        for (const auto k : kinds_)
+            if (dasmig::to_string(k) == text) return k;
+        return std::nullopt;
+    }
+
+    // An optional kind column: the default kind when empty.
+    static vehicle_kind kind_column_(const core::tsv_row& row)
+    {
+        const auto text = text_(row, "kind");
+        return text.empty() ? vehicle_kind::car : *kind_named_(text);
+    }
+
+    static constexpr unsigned kind_bit_(vehicle_kind k) { return 1U << static_cast<unsigned>(k); }
 
     static std::optional<vehicle_fuel> fuel_of_(std::string_view text)
     {
@@ -1276,9 +1424,15 @@ class vhg
                                                                                        std::string{from});
     }
 
+    static void check_kind_(const core::tsv_row& row)
+    {
+        if (const auto k = text_(row, "kind"); !k.empty() && !kind_named_(k))
+            throw row.error("kind", "must be car or motorcycle");
+    }
+
     static void validate_(table t, const core::tsv_row& row)
     {
-        switch (t)
+        switch (columns_of_(t))
         {
         case table::countries:
         {
@@ -1286,6 +1440,10 @@ class vhg
             (void)non_negative_(row, "population");
             (void)non_negative_(row, "cars_per_1000");
             if (!(row.get<double>("mean_age") > 0.0)) throw row.error("mean_age", "must be positive");
+            if (const auto m = optional_<double>(row, "motorcycles_per_1000"); m && !(*m >= 0.0))
+                throw row.error("motorcycles_per_1000", "must not be negative");
+            if (const auto a = optional_<double>(row, "motorcycle_mean_age"); a && !(*a > 0.0))
+                throw row.error("motorcycle_mean_age", "must be positive");
             const auto units = row.get<std::string>("units");
             if (units != "km" && units != "mi") throw row.error("units", "must be km or mi");
             const auto side = row.get<std::string>("driving_side");
@@ -1311,17 +1469,24 @@ class vhg
                 throw row.error("trend", "must be above -1");
             break;
         case table::models:
+        {
             (void)nonempty_(row, "key");
             (void)nonempty_(row, "make");
             (void)nonempty_(row, "model");
             check_years_(row, "from_year", "to_year");
-            if (const auto bodies = weighted_list_(row.get<std::string>("bodies"));
-                !bodies || std::ranges::any_of(*bodies, [](const auto& b) { return !body_of_(b.first); }))
+            check_kind_(row);
+            const auto bodies = weighted_list_(row.get<std::string>("bodies"));
+            if (!bodies || std::ranges::any_of(*bodies, [](const auto& b) { return !body_of_(b.first); }))
                 throw row.error("bodies", "must list bodies as body:weight, separated by commas");
+            const auto kind = kind_column_(row);
+            if (std::ranges::any_of(*bodies, [&](const auto& b) { return kind_of(*body_of_(b.first)) != kind; }))
+                throw row.error("bodies",
+                                "must be bodies of the model's kind (" + std::string{dasmig::to_string(kind)} + ")");
             if (!weighted_list_(row.get<std::string>("markets")))
                 throw row.error("markets", "must list markets as market:weight, separated by commas");
             if (row.get<int>("seats") <= 0) throw row.error("seats", "must be positive");
             break;
+        }
         case table::trims:
         {
             (void)nonempty_(row, "model");
@@ -1331,11 +1496,11 @@ class vhg
             if (row.get<int>("engine_cc") < 0) throw row.error("engine_cc", "must not be negative");
             if (row.get<int>("power_kw") < 0) throw row.error("power_kw", "must not be negative");
             const auto trans = row.get<std::string>("transmissions");
-            if (trans.find_first_not_of("ma") != std::string::npos)
-                throw row.error("transmissions", "must be m, a or ma");
+            if (trans.find_first_not_of("mas") != std::string::npos)
+                throw row.error("transmissions", "must be letters of m, a and s");
             const auto drives = row.get<std::string>("drives");
-            if (drives.find_first_not_of("fra") != std::string::npos)
-                throw row.error("drives", "must be letters of f, r and a");
+            if (drives.find_first_not_of("fra") != std::string::npos && drives.find_first_not_of("cbsh") != std::string::npos)
+                throw row.error("drives", "must be letters of f, r and a (cars) or of c, b, s and h (motorcycles)");
             (void)non_negative_(row, "weight");
             break;
         }
@@ -1357,6 +1522,7 @@ class vhg
             if (!family_of_(row.get<std::string>("family"))) throw row.error("family", "unknown colour family");
             (void)nonempty_(row, "name");
             (void)non_negative_(row, "weight");
+            check_kind_(row);
             if (const auto from = optional_<int>(row, "from_year"))
                 if (const auto to = optional_<int>(row, "to_year"); to && *to < *from)
                     throw row.error("to_year", "must not be before from_year");
@@ -1364,7 +1530,7 @@ class vhg
         case table::mileage:
             (void)alpha2_(row, "country");
             if (!(row.get<double>("annual_km") > 0.0)) throw row.error("annual_km", "must be positive");
-            for (const auto f : {"diesel", "hybrid", "plug_in", "electric", "lpg", "cng", "flex"})
+            for (const auto f : {"diesel", "hybrid", "plug_in", "electric", "lpg", "cng", "flex", "motorcycle_km"})
                 if (const auto v = optional_<double>(row, f); v && !(*v > 0.0)) throw row.error(f, "must be positive");
             break;
         case table::plate_formats:
@@ -1388,6 +1554,8 @@ class vhg
                     throw row.error(col, "must be a date as YYYY-MM-DD");
             for (const auto& f : split_(text_(row, "fuels"), ';'))
                 if (!fuel_of_(f)) throw row.error("fuels", "unknown fuel " + f);
+            for (const auto& k : split_(text_(row, "kinds"), ';'))
+                if (!kind_named_(k)) throw row.error("kinds", "unknown kind " + k);
             if (const auto w = optional_<double>(row, "weight"); w && !(*w >= 0.0))
                 throw row.error("weight", "must not be negative");
             if (const auto r = optional_<double>(row, "reissue"); r && !(*r >= 0.0 && *r <= 1.0))
@@ -1441,11 +1609,13 @@ class vhg
                 throw row.error("owner_age", "must be an age range such as 18-24 or 65-");
             const auto target = row.get<std::string>("target");
             const bool ok = (target.starts_with("age:") && band_index_(std::string_view{target}.substr(4))) ||
-                            (target.starts_with("body:") && body_of_(std::string_view{target}.substr(5)));
-            if (!ok) throw row.error("target", "must be age:<band> or body:<body>");
+                            (target.starts_with("body:") && body_of_(std::string_view{target}.substr(5))) ||
+                            (target.starts_with("kind:") && kind_named_(std::string_view{target}.substr(5)));
+            if (!ok) throw row.error("target", "must be age:<band>, body:<body> or kind:<kind>");
             (void)non_negative_(row, "factor");
             break;
         }
+        default: break;
         }
     }
 
@@ -1561,6 +1731,7 @@ class vhg
             r.key = row.get<std::string>("key");
             r.make = row.get<std::string>("make");
             r.name = row.get<std::string>("model");
+            r.kind = kind_column_(row);
             r.from = row.get<int>("from_year");
             r.to = optional_<int>(row, "to_year").value_or(std::numeric_limits<int>::max());
             const auto bodies = *weighted_list_(row.get<std::string>("bodies"));
@@ -1584,12 +1755,19 @@ class vhg
             tr.from = std::max(row.get<int>("from_year"), mdl.from);
             tr.to = std::min(optional_<int>(row, "to_year").value_or(std::numeric_limits<int>::max()), mdl.to);
             const auto trans = row.get<std::string>("transmissions");
-            tr.manual = trans.find('m') != std::string::npos;
-            tr.automatic = trans.find('a') != std::string::npos;
+            tr.manual = trans.contains('m');
+            tr.automatic = trans.contains('a');
+            tr.semi = trans.contains('s');
             tr.drives = row.get<std::string>("drives");
             tr.weight = row.get<double>("weight");
             tr.markets = split_(text_(row, "markets"), ',');
-            if (tr.from <= tr.to && tr.weight > 0.0 && (tr.manual || tr.automatic) && !tr.drives.empty())
+            const bool motorcycle = mdl.kind == vehicle_kind::motorcycle;
+            if (!tr.drives.empty() && tr.drives.find_first_not_of(motorcycle ? "cbsh" : "fra") != std::string::npos)
+                throw build_error_("trim " + tr.label + " of " + key + " has drives " + tr.drives + ", which a " +
+                                   std::string{dasmig::to_string(mdl.kind)} + " does not have");
+            if (tr.semi && !motorcycle)
+                throw build_error_("trim " + tr.label + " of " + key + " is semi-automatic, which only motorcycles are");
+            if (tr.from <= tr.to && tr.weight > 0.0 && (tr.manual || tr.automatic || tr.semi) && !tr.drives.empty())
                 mdl.trims.push_back(std::move(tr));
         }
         for (const auto& mdl : m.models)
@@ -1601,12 +1779,61 @@ class vhg
         for (const auto& row : rows(table::ages))
             ages[row.get<std::string>("country")].at(*band_index_(row.get<std::string>("band"))) =
                 row.get<double>("share");
-        std::unordered_map<std::string, std::vector<std::pair<int, std::array<double, fuel_count_>>>> fuels;
-        for (const auto& row : rows(table::fuel_shares))
+        using fuel_points = std::unordered_map<std::string, std::vector<std::pair<int, std::array<double, fuel_count_>>>>;
+        std::array<fuel_points, kind_count_> fuels;
+        std::array<std::unordered_map<std::string, std::vector<const core::tsv_row*>>, kind_count_> make_rows;
+        std::array<std::unordered_map<std::string, std::vector<std::size_t>>, kind_count_> models_of_make;
+        for (const auto k : kinds_)
         {
-            std::array<double, fuel_count_> s{};
-            for (std::size_t f = 0; f < fuel_count_; ++f) s.at(f) = row.get<double>(dasmig::to_string(vehicle_fuel(f)));
-            fuels[row.get<std::string>("country")].emplace_back(row.get<int>("year"), s);
+            const auto kt = tables_of_(k);
+            const auto ki = static_cast<std::size_t>(k);
+            for (const auto& row : rows(kt.fuel_shares))
+            {
+                std::array<double, fuel_count_> s{};
+                for (std::size_t f = 0; f < fuel_count_; ++f)
+                    s.at(f) = row.get<double>(dasmig::to_string(vehicle_fuel(f)));
+                fuels.at(ki)[row.get<std::string>("country")].emplace_back(row.get<int>("year"), s);
+            }
+            for (const auto& row : rows(kt.make_shares))
+                make_rows.at(ki)[row.get<std::string>("country")].push_back(&row);
+            for (std::size_t i = 0; i < m.models.size(); ++i)
+                if (m.models[i].kind == k) models_of_make.at(ki)[m.models[i].make].push_back(i);
+
+            // Colours by market.
+            auto& colours = m.colours.at(ki);
+            std::unordered_map<std::string, std::vector<std::pair<int, family_weights>>> colour_points;
+            for (const auto& row : rows(kt.colours))
+            {
+                family_weights w{};
+                for (std::size_t f = 0; f < family_count_; ++f) w.at(f) = row.get<double>(families_.at(f));
+                const auto market = row.get<std::string>("market");
+                if (!colour_points.contains(market)) colours.markets.push_back(market);
+                colour_points[market].emplace_back(row.get<int>("year"), w);
+            }
+            for (const auto& market : colours.markets)
+            {
+                auto& points = colour_points[market];
+                std::ranges::sort(points, {}, &std::pair<int, family_weights>::first);
+                std::vector<family_weights> by_year;
+                for (int s = 0; s < year_slots_; ++s) by_year.push_back(interpolate_(points, first_year_ + s));
+                colours.weights.push_back(std::move(by_year));
+            }
+
+            for (const auto& row : rows(kt.factories))
+            {
+                const auto wmi = row.get<std::string>("wmi");
+                const auto suv = text_(row, "wmi_suv");
+                const auto truck = text_(row, "wmi_truck");
+                m.factories.at(ki)[row.get<std::string>("make")].push_back(
+                    {.market = row.get<std::string>("market"),
+                     .country = row.get<std::string>("country"),
+                     .weight = row.get<double>("weight"),
+                     .wmi = wmi,
+                     .wmi_suv = suv.empty() ? wmi : suv,
+                     .wmi_truck = truck.empty() ? wmi : truck,
+                     .plants = row.get<std::string>("plants"),
+                     .zzz = row.get<std::string>("vds") == "zzz"});
+            }
         }
         std::unordered_map<std::string, std::vector<std::pair<int, double>>> automatic;
         for (const auto& row : rows(table::transmission))
@@ -1614,32 +1841,10 @@ class vhg
                                                                     row.get<double>("automatic_share"));
         std::unordered_map<std::string, const core::tsv_row*> mileage;
         for (const auto& row : rows(table::mileage)) mileage[row.get<std::string>("country")] = &row;
-        std::unordered_map<std::string, std::vector<const core::tsv_row*>> make_rows;
-        for (const auto& row : rows(table::make_shares)) make_rows[row.get<std::string>("country")].push_back(&row);
-        std::unordered_map<std::string, std::vector<std::size_t>> models_of_make;
-        for (std::size_t i = 0; i < m.models.size(); ++i) models_of_make[m.models[i].make].push_back(i);
 
-        // Colours by market.
-        std::unordered_map<std::string, std::vector<std::pair<int, family_weights>>> colour_points;
-        for (const auto& row : rows(table::colours))
-        {
-            family_weights w{};
-            for (std::size_t f = 0; f < family_count_; ++f) w.at(f) = row.get<double>(families_.at(f));
-            const auto market = row.get<std::string>("market");
-            if (!colour_points.contains(market)) m.colour_markets.push_back(market);
-            colour_points[market].emplace_back(row.get<int>("year"), w);
-        }
-        for (const auto& market : m.colour_markets)
-        {
-            auto& points = colour_points[market];
-            std::ranges::sort(points, {}, &std::pair<int, family_weights>::first);
-            std::vector<family_weights> by_year;
-            for (int s = 0; s < year_slots_; ++s) by_year.push_back(interpolate_(points, first_year_ + s));
-            m.colours.push_back(std::move(by_year));
-        }
         for (const auto& row : rows(table::colour_names))
         {
-            m.colour_names[row.get<std::string>("make")]
+            m.colour_names.at(static_cast<std::size_t>(kind_column_(row)))[row.get<std::string>("make")]
                 .at(*family_of_(row.get<std::string>("family")))
                 .push_back({.name = row.get<std::string>("name"),
                             .weight = row.get<double>("weight"),
@@ -1682,6 +1887,7 @@ class vhg
             f.exclude = split_(text_(row, "exclude"), ';');
             f.max_chars = static_cast<std::size_t>(optional_<int>(row, "max_chars").value_or(0));
             f.reissue = optional_<double>(row, "reissue").value_or(0.0);
+            for (const auto& k : split_(text_(row, "kinds"), ';')) f.kinds |= kind_bit_(*kind_named_(k));
             const bool uses_region = std::ranges::any_of(f.items, [](const plate_item& it) {
                 return it.kind == 't' && (it.token == 'R' || it.token == 'S' || it.token == 'C');
             });
@@ -1728,20 +1934,6 @@ class vhg
         // VINs.
         for (const auto& row : rows(table::wmis))
             if (row.get<bool>("reserved")) m.reserved_wmis.push_back(row.get<std::string>("wmi"));
-        for (const auto& row : rows(table::factories))
-        {
-            const auto wmi = row.get<std::string>("wmi");
-            const auto suv = text_(row, "wmi_suv");
-            const auto truck = text_(row, "wmi_truck");
-            m.factories[row.get<std::string>("make")].push_back({.market = row.get<std::string>("market"),
-                                                                 .country = row.get<std::string>("country"),
-                                                                 .weight = row.get<double>("weight"),
-                                                                 .wmi = wmi,
-                                                                 .wmi_suv = suv.empty() ? wmi : suv,
-                                                                 .wmi_truck = truck.empty() ? wmi : truck,
-                                                                 .plants = row.get<std::string>("plants"),
-                                                                 .zzz = row.get<std::string>("vds") == "zzz"});
-        }
 
         // Owner factors.
         for (const auto& row : rows(table::owner_factors))
@@ -1756,6 +1948,8 @@ class vhg
             const auto target = row.get<std::string>("target");
             const double factor = row.get<double>("factor");
             if (target.starts_with("age:")) it->age.at(*band_index_(std::string_view{target}.substr(4))) = factor;
+            else if (target.starts_with("kind:"))
+                it->kind.at(static_cast<std::size_t>(*kind_named_(std::string_view{target}.substr(5)))) = factor;
             else it->body.at(static_cast<std::size_t>(*body_of_(std::string_view{target}.substr(5)))) = factor;
         }
 
@@ -1763,84 +1957,107 @@ class vhg
         {
             country_rec c;
             c.code = row.get<std::string>("country_code");
-            c.cars = core::math::fenced(row.get<double>("population") * row.get<double>("cars_per_1000")) / 1000.0;
             c.miles = row.get<std::string>("units") == "mi";
             c.markets = split_(row.get<std::string>("markets"), ';');
-            const auto age_it = ages.find(c.code);
-            c.ages = age_weights_(age_it != ages.end() ? age_it->second : survival_shares_(row.get<double>("mean_age")));
-
-            auto fuel_points = fuels[c.code];
-            std::ranges::sort(fuel_points, {}, &std::pair<int, std::array<double, fuel_count_>>::first);
-            auto auto_points = automatic[c.code];
-            std::ranges::sort(auto_points);
-            for (int s = 0; s < year_slots_; ++s)
-            {
-                auto shares = fuel_points.empty() ? std::array<double, fuel_count_>{1.0}
-                                                  : interpolate_(fuel_points, first_year_ + s);
-                c.fuels.push_back(shares);
-                c.automatic.push_back(auto_points.empty() ? 0.3 : interpolate_(auto_points, first_year_ + s));
-                for (std::size_t f = 0; f < fuel_count_; ++f)
-                    if (shares.at(f) > 0.0) c.positive.at(f) |= year_mask{1} << static_cast<unsigned>(s);
-            }
-            if (const auto mi = mileage.find(c.code); mi != mileage.end())
-            {
-                c.annual_km = mi->second->get<double>("annual_km");
+            const auto* mileage_row = [&]() -> const core::tsv_row* {
+                const auto mi = mileage.find(c.code);
+                return mi == mileage.end() ? nullptr : mi->second;
+            }();
+            if (mileage_row)
                 for (std::size_t f = 1; f < fuel_count_; ++f)
-                    if (const auto v = optional_<double>(*mi->second, dasmig::to_string(vehicle_fuel(f))))
+                    if (const auto v = optional_<double>(*mileage_row, dasmig::to_string(vehicle_fuel(f))))
                         c.mileage.at(f) = *v;
-            }
-
-            for (const auto* mrow : make_rows[c.code])
-            {
-                make_entry e;
-                e.make = mrow->get<std::string>("make");
-                e.weight = mrow->get<double>("weight");
-                const double trend = optional_<double>(*mrow, "trend").value_or(0.0);
-                e.growth = trend == 0.0 ? 0.0 : core::math::log(1.0 + trend);
-                for (const auto i : models_of_make[e.make])
-                {
-                    const auto& mdl = m.models[i];
-                    const double w = market_weight_(mdl, c);
-                    if (!(w > 0.0)) continue;
-                    model_entry me{.model = i, .weight = w};
-                    for (const auto& tr : mdl.trims)
-                    {
-                        if (!trim_sold_(tr, c)) continue;
-                        const auto years = span_mask_(tr.from, tr.to);
-                        me.years.at(static_cast<std::size_t>(tr.fuel)) |= years;
-                        if (tr.fuel == vehicle_fuel::petrol)
-                            for (const auto f : {vehicle_fuel::lpg, vehicle_fuel::cng, vehicle_fuel::flex})
-                                me.years.at(static_cast<std::size_t>(f)) |= years;
-                    }
-                    if (std::ranges::any_of(me.years, [](year_mask y) { return y != 0; })) e.models.push_back(me);
-                }
-                if (e.weight > 0.0)
-                    for (const auto& me : e.models)
-                        for (std::size_t f = 0; f < fuel_count_; ++f) c.supply.at(f) |= me.years.at(f);
-                c.makes.push_back(std::move(e));
-            }
-
-            for (const auto& market : c.markets)
-            {
-                const auto it = std::ranges::find(m.colour_markets, market);
-                if (it != m.colour_markets.end())
-                {
-                    c.colours = static_cast<std::size_t>(it - m.colour_markets.begin());
-                    break;
-                }
-            }
-            if (c.colours == npos_)
-                if (const auto it = std::ranges::find(m.colour_markets, "*"); it != m.colour_markets.end())
-                    c.colours = static_cast<std::size_t>(it - m.colour_markets.begin());
-
             for (std::size_t i = 0; i < m.formats.size(); ++i)
             {
                 if (m.formats[i].country != c.code) continue;
                 c.formats.push_back(i);
                 if (m.formats[i].region != "*") c.jurisdictions = c.code;
             }
-            for (std::size_t f = 0; f < fuel_count_; ++f)
-                if ((c.supply.at(f) & c.positive.at(f)) != 0) c.drawable = c.cars > 0.0 && !c.formats.empty();
+
+            for (const auto k : kinds_)
+            {
+                const auto ki = static_cast<std::size_t>(k);
+                const bool car = k == vehicle_kind::car;
+                auto& fl = c.fleets.at(ki);
+                const double per_1000 = car ? row.get<double>("cars_per_1000")
+                                            : optional_<double>(row, "motorcycles_per_1000").value_or(0.0);
+                fl.size = core::math::fenced(row.get<double>("population") * per_1000) / 1000.0;
+                const auto age_it = ages.find(c.code);
+                if (car && age_it != ages.end()) fl.ages = age_weights_(age_it->second);
+                else
+                    fl.ages = age_weights_(survival_shares_(
+                        car ? row.get<double>("mean_age")
+                            : optional_<double>(row, "motorcycle_mean_age").value_or(row.get<double>("mean_age"))));
+
+                auto fuel_rows = fuels.at(ki)[c.code];
+                std::ranges::sort(fuel_rows, {}, &std::pair<int, std::array<double, fuel_count_>>::first);
+                auto auto_points = automatic[c.code];
+                std::ranges::sort(auto_points);
+                for (int s = 0; s < year_slots_; ++s)
+                {
+                    auto shares = fuel_rows.empty() ? std::array<double, fuel_count_>{1.0}
+                                                    : interpolate_(fuel_rows, first_year_ + s);
+                    fl.fuels.push_back(shares);
+                    if (car) fl.automatic.push_back(auto_points.empty() ? 0.3 : interpolate_(auto_points, first_year_ + s));
+                    for (std::size_t f = 0; f < fuel_count_; ++f)
+                        if (shares.at(f) > 0.0) fl.positive.at(f) |= year_mask{1} << static_cast<unsigned>(s);
+                }
+                const double car_km = mileage_row ? mileage_row->get<double>("annual_km") : fl.annual_km;
+                fl.annual_km = car ? car_km
+                                   : (mileage_row ? optional_<double>(*mileage_row, "motorcycle_km") : std::nullopt)
+                                         .value_or(core::math::fenced(car_km * motorcycle_km_share_));
+
+                for (const auto* mrow : make_rows.at(ki)[c.code])
+                {
+                    make_entry e;
+                    e.make = mrow->get<std::string>("make");
+                    e.weight = mrow->get<double>("weight");
+                    const double trend = optional_<double>(*mrow, "trend").value_or(0.0);
+                    e.growth = trend == 0.0 ? 0.0 : core::math::log(1.0 + trend);
+                    for (const auto i : models_of_make.at(ki)[e.make])
+                    {
+                        const auto& mdl = m.models[i];
+                        const double w = market_weight_(mdl, c);
+                        if (!(w > 0.0)) continue;
+                        model_entry me{.model = i, .weight = w};
+                        for (const auto& tr : mdl.trims)
+                        {
+                            if (!trim_sold_(tr, c)) continue;
+                            const auto years = span_mask_(tr.from, tr.to);
+                            me.years.at(static_cast<std::size_t>(tr.fuel)) |= years;
+                            if (car && tr.fuel == vehicle_fuel::petrol)
+                                for (const auto f : {vehicle_fuel::lpg, vehicle_fuel::cng, vehicle_fuel::flex})
+                                    me.years.at(static_cast<std::size_t>(f)) |= years;
+                        }
+                        if (std::ranges::any_of(me.years, [](year_mask y) { return y != 0; })) e.models.push_back(me);
+                    }
+                    if (e.weight > 0.0)
+                        for (const auto& me : e.models)
+                            for (std::size_t f = 0; f < fuel_count_; ++f) fl.supply.at(f) |= me.years.at(f);
+                    fl.makes.push_back(std::move(e));
+                }
+
+                const auto& colour_markets = m.colours.at(ki).markets;
+                for (const auto& market : c.markets)
+                {
+                    const auto it = std::ranges::find(colour_markets, market);
+                    if (it != colour_markets.end())
+                    {
+                        fl.colours = static_cast<std::size_t>(it - colour_markets.begin());
+                        break;
+                    }
+                }
+                if (fl.colours == npos_)
+                    if (const auto it = std::ranges::find(colour_markets, "*"); it != colour_markets.end())
+                        fl.colours = static_cast<std::size_t>(it - colour_markets.begin());
+
+                const bool plated = std::ranges::any_of(c.formats, [&](std::size_t i) {
+                    return m.formats[i].kinds == 0 || (m.formats[i].kinds & kind_bit_(k)) != 0;
+                });
+                for (std::size_t f = 0; f < fuel_count_; ++f)
+                    if ((fl.supply.at(f) & fl.positive.at(f)) != 0) fl.drawable = fl.size > 0.0 && plated;
+                c.drawable = c.drawable || fl.drawable;
+            }
             m.country_index.emplace(c.code, m.countries.size());
             m.countries.push_back(std::move(c));
         }
@@ -1968,6 +2185,7 @@ class vhg
         int day{0};
         int year{0};
         const country_rec* country{nullptr};
+        std::optional<vehicle_kind> kind;
         std::optional<std::string> make;
         std::optional<std::size_t> model;
         std::optional<vehicle_body> body;
@@ -2010,12 +2228,15 @@ class vhg
             throw std::invalid_argument("vehicle-generator: the reference date must be from 2000-01-01 to 2050-12-31");
         ctx.day = static_cast<int>(std::chrono::sys_days{date}.time_since_epoch().count());
         ctx.year = static_cast<int>(date.year());
-        if (request.country)
-        {
-            ctx.country = &country_or_throw_(*request.country);
-            if (!ctx.country->drawable)
-                throw std::invalid_argument("vehicle-generator: no vehicles are known in " + ctx.country->code);
-        }
+        if (request.country) ctx.country = &country_or_throw_(*request.country);
+        ctx.kind = request.kind;
+        const auto imply_kind = [&](vehicle_kind k, const std::string& what) {
+            if (ctx.kind && *ctx.kind != k)
+                throw std::invalid_argument("vehicle-generator: " + what + " is a " + std::string{dasmig::to_string(k)} +
+                                            ", not a " + std::string{dasmig::to_string(*ctx.kind)});
+            ctx.kind = k;
+        };
+        if (request.body) imply_kind(kind_of(*request.body), "body " + std::string{dasmig::to_string(*request.body)});
         if (request.model)
         {
             const auto it = _model.model_index.find(*request.model);
@@ -2027,6 +2248,7 @@ class vhg
                 throw std::invalid_argument("vehicle-generator: model " + *request.model + " is a " + make + ", not a " +
                                             *request.make);
             ctx.make = make;
+            imply_kind(_model.models[it->second].kind, "model " + *request.model);
         }
         else if (request.make)
         {
@@ -2034,6 +2256,10 @@ class vhg
                 throw std::invalid_argument("vehicle-generator: unknown make " + *request.make);
             ctx.make = *request.make;
         }
+        if (ctx.country != nullptr && !(ctx.kind ? ctx.country->fleet(*ctx.kind).drawable : ctx.country->drawable))
+            throw std::invalid_argument("vehicle-generator: no " +
+                                        std::string{ctx.kind ? plural_(*ctx.kind) : "vehicles"} + " are known in " +
+                                        ctx.country->code);
         ctx.body = request.body;
         ctx.fuel = request.fuel;
         ctx.min_age = static_cast<int>(std::min<unsigned>(request.min_age.value_or(0), 1000));
@@ -2050,9 +2276,12 @@ class vhg
         return ctx;
     }
 
+    static std::string_view plural_(vehicle_kind k) { return k == vehicle_kind::car ? "cars" : "motorcycles"; }
+
     std::string describe_(const context& ctx) const
     {
         std::string s;
+        if (ctx.kind) s += " " + std::string{dasmig::to_string(*ctx.kind)};
         if (ctx.model) s += " model " + _model.models[*ctx.model].key;
         else if (ctx.make) s += " make " + *ctx.make;
         if (ctx.body) s += " body " + std::string{dasmig::to_string(*ctx.body)};
@@ -2096,11 +2325,11 @@ class vhg
     }
 
     // Model years each fuel can be supplied in, given the request's make, model and body.
-    fuel_masks supply_(const country_rec& c, const context& ctx) const
+    fuel_masks supply_(const fleet_rec& fl, const context& ctx) const
     {
-        if (!ctx.narrowed()) return c.supply;
+        if (!ctx.narrowed()) return fl.supply;
         fuel_masks out{};
-        for (const auto& mk : c.makes)
+        for (const auto& mk : fl.makes)
         {
             if (!(mk.weight > 0.0) || (ctx.make && mk.make != *ctx.make)) continue;
             for (const auto& me : mk.models)
@@ -2110,20 +2339,34 @@ class vhg
         return out;
     }
 
-    // Share of new cars of a model year that the request can be: the allowed fuels that are supplied.
-    static double fuel_weight_(const country_rec& c, const fuel_masks& supply, const context& ctx, int year,
+    // Share of new vehicles of a model year that the request can be: the allowed fuels that are supplied.
+    static double fuel_weight_(const fleet_rec& fl, const fuel_masks& supply, const context& ctx, int year,
                                std::size_t f)
     {
         if (ctx.fuel && static_cast<std::size_t>(*ctx.fuel) != f) return 0.0;
         if ((supply.at(f) & bit_(year)) == 0) return 0.0;
-        return c.fuels.at(static_cast<std::size_t>(slot_(year))).at(f);
+        return fl.fuels.at(static_cast<std::size_t>(slot_(year))).at(f);
     }
 
-    static double year_weight_(const country_rec& c, const fuel_masks& supply, const context& ctx, int year)
+    static double year_weight_(const fleet_rec& fl, const fuel_masks& supply, const context& ctx, int year)
     {
         double w = 0.0;
-        for (std::size_t f = 0; f < fuel_count_; ++f) w += fuel_weight_(c, supply, ctx, year, f);
+        for (std::size_t f = 0; f < fuel_count_; ++f) w += fuel_weight_(fl, supply, ctx, year, f);
         return w;
+    }
+
+    // The vehicles of a kind in a country the request can be: the fleet times the owner's factor, or 0.
+    double kind_weight_(const country_rec& c, vehicle_kind k, const context& ctx) const
+    {
+        if (ctx.kind && *ctx.kind != k) return 0.0;
+        const auto& fl = c.fleet(k);
+        if (!fl.drawable) return 0.0;
+        const auto supply = supply_(fl, ctx);
+        for (int a = ctx.min_age; a <= ctx.max_age; ++a)
+            if (year_weight_(fl, supply, ctx, ctx.year - a) > 0.0)
+                return ctx.owner ? core::math::fenced(fl.size * ctx.owner->kind.at(static_cast<std::size_t>(k)))
+                                 : fl.size;
+        return 0.0;
     }
 
     const country_rec& draw_country_(const context& ctx, const vehicle_request& request, const core::rng& call) const
@@ -2134,11 +2377,7 @@ class vhg
         {
             double weight = 0.0;
             if (c.drawable && (!request.region || has_region_(c, *request.region)))
-            {
-                const auto supply = supply_(c, ctx);
-                for (int a = ctx.min_age; a <= ctx.max_age && weight == 0.0; ++a)
-                    if (year_weight_(c, supply, ctx, ctx.year - a) > 0.0) weight = c.cars;
-            }
+                for (const auto k : kinds_) weight += kind_weight_(c, k, ctx);
             w.push_back(weight);
         }
         if (!any_positive_(w))
@@ -2148,6 +2387,18 @@ class vhg
         }
         auto r = call.split("country");
         return _model.countries[pick_index_(w, request.weighted, r)];
+    }
+
+    vehicle_kind draw_kind_(const country_rec& c, const context& ctx, const vehicle_request& request,
+                            const core::rng& call) const
+    {
+        if (ctx.kind) return *ctx.kind;
+        std::array<double, kind_count_> w{};
+        for (const auto k : kinds_) w.at(static_cast<std::size_t>(k)) = kind_weight_(c, k, ctx);
+        if (!any_positive_(w))
+            throw std::invalid_argument("vehicle-generator: nobody sells a" + describe_(ctx) + " in " + c.code);
+        auto r = call.split("kind");
+        return static_cast<vehicle_kind>(pick_index_(w, request.weighted, r));
     }
 
     std::string draw_jurisdiction_(const country_rec& c, const vehicle_request& request, const core::rng& call) const
@@ -2165,15 +2416,15 @@ class vhg
         return set.codes[pick_index_(set.weights, request.weighted, r)].code;
     }
 
-    int draw_age_(const country_rec& c, const context& ctx, const fuel_masks& supply, const vehicle_request& request,
-                  const core::rng& call) const
+    int draw_age_(const country_rec& c, const fleet_rec& fl, const context& ctx, const fuel_masks& supply,
+                  const vehicle_request& request, const core::rng& call) const
     {
         std::vector<double> w(static_cast<std::size_t>(ctx.max_age + 1), 0.0);
         for (int a = ctx.min_age; a <= ctx.max_age; ++a)
         {
-            double base = c.ages.at(static_cast<std::size_t>(a));
+            double base = fl.ages.at(static_cast<std::size_t>(a));
             if (ctx.owner) base *= ctx.owner->age.at(band_of_(a));
-            w.at(static_cast<std::size_t>(a)) = core::math::fenced(base * year_weight_(c, supply, ctx, ctx.year - a));
+            w.at(static_cast<std::size_t>(a)) = core::math::fenced(base * year_weight_(fl, supply, ctx, ctx.year - a));
         }
         if (!any_positive_(w))
             throw std::invalid_argument("vehicle-generator: nobody sells a" + describe_(ctx) + " in " + c.code);
@@ -2190,12 +2441,12 @@ class vhg
         return core::uniform_int(r, lo, std::max(lo, hi));
     }
 
-    static vehicle_fuel draw_fuel_(const country_rec& c, const context& ctx, const fuel_masks& supply, int year,
+    static vehicle_fuel draw_fuel_(const fleet_rec& fl, const context& ctx, const fuel_masks& supply, int year,
                                    const vehicle_request& request, const core::rng& call)
     {
         if (ctx.fuel) return *ctx.fuel;
         std::array<double, fuel_count_> w{};
-        for (std::size_t f = 0; f < fuel_count_; ++f) w.at(f) = fuel_weight_(c, supply, ctx, year, f);
+        for (std::size_t f = 0; f < fuel_count_; ++f) w.at(f) = fuel_weight_(fl, supply, ctx, year, f);
         auto r = call.split("fuel");
         return static_cast<vehicle_fuel>(pick_index_(w, request.weighted, r));
     }
@@ -2207,12 +2458,12 @@ class vhg
         });
     }
 
-    const make_entry& draw_make_(const country_rec& c, const context& ctx, vehicle_fuel fuel, int year,
+    const make_entry& draw_make_(const fleet_rec& fl, const context& ctx, vehicle_fuel fuel, int year,
                                  const vehicle_request& request, const core::rng& call) const
     {
         std::vector<double> w;
-        w.reserve(c.makes.size());
-        for (const auto& mk : c.makes)
+        w.reserve(fl.makes.size());
+        for (const auto& mk : fl.makes)
         {
             double weight = 0.0;
             if (mk.weight > 0.0 && (!ctx.make || mk.make == *ctx.make) && make_offers_(mk, ctx, fuel, year))
@@ -2227,10 +2478,10 @@ class vhg
         if (ctx.make)
         {
             for (std::size_t i = 0; i < w.size(); ++i)
-                if (w[i] > 0.0) return c.makes[i];
+                if (w[i] > 0.0) return fl.makes[i];
         }
         auto r = call.split("make");
-        return c.makes[pick_index_(w, request.weighted, r)];
+        return fl.makes[pick_index_(w, request.weighted, r)];
     }
 
     double body_factor_(const model_rec& mdl, const context& ctx) const
@@ -2289,6 +2540,7 @@ class vhg
 
     static unsigned doors_(vehicle_body b)
     {
+        if (kind_of(b) == vehicle_kind::motorcycle) return 0;
         switch (b)
         {
         case vehicle_body::sedan:
@@ -2296,6 +2548,20 @@ class vhg
         case vehicle_body::coupe:
         case vehicle_body::convertible: return 2;
         default: return 5;
+        }
+    }
+
+    static std::string_view drive_name_(char d)
+    {
+        switch (d)
+        {
+        case 'f': return "fwd";
+        case 'r': return "rwd";
+        case 'a': return "awd";
+        case 'c': return "chain";
+        case 'b': return "belt";
+        case 's': return "shaft";
+        default: return "hub";
         }
     }
 
@@ -2309,8 +2575,8 @@ class vhg
             return out;
         };
         auto list = candidates(fuel);
-        const bool converted =
-            list.empty() && (fuel == vehicle_fuel::lpg || fuel == vehicle_fuel::cng || fuel == vehicle_fuel::flex);
+        const bool converted = list.empty() && mdl.kind == vehicle_kind::car &&
+                               (fuel == vehicle_fuel::lpg || fuel == vehicle_fuel::cng || fuel == vehicle_fuel::flex);
         if (converted) list = candidates(vehicle_fuel::petrol);
         if (list.empty()) throw std::logic_error("vehicle-generator: no trim for " + mdl.key);
         std::vector<double> w;
@@ -2326,28 +2592,33 @@ class vhg
         {
             const bool electrified =
                 fuel == vehicle_fuel::electric || fuel == vehicle_fuel::hybrid || fuel == vehicle_fuel::plug_in;
-            automatic = electrified || core::bernoulli(r, c.automatic.at(static_cast<std::size_t>(slot_(year))));
+            const double share = mdl.kind == vehicle_kind::car
+                                     ? c.fleet(vehicle_kind::car).automatic.at(static_cast<std::size_t>(slot_(year)))
+                                     : dual_clutch_share_;
+            automatic = electrified || core::bernoulli(r, share);
         }
-        v.transmission = automatic ? "automatic" : "manual";
+        v.transmission = automatic ? "automatic" : tr.manual ? "manual" : "semi-automatic";
         char drive = tr.drives.front();
         if (tr.drives.size() > 1 && !core::bernoulli(r, 0.7))
             drive = tr.drives[1 + below_(r, tr.drives.size() - 1)];
-        v.drive = drive == 'f' ? "fwd" : drive == 'r' ? "rwd" : "awd";
+        v.drive = drive_name_(drive);
     }
 
-    void apply_colour_(vehicle& v, const country_rec& c, int year, const vehicle_request& request,
+    void apply_colour_(vehicle& v, const fleet_rec& fl, int year, const vehicle_request& request,
                        const core::rng& call) const
     {
-        if (c.colours == npos_) return;
-        const auto& w = _model.colours[c.colours].at(static_cast<std::size_t>(slot_(year)));
+        const auto ki = static_cast<std::size_t>(v.kind);
+        if (fl.colours == npos_) return;
+        const auto& w = _model.colours.at(ki).weights[fl.colours].at(static_cast<std::size_t>(slot_(year)));
         if (!any_positive_(w)) return;
         auto r = call.split("colour");
         const auto family = pick_index_(w, request.weighted, r);
         v.colour_family = families_.at(family);
         const auto names_for = [&](const std::string& make) -> std::vector<const colour_name_rec*> {
             std::vector<const colour_name_rec*> out;
-            const auto it = _model.colour_names.find(make);
-            if (it == _model.colour_names.end()) return out;
+            const auto& names = _model.colour_names.at(ki);
+            const auto it = names.find(make);
+            if (it == names.end()) return out;
             for (const auto& n : it->second.at(family))
                 if (n.from <= year && year <= n.to && n.weight > 0.0) out.push_back(&n);
             return out;
@@ -2365,7 +2636,7 @@ class vhg
         v.colour = names[pick_index_(nw, request.weighted, r)]->name;
     }
 
-    static void apply_odometer_(vehicle& v, const country_rec& c, int registered, int day,
+    static void apply_odometer_(vehicle& v, const country_rec& c, const fleet_rec& fl, int registered, int day,
                                 const vehicle_request& request, const core::rng& call)
     {
         const bool miles = request.units == distance_units::imperial ||
@@ -2382,7 +2653,7 @@ class vhg
         {
             const double years = static_cast<double>(days) / 365.25;
             const double median =
-                core::math::fenced(c.annual_km * c.mileage.at(static_cast<std::size_t>(v.fuel)) * years);
+                core::math::fenced(fl.annual_km * c.mileage.at(static_cast<std::size_t>(v.fuel)) * years);
             km = core::lognormal(r, core::math::log(median), years < 1.0 ? 0.25 : 0.35);
         }
         const double value = miles ? km / 1.609344 : km;
@@ -2654,20 +2925,25 @@ class vhg
         return !digits.empty();
     }
 
-    // The formats a car can carry: its country (and jurisdiction), the issuing day, its fuel and age.
+    // The formats a vehicle can carry: its country (and jurisdiction), the issuing day, its kind, fuel and age. A
+    // format of the vehicle's kind for every fuel and age takes the place of the formats of every kind that day.
     std::vector<const plate_format*> formats_at_(const country_rec& c, const std::string& jurisdiction, int day,
-                                                 vehicle_fuel fuel, int age) const
+                                                 vehicle_kind kind, vehicle_fuel fuel, int age) const
     {
         std::vector<const plate_format*> out;
+        bool own = false;
         for (const auto i : c.formats)
         {
             const auto& f = _model.formats[i];
             if (f.region != "*" && f.region != jurisdiction) continue;
             if (day < f.from || day > f.until) continue;
+            if (f.kinds != 0 && (f.kinds & kind_bit_(kind)) == 0) continue;
             if (f.fuels != 0 && (f.fuels & (1U << static_cast<unsigned>(fuel))) == 0) continue;
             if (age < f.min_age) continue;
+            own = own || (f.kinds != 0 && f.fuels == 0 && f.min_age == 0);
             out.push_back(&f);
         }
+        if (own) std::erase_if(out, [](const plate_format* f) { return f->kinds == 0; });
         return out;
     }
 
@@ -2677,7 +2953,7 @@ class vhg
         auto r = call.split("plate");
         auto rr = call.split("region");
         const auto pick = [&](int at) -> const plate_format* {
-            const auto list = formats_at_(c, jurisdiction, at, v.fuel, age);
+            const auto list = formats_at_(c, jurisdiction, at, v.kind, v.fuel, age);
             if (list.empty()) return nullptr;
             std::vector<double> w;
             for (const auto* f : list) w.push_back(f->weight);
@@ -2758,8 +3034,9 @@ class vhg
         }
         else
         {
-            const auto it = _model.factories.find(v.make);
-            if (it == _model.factories.end() || it->second.empty()) return;
+            const auto& factories = _model.factories.at(static_cast<std::size_t>(v.kind));
+            const auto it = factories.find(v.make);
+            if (it == factories.end() || it->second.empty()) return;
             const auto& rows = it->second;
             std::vector<const factory_rec*> list;
             const auto collect = [&](std::string_view market) {
