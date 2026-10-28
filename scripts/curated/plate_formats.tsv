@@ -1,352 +1,359 @@
 # Curated: licence plate formats by country (and US state, Canadian province, Australian state), with the registration dates they were issued for. Pattern tokens: L letter (from letters), D digit, N digit 1-9, X letter or digit, R region code (from the regions set), S the region's sub-number (2 digits), C the region's sub-letter, A UK age identifier, Y UK year letter, J Japanese serial number, [k:...] a sequential group of significance k, T^m-n repeats token T m to n times, {a|b} a choice, '...' a literal; other characters are literal. letters: ranges such as A-Z, ! removes letters. From national vehicle registration rules and public plate references, as known in 2026; US, Canadian and Australian formats are each jurisdiction's standard passenger plate. See doc/data.md.
-key	country	region	from	until	kind	pattern	letters	regions	fuels	min_age	weight	exclude	max_chars	reissue
-ad	AD	*			random	LDDDD	A-Z!IOQ							
-ae	AE	*			random	{A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|AA|BB|CC|DD} N^1-5	A-Z							
-af	AF	*			random	R DDDDD	A-Z!IOQ	AF						
-ag	AG	*			random	{A|B|P|R|T} DDDD	A-Z							
-ai	AI	*			random	DDDD	A-Z							
-al-1993	AL	*		2011-05-31	random	R DDDD L	A-Z!IOQ	AL						
-al-2011	AL	*	2011-06-01		random	LL DDD LL	A-Z!IOQW							
-am	AM	*			random	DD LL DDD	A-Z!IOQ							
-ao	AO	*			random	'LD'-DD-DD-LL	A-Z!IOQ							
-ar-1995	AR	*		2016-03-31	sequential	[1:LLL] [2:DDD]	A-Z!Ñ							
-ar-2016	AR	*	2016-04-01		sequential	[1:LL] [3:DDD] [2:LL]	A-Z							
-as	AS	*			random	DDDD	A-Z							
-at	AT	*			random	R L^1-3 D^1-5	A-Z!IOQ	AT					8	
-au-nsw	AU	NSW			random	LL DD LL	A-Z!IOQ							
-au-vic	AU	VIC			random	{1|2}LL DLL	A-Z!IOQ							
-au-qld	AU	QLD			random	DDD LLL	A-Z!IOQ							
-au-wa	AU	WA			random	N LLL DDD	A-Z!IOQ							
-au-sa	AU	SA			random	'S' DDD LLL	A-Z!IOQ							
-au-tas	AU	TAS			random	L DD LL	A-Z!IOQ							
-au-act	AU	ACT			random	'Y' LL DD L	A-Z!IOQ							
-au-nt	AU	NT			random	LL DD LL	A-Z!IOQ							
-aw	AW	*			random	'A-'DDDDD	A-Z							
-ax	AX	*			random	'ÅL' DDDDD	A-Z							
-az	AZ	*			random	R-LL-DDD	A-Z!IOQ	AZ						
-ba-1998	BA	*		2009-06-30	random	LDD-L-DDD	AEJKMOT							
-ba-2009	BA	*	2009-07-01		random	LDD-L-DDD	AEJKMOT							
-bb	BB	*			random	{B|H|M|T|X} DDDD	A-Z							
-bd	BD	*			random	R-{GA|KHA|GHA|CHA} DD-DDDD	A-Z	BD						
-be-1973	BE	*		2008-06-30	random	LLL-DDD	A-Z!IOQ							
-be-2008	BE	*	2008-07-01	2010-11-15	random	DDD-LLL	A-Z!IOQ							
-be-2010	BE	*	2010-11-16		sequential	[1:N]-[2:LLL]-[3:DDD]	A-Z!IOQ							
-bf	BF	*			random	DD LL DDDD	A-Z!IOQ							
-bg	BG	*			random	R DDDD LL	ABEKMHOPCTYX	BG						
-bh	BH	*			random	N^1-6	A-Z							
-bi	BI	*			random	L DDDD L	A-Z!IOQ							
-bj	BJ	*			random	LL DDDD 'RB'	A-Z!IOQ							
-bl	BL	*			random	DDD LL 977	A-Z!IOQ							
-bm	BM	*			random	{A|B|C|D|E|F|G|H|J|K|L|M} N^1-5	A-Z							
-bn	BN	*			random	L LL DDDD	A-Z!IOQ							
-bo	BO	*			random	DDDD LLL	BCDFGHJKLMNPRSTVWXYZ							
-bq	BQ	*			random	{B|S|E} DDDD	A-Z							
-br-1990	BR	*		2018-09-10	random	LLL-DDDD	A-Z							
-br-2018	BR	*	2018-09-11		random	LLLDLDD	A-Z							
-bs	BS	*			random	LL DDDD	A-Z!IOQ							
-bt	BT	*			random	'BP-1-'L-DDDD	A-Z!IOQ							
-bw	BW	*			random	L DDD LLL	A-Z!IOQ							
-by	BY	*			random	DDDD LL-R	ABEIKMHOPCTX	BY						
-bz	BZ	*			random	R-DDDDD	A-Z	BZ						
-ca-on	CA	ON			random	LLLL DDD	A-Z!IOQU							
-ca-qc	CA	QC			random	LDD LLL	A-Z!IOQU							
-ca-bc	CA	BC			random	LL DDDL	A-Z!IOQU							
-ca-ab	CA	AB			random	LLL-DDDD	A-Z!IOQU							
-ca-mb	CA	MB			random	LLL DDD	A-Z!IOQU							
-ca-sk	CA	SK			random	DDD LLL	A-Z!IOQU							
-ca-ns	CA	NS			random	LLL DDD	A-Z!IOQU							
-ca-nb	CA	NB			random	LLL DDD	A-Z!IOQU							
-ca-nl	CA	NL			random	LLL DDD	A-Z!IOQU							
-ca-pe	CA	PE			random	DDDDDD	A-Z							
-ca-terr	CA	YT			random	LLL DD	A-Z!IOQU							
-ca-nt	CA	NT			random	DDDDDD	A-Z							
-ca-nu	CA	NU			random	DDDDDD	A-Z							
-cc	CC	*			random	'CKI' DDD	A-Z							
-cd	CD	*			random	DDDD LL DD	A-Z!IOQ							
-cf	CF	*			random	DDDD L 'RCA'	A-Z!IOQ							
-cg	CG	*			random	DDD-LL-D	A-Z!IOQ							
-ch	CH	*			random	R ND^0-5	A-Z	CH						
-ci	CI	*			random	DDDD LL DD	A-Z!IOQ							
-ck	CK	*			random	DDDDD	A-Z							
-cl-1985	CL	*		2007-09-30	random	LL·DDDD	A-Z!IOQÑ							
-cl-2007	CL	*	2007-10-01		sequential	[1:LL]·[2:LL]·[3:DD]	BCDFGHJKLPRSTVWXYZ							
-cm	CM	*			random	R DDD LL	A-Z!IOQ	CM						
-cn-1992	CN	*		2017-11-19	random	RC·X^5	A-Z!IO	CN						
-cn-2002	CN	*	2017-11-20		random	RC·X^5	A-Z!IO	CN						
-cn-nev	CN	*	2017-11-20		random	RC·{D|F}X^5	A-Z!IO	CN	electric;plug_in		20			
-co	CO	*			random	LLL DDD	A-Z							
-cr	CR	*			random	LLL-DDD	A-Z!IOQ							
-cu	CU	*			random	{P|B} DDD DDD	A-Z							
-cv	CV	*			random	R-DD-LL	A-Z!IOQ	CV						
-cw	CW	*			random	{C|J}DDDDD	A-Z							
-cx	CX	*			random	'CI' DDD	A-Z							
-cy	CY	*			random	LLL DDD	A-Z!IOQ							
-cz-1960	CZ	*		2001-06-30	random	LLL DD-DD	A-Z!IOQ							
-cz-2001	CZ	*	2001-07-01		random	NRN DDDD	A-Z!IOQ	CZ						
-de	DE	*			random	R-L^1-2 ND^0-3	A-Z!ÄÖÜ	DE				SS;SA;HJ;KZ;NS;SD	8	
-de-e	DE	*	2015-06-12		random	R-L^1-2 ND^0-2'E'	A-Z!ÄÖÜ	DE	electric;plug_in		1.5	SS;SA;HJ;KZ;NS;SD	8	
-de-h	DE	*	1997-07-01		random	R-L^1-2 ND^0-2'H'	A-Z!ÄÖÜ	DE		30	0.4	SS;SA;HJ;KZ;NS;SD	8	
-dj	DJ	*			random	DDDD L DD	A-Z!IOQ							
-dk	DK	*			random	LL DD DDD	A-Z!IOQÆØÅ							
-dm	DM	*			random	{P|H} DDDD	A-Z							
-do	DO	*			random	{A|G|L}DDDDDD	A-Z							
-dz	DZ	*			random	DDDDD 1V R	A-Z	DZ						
-ec	EC	*			random	R LL-DDDD	A-Z!IOQ	EC						
-ee-2004	EE	*			random	DDD LLL	A-Z!IOQÕÄÖÜ							
-eg	EG	*			random	DDDD LLL	ABDEGHJKLMNRSTWY							
-eh	EH	*			random	DDDDD DD	A-Z							
-er	ER	*			random	DD-DDDDD	A-Z							
-es-1971	ES	*		2000-09-17	random	R-DDDD-L^1-2	A-Z!IOQÑ	ES-OLD						
-es-2000	ES	*	2000-09-18		sequential	[2:DDDD] [1:LLL]	BCDFGHJKLMNPRSTVWXYZ							
-et	ET	*			random	R 2-L DDDDD	A-Z	ET						
-fi	FI	*			random	LLL-DDD	A-Z!IOQÅÄÖ							
-fj	FJ	*			random	LL DDD	A-Z!IOQ							
-fk	FK	*			random	'F' DDD L	A-Z!IOQ							
-fm	FM	*			random	{P|C|K|Y} DDDD	A-Z							
-fo	FO	*			random	LL DDD	A-Z!IOQ							
-fr-fni	FR	*		2009-04-14	random	N^1D^0-3 L^2-3 R	A-Z!IOU	FR						0.15
-fr-siv	FR	*	2009-04-15		sequential	[1:LL]-[3:DDD]-[2:LL]	A-Z!IOU							
-ga	GA	*			random	LL DDDD	A-Z!IOQ							
-gb-1983	GB	*	1983-08-01	2001-08-31	random	YN^1D^0-2 LLL	A-Z!IQUZ							
-gb-2001	GB	*	2001-09-01		random	RL A LLL	A-Z!IQ	GB						
-gd	GD	*			random	{P|H|T} DDDD	A-Z							
-ge	GE	*			random	LL-DDD-LL	A-Z!IOQ							
-gf	GF	*			random	LL-DDD-LL	A-Z!IOU							
-gg	GG	*			random	N^1D^0-4	A-Z							
-gh	GH	*			random	R DDDD-V	A-Z	GH						
-gi	GI	*			random	'G' DDDD L	A-Z!IOQ							
-gl	GL	*			random	LL DDDDD	A-Z!IOQ							
-gm	GM	*			random	R DDDD L	A-Z!IOQ	GM						
-gn	GN	*			random	DDDD LL	A-Z!IOQ							
-gp	GP	*			random	LL-DDD-LL	A-Z!IOU							
-gq	GQ	*			random	DDDD L LL	A-Z!IOQ							
-gr	GR	*			random	RLL-DDDD	ABEZHIKMNOPTYX	GR						
-gt	GT	*			random	'P' DDD LLL	BCDFGHJKLMNPQRSTVWXYZ							
-gu	GU	*			random	LL DDDD	A-Z!IOQ							
-gw	GW	*			random	LL-DD-LL	A-Z!IOQ							
-gy	GY	*			random	{P|H|G}LL DDDD	A-Z!IOQ							
-hk	HK	*			random	LL DDDD	A-Z!IOQ							
-hn	HN	*			random	LLL DDDD	A-Z!IOQ							
-hr	HR	*			random	R DDD^0-1-L^1-2	ABCDEFGHIJKLMNOPRSTUVZ	HR						
-ht	HT	*			random	'AA' DDDDD	A-Z							
-hu-1990	HU	*		2022-08-31	random	LLL-DDD	A-Z!Q							
-hu-2022	HU	*	2022-09-01		random	LL LL-DDD	A-Z!Q							
-id	ID	*			random	R ND^0-3 L^1-3	A-Z!IOQ	ID						
-ie-1987	IE	*		2012-12-31	random	V-R-ND^0-5	A-Z	IE						
-ie-2013	IE	*	2013-01-01		random	VH-R-ND^0-5	A-Z	IE						
-il-1990	IL	*		2016-12-31	random	DD-DDD-DD	A-Z							
-il-2017	IL	*	2017-01-01		random	DDD-DD-DDD	A-Z							
-im	IM	*			random	'MN' DDD L	A-Z!IOQ							
-in	IN	*			random	R S L^1-2 DDDD	A-Z!IO	IN						
-in-bh	IN	*	2021-09-15		random	DD 'BH' DDDD LL	A-Z!IO				0.03			
-iq	IQ	*			random	DDDDD L	A-Z							
-ir	IR	*			random	DD L DDD-R	BDJLMNSTVYEHQ	IR						
-is	IS	*			random	LL XDD	A-Z!IOQ							
-it-1985	IT	*		1994-03-31	random	R DLDDDD	A-Z!IOQU	IT-OLD						
-it-1994	IT	*	1994-04-01		sequential	[1:LL] [3:DDD] [2:LL]	A-Z!IOQU							
-je	JE	*			random	'J' N^1D^0-5	A-Z							
-jm	JM	*			random	DDDD LL	A-Z!IOQ							
-jo	JO	*			random	DD-DDDDD	A-Z							
-jp-1990	JP	*		1999-04-30	random	R {3|5}N {さ|す|せ|そ|た|ち|つ|て|と|な|に|ぬ|ね|の|は|ひ|ふ|ほ|ま|み|む|め|も|や|ゆ|よ|ら|る|ろ} J	A-Z	JP						
-jp-1999	JP	*	1999-05-01		random	R {3|5}DD {さ|す|せ|そ|た|ち|つ|て|と|な|に|ぬ|ね|の|は|ひ|ふ|ほ|ま|み|む|め|も|や|ゆ|よ|ら|る|ろ} J	A-Z	JP						
-ke	KE	*			random	'K'LL DDDL	A-Z!IOQ							
-kg	KG	*			random	DD DDD LLL	A-Z!IOQ							
-kh	KH	*			random	R 2L-DDDD	A-Z!IOQ	KH						
-ki	KI	*			random	DDDDD	A-Z							
-km	KM	*			random	DDDD L 'M'	A-Z!IOQ							
-kn	KN	*			random	{P|R|N} DDDD	A-Z							
-kp	KP	*			random	DD-DDDD	A-Z							
-kr-1996	KR	*		2006-10-31	random	R DD{가|나|다|라|마|거|너|더|러|머|버|서|어|저|고|노|도|로|모|보|소|오|조|구|누|두|루|무|부|수|우|주} DDDD	A-Z	KR						
-kr-2006	KR	*	2006-11-01		random	DD{가|나|다|라|마|거|너|더|러|머|버|서|어|저|고|노|도|로|모|보|소|오|조|구|누|두|루|무|부|수|우|주} DDDD	A-Z							
-kr-2019	KR	*	2019-09-01		random	DDD{가|나|다|라|마|거|너|더|러|머|버|서|어|저|고|노|도|로|모|보|소|오|조|구|누|두|루|무|부|수|우|주} DDDD	A-Z							
-kw	KW	*			random	DD/DDDDD	A-Z							
-ky	KY	*			random	DDD-DDD	A-Z							
-kz-1993	KZ	*		2012-06-30	random	L DDD LLL	A-Z!IOQ							
-kz-2012	KZ	*	2012-07-01		random	DDD LLL R	A-Z!IOQ	KZ						
-la	LA	*			random	LL DDDD	A-Z!IOQ							
-lb	LB	*			random	L DDDDDD	BGMNORSTZ							
-lc	LC	*			random	{PA|PB|PC|PD|TX} DDDD	A-Z							
-li	LI	*			random	'FL' N^1D^0-4	A-Z							
-lk-1990	LK	*		2000-12-31	random	DD-DDDD	A-Z							
-lk-2000	LK	*	2001-01-01		random	R LLL-DDDD	A-Z!IOQ	LK						
-lr	LR	*			random	L-DDDD	A-Z!IOQ							
-ls	LS	*			random	L DDD LLL	A-Z!IOQ							
-lt	LT	*			random	LLL DDD	A-Z!IOQ							
-lu	LU	*			random	LL DDDD	A-Z!IOQ							
-lv	LV	*			random	LL-N^1D^0-3	A-Z!IOQ							
-ly	LY	*			random	DD-DDDDDD	A-Z							
-ma	MA	*			random	N^1D^0-4 {أ|ب|د|ه|و|ط} R	A-Z	MA						
-mc	MC	*			random	X^4	A-Z!IOQ							
-md	MD	*			random	LLL DDD	A-Z!IOQ							
-me	ME	*			random	R LL DDD	A-Z!IOQ	ME						
-mf	MF	*			random	DDD LL 978	A-Z!IOQ							
-mg	MG	*			random	DDDD LLL	A-Z!IOQ							
-mh	MH	*			random	DDDDD	A-Z							
-mk	MK	*			random	R-DDDD-LL	A-Z!IOQ	MK						
-ml	ML	*			random	L DDDD L	A-Z!IOQ							
-mm	MM	*			random	NL-DDDD	A-Z!IOQ							
-mn	MN	*			random	DDDD LLL	АБВГДЕЗИКЛМНОПРСТУФХЦЧШЭЯ							
-mo	MO	*			random	LL-DD-DD	A-Z!IOQ							
-mp	MP	*			random	LLL DDD	A-Z!IOQ							
-mq	MQ	*			random	LL-DDD-LL	A-Z!IOU							
-mr	MR	*			random	DDDD LL DD	A-Z!IOQ							
-ms	MS	*			random	DDDD	A-Z							
-mt	MT	*			random	LLL DDD	A-Z!IOQ							
-mu	MU	*			random	DDDD LL DD	A-Z!IOQ							
-mv	MV	*			random	'C' DDDD	A-Z							
-mw	MW	*			random	R DDDD	A-Z!IOQ	MW						
-mx	MX	*			random	LLL-DDD-L	A-Z!IOQÑ							
-my	MY	*			random	RL^0-2 N^1D^0-3	A-Z!IOZ	MY						
-mz	MZ	*			random	LLL-DDD-R	A-Z!IOQ	MZ						
-na	NA	*			random	N^1D^0-4 R	A-Z	NA						
-nc	NC	*			random	DDDDDD 'NC'	A-Z							
-ne	NE	*			random	NL DDDD	A-Z!IOQ							
-nf	NF	*			random	DDDD	A-Z							
-ng	NG	*			random	LLL-DDDLL	A-Z!IOQ							
-ni	NI	*			random	R DDD-DDD	A-Z	NI						
-nl-1978	NL	*		1991-12-31	sequential	[1:LL]-[3:DD]-[2:LL]	BDFGHJKLNPRSTVXZ							
-nl-1991	NL	*	1992-01-01	1998-12-31	sequential	[1:LL]-[2:LL]-[3:DD]	BDFGHJKLNPRSTVXZ							
-nl-1999	NL	*	1999-01-01	2008-03-31	sequential	[3:DD]-[1:LL]-[2:LL]	BDFGHJKLNPRSTVXZ							
-nl-2008	NL	*	2008-04-01	2013-09-30	sequential	[2:DD]-[1:LLL]-[3:D]	BDFGHJKLNPRSTVXZ							
-nl-2013	NL	*	2013-10-01	2015-11-30	sequential	[3:D]-[1:LLL]-[2:DD]	BDFGHJKLNPRSTVXZ							
-nl-2015	NL	*	2015-12-01	2019-08-31	sequential	[1:LL]-[3:DDD]-[2:L]	BDFGHJKLNPRSTVXZ							
-nl-2019	NL	*	2019-09-01	2023-06-30	sequential	[2:L]-[3:DDD]-[1:LL]	BDFGHJKLNPRSTVXZ							
-nl-2023	NL	*	2023-07-01		sequential	[1:LLL]-[3:DD]-[2:L]	BDFGHJKLNPRSTVXZ							
-no	NO	*			random	LL DDDDD	A-Z!IOQÆØÅ							
-np	NP	*			random	R DD {KA|KHA|PA|CHA} DDDD	A-Z	NP						
-nr	NR	*			random	DDDD	A-Z							
-nu	NU	*			random	DDDD	A-Z							
-nz	NZ	*			random	LLL DDD	A-Z!IOQ							
-om	OM	*			random	N^1D^0-4 LL	A-Z!IOQ							
-pa	PA	*			random	LL DDDD	A-Z!IOQ							
-pe	PE	*			random	LLL-DDD	A-Z!IOQ							
-pf	PF	*			random	DDDDDD 'P'	A-Z							
-pg	PG	*			random	LLL DDD	A-Z!IOQ							
-ph-1990	PH	*		2014-12-31	random	LLL DDD	A-Z!IOQ							
-ph-2014	PH	*	2015-01-01		random	LLL DDDD	A-Z!IOQ							
-pk	PK	*			random	RL-DDDD	A-Z!IOQ	PK						
-pl-1976	PL	*		2000-04-30	random	LLL DDDD	A-Z!IOQ							
-pl-2000	PL	*	2000-05-01		random	R X^4-5	A-Z!BDIOZ	PL					8	
-pm	PM	*			random	'SP' DDDD	A-Z							
-pr	PR	*			random	LLL-DDD	A-Z!IOQ							
-ps	PS	*			random	DDDDDD-L	A-Z							
-pt-1992	PT	*		2005-02-28	sequential	[2:DD]-[3:DD]-[1:LL]	A-Z!KWY							
-pt-2005	PT	*	2005-03-01	2020-02-29	sequential	[2:DD]-[1:LL]-[3:DD]	A-Z!KWY							
-pt-2020	PT	*	2020-03-01		sequential	[1:LL]-[3:DD]-[2:LL]	A-Z!KWY							
-pw	PW	*			random	L DDDD	A-Z							
-py	PY	*			random	LLLL DDD	A-Z							
-qa	QA	*			random	N^1D^0-5	A-Z							
-re	RE	*			random	LL-DDD-LL	A-Z!IOU							
-ro	RO	*			random	R DD^0-1 LLL	A-Z!Q	RO				III;OOO		
-rs	RS	*			random	R DDD^0-2-LL	ABCDEFGHIJKLMNOPRSTUVZ	RS						
-ru	RU	*			random	LDDDLL R	АВЕКМНОРСТУХ	RU						
-rw	RW	*			random	'R'LL DDDL	A-Z!IOQ							
-sa	SA	*			random	DDDD LLL	ABDEGHJKLNRSTUVXZ							
-sb	SB	*			random	'G' DDDD	A-Z							
-sc	SC	*			random	'S' DDDDD	A-Z							
-sd	SD	*			random	LL DDDD	A-Z							
-se	SE	*			random	LLL DDX	A-Z!IQVÅÄÖ							
-sg	SG	*			random	'S'LL DDDDL	A-Z!IO							
-sh	SH	*			random	DDDD	A-Z							
-si	SI	*			random	R LL-DDD	ABCDEFGHIJKLMNOPRSTUVZ	SI						
-sj	SJ	*			random	LL DDDDD	A-Z!IOQ							
-sk-1997	SK	*		2022-12-31	random	R-DDDLL	A-Z!Q	SK						
-sk-2023	SK	*	2023-01-01		random	LLDDDLL	A-Z!Q							
-sl	SL	*			random	LLL DDD	A-Z!IOQ							
-sm	SM	*			random	L DDDD	A-Z!IOQ							
-sn	SN	*			random	R-DDDD-LL	A-Z!IOQ	SN						
-so	SO	*			random	LL DDDD	A-Z!IOQ							
-sr	SR	*			random	LL-DD-DD	A-Z!IOQ							
-ss	SS	*			random	'SSD' DDD L	A-Z!IOQ							
-st	ST	*			random	LL-DD-DD	A-Z!IOQ							
-sv	SV	*			random	'P' DDD-DDD	A-Z							
-sx	SX	*			random	'M-'DDD	A-Z							
-sy	SY	*			random	DDDDDD	A-Z							
-sz	SZ	*			random	LLL DDD LL	A-Z!IOQ							
-tc	TC	*			random	DDDDD	A-Z							
-td	TD	*			random	DDDD L DD	A-Z!IOQ							
-tg	TG	*			random	'TG' DDDD L	A-Z!IOQ							
-th	TH	*			random	N{ก|ข|ค|ฆ|ง|จ|ฉ|ช|ฌ|ญ|ฎ|ฐ|ฒ|ณ|ด|ต|ถ|ท|ธ|น|บ|ผ|พ|ภ|ม|ย|ร|ล|ว|ศ|ษ|ส|ห|ฬ|อ|ฮ}{ก|ข|ค|ง|จ|ฉ|ช|ด|ต|ท|น|บ|พ|ม|ย|ร|ล|ว|ส|ห|อ} DDDD R	A-Z	TH						
-tj	TJ	*			random	DDDD LL 0{1|2|3|4|5|6|7|8}	A-Z!IOQ							
-tk	TK	*			random	DDDD	A-Z							
-tl	TL	*			random	DD-DDD 'TL'	A-Z							
-tm	TM	*			random	LL DDDD R	A-Z!IOQ	TM						
-tn	TN	*			random	DDD تونس DDDD	A-Z							
-to	TO	*			random	{L|P} DDDD	A-Z							
-tr	TR	*			random	R L^1-3 D^2-4	A-Z!QWX	TR					7	
-tt	TT	*			random	{P|H|T}LL DDDD	A-Z!IOQ							
-tv	TV	*			random	DDDD	A-Z							
-tw-1992	TW	*		2012-12-31	random	LL-DDDD	A-Z!IO							
-tw-2012	TW	*	2013-01-01		random	LLL-DDDD	A-Z!IO							
-tz	TZ	*			random	'T' DDD LLL	A-Z!IOQ							
-ua-1995	UA	*		2004-01-01	random	DDD-DD LL	ABCEHIKMOPTX							
-ua-2004	UA	*	2004-01-02		random	R DDDD LL	ABCEHIKMOPTX	UA						
-ug	UG	*			random	'U'LL DDDL	A-Z!IOQ							
-us-ak	US	AK			random	LLL DDD	A-Z!IOQ							
-us-al	US	AL			random	NLLDDDD	A-Z!IOQ							
-us-ar	US	AR			random	LLL DDL	A-Z!IOQ							
-us-az	US	AZ			random	LLL DDDD	A-Z!IOQ							
-us-ca	US	CA	1980-01-01		sequential	[1:N][2:LLL][3:DDD]	A-Z!IOQ							
-us-co	US	CO			random	LLL-LDD	A-Z!IOQ							
-us-ct	US	CT			random	LL-DDDDD	A-Z!IOQ							
-us-dc	US	DC			random	LL-DDDD	A-Z!IOQ							
-us-de	US	DE			random	N^1D^5	A-Z							
-us-fl	US	FL			random	LLL LDD	A-Z!IOQ							
-us-ga	US	GA			random	LLL DDDD	A-Z!IOQ							
-us-hi	US	HI			random	LLL DDD	A-Z!IOQ							
-us-ia	US	IA			random	LLL DDD	A-Z!IOQ							
-us-id	US	ID			random	NL DDDDD	A-Z!IOQ							
-us-il	US	IL			random	LL DDDDD	A-Z!IOQ							
-us-in	US	IN			random	DDDLLL	A-Z!IOQ							
-us-ks	US	KS			random	DDD LLL	A-Z!IOQ							
-us-ky	US	KY			random	DLL DDD	A-Z!IOQ							
-us-la	US	LA			random	DDD LLL	A-Z!IOQ							
-us-ma	US	MA			random	NLLL DD	A-Z!IOQ							
-us-md	US	MD			random	NLL DDDD	A-Z!IOQ							
-us-me	US	ME			random	DDDD LL	A-Z!IOQ							
-us-mi	US	MI			random	LLL DDDD	A-Z!IOQ							
-us-mn	US	MN			random	LLL DDD	A-Z!IOQ							
-us-mo	US	MO			random	LLD-LDL	A-Z!IOQ							
-us-ms	US	MS			random	LLL DDDD	A-Z!IOQ							
-us-mt	US	MT			random	N-DDDDDL	A-Z!IOQ							
-us-nc	US	NC			random	LLL-DDDD	A-Z!IOQ							
-us-nd	US	ND			random	DDD LLL	A-Z!IOQ							
-us-ne	US	NE			random	LLL DDD	A-Z!IOQ							
-us-nh	US	NH			random	DDD DDDD	A-Z							
-us-nj	US	NJ			random	L DD-LLL	A-Z!IOQ							
-us-nm	US	NM			random	LLL-DDD	A-Z!IOQ							
-us-nv	US	NV			random	DLL DDD	A-Z!IOQ							
-us-ny	US	NY			random	LLL-DDDD	A-Z!IOQ							
-us-oh	US	OH			random	LLL DDDD	A-Z!IOQ							
-us-ok	US	OK			random	LLL-DDD	A-Z!IOQ							
-us-or	US	OR			random	DDD LLL	A-Z!IOQ							
-us-pa	US	PA			random	LLL-DDDD	A-Z!IOQ							
-us-ri	US	RI			random	LL-DDD	A-Z!IOQ							
-us-sc	US	SC			random	LLL DDD	A-Z!IOQ							
-us-sd	US	SD			random	NL DDDD	A-Z!IOQ							
-us-tn	US	TN			random	LLL-DDD	A-Z!IOQ							
-us-tx	US	TX			random	LLL-DDDD	A-Z!IOQ							
-us-ut	US	UT			random	L DDD LL	A-Z!IOQ							
-us-va	US	VA			random	LLL-DDDD	A-Z!IOQ							
-us-vt	US	VT			random	LLL DDD	A-Z!IOQ							
-us-wa	US	WA			random	LLL DDDD	A-Z!IOQ							
-us-wi	US	WI			random	LLL-DDDD	A-Z!IOQ							
-us-wv	US	WV			random	NLL DDD	A-Z!IOQ							
-us-wy	US	WY			random	ND-DDDD	A-Z							
-uy	UY	*			random	R LL DDDD	A-Z!IOQ	UY						
-uz	UZ	*			random	R L DDD LL	A-Z!IOQ	UZ						
-va	VA	*			random	'SCV' DDDDD	A-Z							
-vc	VC	*			random	{P|H} DDDD	A-Z							
-ve	VE	*			random	LLDDDLL	A-Z!IOQ							
-vg	VG	*			random	'BVI' DDDD	A-Z							
-vi	VI	*			random	LLL DDD	A-Z!IOQ							
-vn	VN	*			random	RL-DDD.DD	A-Z!IOQW	VN						
-vu	VU	*			random	DDDDD	A-Z							
-wf	WF	*			random	DDDD 'WF'	A-Z							
-ws	WS	*			random	DDDDD	A-Z							
-xk	XK	*			random	R-DDD-LL	A-Z!IOQ	XK						
-ye	YE	*			random	DD/DDDDD	A-Z							
-yt	YT	*			random	LL-DDD-LL	A-Z!IOU							
-za	ZA	*			random	LL DD LL R	A-Z!IOQV	ZA						
-zm	ZM	*			random	LLL DDDD	A-Z!IOQ							
-zw	ZW	*			random	LLL DDDD	A-Z!IOQ							
+key	country	region	from	until	kind	pattern	letters	regions	fuels	min_age	weight	exclude	max_chars	reissue	kinds
+ad	AD	*			random	LDDDD	A-Z!IOQ								
+ae	AE	*			random	{A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|AA|BB|CC|DD} N^1-5	A-Z								
+af	AF	*			random	R DDDDD	A-Z!IOQ	AF							
+ag	AG	*			random	{A|B|P|R|T} DDDD	A-Z								
+ai	AI	*			random	DDDD	A-Z								
+al-1993	AL	*		2011-05-31	random	R DDDD L	A-Z!IOQ	AL							
+al-2011	AL	*	2011-06-01		random	LL DDD LL	A-Z!IOQW								
+am	AM	*			random	DD LL DDD	A-Z!IOQ								
+ao	AO	*			random	'LD'-DD-DD-LL	A-Z!IOQ								
+ar-1995	AR	*		2016-03-31	sequential	[1:LLL] [2:DDD]	A-Z!Ñ								
+ar-2016	AR	*	2016-04-01		sequential	[1:LL] [3:DDD] [2:LL]	A-Z								
+ar-moto-1995	AR	*		2016-03-31	random	DDD LLL	A-Z								motorcycle
+ar-moto-2016	AR	*	2016-04-01		random	LDDD LLL	A-Z								motorcycle
+as	AS	*			random	DDDD	A-Z								
+at	AT	*			random	R L^1-3 D^1-5	A-Z!IOQ	AT					8		
+au-nsw	AU	NSW			random	LL DD LL	A-Z!IOQ								
+au-vic	AU	VIC			random	{1|2}LL DLL	A-Z!IOQ								
+au-qld	AU	QLD			random	DDD LLL	A-Z!IOQ								
+au-wa	AU	WA			random	N LLL DDD	A-Z!IOQ								
+au-sa	AU	SA			random	'S' DDD LLL	A-Z!IOQ								
+au-tas	AU	TAS			random	L DD LL	A-Z!IOQ								
+au-act	AU	ACT			random	'Y' LL DD L	A-Z!IOQ								
+au-nt	AU	NT			random	LL DD LL	A-Z!IOQ								
+aw	AW	*			random	'A-'DDDDD	A-Z								
+ax	AX	*			random	'ÅL' DDDDD	A-Z								
+az	AZ	*			random	R-LL-DDD	A-Z!IOQ	AZ							
+ba-1998	BA	*		2009-06-30	random	LDD-L-DDD	AEJKMOT								
+ba-2009	BA	*	2009-07-01		random	LDD-L-DDD	AEJKMOT								
+bb	BB	*			random	{B|H|M|T|X} DDDD	A-Z								
+bd	BD	*			random	R-{GA|KHA|GHA|CHA} DD-DDDD	A-Z	BD							
+be-1973	BE	*		2008-06-30	random	LLL-DDD	A-Z!IOQ								
+be-2008	BE	*	2008-07-01	2010-11-15	random	DDD-LLL	A-Z!IOQ								
+be-2010	BE	*	2010-11-16		sequential	[1:N]-[2:LLL]-[3:DDD]	A-Z!IOQ								
+bf	BF	*			random	DD LL DDDD	A-Z!IOQ								
+bg	BG	*			random	R DDDD LL	ABEKMHOPCTYX	BG							
+bh	BH	*			random	N^1-6	A-Z								
+bi	BI	*			random	L DDDD L	A-Z!IOQ								
+bj	BJ	*			random	LL DDDD 'RB'	A-Z!IOQ								
+bl	BL	*			random	DDD LL 977	A-Z!IOQ								
+bm	BM	*			random	{A|B|C|D|E|F|G|H|J|K|L|M} N^1-5	A-Z								
+bn	BN	*			random	L LL DDDD	A-Z!IOQ								
+bo	BO	*			random	DDDD LLL	BCDFGHJKLMNPRSTVWXYZ								
+bq	BQ	*			random	{B|S|E} DDDD	A-Z								
+br-1990	BR	*		2018-09-10	random	LLL-DDDD	A-Z								
+br-2018	BR	*	2018-09-11		random	LLLDLDD	A-Z								
+bs	BS	*			random	LL DDDD	A-Z!IOQ								
+bt	BT	*			random	'BP-1-'L-DDDD	A-Z!IOQ								
+bw	BW	*			random	L DDD LLL	A-Z!IOQ								
+by	BY	*			random	DDDD LL-R	ABEIKMHOPCTX	BY							
+bz	BZ	*			random	R-DDDDD	A-Z	BZ							
+ca-on	CA	ON			random	LLLL DDD	A-Z!IOQU								
+ca-qc	CA	QC			random	LDD LLL	A-Z!IOQU								
+ca-bc	CA	BC			random	LL DDDL	A-Z!IOQU								
+ca-ab	CA	AB			random	LLL-DDDD	A-Z!IOQU								
+ca-mb	CA	MB			random	LLL DDD	A-Z!IOQU								
+ca-sk	CA	SK			random	DDD LLL	A-Z!IOQU								
+ca-ns	CA	NS			random	LLL DDD	A-Z!IOQU								
+ca-nb	CA	NB			random	LLL DDD	A-Z!IOQU								
+ca-nl	CA	NL			random	LLL DDD	A-Z!IOQU								
+ca-pe	CA	PE			random	DDDDDD	A-Z								
+ca-terr	CA	YT			random	LLL DD	A-Z!IOQU								
+ca-nt	CA	NT			random	DDDDDD	A-Z								
+ca-nu	CA	NU			random	DDDDDD	A-Z								
+cc	CC	*			random	'CKI' DDD	A-Z								
+cd	CD	*			random	DDDD LL DD	A-Z!IOQ								
+cf	CF	*			random	DDDD L 'RCA'	A-Z!IOQ								
+cg	CG	*			random	DDD-LL-D	A-Z!IOQ								
+ch	CH	*			random	R ND^0-5	A-Z	CH							
+ci	CI	*			random	DDDD LL DD	A-Z!IOQ								
+ck	CK	*			random	DDDDD	A-Z								
+cl-1985	CL	*		2007-09-30	random	LL·DDDD	A-Z!IOQÑ								
+cl-2007	CL	*	2007-10-01		sequential	[1:LL]·[2:LL]·[3:DD]	BCDFGHJKLPRSTVWXYZ								
+cm	CM	*			random	R DDD LL	A-Z!IOQ	CM							
+cn-1992	CN	*		2017-11-19	random	RC·X^5	A-Z!IO	CN							
+cn-2002	CN	*	2017-11-20		random	RC·X^5	A-Z!IO	CN							
+cn-nev	CN	*	2017-11-20		random	RC·{D|F}X^5	A-Z!IO	CN	electric;plug_in		20				car
+co	CO	*			random	LLL DDD	A-Z								
+co-moto	CO	*			random	LLL DDL	A-Z								motorcycle
+cr	CR	*			random	LLL-DDD	A-Z!IOQ								
+cu	CU	*			random	{P|B} DDD DDD	A-Z								
+cv	CV	*			random	R-DD-LL	A-Z!IOQ	CV							
+cw	CW	*			random	{C|J}DDDDD	A-Z								
+cx	CX	*			random	'CI' DDD	A-Z								
+cy	CY	*			random	LLL DDD	A-Z!IOQ								
+cz-1960	CZ	*		2001-06-30	random	LLL DD-DD	A-Z!IOQ								
+cz-2001	CZ	*	2001-07-01		random	NRN DDDD	A-Z!IOQ	CZ							
+de	DE	*			random	R-L^1-2 ND^0-3	A-Z!ÄÖÜ	DE				SS;SA;HJ;KZ;NS;SD	8		
+de-e	DE	*	2015-06-12		random	R-L^1-2 ND^0-2'E'	A-Z!ÄÖÜ	DE	electric;plug_in		1.5	SS;SA;HJ;KZ;NS;SD	8		
+de-h	DE	*	1997-07-01		random	R-L^1-2 ND^0-2'H'	A-Z!ÄÖÜ	DE		30	0.4	SS;SA;HJ;KZ;NS;SD	8		
+dj	DJ	*			random	DDDD L DD	A-Z!IOQ								
+dk	DK	*			random	LL DD DDD	A-Z!IOQÆØÅ								
+dm	DM	*			random	{P|H} DDDD	A-Z								
+do	DO	*			random	{A|G|L}DDDDDD	A-Z								
+dz	DZ	*			random	DDDDD 1V R	A-Z	DZ							
+ec	EC	*			random	R LL-DDDD	A-Z!IOQ	EC							
+ee-2004	EE	*			random	DDD LLL	A-Z!IOQÕÄÖÜ								
+eg	EG	*			random	DDDD LLL	ABDEGHJKLMNRSTWY								
+eh	EH	*			random	DDDDD DD	A-Z								
+er	ER	*			random	DD-DDDDD	A-Z								
+es-1971	ES	*		2000-09-17	random	R-DDDD-L^1-2	A-Z!IOQÑ	ES-OLD							
+es-2000	ES	*	2000-09-18		sequential	[2:DDDD] [1:LLL]	BCDFGHJKLMNPRSTVWXYZ								
+et	ET	*			random	R 2-L DDDDD	A-Z	ET							
+fi	FI	*			random	LLL-DDD	A-Z!IOQÅÄÖ								
+fj	FJ	*			random	LL DDD	A-Z!IOQ								
+fk	FK	*			random	'F' DDD L	A-Z!IOQ								
+fm	FM	*			random	{P|C|K|Y} DDDD	A-Z								
+fo	FO	*			random	LL DDD	A-Z!IOQ								
+fr-fni	FR	*		2009-04-14	random	N^1D^0-3 L^2-3 R	A-Z!IOU	FR						0.15	
+fr-siv	FR	*	2009-04-15		sequential	[1:LL]-[3:DDD]-[2:LL]	A-Z!IOU								
+ga	GA	*			random	LL DDDD	A-Z!IOQ								
+gb-1983	GB	*	1983-08-01	2001-08-31	random	YN^1D^0-2 LLL	A-Z!IQUZ								
+gb-2001	GB	*	2001-09-01		random	RL A LLL	A-Z!IQ	GB							
+gd	GD	*			random	{P|H|T} DDDD	A-Z								
+ge	GE	*			random	LL-DDD-LL	A-Z!IOQ								
+gf	GF	*			random	LL-DDD-LL	A-Z!IOU								
+gg	GG	*			random	N^1D^0-4	A-Z								
+gh	GH	*			random	R DDDD-V	A-Z	GH							
+gi	GI	*			random	'G' DDDD L	A-Z!IOQ								
+gl	GL	*			random	LL DDDDD	A-Z!IOQ								
+gm	GM	*			random	R DDDD L	A-Z!IOQ	GM							
+gn	GN	*			random	DDDD LL	A-Z!IOQ								
+gp	GP	*			random	LL-DDD-LL	A-Z!IOU								
+gq	GQ	*			random	DDDD L LL	A-Z!IOQ								
+gr	GR	*			random	RLL-DDDD	ABEZHIKMNOPTYX	GR							
+gr-moto	GR	*			random	RLL DDD	ABEZHIKMNOPTYX	GR							motorcycle
+gt	GT	*			random	'P' DDD LLL	BCDFGHJKLMNPQRSTVWXYZ								
+gu	GU	*			random	LL DDDD	A-Z!IOQ								
+gw	GW	*			random	LL-DD-LL	A-Z!IOQ								
+gy	GY	*			random	{P|H|G}LL DDDD	A-Z!IOQ								
+hk	HK	*			random	LL DDDD	A-Z!IOQ								
+hn	HN	*			random	LLL DDDD	A-Z!IOQ								
+hr	HR	*			random	R DDD^0-1-L^1-2	ABCDEFGHIJKLMNOPRSTUVZ	HR							
+ht	HT	*			random	'AA' DDDDD	A-Z								
+hu-1990	HU	*		2022-08-31	random	LLL-DDD	A-Z!Q								
+hu-2022	HU	*	2022-09-01		random	LL LL-DDD	A-Z!Q								
+id	ID	*			random	R ND^0-3 L^1-3	A-Z!IOQ	ID							
+ie-1987	IE	*		2012-12-31	random	V-R-ND^0-5	A-Z	IE							
+ie-2013	IE	*	2013-01-01		random	VH-R-ND^0-5	A-Z	IE							
+il-1990	IL	*		2016-12-31	random	DD-DDD-DD	A-Z								
+il-2017	IL	*	2017-01-01		random	DDD-DD-DDD	A-Z								
+im	IM	*			random	'MN' DDD L	A-Z!IOQ								
+in	IN	*			random	R S L^1-2 DDDD	A-Z!IO	IN							
+in-bh	IN	*	2021-09-15		random	DD 'BH' DDDD LL	A-Z!IO				0.03				
+iq	IQ	*			random	DDDDD L	A-Z								
+ir	IR	*			random	DD L DDD-R	BDJLMNSTVYEHQ	IR							
+is	IS	*			random	LL XDD	A-Z!IOQ								
+it-1985	IT	*		1994-03-31	random	R DLDDDD	A-Z!IOQU	IT-OLD							
+it-1994	IT	*	1994-04-01		sequential	[1:LL] [3:DDD] [2:LL]	A-Z!IOQU								
+it-moto	IT	*	1999-07-01		random	LL DDDDD	A-Z!IOQU								motorcycle
+je	JE	*			random	'J' N^1D^0-5	A-Z								
+jm	JM	*			random	DDDD LL	A-Z!IOQ								
+jo	JO	*			random	DD-DDDDD	A-Z								
+jp-1990	JP	*		1999-04-30	random	R {3|5}N {さ|す|せ|そ|た|ち|つ|て|と|な|に|ぬ|ね|の|は|ひ|ふ|ほ|ま|み|む|め|も|や|ゆ|よ|ら|る|ろ} J	A-Z	JP							
+jp-1999	JP	*	1999-05-01		random	R {3|5}DD {さ|す|せ|そ|た|ち|つ|て|と|な|に|ぬ|ね|の|は|ひ|ふ|ほ|ま|み|む|め|も|や|ゆ|よ|ら|る|ろ} J	A-Z	JP							
+jp-moto	JP	*			random	R {さ|す|せ|そ|た|ち|つ|て|と|な|に|ぬ|ね|の|は|ひ|ふ|ほ|ま|み|む|め|も|や|ゆ|よ|ら|る|ろ} J	A-Z	JP							motorcycle
+ke	KE	*			random	'K'LL DDDL	A-Z!IOQ								
+kg	KG	*			random	DD DDD LLL	A-Z!IOQ								
+kh	KH	*			random	R 2L-DDDD	A-Z!IOQ	KH							
+ki	KI	*			random	DDDDD	A-Z								
+km	KM	*			random	DDDD L 'M'	A-Z!IOQ								
+kn	KN	*			random	{P|R|N} DDDD	A-Z								
+kp	KP	*			random	DD-DDDD	A-Z								
+kr-1996	KR	*		2006-10-31	random	R DD{가|나|다|라|마|거|너|더|러|머|버|서|어|저|고|노|도|로|모|보|소|오|조|구|누|두|루|무|부|수|우|주} DDDD	A-Z	KR							
+kr-2006	KR	*	2006-11-01		random	DD{가|나|다|라|마|거|너|더|러|머|버|서|어|저|고|노|도|로|모|보|소|오|조|구|누|두|루|무|부|수|우|주} DDDD	A-Z								
+kr-2019	KR	*	2019-09-01		random	DDD{가|나|다|라|마|거|너|더|러|머|버|서|어|저|고|노|도|로|모|보|소|오|조|구|누|두|루|무|부|수|우|주} DDDD	A-Z								
+kw	KW	*			random	DD/DDDDD	A-Z								
+ky	KY	*			random	DDD-DDD	A-Z								
+kz-1993	KZ	*		2012-06-30	random	L DDD LLL	A-Z!IOQ								
+kz-2012	KZ	*	2012-07-01		random	DDD LLL R	A-Z!IOQ	KZ							
+la	LA	*			random	LL DDDD	A-Z!IOQ								
+lb	LB	*			random	L DDDDDD	BGMNORSTZ								
+lc	LC	*			random	{PA|PB|PC|PD|TX} DDDD	A-Z								
+li	LI	*			random	'FL' N^1D^0-4	A-Z								
+lk-1990	LK	*		2000-12-31	random	DD-DDDD	A-Z								
+lk-2000	LK	*	2001-01-01		random	R LLL-DDDD	A-Z!IOQ	LK							
+lr	LR	*			random	L-DDDD	A-Z!IOQ								
+ls	LS	*			random	L DDD LLL	A-Z!IOQ								
+lt	LT	*			random	LLL DDD	A-Z!IOQ								
+lu	LU	*			random	LL DDDD	A-Z!IOQ								
+lv	LV	*			random	LL-N^1D^0-3	A-Z!IOQ								
+ly	LY	*			random	DD-DDDDDD	A-Z								
+ma	MA	*			random	N^1D^0-4 {أ|ب|د|ه|و|ط} R	A-Z	MA							
+mc	MC	*			random	X^4	A-Z!IOQ								
+md	MD	*			random	LLL DDD	A-Z!IOQ								
+me	ME	*			random	R LL DDD	A-Z!IOQ	ME							
+mf	MF	*			random	DDD LL 978	A-Z!IOQ								
+mg	MG	*			random	DDDD LLL	A-Z!IOQ								
+mh	MH	*			random	DDDDD	A-Z								
+mk	MK	*			random	R-DDDD-LL	A-Z!IOQ	MK							
+ml	ML	*			random	L DDDD L	A-Z!IOQ								
+mm	MM	*			random	NL-DDDD	A-Z!IOQ								
+mn	MN	*			random	DDDD LLL	АБВГДЕЗИКЛМНОПРСТУФХЦЧШЭЯ								
+mo	MO	*			random	LL-DD-DD	A-Z!IOQ								
+mp	MP	*			random	LLL DDD	A-Z!IOQ								
+mq	MQ	*			random	LL-DDD-LL	A-Z!IOU								
+mr	MR	*			random	DDDD LL DD	A-Z!IOQ								
+ms	MS	*			random	DDDD	A-Z								
+mt	MT	*			random	LLL DDD	A-Z!IOQ								
+mu	MU	*			random	DDDD LL DD	A-Z!IOQ								
+mv	MV	*			random	'C' DDDD	A-Z								
+mw	MW	*			random	R DDDD	A-Z!IOQ	MW							
+mx	MX	*			random	LLL-DDD-L	A-Z!IOQÑ								
+my	MY	*			random	RL^0-2 N^1D^0-3	A-Z!IOZ	MY							
+mz	MZ	*			random	LLL-DDD-R	A-Z!IOQ	MZ							
+na	NA	*			random	N^1D^0-4 R	A-Z	NA							
+nc	NC	*			random	DDDDDD 'NC'	A-Z								
+ne	NE	*			random	NL DDDD	A-Z!IOQ								
+nf	NF	*			random	DDDD	A-Z								
+ng	NG	*			random	LLL-DDDLL	A-Z!IOQ								
+ni	NI	*			random	R DDD-DDD	A-Z	NI							
+nl-1978	NL	*		1991-12-31	sequential	[1:LL]-[3:DD]-[2:LL]	BDFGHJKLNPRSTVXZ								
+nl-1991	NL	*	1992-01-01	1998-12-31	sequential	[1:LL]-[2:LL]-[3:DD]	BDFGHJKLNPRSTVXZ								
+nl-1999	NL	*	1999-01-01	2008-03-31	sequential	[3:DD]-[1:LL]-[2:LL]	BDFGHJKLNPRSTVXZ								
+nl-2008	NL	*	2008-04-01	2013-09-30	sequential	[2:DD]-[1:LLL]-[3:D]	BDFGHJKLNPRSTVXZ								
+nl-2013	NL	*	2013-10-01	2015-11-30	sequential	[3:D]-[1:LLL]-[2:DD]	BDFGHJKLNPRSTVXZ								
+nl-2015	NL	*	2015-12-01	2019-08-31	sequential	[1:LL]-[3:DDD]-[2:L]	BDFGHJKLNPRSTVXZ								
+nl-2019	NL	*	2019-09-01	2023-06-30	sequential	[2:L]-[3:DDD]-[1:LL]	BDFGHJKLNPRSTVXZ								
+nl-2023	NL	*	2023-07-01		sequential	[1:LLL]-[3:DD]-[2:L]	BDFGHJKLNPRSTVXZ								
+no	NO	*			random	LL DDDDD	A-Z!IOQÆØÅ								
+np	NP	*			random	R DD {KA|KHA|PA|CHA} DDDD	A-Z	NP							
+nr	NR	*			random	DDDD	A-Z								
+nu	NU	*			random	DDDD	A-Z								
+nz	NZ	*			random	LLL DDD	A-Z!IOQ								
+om	OM	*			random	N^1D^0-4 LL	A-Z!IOQ								
+pa	PA	*			random	LL DDDD	A-Z!IOQ								
+pe	PE	*			random	LLL-DDD	A-Z!IOQ								
+pf	PF	*			random	DDDDDD 'P'	A-Z								
+pg	PG	*			random	LLL DDD	A-Z!IOQ								
+ph-1990	PH	*		2014-12-31	random	LLL DDD	A-Z!IOQ								
+ph-2014	PH	*	2015-01-01		random	LLL DDDD	A-Z!IOQ								
+pk	PK	*			random	RL-DDDD	A-Z!IOQ	PK							
+pl-1976	PL	*		2000-04-30	random	LLL DDDD	A-Z!IOQ								
+pl-2000	PL	*	2000-05-01		random	R X^4-5	A-Z!BDIOZ	PL					8		
+pm	PM	*			random	'SP' DDDD	A-Z								
+pr	PR	*			random	LLL-DDD	A-Z!IOQ								
+ps	PS	*			random	DDDDDD-L	A-Z								
+pt-1992	PT	*		2005-02-28	sequential	[2:DD]-[3:DD]-[1:LL]	A-Z!KWY								
+pt-2005	PT	*	2005-03-01	2020-02-29	sequential	[2:DD]-[1:LL]-[3:DD]	A-Z!KWY								
+pt-2020	PT	*	2020-03-01		sequential	[1:LL]-[3:DD]-[2:LL]	A-Z!KWY								
+pw	PW	*			random	L DDDD	A-Z								
+py	PY	*			random	LLLL DDD	A-Z								
+qa	QA	*			random	N^1D^0-5	A-Z								
+re	RE	*			random	LL-DDD-LL	A-Z!IOU								
+ro	RO	*			random	R DD^0-1 LLL	A-Z!Q	RO				III;OOO			
+rs	RS	*			random	R DDD^0-2-LL	ABCDEFGHIJKLMNOPRSTUVZ	RS							
+ru	RU	*			random	LDDDLL R	АВЕКМНОРСТУХ	RU							
+rw	RW	*			random	'R'LL DDDL	A-Z!IOQ								
+sa	SA	*			random	DDDD LLL	ABDEGHJKLNRSTUVXZ								
+sb	SB	*			random	'G' DDDD	A-Z								
+sc	SC	*			random	'S' DDDDD	A-Z								
+sd	SD	*			random	LL DDDD	A-Z								
+se	SE	*			random	LLL DDX	A-Z!IQVÅÄÖ								
+sg	SG	*			random	'S'LL DDDDL	A-Z!IO								
+sh	SH	*			random	DDDD	A-Z								
+si	SI	*			random	R LL-DDD	ABCDEFGHIJKLMNOPRSTUVZ	SI							
+sj	SJ	*			random	LL DDDDD	A-Z!IOQ								
+sk-1997	SK	*		2022-12-31	random	R-DDDLL	A-Z!Q	SK							
+sk-2023	SK	*	2023-01-01		random	LLDDDLL	A-Z!Q								
+sl	SL	*			random	LLL DDD	A-Z!IOQ								
+sm	SM	*			random	L DDDD	A-Z!IOQ								
+sn	SN	*			random	R-DDDD-LL	A-Z!IOQ	SN							
+so	SO	*			random	LL DDDD	A-Z!IOQ								
+sr	SR	*			random	LL-DD-DD	A-Z!IOQ								
+ss	SS	*			random	'SSD' DDD L	A-Z!IOQ								
+st	ST	*			random	LL-DD-DD	A-Z!IOQ								
+sv	SV	*			random	'P' DDD-DDD	A-Z								
+sx	SX	*			random	'M-'DDD	A-Z								
+sy	SY	*			random	DDDDDD	A-Z								
+sz	SZ	*			random	LLL DDD LL	A-Z!IOQ								
+tc	TC	*			random	DDDDD	A-Z								
+td	TD	*			random	DDDD L DD	A-Z!IOQ								
+tg	TG	*			random	'TG' DDDD L	A-Z!IOQ								
+th	TH	*			random	N{ก|ข|ค|ฆ|ง|จ|ฉ|ช|ฌ|ญ|ฎ|ฐ|ฒ|ณ|ด|ต|ถ|ท|ธ|น|บ|ผ|พ|ภ|ม|ย|ร|ล|ว|ศ|ษ|ส|ห|ฬ|อ|ฮ}{ก|ข|ค|ง|จ|ฉ|ช|ด|ต|ท|น|บ|พ|ม|ย|ร|ล|ว|ส|ห|อ} DDDD R	A-Z	TH							
+tj	TJ	*			random	DDDD LL 0{1|2|3|4|5|6|7|8}	A-Z!IOQ								
+tk	TK	*			random	DDDD	A-Z								
+tl	TL	*			random	DD-DDD 'TL'	A-Z								
+tm	TM	*			random	LL DDDD R	A-Z!IOQ	TM							
+tn	TN	*			random	DDD تونس DDDD	A-Z								
+to	TO	*			random	{L|P} DDDD	A-Z								
+tr	TR	*			random	R L^1-3 D^2-4	A-Z!QWX	TR					7		
+tt	TT	*			random	{P|H|T}LL DDDD	A-Z!IOQ								
+tv	TV	*			random	DDDD	A-Z								
+tw-1992	TW	*		2012-12-31	random	LL-DDDD	A-Z!IO								
+tw-2012	TW	*	2013-01-01		random	LLL-DDDD	A-Z!IO								
+tz	TZ	*			random	'T' DDD LLL	A-Z!IOQ								
+ua-1995	UA	*		2004-01-01	random	DDD-DD LL	ABCEHIKMOPTX								
+ua-2004	UA	*	2004-01-02		random	R DDDD LL	ABCEHIKMOPTX	UA							
+ug	UG	*			random	'U'LL DDDL	A-Z!IOQ								
+us-ak	US	AK			random	LLL DDD	A-Z!IOQ								
+us-al	US	AL			random	NLLDDDD	A-Z!IOQ								
+us-ar	US	AR			random	LLL DDL	A-Z!IOQ								
+us-az	US	AZ			random	LLL DDDD	A-Z!IOQ								
+us-ca	US	CA	1980-01-01		sequential	[1:N][2:LLL][3:DDD]	A-Z!IOQ								
+us-co	US	CO			random	LLL-LDD	A-Z!IOQ								
+us-ct	US	CT			random	LL-DDDDD	A-Z!IOQ								
+us-dc	US	DC			random	LL-DDDD	A-Z!IOQ								
+us-de	US	DE			random	N^1D^5	A-Z								
+us-fl	US	FL			random	LLL LDD	A-Z!IOQ								
+us-ga	US	GA			random	LLL DDDD	A-Z!IOQ								
+us-hi	US	HI			random	LLL DDD	A-Z!IOQ								
+us-ia	US	IA			random	LLL DDD	A-Z!IOQ								
+us-id	US	ID			random	NL DDDDD	A-Z!IOQ								
+us-il	US	IL			random	LL DDDDD	A-Z!IOQ								
+us-in	US	IN			random	DDDLLL	A-Z!IOQ								
+us-ks	US	KS			random	DDD LLL	A-Z!IOQ								
+us-ky	US	KY			random	DLL DDD	A-Z!IOQ								
+us-la	US	LA			random	DDD LLL	A-Z!IOQ								
+us-ma	US	MA			random	NLLL DD	A-Z!IOQ								
+us-md	US	MD			random	NLL DDDD	A-Z!IOQ								
+us-me	US	ME			random	DDDD LL	A-Z!IOQ								
+us-mi	US	MI			random	LLL DDDD	A-Z!IOQ								
+us-mn	US	MN			random	LLL DDD	A-Z!IOQ								
+us-mo	US	MO			random	LLD-LDL	A-Z!IOQ								
+us-ms	US	MS			random	LLL DDDD	A-Z!IOQ								
+us-mt	US	MT			random	N-DDDDDL	A-Z!IOQ								
+us-nc	US	NC			random	LLL-DDDD	A-Z!IOQ								
+us-nd	US	ND			random	DDD LLL	A-Z!IOQ								
+us-ne	US	NE			random	LLL DDD	A-Z!IOQ								
+us-nh	US	NH			random	DDD DDDD	A-Z								
+us-nj	US	NJ			random	L DD-LLL	A-Z!IOQ								
+us-nm	US	NM			random	LLL-DDD	A-Z!IOQ								
+us-nv	US	NV			random	DLL DDD	A-Z!IOQ								
+us-ny	US	NY			random	LLL-DDDD	A-Z!IOQ								
+us-oh	US	OH			random	LLL DDDD	A-Z!IOQ								
+us-ok	US	OK			random	LLL-DDD	A-Z!IOQ								
+us-or	US	OR			random	DDD LLL	A-Z!IOQ								
+us-pa	US	PA			random	LLL-DDDD	A-Z!IOQ								
+us-ri	US	RI			random	LL-DDD	A-Z!IOQ								
+us-sc	US	SC			random	LLL DDD	A-Z!IOQ								
+us-sd	US	SD			random	NL DDDD	A-Z!IOQ								
+us-tn	US	TN			random	LLL-DDD	A-Z!IOQ								
+us-tx	US	TX			random	LLL-DDDD	A-Z!IOQ								
+us-ut	US	UT			random	L DDD LL	A-Z!IOQ								
+us-va	US	VA			random	LLL-DDDD	A-Z!IOQ								
+us-vt	US	VT			random	LLL DDD	A-Z!IOQ								
+us-wa	US	WA			random	LLL DDDD	A-Z!IOQ								
+us-wi	US	WI			random	LLL-DDDD	A-Z!IOQ								
+us-wv	US	WV			random	NLL DDD	A-Z!IOQ								
+us-wy	US	WY			random	ND-DDDD	A-Z								
+uy	UY	*			random	R LL DDDD	A-Z!IOQ	UY							
+uz	UZ	*			random	R L DDD LL	A-Z!IOQ	UZ							
+va	VA	*			random	'SCV' DDDDD	A-Z								
+vc	VC	*			random	{P|H} DDDD	A-Z								
+ve	VE	*			random	LLDDDLL	A-Z!IOQ								
+vg	VG	*			random	'BVI' DDDD	A-Z								
+vi	VI	*			random	LLL DDD	A-Z!IOQ								
+vn	VN	*			random	RL-DDD.DD	A-Z!IOQW	VN							
+vn-moto	VN	*			random	R-LN DDD.DD	A-Z!IOQW	VN							motorcycle
+vu	VU	*			random	DDDDD	A-Z								
+wf	WF	*			random	DDDD 'WF'	A-Z								
+ws	WS	*			random	DDDDD	A-Z								
+xk	XK	*			random	R-DDD-LL	A-Z!IOQ	XK							
+ye	YE	*			random	DD/DDDDD	A-Z								
+yt	YT	*			random	LL-DDD-LL	A-Z!IOU								
+za	ZA	*			random	LL DD LL R	A-Z!IOQV	ZA							
+zm	ZM	*			random	LLL DDDD	A-Z!IOQ								
+zw	ZW	*			random	LLL DDDD	A-Z!IOQ								

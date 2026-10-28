@@ -1,0 +1,189 @@
+# Curated: motorcycle models (columns as in models_europe.tsv). A motorcycle's trim names the model as its maker does (CBR600RR of the CBR family). Gearboxes: m manual, a automatic (CVT, dual clutch or single speed), s semi-automatic (centrifugal clutch); drives: c chain, b belt, s shaft, h hub or electric motor drive. Petrol mopeds of 50 cc and under are left out. From the makers' specifications and model histories.
+key	make	model	from	to	bodies	markets	seats	lite	trims
+honda-cg	Honda	CG	1990		standard:100	MER:30,BR:45,LAM:20,AFR:14,MEA:10,IR:40,PK:20,CHN:4,SEA:2	2	1	CG 125|petrol|124|8|1990-2017|m|c|5;CG 150 Titan|petrol|149|10|2004-2015|m|c|5|MER,LAM;CG 150 Titan Mix|flex|149|10|2009-2015|m|c|5|BR;CG 160 Titan|flex|163|11|2016-|m|c|6|BR;CG 160|petrol|163|11|2016-|m|c|4|MER,LAM,AFR,MEA
+honda-cd70	Honda	CD 70	1990		standard:100	PK:45	2	1	CD 70|petrol|72|4|1990-|m|c|1
+honda-wave	Honda	Wave	1990		underbone:100	SEA:40,ID:10,PH:15,LAM:6,AFR:2,CHN:4,OCE:1	2	1	Dream 100|petrol|97|5|1990-2000|s|c|5;Wave 100|petrol|97|5|1995-2012|s|c|5;Wave 110|petrol|109|6|2008-|s|c|6;Wave 125|petrol|124|7|2003-|s|c|3
+honda-supercub	Honda	Super Cub	1990		underbone:100	JPN:22,SEA:4,EUR:2,OCE:3,NAM:1,KOR:5	2	1	Super Cub 90|petrol|85|5|1990-2012|s|c|5;Super Cub 110|petrol|109|6|2009-|s|c|6;Super Cub C125|petrol|124|7|2018-|s|c|3
+honda-pcx	Honda	PCX	2010		scooter:100	SEA:22,EUR:12,JPN:12,LAM:6,MER:6,TR:15,KOR:8,OCE:5,NAM:2,MEA:4	2	1	PCX 125|petrol|125|9|2010-|a|b|6;PCX 150|petrol|153|10|2012-2020|a|b|4|SEA,LAM,MER,JPN,TR,KOR;PCX 160|petrol|157|12|2021-|a|b|4|SEA,LAM,MER,JPN,TR,KOR;PCX e:HEV|hybrid|125|9|2018-2021|a|b|1|JPN,TH
+honda-vario	Honda	Vario	2006		scooter:100	ID:30,SEA:15	2	1	Vario 110|petrol|108|7|2006-|a|b|5;Vario 125|petrol|125|8|2012-|a|b|5;Vario 150|petrol|149|10|2015-2021|a|b|3;Vario 160|petrol|157|11|2022-|a|b|3
+honda-beat	Honda	BeAT	2008		scooter:100	ID:40,SEA:10,PH:12	2	1	BeAT|petrol|110|7|2008-|a|b|1
+honda-activa	Honda	Activa	2001		scooter:100	IND:50,NP:20,LK:10,BD:5,AFR:2	2	1	Activa|petrol|102|5|2001-2008|a|b|3;Activa 110|petrol|110|6|2008-|a|b|6;Activa 125|petrol|125|6|2014-|a|b|3;Activa e|electric|0|4|2025-|a|h|1|IN
+honda-shine	Honda	Shine	2006		standard:100	IND:28,NP:10,BD:5,AFR:3	2	1	CB Shine 125|petrol|125|8|2006-|m|c|5;Shine 100|petrol|98|5|2023-|m|c|2|IN
+honda-unicorn	Honda	Unicorn	2004		standard:100	IND:8,BD:5,LAM:3	2	0	Unicorn 150|petrol|149|10|2004-2016|m|c|1;Unicorn 160|petrol|163|10|2017-|m|c|1
+honda-cbr	Honda	CBR	1990		sport:100	EUR:6,NAM:8,OCE:5,JPN:3,LAM:1,SEA:1,CIS:2	2	1	CBR600F|petrol|599|74|1990-2006|m|c|5;CBR600RR|petrol|599|88|2003-2024|m|c|5;CBR650F|petrol|649|64|2014-2018|m|c|3|EUR,OCE,SEA,JPN;CBR650R|petrol|649|70|2019-|m|c|4|EUR,OCE,SEA,JPN,LAM
+honda-fireblade	Honda	Fireblade	1992		sport:100	EUR:4,NAM:3,OCE:3,JPN:2	2	0	CBR900RR Fireblade|petrol|893|91|1992-1999|m|c|1;CBR929RR Fireblade|petrol|929|112|2000-2001|m|c|1;CBR954RR Fireblade|petrol|954|113|2002-2003|m|c|1;CBR1000RR Fireblade|petrol|998|128|2004-2019|m|c|2;CBR1000RR-R Fireblade|petrol|1000|160|2020-|m|c|1
+honda-cb500	Honda	CB500	1994		standard:100	EUR:8,OCE:4,NAM:2,JPN:1,LAM:2,SEA:1	2	1	CB500|petrol|499|42|1994-2003|m|c|1;CB500F|petrol|471|35|2013-2023|m|c|2;CB500 Hornet|petrol|471|35|2024-|m|c|1
+honda-hornet	Honda	Hornet	1998		standard:100	EUR:8,OCE:2,JPN:2,SEA:1,LAM:1	2	0	CB600F Hornet|petrol|599|70|1998-2013|m|c|3;CB650F|petrol|649|64|2014-2018|m|c|1;CB650R|petrol|649|70|2019-|m|c|2;CB750 Hornet|petrol|755|67|2023-|m|c|1
+honda-cb125f	Honda	CB125F	2009		standard:100	EUR:7,AFR:3,OCE:2,LAM:2	2	1	CBF125|petrol|125|8|2009-2014|m|c|1;CB125F|petrol|125|8|2015-|m|c|1
+honda-goldwing	Honda	Gold Wing	1990		touring:100	NAM:7,EUR:2,JPN:2,OCE:2	2	1	Gold Wing GL1500|petrol|1520|74|1990-2000|m|s|1;Gold Wing GL1800|petrol|1832|87|2001-2017|m|s|1;Gold Wing|petrol|1833|93|2018-|ma|s|1
+honda-africatwin	Honda	Africa Twin	1990		adventure:100	EUR:6,OCE:3,NAM:2,JPN:2,LAM:1,AFR:1	2	1	Africa Twin XRV750|petrol|742|44|1990-2003|m|c|1;Africa Twin CRF1000L|petrol|998|70|2016-2019|ma|c|1;Africa Twin CRF1100L|petrol|1084|75|2020-|ma|c|1
+honda-nc750x	Honda	NC750X	2012		adventure:100	EUR:6,OCE:2,JPN:2,NAM:1	2	0	NC700X|petrol|670|35|2012-2013|ma|c|1;NC750X|petrol|745|40|2014-|ma|c|3
+honda-transalp	Honda	Transalp	1990		adventure:100	EUR:5,OCE:1	2	0	Transalp XL600V|petrol|583|38|1990-1999|m|c|1;Transalp XL650V|petrol|647|39|2000-2007|m|c|1;Transalp XL700V|petrol|680|44|2008-2012|m|c|1;Transalp XL750|petrol|755|67|2023-|m|c|1
+honda-shadow	Honda	Shadow	1990	2020	cruiser:100	NAM:8,EUR:3,JPN:3,OCE:2,LAM:1	2	1	Shadow VT600C|petrol|583|29|1990-2007|m|c|1;Shadow VT750C|petrol|745|33|1997-2020|m|s|2
+honda-rebel	Honda	Rebel	2017		cruiser:100	NAM:8,EUR:3,JPN:4,OCE:3,SEA:1	2	1	Rebel 300|petrol|286|20|2017-|m|c|1;Rebel 500|petrol|471|34|2017-|m|c|2;Rebel 1100|petrol|1084|64|2021-|ma|c|1
+honda-xr	Honda	XR	1990		offroad:100	LAM:14,AFR:6,OCE:4,NAM:2,SEA:2,MER:3	2	1	XR200R|petrol|195|13|1990-2002|m|c|1;XR125L|petrol|124|8|2003-2019|m|c|2;XR150L|petrol|149|9|2014-|m|c|3;XR190L|petrol|184|11|2020-|m|c|1|LAM
+honda-bros	Honda	Bros	2003		offroad:100	BR:20,MER:10	2	0	NXR 125 Bros|petrol|124|9|2003-2008|m|c|1;NXR 150 Bros|petrol|149|10|2006-2015|m|c|1;NXR 150 Bros Mix|flex|149|10|2009-2015|m|c|1|BR;NXR 160 Bros|flex|163|11|2015-|m|c|2|BR
+honda-biz	Honda	Biz	1998		underbone:100	BR:20,MER:8	2	0	Biz 100|petrol|97|5|1998-2005|s|c|1;Biz 125|petrol|125|7|2005-|s|c|2;Biz 125 Flex|flex|125|7|2016-|s|c|2|BR
+honda-pop	Honda	Pop	2007		underbone:100	BR:15	2	0	Pop 100|petrol|97|4|2007-2015|s|c|1;Pop 110i|petrol|110|6|2016-|s|c|1
+honda-twister	Honda	Twister	2001		standard:100	BR:10,MER:5,LAM:2	2	0	CBX 250 Twister|petrol|249|18|2001-2008|m|c|1;CB 300R|petrol|291|19|2009-2015|m|c|1;CB 250F Twister|flex|250|17|2016-|m|c|1|BR
+honda-xre	Honda	XRE	2009		adventure:100	BR:8,MER:4,LAM:2	2	0	XRE 300|petrol|291|19|2009-2015|m|c|1;XRE 300|flex|291|19|2016-|m|c|1|BR
+honda-sh	Honda	SH	2001		scooter:100	EUR:10,IT:30,ES:20,VN:12,SEA:2,TR:5	2	1	SH125|petrol|125|9|2001-|a|b|4;SH150|petrol|153|11|2001-|a|b|2|EUR,VN;SH300|petrol|279|19|2007-2020|a|b|1|EUR;SH350|petrol|330|22|2021-|a|b|1|EUR
+honda-forza	Honda	Forza	2000		scooter:100	JPN:5,EUR:6,SEA:2,KOR:2	2	0	Forza 250|petrol|249|15|2000-2017|a|b|1|JPN,SEA,KOR;Forza 300|petrol|279|19|2013-2020|a|b|1|EUR,SEA;Forza 125|petrol|125|11|2015-|a|b|2|EUR;Forza 350|petrol|330|22|2021-|a|b|2
+honda-cb400sf	Honda	CB400 Super Four	1992	2022	standard:100	JPN:12,SEA:1	2	1	CB400 Super Four|petrol|399|41|1992-2022|m|c|1
+yamaha-ybr	Yamaha	YBR	1990		standard:100	EUR:6,MER:20,LAM:16,AFR:10,MEA:10,CHN:6,IND:4,PK:10,CIS:6,SEA:2	2	1	YB 125|petrol|123|7|1990-2004|m|c|3;YBR 125|petrol|124|7|2005-|m|c|5;YBR 125 Factor|petrol|124|8|2009-|m|c|3|MER;Factor 150|flex|149|9|2016-|m|c|2|BR
+yamaha-jupiter	Yamaha	Jupiter	1990		underbone:100	SEA:25,ID:20,VN:20,AFR:5,LAM:4	2	1	Crypton 105|petrol|102|5|1990-2004|s|c|3;Jupiter Z|petrol|110|7|2004-|s|c|4;Jupiter MX 135|petrol|135|8|2005-|m|c|2|SEA;Sirius 110|petrol|110|6|2006-|s|c|3|VN,AFR
+yamaha-mio	Yamaha	Mio	2003		scooter:100	SEA:22,ID:25,PH:25,LAM:4	2	1	Mio 115|petrol|113|6|2003-|a|b|3;Mio 125|petrol|125|7|2012-|a|b|2
+yamaha-nmax	Yamaha	NMAX	2015		scooter:100	SEA:16,ID:16,EUR:5,JPN:4,LAM:6,MER:4,TR:10,OCE:2	2	1	NMAX 125|petrol|125|9|2015-|a|b|3;NMAX 155|petrol|155|11|2015-|a|b|3|SEA,LAM,MER,JPN,TR
+yamaha-aerox	Yamaha	Aerox	2016		scooter:100	SEA:8,ID:8,PH:8	2	0	Aerox 155|petrol|155|11|2016-|a|b|1
+yamaha-fz	Yamaha	FZ	2008		standard:100	IND:18,LAM:10,NP:15,BD:15,LK:6,AFR:3,MEA:3	2	1	FZ16|petrol|153|10|2008-2013|m|c|1;FZ-S FI|petrol|149|9|2014-|m|c|2
+yamaha-r15	Yamaha	R15	2008		sport:100	IND:8,SEA:6,ID:4,LAM:4,BD:6	2	0	YZF-R15|petrol|150|12|2008-2017|m|c|1;YZF-R15 V3|petrol|155|14|2018-|m|c|1
+yamaha-r1	Yamaha	R1	1998		sport:100	EUR:4,NAM:4,OCE:3,JPN:2	2	0	YZF-R1|petrol|998|110|1998-2014|m|c|2;YZF-R1|petrol|998|147|2015-|m|c|1
+yamaha-r6	Yamaha	R6	1999	2020	sport:100	EUR:5,NAM:7,OCE:3,JPN:2	2	1	YZF-R6|petrol|599|88|1999-2020|m|c|1
+yamaha-mt07	Yamaha	MT-07	2014		standard:100	EUR:10,OCE:5,NAM:4,JPN:2,LAM:2,SEA:1	2	1	MT-07|petrol|689|54|2014-|m|c|1
+yamaha-mt09	Yamaha	MT-09	2014		standard:100	EUR:6,OCE:3,NAM:3,JPN:2	2	0	MT-09|petrol|847|85|2014-2020|m|c|1;MT-09|petrol|889|87|2021-|m|c|1
+yamaha-diversion	Yamaha	Diversion	1992	2003	standard:100	EUR:8,OCE:2	2	1	XJ600S Diversion|petrol|598|45|1992-2003|m|c|1;XJ900S Diversion|petrol|892|66|1995-2003|m|s|1
+yamaha-fazer	Yamaha	Fazer	2000	2016	standard:100	EUR:7,NAM:2,OCE:2	2	0	FZS600 Fazer|petrol|599|70|2000-2003|m|c|1;FZ6 Fazer|petrol|600|72|2004-2010|m|c|2;XJ6 Diversion|petrol|600|57|2009-2016|m|c|2
+yamaha-tmax	Yamaha	TMAX	2001		scooter:100	EUR:10,FR:18,IT:10,ES:10,JPN:1,OCE:1	2	1	TMAX 500|petrol|499|30|2001-2011|a|b|2;TMAX 530|petrol|530|34|2012-2019|a|b|2;TMAX 560|petrol|562|35|2020-|a|b|2
+yamaha-xmax	Yamaha	XMAX	2006		scooter:100	EUR:9,JPN:3,SEA:2,TR:5,KOR:2	2	1	XMAX 125|petrol|125|10|2006-|a|b|3|EUR,TR;XMAX 250|petrol|249|15|2006-|a|b|2;XMAX 300|petrol|292|21|2017-|a|b|3;XMAX 400|petrol|395|24|2013-2020|a|b|1|EUR
+yamaha-virago	Yamaha	Virago	1990	2003	cruiser:100	NAM:6,EUR:4,OCE:2,JPN:2	2	1	XV535 Virago|petrol|535|33|1990-2003|m|s|2;XV750 Virago|petrol|748|40|1990-1997|m|s|1
+yamaha-dragstar	Yamaha	Drag Star	1997	2016	cruiser:100	NAM:6,EUR:4,OCE:2,JPN:3	2	0	XVS650 Drag Star|petrol|649|30|1997-2016|m|s|2;XVS1100 Drag Star|petrol|1063|46|1999-2009|m|s|1
+yamaha-bolt	Yamaha	Bolt	2014		cruiser:100	NAM:4,EUR:2,OCE:2,JPN:2	2	0	XV950 Bolt|petrol|942|40|2014-|m|b|1
+yamaha-tenere	Yamaha	Ténéré	1990		adventure:100	EUR:6,OCE:2,AFR:1,LAM:1,NAM:1	2	1	XT600E|petrol|595|33|1990-2003|m|c|1;XTZ750 Super Ténéré|petrol|749|51|1990-1997|m|c|1;XT660Z Ténéré|petrol|660|35|2008-2016|m|c|1;XT1200Z Super Ténéré|petrol|1199|82|2010-2021|m|s|1;Ténéré 700|petrol|689|54|2019-|m|c|2
+yamaha-xtz	Yamaha	XTZ	2002		offroad:100	LAM:12,MER:12,AFR:6,SEA:2	2	1	XTZ 125|petrol|124|8|2002-|m|c|3;XTZ 250 Lander|petrol|249|15|2006-|m|c|1|MER,LAM;XTZ 150 Crosser|flex|149|9|2014-|m|c|2|BR
+yamaha-dt	Yamaha	DT	1990	2006	offroad:100	LAM:10,AFR:10,EUR:3,SEA:2,MEA:2	2	1	DT 125|petrol|123|10|1990-2006|m|c|3;DT 175|petrol|171|12|1990-2000|m|c|1|LAM,AFR
+yamaha-rx	Yamaha	RX	1990	2008	standard:100	IND:25,ID:12,SEA:4	2	1	RX 100|petrol|98|8|1990-1996|m|c|1|IND;RX-King|petrol|132|10|1990-2008|m|c|1|SEA
+yamaha-sr400	Yamaha	SR400	1990	2021	standard:100	JPN:5	2	0	SR400|petrol|399|19|1990-2021|m|c|1
+yamaha-serow	Yamaha	Serow	1990	2020	offroad:100	JPN:5	2	0	XT225 Serow|petrol|223|14|1990-2004|m|c|1;XT250 Serow|petrol|249|13|2005-2020|m|c|1
+suzuki-gn	Suzuki	GN	1990		standard:100	MER:10,LAM:10,AFR:10,CHN:8,PK:20,MEA:10,CIS:4,EUR:2,SEA:2	2	1	GN 125|petrol|124|8|1990-|m|c|3;GD 110|petrol|113|6|2014-|m|c|2|PK;GS 150|petrol|150|9|2005-|m|c|1|PK
+suzuki-ax100	Suzuki	AX100	1990	2017	standard:100	LAM:6,AFR:8,CHN:6,IND:3,SEA:2,MEA:4	2	1	AX100|petrol|99|7|1990-2017|m|c|1
+suzuki-gsxr	Suzuki	GSX-R	1990		sport:100	NAM:7,EUR:5,OCE:3,JPN:2,LAM:1	2	1	GSX-R750|petrol|749|88|1990-2023|m|c|2;GSX-R1100|petrol|1074|100|1990-1998|m|c|1;GSX-R600|petrol|599|85|1997-2024|m|c|3;GSX-R1000|petrol|999|136|2001-|m|c|2
+suzuki-sv650	Suzuki	SV650	1999		standard:100	EUR:5,NAM:3,OCE:3,JPN:1	2	0	SV650|petrol|645|52|1999-|m|c|1
+suzuki-vstrom	Suzuki	V-Strom	2002		adventure:100	EUR:6,NAM:3,OCE:4,JPN:3,LAM:2,IND:1,SEA:1	2	1	V-Strom 1000|petrol|996|72|2002-2019|m|c|1;V-Strom 650|petrol|645|50|2004-|m|c|3;V-Strom 250|petrol|248|18|2017-|m|c|1|JPN,SEA,LAM,IND;V-Strom 1050|petrol|1037|79|2020-|m|c|1;V-Strom 800DE|petrol|776|62|2023-|m|c|1
+suzuki-burgman	Suzuki	Burgman	1998		scooter:100	EUR:6,JPN:6,NAM:1,OCE:1,IND:4	2	1	Burgman 400|petrol|400|24|1998-|a|b|2;Burgman 650|petrol|638|40|2002-2022|a|b|1|EUR,NAM,JPN,OCE;Burgman 125|petrol|125|9|2002-|a|b|2|EUR,JPN;Burgman Street 125|petrol|124|6|2018-|a|b|3|IND
+suzuki-access	Suzuki	Access	2007		scooter:100	IND:20	2	1	Access 125|petrol|124|6|2007-|a|b|1
+suzuki-intruder	Suzuki	Intruder	1990		cruiser:100	NAM:6,EUR:3,OCE:2,JPN:2,IND:1	2	0	Intruder VS800|petrol|805|39|1990-2004|m|s|1;Intruder VS1400|petrol|1360|46|1990-2004|m|s|1;Boulevard C50|petrol|805|38|2005-2019|m|s|2;Boulevard M109R|petrol|1783|93|2006-2019|m|s|1
+suzuki-smash	Suzuki	Smash	1995		underbone:100	SEA:10,ID:6,PH:4	2	1	Shogun 110|petrol|110|6|1995-2003|s|c|1;Smash 110|petrol|110|6|2002-2019|s|c|2;Smash 115|petrol|113|7|2019-|s|c|1
+suzuki-raider	Suzuki	Raider	1997		underbone:100	PH:30,ID:6,SEA:3	2	0	Raider J 110|petrol|109|6|1997-2016|s|c|1;Raider 150|petrol|147|13|2004-|m|c|2
+suzuki-bandit	Suzuki	Bandit	1995	2016	standard:100	EUR:6,OCE:2,JPN:2	2	0	GSF600 Bandit|petrol|599|57|1995-2004|m|c|2;GSF650 Bandit|petrol|656|62|2005-2016|m|c|2;GSF1200 Bandit|petrol|1157|72|1996-2006|m|c|1;GSF1250 Bandit|petrol|1255|72|2007-2016|m|c|1
+suzuki-dr	Suzuki	DR	1990		offroad:100	NAM:3,OCE:4,LAM:4,AFR:4,JPN:1,EUR:1	2	0	DR200|petrol|199|15|1990-|m|c|1;DR650|petrol|644|32|1990-|m|c|1;DR-Z400|petrol|398|29|2000-|m|c|1
+kawasaki-ninja	Kawasaki	Ninja	1990		sport:100	SEA:10,ID:12,NAM:8,EUR:6,OCE:6,LAM:6,JPN:4,IND:3,MER:4,MEA:2	2	1	GPX250R|petrol|248|25|1990-2007|m|c|1;Ninja 250R|petrol|249|24|2008-2012|m|c|1;Ninja 250|petrol|249|24|2013-|m|c|2|SEA,JPN,LAM,MER;Ninja 300|petrol|296|29|2013-2017|m|c|1;Ninja 400|petrol|399|33|2018-|m|c|2
+kawasaki-zx	Kawasaki	Ninja ZX	1990		sport:100	NAM:6,EUR:5,OCE:3,JPN:2	2	1	ZZR600|petrol|599|72|1990-2008|m|c|2;Ninja ZX-9R|petrol|899|105|1994-2003|m|c|1;Ninja ZX-6R|petrol|636|95|1995-|m|c|3;Ninja ZX-10R|petrol|998|147|2004-|m|c|2
+kawasaki-z	Kawasaki	Z	1990		standard:100	EUR:9,OCE:4,NAM:4,JPN:4,SEA:2,LAM:2	2	1	Zephyr 750|petrol|738|50|1990-1999|m|c|1;ZR-7|petrol|738|56|1999-2003|m|c|1;Z1000|petrol|1043|104|2003-2020|m|c|1;Z750|petrol|748|78|2004-2012|m|c|2;Z800|petrol|806|83|2013-2016|m|c|2;Z900|petrol|948|92|2017-|m|c|3;Z650|petrol|649|50|2017-|m|c|2;Z900RS|petrol|948|82|2018-|m|c|1
+kawasaki-er6	Kawasaki	ER-6	2006		standard:60,sport:40	EUR:5,OCE:2,NAM:2	2	0	ER-6|petrol|649|53|2006-2016|m|c|1;Ninja 650|petrol|649|50|2017-|m|c|1
+kawasaki-vulcan	Kawasaki	Vulcan	1990		cruiser:100	NAM:7,EUR:2,OCE:2,JPN:1	2	1	Vulcan VN800|petrol|805|42|1995-2006|m|s|1;Vulcan VN1500|petrol|1470|48|1990-2008|m|s|1;Vulcan 900|petrol|903|37|2006-|m|b|2;Vulcan S|petrol|649|45|2015-|m|c|1
+kawasaki-klr	Kawasaki	KLR	1990		adventure:100	NAM:4,OCE:3,LAM:3,AFR:2	2	0	KLR650|petrol|651|31|1990-|m|c|1
+kawasaki-klx	Kawasaki	KLX	1993		offroad:100	SEA:6,ID:8,PH:6,JPN:2,OCE:2,LAM:2	2	0	KLX250|petrol|249|16|1993-|m|c|1;KLX150|petrol|144|9|2009-|m|c|2|SEA
+kawasaki-versys	Kawasaki	Versys	2007		adventure:100	EUR:5,OCE:3,NAM:2,JPN:1,SEA:1	2	0	Versys 650|petrol|649|51|2007-|m|c|2;Versys 1000|petrol|1043|88|2012-|m|c|1
+harley-sportster	Harley-Davidson	Sportster	1990		cruiser:100	NAM:25,EUR:12,OCE:10,JPN:8,LAM:6,SEA:4,MER:6,MEA:6	2	1	Sportster 883|petrol|883|39|1990-2022|m|b|3;Sportster 1200|petrol|1202|50|1990-2022|m|b|2;Sportster S|petrol|1252|90|2021-|m|b|1;Nightster|petrol|975|66|2022-|m|b|1
+harley-softail	Harley-Davidson	Softail	1990		cruiser:100	NAM:25,EUR:12,OCE:10,JPN:6,LAM:4,SEA:3,MER:4,MEA:6	2	1	Fat Boy|petrol|1340|45|1990-1999|m|b|1;Fat Boy|petrol|1450|50|2000-2006|m|b|1;Fat Boy|petrol|1584|55|2007-2011|m|b|1;Fat Boy|petrol|1690|60|2012-2017|m|b|1;Fat Boy 114|petrol|1868|69|2018-|m|b|1;Heritage Softail Classic|petrol|1340|45|1990-1999|m|b|1;Heritage Softail Classic|petrol|1450|50|2000-2006|m|b|1;Heritage Softail Classic|petrol|1584|55|2007-2011|m|b|1;Heritage Softail Classic|petrol|1690|60|2012-2017|m|b|1;Heritage Classic 114|petrol|1868|69|2018-|m|b|1;Street Bob|petrol|1746|64|2018-|m|b|1
+harley-dyna	Harley-Davidson	Dyna	1991	2017	cruiser:100	NAM:12,EUR:5,OCE:5	2	0	Dyna Super Glide|petrol|1340|45|1991-1998|m|b|1;Dyna Super Glide|petrol|1450|50|1999-2005|m|b|1;Dyna Street Bob|petrol|1450|50|2006-2006|m|b|1;Dyna Street Bob|petrol|1584|55|2007-2011|m|b|1;Dyna Street Bob|petrol|1690|60|2012-2017|m|b|1
+harley-touring	Harley-Davidson	Touring	1990		touring:100	NAM:22,EUR:6,OCE:5,JPN:2,MEA:4	2	1	Electra Glide|petrol|1340|45|1990-1998|m|b|1;Electra Glide|petrol|1450|50|1999-2006|m|b|1;Road King|petrol|1584|55|2007-2016|m|b|1;Street Glide|petrol|1746|66|2017-2023|m|b|2;Road Glide|petrol|1868|74|2017-|m|b|1;Street Glide|petrol|1923|79|2024-|m|b|1
+harley-street	Harley-Davidson	Street	2014	2020	standard:100	IND:3,EUR:3,SEA:3,NAM:2	2	0	Street 750|petrol|749|40|2014-2020|m|b|1;Street 500|petrol|494|28|2014-2020|m|b|1|IND,SEA
+harley-panamerica	Harley-Davidson	Pan America	2021		adventure:100	NAM:3,EUR:2,OCE:2	2	0	Pan America 1250|petrol|1252|112|2021-|m|c|1
+indian-chief	Indian	Chief	2014		cruiser:60,touring:40	NAM:10,EUR:3,OCE:3	2	1	Chief|petrol|1811|68|2014-2021|m|b|1;Chief|petrol|1890|71|2022-|m|b|1
+indian-scout	Indian	Scout	2015		cruiser:100	NAM:10,EUR:4,OCE:4	2	1	Scout|petrol|1133|74|2015-2024|m|b|2;Scout Bobber|petrol|1133|74|2018-2024|m|b|1;Scout|petrol|1250|78|2025-|m|b|1
+bmw-gs	BMW	GS	1990		adventure:100	EUR:12,DE:20,OCE:6,AFR:6,NAM:4,LAM:3,MER:3,JPN:2,CIS:2,MEA:3	2	1	R 100 GS|petrol|980|44|1990-1996|m|s|1;R 1100 GS|petrol|1085|59|1994-1999|m|s|1;R 1150 GS|petrol|1130|62|1999-2004|m|s|1;R 1200 GS|petrol|1170|92|2004-2018|m|s|3;R 1250 GS|petrol|1254|100|2019-2023|m|s|2;R 1300 GS|petrol|1300|107|2024-|ma|s|1
+bmw-fgs	BMW	GS	2000		adventure:100	EUR:7,OCE:3,AFR:2,NAM:2,LAM:2	2	0	F 650 GS|petrol|652|37|2000-2007|m|c|1;F 800 GS|petrol|798|63|2008-2018|m|c|2;F 650 GS Twin|petrol|798|52|2008-2012|m|c|1;F 750 GS|petrol|853|57|2018-2023|m|c|1;F 850 GS|petrol|853|70|2018-2023|m|c|1;F 800 GS|petrol|895|64|2024-|m|c|1;F 900 GS|petrol|895|77|2024-|m|c|1
+bmw-rt	BMW	RT	1990		touring:100	EUR:6,DE:8,NAM:2,OCE:2	2	1	K 75 RT|petrol|740|37|1990-1996|m|s|1;K 1100 LT|petrol|1092|74|1991-1999|m|s|1;R 850 RT|petrol|848|51|1996-2000|m|s|1;R 1100 RT|petrol|1085|66|1996-2001|m|s|1;R 1150 RT|petrol|1130|70|2001-2005|m|s|1;R 1200 RT|petrol|1170|81|2005-2018|m|s|3;R 1250 RT|petrol|1254|100|2019-|m|s|2
+bmw-g310	BMW	G 310	2016		standard:60,adventure:40	EUR:4,IND:5,SEA:3,LAM:3,OCE:2,MER:3	2	0	G 310|petrol|313|25|2016-|m|c|1
+bmw-s1000rr	BMW	S 1000 RR	2009		sport:100	EUR:3,DE:4,NAM:2,OCE:2	2	0	S 1000 RR|petrol|999|142|2009-|m|c|1
+bmw-c	BMW	C	2012		scooter:100	EUR:4,DE:3,FR:6,IT:5,ES:5,OCE:1	2	0	C 600 Sport|petrol|647|44|2012-2015|a|b|1;C 650 GT|petrol|647|44|2012-2020|a|b|1;C 400 X|petrol|350|25|2018-|a|b|2;C 400 GT|petrol|350|25|2019-|a|b|2
+bmw-ce04	BMW	CE 04	2022		scooter:100	EUR:2,DE:2,FR:3	2	0	CE 04|electric|0|31|2022-|a|b|1
+bmw-ninet	BMW	R nineT	2014	2024	standard:100	EUR:3,DE:4,NAM:1,OCE:1,JPN:1	2	0	R nineT|petrol|1170|81|2014-2024|m|s|2;R nineT Pure|petrol|1170|81|2017-2024|m|s|1;R nineT Scrambler|petrol|1170|81|2016-2024|m|s|1
+ducati-monster	Ducati	Monster	1993		standard:100	EUR:12,IT:20,NAM:5,OCE:5,JPN:4,SEA:3,LAM:2	2	1	Monster 600|petrol|583|40|1993-2001|m|c|1;Monster 900|petrol|904|53|1993-2002|m|c|1;Monster 620|petrol|618|46|2002-2006|m|c|1;Monster 695|petrol|695|54|2006-2008|m|c|1;Monster 696|petrol|696|59|2008-2014|m|c|2;Monster 821|petrol|821|80|2014-2020|m|c|2;Monster 1200|petrol|1198|108|2014-2021|m|c|1;Monster|petrol|937|82|2021-|m|c|2
+ducati-superbike	Ducati	Superbike	1990		sport:100	EUR:8,IT:12,NAM:4,OCE:3,JPN:2	2	1	851|petrol|851|74|1990-1992|m|c|1;888|petrol|888|78|1991-1994|m|c|1;916|petrol|916|84|1994-1998|m|c|1;996|petrol|996|83|1999-2001|m|c|1;998|petrol|998|91|2002-2004|m|c|1;999|petrol|999|91|2003-2006|m|c|1;1098|petrol|1099|118|2007-2008|m|c|1;1198|petrol|1198|125|2009-2011|m|c|1;Panigale 1199|petrol|1198|143|2012-2014|m|c|1;Panigale 899|petrol|898|110|2014-2015|m|c|1;Panigale 1299|petrol|1285|151|2015-2017|m|c|1;Panigale 959|petrol|955|116|2016-2019|m|c|1;Panigale V4|petrol|1103|158|2018-|m|c|2;Panigale V2|petrol|955|114|2020-|m|c|1
+ducati-multistrada	Ducati	Multistrada	2003		adventure:100	EUR:8,IT:10,NAM:3,OCE:4,JPN:1,SEA:1	2	1	Multistrada 1000DS|petrol|992|62|2003-2006|m|c|1;Multistrada 1100|petrol|1078|70|2007-2009|m|c|1;Multistrada 1200|petrol|1198|110|2010-2017|m|c|2;Multistrada 950|petrol|937|83|2017-|m|c|2;Multistrada 1260|petrol|1262|116|2018-2020|m|c|1;Multistrada V4|petrol|1158|125|2021-|m|c|2
+ducati-scrambler	Ducati	Scrambler	2015		standard:100	EUR:8,IT:10,NAM:3,OCE:4,JPN:3,SEA:2	2	0	Scrambler 800|petrol|803|55|2015-|m|c|3;Scrambler 1100|petrol|1079|63|2018-2022|m|c|1
+ducati-supersport	Ducati	SuperSport	1990		sport:100	EUR:5,IT:6,NAM:2,OCE:2	2	0	900 SS|petrol|904|55|1990-2002|m|c|2;750 SS|petrol|748|43|1991-2002|m|c|1;SuperSport 1000DS|petrol|992|62|2003-2007|m|c|1;SuperSport 950|petrol|937|81|2017-|m|c|1
+ktm-duke	KTM	Duke	1994		standard:100	EUR:10,AT:20,IND:6,SEA:4,LAM:5,OCE:5,NAM:3,JPN:2,MER:2	2	1	620 Duke|petrol|609|37|1994-1998|m|c|1;640 Duke|petrol|625|40|1999-2006|m|c|1;690 Duke|petrol|690|48|2008-2019|m|c|1;125 Duke|petrol|125|11|2011-|m|c|3|EUR,IND,SEA,LAM;200 Duke|petrol|199|19|2012-|m|c|3|IND,SEA,LAM,MER;390 Duke|petrol|373|32|2013-|m|c|3;990 Super Duke|petrol|999|88|2005-2013|m|c|1;1290 Super Duke R|petrol|1301|132|2014-|m|c|1;790 Duke|petrol|799|77|2018-2023|m|c|1;890 Duke|petrol|889|85|2021-|m|c|1
+ktm-rc	KTM	RC	2014		sport:100	EUR:3,IND:4,SEA:3,LAM:2,OCE:2	2	0	RC 125|petrol|125|11|2014-|m|c|1|EUR,SEA;RC 200|petrol|199|19|2014-|m|c|1|IND,SEA,LAM;RC 390|petrol|373|32|2014-|m|c|1
+ktm-adventure	KTM	Adventure	2003		adventure:100	EUR:6,AT:10,OCE:5,AFR:3,NAM:3,LAM:2,IND:2	2	1	950 Adventure|petrol|942|72|2003-2006|m|c|1;990 Adventure|petrol|999|78|2006-2013|m|c|1;1190 Adventure|petrol|1195|110|2013-2016|m|c|1;1290 Super Adventure|petrol|1301|118|2015-|m|c|1;1090 Adventure|petrol|1050|92|2017-2019|m|c|1;790 Adventure|petrol|799|70|2019-2022|m|c|1;890 Adventure|petrol|889|77|2021-|m|c|1;390 Adventure|petrol|373|32|2020-|m|c|2
+ktm-exc	KTM	EXC	1990		offroad:100	EUR:4,AT:8,OCE:4,NAM:2,LAM:1,AFR:1	2	0	250 EXC|petrol|249|33|1990-|m|c|1;300 EXC|petrol|293|38|1990-|m|c|1;450 EXC|petrol|449|40|2003-|m|c|1;690 Enduro|petrol|690|48|2008-|m|c|1
+triumph-bonneville	Triumph	Bonneville	2001		standard:100	EUR:6,GB:10,NAM:4,OCE:4,JPN:2,SEA:1,IND:1	2	1	Bonneville|petrol|790|46|2001-2006|m|c|1;Bonneville|petrol|865|50|2007-2015|m|c|2;Bonneville T100|petrol|900|40|2016-|m|c|2;Bonneville T120|petrol|1200|59|2016-|m|c|2;Thruxton|petrol|865|51|2004-2015|m|c|1;Speed Twin|petrol|1200|74|2019-|m|c|1
+triumph-streettriple	Triumph	Street Triple	2007		standard:100	EUR:6,GB:10,OCE:3,NAM:2,JPN:1	2	0	Street Triple|petrol|675|79|2007-2016|m|c|2;Street Triple 765|petrol|765|90|2017-|m|c|2
+triumph-speedtriple	Triumph	Speed Triple	1994		standard:100	EUR:4,GB:6,OCE:2,NAM:2	2	0	Speed Triple|petrol|885|72|1994-1996|m|c|1;Speed Triple|petrol|955|79|1997-2004|m|c|1;Speed Triple|petrol|1050|97|2005-2020|m|c|2;Speed Triple 1200|petrol|1160|132|2021-|m|c|1
+triumph-tiger	Triumph	Tiger	1993		adventure:100	EUR:7,GB:10,OCE:5,NAM:2,AFR:2,LAM:1	2	1	Tiger 900|petrol|885|63|1993-1998|m|c|1;Tiger 955i|petrol|955|77|1999-2006|m|c|1;Tiger 1050|petrol|1050|84|2007-2013|m|c|1;Tiger 800|petrol|799|70|2011-2019|m|c|2;Tiger Explorer 1200|petrol|1215|101|2012-2021|m|s|1;Tiger 900|petrol|888|70|2020-|m|c|2;Tiger 1200|petrol|1160|110|2022-|m|s|1;Tiger Sport 660|petrol|660|60|2022-|m|c|1
+triumph-trident	Triumph	Trident	1991		standard:100	EUR:5,GB:8,OCE:2,NAM:1,SEA:1	2	1	Trident 900|petrol|885|73|1991-1998|m|c|1;Trident 660|petrol|660|60|2021-|m|c|2
+triumph-speed400	Triumph	Speed 400	2023		standard:100	IND:4,EUR:2,GB:3,SEA:2,LAM:1	2	0	Speed 400|petrol|398|29|2023-|m|c|2;Scrambler 400 X|petrol|398|29|2024-|m|c|1
+triumph-rocket	Triumph	Rocket	2004		cruiser:100	EUR:2,GB:3,NAM:2,OCE:2	2	0	Rocket III|petrol|2294|105|2004-2018|m|s|1;Rocket 3|petrol|2458|123|2020-|m|s|1
+piaggio-vespa	Piaggio	Vespa	1996		scooter:100	EUR:12,IT:20,VN:10,SEA:2,IND:3,OCE:3,NAM:2,JPN:2,LAM:2,KOR:2,TW:2	2	1	Vespa ET4 125|petrol|124|7|1996-2005|a|b|1;Vespa LX 125|petrol|124|8|2005-2013|a|b|2;Vespa GTS 125|petrol|124|11|2003-|a|b|2|EUR;Vespa GTS 300|petrol|278|16|2008-|a|b|2|EUR,OCE,NAM,JPN,KOR;Vespa Primavera 125|petrol|124|8|2014-|a|b|3;Vespa Sprint 150|petrol|155|9|2014-|a|b|1|SEA,VN,IND,LAM;Vespa VXL 125|petrol|125|7|2012-|a|b|2|IND;Vespa Elettrica|electric|0|4|2019-|a|h|1|EUR
+piaggio-liberty	Piaggio	Liberty	1997		scooter:100	EUR:8,IT:14,VN:8,SEA:2,TR:3	2	1	Liberty 125|petrol|124|8|1997-|a|b|2;Liberty 150|petrol|155|9|2010-|a|b|1|EUR,VN,SEA,TR
+piaggio-beverly	Piaggio	Beverly	2001		scooter:100	EUR:6,IT:12	2	0	Beverly 125|petrol|124|10|2001-|a|b|1;Beverly 200|petrol|198|14|2001-2004|a|b|1;Beverly 250|petrol|244|16|2005-2009|a|b|1;Beverly 300|petrol|278|18|2010-|a|b|1;Beverly 400|petrol|399|26|2021-|a|b|1
+aprilia-rs	Aprilia	RS	1992		sport:100	EUR:5,IT:8,OCE:1,SEA:1	2	1	RS 125|petrol|125|11|1992-2021|m|c|3;RS 250|petrol|249|46|1995-2002|m|c|1;RS 660|petrol|659|74|2021-|m|c|1
+aprilia-rsv	Aprilia	RSV	1998		sport:100	EUR:3,IT:5,NAM:1,OCE:1	2	0	RSV Mille|petrol|998|94|1998-2009|m|c|1;RSV4|petrol|999|132|2009-|m|c|1
+aprilia-tuono	Aprilia	Tuono	2002		standard:100	EUR:3,IT:5,OCE:1	2	0	Tuono 1000 R|petrol|998|98|2002-2010|m|c|1;Tuono V4|petrol|1077|129|2011-|m|c|1
+aprilia-sr	Aprilia	SR	2016		scooter:100	IND:4,EUR:2,IT:3	2	0	SR 125|petrol|125|7|2016-|a|b|1|IND;SR 160|petrol|160|8|2017-|a|b|1|IND;SR GT 125|petrol|125|11|2022-|a|b|1|EUR
+guzzi-v7	Moto Guzzi	V7	2008		standard:100	EUR:6,IT:10,OCE:2,NAM:2,JPN:2	2	1	V7|petrol|744|36|2008-2020|m|s|2;V7|petrol|853|48|2021-|m|s|2
+guzzi-california	Moto Guzzi	California	1990	2020	cruiser:100	EUR:4,IT:6,NAM:2,OCE:1	2	1	California 1000|petrol|949|45|1990-1993|m|s|1;California 1100|petrol|1064|55|1994-2012|m|s|2;California 1400|petrol|1380|71|2013-2020|m|s|1
+guzzi-v85	Moto Guzzi	V85 TT	2019		adventure:100	EUR:4,IT:6,OCE:2,NAM:1	2	0	V85 TT|petrol|853|59|2019-|m|s|1
+peugeot-satelis	Peugeot	Satelis	2006	2013	scooter:100	EUR:2,FR:6	2	0	Satelis 125|petrol|125|11|2006-2013|a|b|1;Satelis 250|petrol|244|16|2006-2013|a|b|1
+peugeot-tweet	Peugeot	Tweet	2010		scooter:100	EUR:4,FR:10,AFR:4	2	1	Tweet 125|petrol|125|7|2010-|a|b|1
+peugeot-django	Peugeot	Django	2014		scooter:100	EUR:3,FR:6	2	0	Django 125|petrol|125|7|2014-|a|b|2;Django 150|petrol|150|8|2014-2020|a|b|1
+peugeot-metropolis	Peugeot	Metropolis	2013		scooter:100	EUR:2,FR:6	2	0	Metropolis 400|petrol|399|26|2013-|a|b|1
+benelli-tnt	Benelli	TNT	2004		standard:100	EUR:4,IT:8,CHN:10,SEA:4,LAM:4,IND:2,OCE:2	2	1	TNT 1130|petrol|1131|99|2004-2016|m|c|1|EUR;TNT 125|petrol|125|8|2016-|m|c|3;TNT 300|petrol|300|28|2014-|m|c|2;TNT 600|petrol|600|60|2013-|m|c|2
+benelli-trk	Benelli	TRK	2017		adventure:100	EUR:6,IT:12,CHN:6,SEA:3,LAM:3,OCE:2	2	1	TRK 502|petrol|500|35|2017-|m|c|3;TRK 702|petrol|698|56|2023-|m|c|1
+benelli-leoncino	Benelli	Leoncino	2017		standard:100	EUR:4,IT:8,CHN:4,LAM:2,OCE:1	2	0	Leoncino 500|petrol|500|35|2017-|m|c|1;Leoncino 250|petrol|249|19|2019-|m|c|1
+re-bullet	Royal Enfield	Bullet	1990		standard:100	IND:30,EUR:3,GB:5,OCE:3,NAM:1,NP:20,LK:4,SEA:1,LAM:1	2	1	Bullet 350|petrol|346|13|1990-|m|c|4;Bullet 500|petrol|499|20|1990-2020|m|c|1
+re-classic	Royal Enfield	Classic	2009		standard:100	IND:45,EUR:4,GB:6,OCE:4,SEA:2,LAM:2,NP:25,LK:5,MER:2	2	1	Classic 350|petrol|346|15|2009-|m|c|5;Classic 500|petrol|499|20|2009-2020|m|c|1
+re-thunderbird	Royal Enfield	Thunderbird	2002	2020	cruiser:100	IND:12,NP:5	2	0	Thunderbird 350|petrol|346|15|2002-2020|m|c|1;Thunderbird 500|petrol|499|20|2012-2020|m|c|1
+re-himalayan	Royal Enfield	Himalayan	2016		adventure:100	IND:10,EUR:6,GB:8,OCE:6,NAM:2,LAM:3,NP:15,SEA:2,MER:3	2	1	Himalayan|petrol|411|18|2016-2023|m|c|2;Himalayan 450|petrol|452|30|2024-|m|c|2
+re-interceptor	Royal Enfield	Interceptor	2018		standard:100	IND:3,EUR:6,GB:8,OCE:5,NAM:4,SEA:2,LAM:2	2	1	Interceptor 650|petrol|648|35|2018-|m|c|2;Continental GT 650|petrol|648|35|2018-|m|c|1
+re-meteor	Royal Enfield	Meteor	2020		cruiser:100	IND:12,EUR:4,GB:4,OCE:3,SEA:2,LAM:2,NP:5,MER:2	2	0	Meteor 350|petrol|349|15|2020-|m|c|1
+re-hunter	Royal Enfield	Hunter	2022		standard:100	IND:15,EUR:3,GB:3,OCE:2,SEA:2,LAM:2,NP:5	2	0	Hunter 350|petrol|349|15|2022-|m|c|1
+hero-cd100	Hero	CD 100	1990	2005	standard:100	IND:35,NP:10,BD:10,LK:5	2	1	CD 100|petrol|97|5|1990-2005|m|c|2;CD 100 SS|petrol|97|5|1991-2005|m|c|1;Sleek|petrol|97|5|1996-2005|m|c|1
+hero-splendor	Hero	Splendor	1994		standard:100	IND:45,NP:15,BD:15,LK:10,AFR:4,LAM:4	2	1	Splendor|petrol|97|5|1994-2014|m|c|3;Splendor Plus|petrol|97|6|2004-|m|c|5;Super Splendor|petrol|125|8|2005-|m|c|2
+hero-passion	Hero	Passion	2001		standard:100	IND:15,NP:5,BD:5	2	0	Passion|petrol|97|5|2001-2015|m|c|1;Passion Pro|petrol|110|7|2008-|m|c|1
+hero-hf	Hero	HF	2004		standard:100	IND:25,AFR:12,BD:8,NP:5,LAM:5	2	1	HF Dawn|petrol|97|5|2004-2018|m|c|1;HF Deluxe|petrol|97|6|2005-|m|c|3
+hero-glamour	Hero	Glamour	2005		standard:100	IND:10,BD:5,NP:3	2	0	Glamour|petrol|125|7|2005-|m|c|1
+hero-pleasure	Hero	Pleasure	2006		scooter:100	IND:8,NP:5	2	0	Pleasure|petrol|102|5|2006-2018|a|b|1;Pleasure+ 110|petrol|110|6|2019-|a|b|1
+hero-maestro	Hero	Maestro	2012		scooter:100	IND:6,NP:4,BD:3	2	0	Maestro Edge 110|petrol|110|6|2012-|a|b|1
+hero-xpulse	Hero	Xpulse	2019		adventure:100	IND:4,NP:3,BD:2,LAM:3	2	0	Xpulse 200|petrol|200|14|2019-|m|c|1
+hero-vida	Hero	Vida	2022		scooter:100	IND:3	2	0	Vida V1|electric|0|6|2022-|a|b|1
+bajaj-boxer	Bajaj	Boxer	1997		standard:100	AFR:45,IND:6,LAM:12,MEA:5,BD:5,LK:5	2	1	Boxer|petrol|100|6|1997-2005|m|c|1;Boxer BM 100|petrol|100|6|2005-|m|c|3;Boxer BM 150|petrol|145|9|2011-|m|c|3|AFR,LAM
+bajaj-ct100	Bajaj	CT 100	2004		standard:100	IND:6,AFR:10,LAM:6,LK:5	2	1	CT 100|petrol|100|6|2004-|m|c|1
+bajaj-platina	Bajaj	Platina	2006		standard:100	IND:16,AFR:6,BD:8,NP:4,LK:5	2	1	Platina 100|petrol|102|6|2006-|m|c|2;Platina 110|petrol|115|6|2019-|m|c|1
+bajaj-pulsar	Bajaj	Pulsar	2001		standard:80,sport:20	IND:30,LAM:14,AFR:6,IR:30,BD:15,NP:12,LK:10,SEA:3,MEA:6,TR:8	2	1	Pulsar 150|petrol|149|11|2001-|m|c|5;Pulsar 180|petrol|178|12|2001-2019|m|c|1;Pulsar 220F|petrol|220|15|2007-|m|c|2;Pulsar NS200|petrol|199|18|2012-|m|c|3;Pulsar 125|petrol|125|9|2019-|m|c|2|IND
+bajaj-discover	Bajaj	Discover	2004	2019	standard:100	IND:10,LAM:10,AFR:6,BD:8,NP:4,LK:4	2	0	Discover 100|petrol|94|6|2009-2019|m|c|1;Discover 125|petrol|125|8|2004-2019|m|c|1
+bajaj-avenger	Bajaj	Avenger	2005		cruiser:100	IND:5,LAM:4,AFR:1,NP:3	2	0	Avenger 220|petrol|220|14|2005-|m|c|1;Avenger 160|petrol|160|11|2018-|m|c|1
+bajaj-dominar	Bajaj	Dominar	2017		touring:100	IND:3,LAM:3,IR:3,NP:2	2	0	Dominar 400|petrol|373|29|2017-|m|c|1;Dominar 250|petrol|248|20|2020-|m|c|1
+bajaj-chetak	Bajaj	Chetak	2020		scooter:100	IND:5	2	1	Chetak|electric|0|4|2020-|a|h|1
+tvs-xl	TVS	XL	1990		underbone:100	IND:15,AFR:5	2	1	XL Super|petrol|70|3|1990-2014|s|c|1;XL100|petrol|99|3|2015-|s|c|2
+tvs-star	TVS	Star	2003		standard:100	IND:12,AFR:30,LAM:6,BD:5,NP:3,LK:6	2	1	Star City|petrol|110|6|2003-|m|c|3;HLX 125|petrol|125|7|2013-|m|c|3|AFR,LAM;HLX 150|petrol|150|9|2016-|m|c|2|AFR
+tvs-apache	TVS	Apache	2006		standard:80,sport:20	IND:16,LAM:12,AFR:6,BD:12,NP:8,LK:6,SEA:3,MEA:3	2	1	Apache RTR 160|petrol|160|11|2006-|m|c|4;Apache RTR 180|petrol|177|13|2009-2022|m|c|1;Apache RTR 200 4V|petrol|198|15|2016-|m|c|2;Apache RR 310|petrol|313|25|2017-|m|c|1
+tvs-scooty	TVS	Scooty	1994		scooter:100	IND:10,NP:5,LK:5	2	0	Scooty|petrol|60|2|1994-2004|a|b|1;Scooty Pep+|petrol|87|4|2005-|a|b|2;Scooty Zest 110|petrol|110|6|2015-|a|b|1
+tvs-jupiter	TVS	Jupiter	2013		scooter:100	IND:22,NP:5,LK:5,BD:3	2	1	Jupiter|petrol|110|6|2013-|a|b|3;Jupiter 125|petrol|124|6|2021-|a|b|1
+tvs-ntorq	TVS	Ntorq	2018		scooter:100	IND:10,NP:4,LK:3,BD:3,SEA:1,LAM:2	2	0	Ntorq 125|petrol|124|7|2018-|a|b|1
+tvs-iqube	TVS	iQube	2020		scooter:100	IND:6	2	1	iQube|electric|0|4|2020-|a|h|1
+tvs-raider	TVS	Raider	2021		standard:100	IND:6,LAM:2,AFR:2	2	0	Raider 125|petrol|124|8|2021-|m|c|1
+haojue-hj	Haojue	HJ	1995		standard:100	CHN:20,AFR:20,LAM:10,MEA:10,SEA:3,CIS:5,IR:8,MER:4	2	1	HJ125|petrol|124|7|1995-|m|c|4;HJ150|petrol|149|9|2005-|m|c|2;DR160|petrol|162|11|2017-|m|c|1
+haojue-uhr	Haojue	UHR	2015		scooter:100	CHN:8,AFR:2,LAM:2,MER:2	2	0	UHR 150|petrol|150|9|2015-|a|b|1
+loncin-lx	Loncin	LX	1995		standard:100	CHN:15,AFR:15,LAM:10,MEA:6,SEA:5,CIS:8,PK:8,MER:4,IR:6	2	1	LX125|petrol|124|7|1995-|m|c|3;LX150|petrol|149|9|2003-|m|c|2;LX200|petrol|197|11|2008-|m|c|1
+loncin-voge	Loncin	Voge	2018		standard:50,adventure:50	CHN:5,EUR:3,CIS:3,LAM:2,OCE:1	2	0	Voge 300R|petrol|292|21|2018-|m|c|1;Voge 500DS|petrol|471|35|2019-|m|c|1
+zongshen-zs	Zongshen	ZS	1995		standard:100	CHN:15,AFR:10,LAM:8,MEA:4,SEA:3,CIS:6,PK:8,MER:4,IR:6	2	1	ZS125|petrol|124|7|1995-|m|c|3;ZS150|petrol|149|9|2003-|m|c|2
+zongshen-cyclone	Zongshen	Cyclone	2015		adventure:100	CHN:5,LAM:3,CIS:2	2	0	Cyclone RX3|petrol|249|19|2015-|m|c|1
+lifan-lf	Lifan	LF	1997		standard:100	CHN:10,AFR:15,LAM:10,MEA:6,SEA:6,CIS:8,PK:6,MER:4,IR:6	2	1	LF125|petrol|124|7|1997-|m|c|3;LF150|petrol|149|9|2003-|m|c|2;KPR 200|petrol|198|13|2013-|m|c|1
+dayang-dy	Dayang	DY	1995		standard:100	CHN:10,AFR:12,LAM:6,MEA:4,SEA:4,PK:6	2	1	DY100|petrol|97|5|1995-|m|c|2;DY125|petrol|124|7|1998-|m|c|3;DY150|petrol|149|9|2005-|m|c|1
+shineray-xy	Shineray	XY	2000		standard:100	CHN:5,MER:10,BR:12,AFR:5,LAM:4	2	1	XY125|petrol|124|7|2000-|m|c|2;XY150|petrol|149|9|2005-|m|c|1
+jincheng-jc	Jincheng	JC	1995		standard:100	AFR:15,CHN:5,LAM:3,SEA:2,MEA:3	2	1	JC100|petrol|97|5|1995-|m|c|2;JC125|petrol|124|7|1998-|m|c|2
+cfmoto-nk	CFMoto	NK	2010		standard:100	CHN:6,EUR:4,LAM:3,SEA:3,OCE:3,CIS:2,MER:2	2	1	150NK|petrol|149|9|2010-|m|c|1;650NK|petrol|649|45|2012-|m|c|2;250NK|petrol|249|20|2017-|m|c|1;300NK|petrol|292|21|2019-|m|c|1;800NK|petrol|799|70|2023-|m|c|1
+cfmoto-mt	CFMoto	MT	2012		adventure:100	CHN:3,EUR:4,LAM:2,OCE:3,CIS:2,SEA:1	2	0	650MT|petrol|649|45|2012-|m|c|2;800MT|petrol|799|70|2022-|m|c|1
+cfmoto-sr	CFMoto	SR	2020		sport:100	CHN:3,EUR:2,LAM:2,SEA:2,OCE:1	2	0	300SR|petrol|292|21|2020-|m|c|1;450SR|petrol|450|37|2022-|m|c|1
+yadea-g5	Yadea	G5	2016		scooter:100	CHN:15,SEA:6,VN:10,EUR:2,LAM:3,AFR:2,IND:1	2	1	G5|electric|0|3|2016-|a|h|1
+niu-nqi	NIU	NQi	2015		scooter:100	CHN:10,EUR:4,SEA:2	2	1	NQi|electric|0|2|2015-|a|h|2;NQi GT|electric|0|3|2018-|a|h|1
+niu-mqi	NIU	MQi	2016		scooter:100	CHN:6,EUR:2	2	0	MQi+|electric|0|2|2016-|a|h|1
+kymco-agility	Kymco	Agility	2005		scooter:100	EUR:6,IT:8,TW:10,LAM:4,TR:4,SEA:2,OCE:2	2	1	Agility 125|petrol|125|6|2005-|a|b|2;Agility City 125|petrol|125|7|2008-|a|b|1
+kymco-people	Kymco	People	1999		scooter:100	EUR:5,IT:8,TW:6,TR:2	2	1	People 125|petrol|125|8|1999-|a|b|1;People S 200|petrol|163|10|2006-|a|b|1
+kymco-gdink	Kymco	Grand Dink	1998	2015	scooter:100	TW:6,EUR:3,IT:3	2	1	Grand Dink 125|petrol|125|8|1998-2015|a|b|1;Grand Dink 250|petrol|249|14|2001-2012|a|b|1
+kymco-downtown	Kymco	Downtown	2009		scooter:100	EUR:3,IT:5,TW:2,KOR:3	2	0	Downtown 125i|petrol|125|11|2009-|a|b|1;Downtown 350i|petrol|321|20|2015-|a|b|1
+kymco-xciting	Kymco	Xciting	2005		scooter:100	EUR:3,IT:5,TW:2	2	0	Xciting 500|petrol|499|28|2005-2017|a|b|1;Xciting 400i|petrol|399|26|2013-|a|b|1
+kymco-many	Kymco	Many	2007		scooter:100	TW:15,EUR:1	2	1	Many 110|petrol|110|6|2007-|a|b|1
+kymco-gp	Kymco	GP	2007		scooter:100	TW:12	2	0	GP 125|petrol|125|7|2007-|a|b|1
+kymco-ionex	Kymco	Ionex	2019		scooter:100	TW:8	2	0	Ionex i-One|electric|0|3|2019-|a|h|1
+sym-jet	SYM	Jet	1999		scooter:100	TW:15,EUR:2	2	1	Jet 100|petrol|102|5|1999-2008|a|b|1;Jet Power 125|petrol|125|7|2009-|a|b|1;Jet SL 125|petrol|125|9|2019-|a|b|1
+sym-symphony	SYM	Symphony	2009		scooter:100	EUR:6,IT:8,ES:8,VN:2,TR:3	2	1	Symphony 125|petrol|125|7|2009-|a|b|1;Symphony ST 125|petrol|125|8|2019-|a|b|1
+sym-attila	SYM	Attila	1999		scooter:100	VN:10,TW:6,SEA:3	2	1	Attila 125|petrol|125|7|1999-|a|b|1
+sym-joymax	SYM	Joymax	2009		scooter:100	EUR:3,IT:4,ES:4,TW:3	2	0	Joymax 125|petrol|125|10|2009-|a|b|1;Joymax 300|petrol|278|18|2013-|a|b|1
+sym-fiddle	SYM	Fiddle	2008		scooter:100	TW:8,EUR:2	2	0	Fiddle 125|petrol|125|7|2008-|a|b|1
+daelim-citi	Daelim	Citi	1990		underbone:100	KOR:30	2	1	Citi 100|petrol|97|5|1990-|s|c|1
+hyosung-gt	Hyosung	GT	2003	2017	standard:60,sport:40	KOR:10,EUR:2,OCE:2,NAM:2,LAM:2	2	1	GT125|petrol|125|11|2003-2017|m|c|1;GT250|petrol|249|21|2003-2017|m|c|2;GT650|petrol|647|59|2004-2017|m|c|1
+hyosung-aquila	Hyosung	Aquila	2000		cruiser:100	KOR:6,EUR:1,NAM:1,OCE:1,LAM:1	2	0	GV250 Aquila|petrol|249|20|2000-|m|c|1;GV650 Aquila|petrol|647|59|2005-2017|m|b|1

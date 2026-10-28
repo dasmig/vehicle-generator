@@ -1,0 +1,31 @@
+# Curated: the fuel mix of new motorcycles by model year, as fuel:year=share anchors (as in fuels.tsv); petrol is what is left. Country * holds the mix of every country without its own row. Rounded from the IEA Global EV Outlook's two-wheeler chapters, ACEM registrations, India's VAHAN dashboard, ABRACICLO (Brazilian flex-fuel motorcycles) and the makers' figures; electric two-wheelers here are licensed electric motorcycles and scooters, not electric bicycles.
+country	fuels
+*
+CN	electric:2010=0,2018=0.15,2024=0.35
+TW	electric:2014=0,2019=0.2,2024=0.1
+VN	electric:2016=0,2024=0.1
+IN	electric:2018=0,2024=0.06
+NP	electric:2020=0,2024=0.03
+LK	electric:2020=0,2024=0.02
+ID	electric:2020=0,2024=0.02
+TH	electric:2020=0,2024=0.02;hybrid:2017=0,2018=0.01,2021=0.01,2022=0
+PH	electric:2020=0,2024=0.02
+MY	electric:2020=0,2024=0.01
+JP	electric:2020=0,2024=0.01;hybrid:2017=0,2018=0.01,2021=0.01,2022=0
+KR	electric:2018=0,2024=0.05
+BR	flex:2008=0,2010=0.3,2016=0.5,2024=0.5
+AT	electric:2015=0,2024=0.05
+BE	electric:2015=0,2024=0.06
+CH	electric:2015=0,2024=0.06
+DE	electric:2015=0,2024=0.05
+DK	electric:2015=0,2024=0.06
+ES	electric:2015=0,2024=0.05
+FI	electric:2015=0,2024=0.05
+FR	electric:2015=0,2024=0.07
+GB	electric:2015=0,2024=0.04
+IT	electric:2015=0,2024=0.03
+LU	electric:2015=0,2024=0.05
+NL	electric:2015=0,2024=0.1
+NO	electric:2015=0,2024=0.12
+PT	electric:2015=0,2024=0.04
+SE	electric:2015=0,2024=0.08

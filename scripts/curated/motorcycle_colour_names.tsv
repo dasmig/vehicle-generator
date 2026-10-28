@@ -1,0 +1,86 @@
+# Curated: the motorcycle makers' names for colours of each family (columns as in colour_names.tsv), from the makers' colour charts. Make * holds generic names for motorcycle makes without their own. A make that also builds cars keeps its motorcycle names apart from its car names.
+make	family	name	weight	from	to
+*	white	Gloss White	1
+*	black	Gloss Black	2
+*	black	Matte Black	1	2005
+*	grey	Matte Grey	1
+*	silver	Silver	1
+*	blue	Racing Blue	1
+*	red	Racing Red	1
+*	brown	Bronze	1
+*	green	Racing Green	1
+*	yellow	Racing Yellow	1
+*	orange	Bright Orange	1
+*	other	Two-Tone	1
+Honda	white	Pearl Glare White	1	2008
+Honda	white	Ross White	1
+Honda	black	Graphite Black	2
+Honda	black	Mat Gunpowder Black Metallic	1	2012
+Honda	grey	Mat Iridium Grey Metallic	1	2012
+Honda	silver	Pearl Shining Silver	1
+Honda	blue	Pearl Splendor Blue	1
+Honda	red	Grand Prix Red	2
+Honda	red	Candy Chromosphere Red	1	2015
+Honda	other	HRC Tricolour	1	2008
+Yamaha	white	Competition White	1
+Yamaha	black	Midnight Black	2
+Yamaha	black	Tech Black	1	2014
+Yamaha	grey	Cyan Storm	1	2018
+Yamaha	grey	Matte Grey Metallic	1
+Yamaha	silver	Silver Metallic	1
+Yamaha	blue	Icon Blue	2	2014
+Yamaha	blue	Team Yamaha Blue	1
+Yamaha	red	Vivid Red	1
+Kawasaki	white	Pearl Blizzard White	1
+Kawasaki	black	Metallic Spark Black	2
+Kawasaki	black	Ebony	1
+Kawasaki	grey	Metallic Matte Graphenesteel Grey	1	2017
+Kawasaki	green	Lime Green	3
+Kawasaki	red	Candy Persimmon Red	1
+Suzuki	white	Pearl Glacier White	1
+Suzuki	black	Glass Sparkle Black	2
+Suzuki	grey	Metallic Matte Black Grey	1	2012
+Suzuki	blue	Metallic Triton Blue	2
+Suzuki	red	Candy Daring Red	1
+Suzuki	yellow	Champion Yellow No. 2	1
+Ducati	red	Ducati Red	6
+Ducati	black	Dark Stealth	1	2010
+Ducati	white	Iceberg White	1
+Ducati	grey	Aviator Grey	1	2015
+Ducati	yellow	Ducati Yellow	1
+KTM	orange	KTM Orange	5
+KTM	black	Black	1
+KTM	white	White	1
+KTM	grey	Silver Metallic Grey	1
+BMW	white	Light White	2
+BMW	black	Blackstorm Metallic	2
+BMW	grey	Granite Grey Metallic	1
+BMW	blue	Racing Blue Metallic	1
+BMW	red	Racing Red	1
+BMW	other	Motorsport Tricolour	1	2012
+Harley-Davidson	black	Vivid Black	4
+Harley-Davidson	black	Black Denim	1	2008
+Harley-Davidson	grey	Gauntlet Grey Metallic	1	2015
+Harley-Davidson	red	Redline Red	1
+Harley-Davidson	blue	Billiard Blue	1
+Harley-Davidson	white	Bright Billiard White	1
+Triumph	black	Jet Black	2
+Triumph	black	Sapphire Black	1
+Triumph	white	Crystal White	1
+Triumph	grey	Matt Graphite	1
+Triumph	red	Korosi Red	1	2015
+Triumph	blue	Lucerne Blue	1
+Triumph	green	Competition Green	1
+Royal Enfield	black	Stealth Black	2
+Royal Enfield	green	Halcyon Green	1	2018
+Royal Enfield	grey	Signals Marsh Grey	1	2018
+Royal Enfield	red	Chrome Red	1
+Royal Enfield	brown	Desert Storm	1	2010
+Piaggio	white	Bianco Innocenza	2
+Piaggio	black	Nero Convinto	1
+Piaggio	blue	Blu Energico	1
+Piaggio	red	Rosso Dragon	1
+Piaggio	green	Verde Relax	1
+Piaggio	grey	Grigio Delicato	1
+Piaggio	yellow	Giallo Solare	1
+Piaggio	orange	Arancio Impulsivo	1

@@ -18,6 +18,7 @@
 using dasmig::vehicle;
 using dasmig::vehicle_body;
 using dasmig::vehicle_fuel;
+using dasmig::vehicle_kind;
 using dasmig::vehicle_request;
 using dasmig::vehicle_table;
 using dasmig::vhg;
@@ -126,7 +127,9 @@ TEST_CASE("load(dataset::lite) loads every table", "[loading]")
                          vehicle_table::transmission, vehicle_table::colours, vehicle_table::colour_names,
                          vehicle_table::mileage, vehicle_table::plate_formats, vehicle_table::plate_series,
                          vehicle_table::plate_regions, vehicle_table::wmis, vehicle_table::factories,
-                         vehicle_table::owner_factors})
+                         vehicle_table::owner_factors, vehicle_table::motorcycle_fuel_shares,
+                         vehicle_table::motorcycle_make_shares, vehicle_table::motorcycle_colours,
+                         vehicle_table::motorcycle_factories})
     {
         REQUIRE(gen.layers(t).size() == 1);
     }
@@ -247,8 +250,22 @@ TEST_CASE("vehicles are coherent with the data and the date", "[coherence]")
             REQUIRE(found);
 
             if (v.fuel == vehicle_fuel::electric) REQUIRE(v.engine_cc == 0);
-            REQUIRE((v.transmission == "manual" || v.transmission == "automatic"));
-            REQUIRE((v.drive == "fwd" || v.drive == "rwd" || v.drive == "awd"));
+            REQUIRE(v.kind == dasmig::kind_of(v.body));
+            if (v.kind == vehicle_kind::car)
+            {
+                REQUIRE((v.transmission == "manual" || v.transmission == "automatic"));
+                REQUIRE((v.drive == "fwd" || v.drive == "rwd" || v.drive == "awd"));
+                REQUIRE(v.doors >= 2);
+            }
+            else
+            {
+                REQUIRE((v.transmission == "manual" || v.transmission == "automatic" ||
+                         v.transmission == "semi-automatic"));
+                REQUIRE((v.drive == "chain" || v.drive == "belt" || v.drive == "shaft" || v.drive == "hub"));
+                REQUIRE(v.doors == 0);
+                REQUIRE(v.fuel != vehicle_fuel::lpg);
+                REQUIRE(v.fuel != vehicle_fuel::cng);
+            }
             REQUIRE(v.odometer >= 10);
             REQUIRE(v.odometer < 2000000);
             REQUIRE((v.odometer_unit == "km" || v.odometer_unit == "mi"));
@@ -283,10 +300,14 @@ TEST_CASE("electric cars follow the fleet: rare in 2012 Norway, most of 2024's",
 
 TEST_CASE("VINs are valid ISO 3779 numbers of the make and model year", "[vin]")
 {
-    std::map<std::string, std::set<std::string>> wmis_of; // make -> WMIs
-    for (const auto& row : read_table("factories.tsv"))
-        for (const auto* col : {"wmi", "wmi_suv", "wmi_truck"})
-            if (!row.at(col).empty()) wmis_of[row.at("make")].insert(row.at(col));
+    std::map<std::string, std::set<std::string>> wmis_of; // kind/make -> WMIs
+    for (const auto* table : {"factories.tsv", "motorcycle_factories.tsv"})
+        for (const auto& row : read_table(table))
+            for (const auto* col : {"wmi", "wmi_suv", "wmi_truck"})
+                if (!row.at(col).empty())
+                    wmis_of[std::string{table}.starts_with("motorcycle") ? "motorcycle/" + row.at("make")
+                                                                          : "car/" + row.at("make")]
+                        .insert(row.at(col));
     std::map<std::string, std::string> vds_of; // model/trim -> VIN positions 4-6
     const auto& gen = shared();
     for (std::uint64_t s = 0; s < 5000; ++s)
@@ -296,7 +317,7 @@ TEST_CASE("VINs are valid ISO 3779 numbers of the make and model year", "[vin]")
         REQUIRE(vin_valid(v.vin));
         REQUIRE(v.vin[9] == year_code(v.model_year));
         REQUIRE(v.vin.substr(0, 3) == v.wmi);
-        REQUIRE(wmis_of.at(v.make).contains(v.wmi));
+        REQUIRE(wmis_of.at(std::string{dasmig::to_string(v.kind)} + "/" + v.make).contains(v.wmi));
         if (v.vin.substr(3, 3) != "ZZZ")
         {
             const auto key = v.model_key + "/" + v.trim;
@@ -465,6 +486,7 @@ TEST_CASE("safe plates and VINs come from series nobody holds", "[safe]")
     }
     auto late = at(2050, 12, 31);
     late.country = "AR";
+    late.kind = vehicle_kind::car;
     late.max_age = 0;
     for (std::uint64_t s = 0; s < 300; ++s)
         ar_2016_2050 = std::max(ar_2016_2050, gen.get_vehicle(late, s).plate.substr(0, 2));
@@ -635,21 +657,204 @@ TEST_CASE("ages follow the fleet by band", "[stats]")
     }
 }
 
-TEST_CASE("countries are drawn by cars in use", "[stats]")
+TEST_CASE("countries are drawn by cars and motorcycles in use", "[stats]")
 {
     double total = 0;
     double us = 0;
     for (const auto& row : read_table("countries.tsv"))
     {
-        const double cars = std::stod(row.at("population")) * std::stod(row.at("cars_per_1000"));
-        total += cars;
-        if (row.at("country_code") == "US") us = cars;
+        const double vehicles = std::stod(row.at("population")) *
+                                (std::stod(row.at("cars_per_1000")) + std::stod(row.at("motorcycles_per_1000")));
+        total += vehicles;
+        if (row.at("country_code") == "US") us = vehicles;
     }
     const auto& gen = shared();
     int hits = 0;
     const int n = 20000;
     for (std::uint64_t s = 0; s < n; ++s) hits += gen.get_vehicle({}, s).country_code == "US";
     REQUIRE(std::abs((static_cast<double>(hits) / n) - (us / total)) < 0.015);
+}
+
+// ---------------------------------------------------------------------------
+// Motorcycles
+// ---------------------------------------------------------------------------
+
+TEST_CASE("the kind is requested, or implied by the body and the model", "[motorcycle][request]")
+{
+    const auto& gen = shared();
+    auto r = at(2023, 7, 1);
+    r.kind = vehicle_kind::motorcycle;
+    for (std::uint64_t s = 0; s < 500; ++s)
+    {
+        const auto v = gen.get_vehicle(r, s);
+        INFO(v.to_json());
+        REQUIRE(v.kind == vehicle_kind::motorcycle);
+        REQUIRE(dasmig::kind_of(v.body) == vehicle_kind::motorcycle);
+        REQUIRE(v.doors == 0);
+        REQUIRE(v.to_json().find(R"("kind":"motorcycle")") != std::string::npos);
+    }
+    r = at(2023, 7, 1);
+    r.body = vehicle_body::scooter;
+    for (std::uint64_t s = 0; s < 200; ++s) REQUIRE(gen.get_vehicle(r, s).kind == vehicle_kind::motorcycle);
+    r = at(2023, 7, 1);
+    r.model = "honda-pcx";
+    for (std::uint64_t s = 0; s < 200; ++s)
+    {
+        const auto v = gen.get_vehicle(r, s);
+        REQUIRE(v.kind == vehicle_kind::motorcycle);
+        REQUIRE(v.model_year >= 2010);
+    }
+    r = at(2023, 7, 1);
+    r.kind = vehicle_kind::car;
+    for (std::uint64_t s = 0; s < 200; ++s) REQUIRE(gen.get_vehicle(r, s).kind == vehicle_kind::car);
+
+    r.body = vehicle_body::scooter;
+    REQUIRE_THROWS_AS(gen.get_vehicle(r, 1), std::invalid_argument);
+    r.body.reset();
+    r.model = "honda-pcx";
+    REQUIRE_THROWS_AS(gen.get_vehicle(r, 1), std::invalid_argument);
+    r = at(2023, 7, 1);
+    r.model = "vw-golf";
+    r.body = vehicle_body::cruiser;
+    REQUIRE_THROWS_AS(gen.get_vehicle(r, 1), std::invalid_argument);
+    r = at(2023, 7, 1);
+    r.kind = vehicle_kind::motorcycle;
+    r.make = "Tesla"; // builds no motorcycles
+    REQUIRE_THROWS_AS(gen.get_vehicle(r, 1), std::invalid_argument);
+}
+
+TEST_CASE("fixing the kind leaves every other draw unchanged", "[motorcycle][seed]")
+{
+    const auto& gen = shared();
+    int motorcycles = 0;
+    for (std::uint64_t s = 0; s < 300; ++s)
+    {
+        const auto v = gen.get_vehicle({}, s);
+        motorcycles += v.kind == vehicle_kind::motorcycle;
+        // The country is drawn by the kind's fleet, so the kind is fixed with it.
+        vehicle_request fixed;
+        fixed.country = v.country_code;
+        fixed.kind = v.kind;
+        REQUIRE(gen.get_vehicle(fixed, s).to_json() == v.to_json());
+    }
+    REQUIRE(motorcycles > 30); // Asia's two-wheelers are a large share of the world's vehicles
+}
+
+TEST_CASE("cars and motorcycles follow each country's fleet", "[motorcycle][stats]")
+{
+    const auto& gen = shared();
+    const auto share = [&](const char* country) {
+        auto r = at(2024, 6, 1);
+        r.country = country;
+        int motorcycles = 0;
+        for (std::uint64_t s = 0; s < 2000; ++s) motorcycles += gen.get_vehicle(r, s).kind == vehicle_kind::motorcycle;
+        return motorcycles / 2000.0;
+    };
+    REQUIRE(share("VN") > 0.8);
+    REQUIRE(share("ID") > 0.6);
+    REQUIRE(share("US") < 0.06);
+    const double italy = share("IT");
+    REQUIRE(italy > 0.1);
+    REQUIRE(italy < 0.3);
+
+    // Young owners ride more than old ones.
+    const auto by_owner = [&](unsigned owner) {
+        auto r = at(2024, 6, 1);
+        r.country = "IT";
+        r.owner_age = owner;
+        int motorcycles = 0;
+        for (std::uint64_t s = 0; s < 4000; ++s) motorcycles += gen.get_vehicle(r, s).kind == vehicle_kind::motorcycle;
+        return motorcycles;
+    };
+    REQUIRE(by_owner(20) > by_owner(70) * 2);
+
+    // Scooters and underbones rule Vietnam; Harley-Davidson is the largest US motorcycle make.
+    auto vn = at(2024, 6, 1);
+    vn.country = "VN";
+    vn.kind = vehicle_kind::motorcycle;
+    int small = 0;
+    for (std::uint64_t s = 0; s < 1000; ++s)
+    {
+        const auto body = gen.get_vehicle(vn, s).body;
+        small += body == vehicle_body::scooter || body == vehicle_body::underbone;
+    }
+    REQUIRE(small > 800);
+    auto us = at(2024, 6, 1);
+    us.country = "US";
+    us.kind = vehicle_kind::motorcycle;
+    std::map<std::string, int> makes;
+    for (std::uint64_t s = 0; s < 2000; ++s) ++makes[gen.get_vehicle(us, s).make];
+    REQUIRE(std::ranges::max_element(makes, {}, &std::pair<const std::string, int>::second)->first ==
+            "Harley-Davidson");
+}
+
+TEST_CASE("motorcycle plates follow their own formats", "[motorcycle][plates]")
+{
+    // Written from the national rules, not from plate_formats.tsv.
+    const std::map<std::string, std::regex> rules{
+        {"it-moto", std::regex{R"(^[A-HJ-NPR-TV-Z]{2} [0-9]{5}$)"}},
+        {"vn-moto", std::regex{R"(^[0-9]{2}-[A-HJ-NPR-VX-Z][1-9] [0-9]{3}\.[0-9]{2}$)"}},
+        {"co-moto", std::regex{R"(^[A-Z]{3} [0-9]{2}[A-Z]$)"}},
+        {"ar-moto-2016", std::regex{R"(^[A-Z][0-9]{3} [A-Z]{3}$)"}},
+    };
+    std::map<std::string, int> checked;
+    const auto& gen = shared();
+    for (const auto* country : {"IT", "VN", "CO", "AR", "CN", "JP"})
+    {
+        auto request = at(2024, 6, 1);
+        request.country = country;
+        for (std::uint64_t s = 0; s < 1500; ++s)
+        {
+            const auto v = gen.get_vehicle(request, s);
+            INFO(v.to_json());
+            const bool moto_format = v.plate_format.find("-moto") != std::string::npos;
+            if (v.kind == vehicle_kind::car) REQUIRE_FALSE(moto_format);
+            if (v.kind == vehicle_kind::motorcycle) REQUIRE(v.plate_format != "cn-nev");
+            // Italian motorcycles registered since July 1999 carry the motorcycle series.
+            if (v.kind == vehicle_kind::motorcycle && (country == std::string{"VN"} || country == std::string{"CO"} ||
+                                                       country == std::string{"JP"} ||
+                                                       days(v.first_registration) >= days(at(1999, 7, 1).reference_date)))
+                if (country != std::string{"CN"}) REQUIRE(moto_format);
+            const auto rule = rules.find(v.plate_format);
+            if (rule == rules.end()) continue;
+            REQUIRE(std::regex_match(v.plate, rule->second));
+            ++checked[v.plate_format];
+        }
+    }
+    for (const auto& [format, _] : rules) REQUIRE(checked[format] > 0);
+}
+
+TEST_CASE("motorcycle queries and summaries", "[motorcycle][queries]")
+{
+    const auto& gen = shared();
+    REQUIRE(gen.countries(vehicle_kind::motorcycle).size() == gen.countries().size());
+    const auto indian = gen.makes("IN", vehicle_kind::motorcycle);
+    REQUIRE(std::ranges::find(indian, "Hero") != indian.end());
+    REQUIRE(std::ranges::find(indian, "Toyota") == indian.end());
+    const auto indian_cars = gen.makes("IN", vehicle_kind::car);
+    REQUIRE(std::ranges::find(indian_cars, "Hero") == indian_cars.end());
+    const auto all = gen.makes("IN");
+    REQUIRE(std::ranges::find(all, "Hero") != all.end());
+    REQUIRE(std::ranges::find(all, "Toyota") != all.end());
+    const auto moto_makes = gen.makes({}, vehicle_kind::motorcycle);
+    REQUIRE(std::ranges::find(moto_makes, "Ducati") != moto_makes.end());
+    REQUIRE(std::ranges::find(moto_makes, "Volkswagen") == moto_makes.end());
+
+    const auto honda_bikes = gen.models("Honda", vehicle_kind::motorcycle);
+    const auto honda_cars = gen.models("Honda", vehicle_kind::car);
+    REQUIRE(std::ranges::find(honda_bikes, "honda-pcx") != honda_bikes.end());
+    REQUIRE(std::ranges::find(honda_cars, "honda-pcx") == honda_cars.end());
+    REQUIRE(std::ranges::find(honda_cars, "honda-civic") != honda_cars.end());
+    REQUIRE(gen.models("Honda").size() == honda_bikes.size() + honda_cars.size());
+
+    // A motorcycle's trim names its model: the summary does not repeat it.
+    auto r = at(2024, 6, 1);
+    r.model = "honda-cbr";
+    const auto v = gen.get_vehicle(r, 1);
+    REQUIRE(v.to_string().starts_with(std::to_string(v.model_year) + " Honda " + v.trim + ", "));
+    r.model = "harley-softail";
+    const auto h = gen.get_vehicle(r, 1);
+    REQUIRE(h.to_string().starts_with(std::to_string(h.model_year) + " Harley-Davidson Softail " + h.trim + ", "));
 }
 
 // ---------------------------------------------------------------------------
@@ -698,18 +903,23 @@ TEST_CASE("known answers for fixed seeds", "[kat]")
     vhg gen;
     gen.load(lite_dir());
     REQUIRE(gen.has_data());
-    REQUIRE(gen.data_hash() == 0xcae52f3d38d59d5dULL);
+    REQUIRE(gen.data_hash() == 0x7e53b64e7b4b9c2cULL);
 
     auto de = at(2023, 7, 1);
     de.country = "DE";
     REQUIRE(gen.get_vehicle(de, std::uint64_t{1}).to_json() ==
-            R"({"country_code":"DE","make":"Mercedes-Benz","model":"GLC","model_key":"mercedes-glc","trim":"GLC 200","body":"suv","fuel":"petrol","model_year":2018,"first_registration":"2018-12-10","engine_cc":1991,"power_kw":150,"transmission":"automatic","drive":"rwd","doors":5,"seats":5,"colour":"Polar White","colour_family":"white","odometer":31790,"odometer_unit":"km","plate":"EU-RI 23","plate_region":"EU","plate_format":"de","vin":"WDCJGRDP4JR152138","wmi":"WDC","reserved":false,"signature":{"seed":"0000000000000001","data":"cae52f3d38d59d5d"}})");
+            R"({"country_code":"DE","kind":"car","make":"Mercedes-Benz","model":"GLC","model_key":"mercedes-glc","trim":"GLC 200","body":"suv","fuel":"petrol","model_year":2018,"first_registration":"2018-12-10","engine_cc":1991,"power_kw":150,"transmission":"automatic","drive":"rwd","doors":5,"seats":5,"colour":"Polar White","colour_family":"white","odometer":31790,"odometer_unit":"km","plate":"EU-RI 23","plate_region":"EU","plate_format":"de","vin":"WDCJGRDP4JR152138","wmi":"WDC","reserved":false,"signature":{"seed":"0000000000000001","data":"7e53b64e7b4b9c2c"}})");
     auto us = at(2015, 3, 1);
     us.country = "US";
     us.safe = true;
     REQUIRE(gen.get_vehicle(us, std::uint64_t{2}).to_json() ==
-            R"({"country_code":"US","make":"Chevrolet","model":"Malibu","model_key":"chevrolet-malibu","trim":"3.5 V6","body":"sedan","fuel":"petrol","model_year":2005,"first_registration":"2005-05-15","engine_cc":3511,"power_kw":165,"transmission":"automatic","drive":"fwd","doors":4,"seats":5,"colour":"Dark Blue Metallic","colour_family":"blue","odometer":161310,"odometer_unit":"mi","plate":"RIB 3891","plate_region":"MI","plate_format":"us-mi","vin":"GZ9JAAYF250743579","wmi":"GZ9","reserved":true,"signature":{"seed":"0000000000000002","data":"cae52f3d38d59d5d"}})");
-    REQUIRE(gen.get_vehicle({}, std::uint64_t{3}).to_string() == R"(2022 Toyota Hilux 2.8 D-4D, diesel, red, 24,360 km, F 7 ETE)");
+            R"({"country_code":"US","kind":"car","make":"Chevrolet","model":"Malibu","model_key":"chevrolet-malibu","trim":"3.5 V6","body":"sedan","fuel":"petrol","model_year":2005,"first_registration":"2005-05-15","engine_cc":3511,"power_kw":165,"transmission":"automatic","drive":"fwd","doors":4,"seats":5,"colour":"Dark Blue Metallic","colour_family":"blue","odometer":161310,"odometer_unit":"mi","plate":"RIB 3891","plate_region":"MI","plate_format":"us-mi","vin":"GZ9JAAYF250743579","wmi":"GZ9","reserved":true,"signature":{"seed":"0000000000000002","data":"7e53b64e7b4b9c2c"}})");
+    REQUIRE(gen.get_vehicle({}, std::uint64_t{3}).to_string() == R"(2022 Honda Activa 110, petrol, yellow, 12,490 km, TN 70 T 1716)");
+    auto it = at(2023, 7, 1);
+    it.country = "IT";
+    it.kind = dasmig::vehicle_kind::motorcycle;
+    REQUIRE(gen.get_vehicle(it, std::uint64_t{4}).to_json() ==
+            R"({"country_code":"IT","kind":"motorcycle","make":"KTM","model":"Duke","model_key":"ktm-duke","trim":"640 Duke","body":"standard","fuel":"petrol","model_year":2005,"first_registration":"2005-10-07","engine_cc":625,"power_kw":40,"transmission":"manual","drive":"chain","doors":0,"seats":2,"colour":"Silver Metallic Grey","colour_family":"grey","odometer":70960,"odometer_unit":"km","plate":"MW 62480","plate_region":"","plate_format":"it-moto","vin":"VBK784SS250239763","wmi":"VBK","reserved":false,"signature":{"seed":"0000000000000004","data":"7e53b64e7b4b9c2c"}})");
 
     std::uint64_t h = 0xcbf29ce484222325ULL;
     for (std::uint64_t s = 0; s < 10000; ++s)
@@ -720,7 +930,7 @@ TEST_CASE("known answers for fixed seeds", "[kat]")
             h *= 0x100000001b3ULL;
         }
     }
-    REQUIRE(h == 0x401bceaf463dcbc7ULL);
+    REQUIRE(h == 0xc43597e7dc527270ULL);
 }
 
 // ---------------------------------------------------------------------------
@@ -883,5 +1093,5 @@ TEST_CASE("vehicle batch: known answer of 10,000 items", "[batch][kat]")
                          [&](std::uint64_t, const vehicle& item) {
                              hash = dasmig::core::hash_combine(hash, dasmig::core::fnv1a64(item.to_json()));
                          });
-    REQUIRE(hash == 0x941e2b22e87dad8eULL);
+    REQUIRE(hash == 0x4fa4311d04a8752ULL);
 }

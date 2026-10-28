@@ -11,27 +11,30 @@
 
 **[API Reference](https://dasmig.github.io/vehicle-generator/)** · **[Usage Guide](doc/usage.md)** · **[Data and Method](doc/data.md)** · **[Releases](https://github.com/dasmig/vehicle-generator/releases)**
 
-Vehicles that fit their country and date: a make sold there and a model built in its model year, a fuel as common as it was among new cars that year, a trim, gearbox and drive the model was offered with, a colour of its era, an odometer reading that fits its age, a licence plate in the country's format of the registration date, and a VIN whose maker prefix, check digit and model-year code are right.
+Cars and motorcycles that fit their country and date: a make sold there and a model built in its model year, a fuel as common as it was among new vehicles of that kind that year, a trim, gearbox and drive the model was offered with, a colour of its era, an odometer reading that fits its age, a licence plate in the country's format of the registration date, and a VIN whose maker prefix, check digit and model-year code are right.
 
 ```
 2019 Volkswagen Golf 1.5 TSI, petrol, silver, 54,300 km, B-KX 4821
 2022 Toyota Prius 1.8 Hybrid, hybrid, white, 3,840 km, 福岡 331 な ・317
 2013 Chevrolet Equinox 2.4, petrol, black, 92,800 mi, 7CBU948
+2020 Honda BeAT, petrol, red, 25,480 km, 30-Y5 275.82
 ```
 
 ## Features
 
 - **Every Country**. 195 countries in the `lite` tier and 242 in `full`, each with its own fleet age, fuel mix by model year, makes, models sold, automatic share, yearly mileage and plate format; no country falls back to an invented format.
 
+- **Cars and Motorcycles**. Each country's motorcycles and scooters next to its cars, with their own fleet size, age, makes, fuel mix, colours and mileage: most vehicles drawn in Vietnam or Indonesia are scooters and underbones, a US motorcycle is most often a Harley-Davidson, an Indian one a Hero, a Honda or a TVS. Without a requested kind, the kind is drawn by the country's vehicles in use.
+
 - **Coherent with the Date**. The model was built in the model year, the trim was offered with that fuel that year, the first registration falls between October of the year before and the end of the model year, the odometer grows with the years in use. A 2012 car in Norway is rarely electric, a 2024 one usually is.
 
-- **Real Plates**. The format each country issued at the registration date: Spain's and Italy's sequential series move with the date, British age identifiers match the half-year, German plates carry their district with `E` for electric and `H` for historic cars, China's green NEV plates from 2017, Japanese plates in kanji and hiragana, all 50 US states and DC, Canadian provinces and Australian states.
+- **Real Plates**. The format each country issued at the registration date: Spain's and Italy's sequential series move with the date, British age identifiers match the half-year, German plates carry their district with `E` for electric and `H` for historic cars, China's green NEV plates from 2017, Japanese plates in kanji and hiragana, the motorcycle series of Italy, Vietnam, Japan, Greece, Colombia and Argentina, all 50 US states and DC, Canadian provinces and Australian states.
 
-- **Valid VINs**. ISO 3779: the WMI of the make and the country that built the car for that market (a Golf sold in Mexico comes from Puebla), model-consistent descriptor characters, the check digit, the model-year code and a plant code.
+- **Valid VINs**. ISO 3779: the WMI of the make and the country that built the vehicle for that market (a Golf sold in Mexico comes from Puebla, a Honda Wave sold in Vietnam from Vinh Phuc), model-consistent descriptor characters, the check digit, the model-year code and a plant code.
 
 - **Safe Mode**. `safe = true` gives plates from series not yet issued, region codes no authority uses or letters the format never takes, and VINs whose WMI no manufacturer holds (checked against NHTSA vPIC).
 
-- **Requests**. Country, plate region, make, model, body, fuel, age range, owner's age, reference date (2000 to 2050), units; impossible combinations are rejected with their reason.
+- **Requests**. Country, kind (car or motorcycle), plate region, make, model, body, fuel, age range, owner's age, reference date (2000 to 2050), units; impossible combinations are rejected with their reason.
 
 - **Deterministic**. A seed gives the same vehicle on every compiler and platform; batches, threads and streaming as in every dasmig library.
 
@@ -64,6 +67,11 @@ r.region = "CA";
 r.fuel = dasmig::vehicle_fuel::electric;
 r.safe = true;                    // plate and VIN nobody holds
 auto ev = gen.get_vehicle(r, 42); // the same seed gives the same result everywhere
+
+dasmig::vehicle_request bike;
+bike.country = "IT";
+bike.kind = dasmig::vehicle_kind::motorcycle; // or a motorcycle body or model
+auto m = gen.get_vehicle(bike);               // 2005 KTM 640 Duke, petrol, grey, 70,960 km, MW 62480
 ```
 
 See the [usage guide](doc/usage.md) for everything else.
@@ -98,7 +106,7 @@ Tested with:
 
 ## Data
 
-The data is curated for this library from public sources (national registration rules and statistics, makers' specifications, paint makers' colour reports) and derived from Eurostat, Our World in Data / IEA (CC BY 4.0), NHTSA vPIC and country-generator; see [doc/data.md](doc/data.md) and [LICENSE_DATA.txt](LICENSE_DATA.txt). Plates and VINs are realistic by design; use `safe` where a real one must never appear.
+The data is curated for this library from public sources (national registration rules and statistics, motorcycle industry associations, makers' specifications, paint makers' colour reports) and derived from Eurostat, Our World in Data / IEA (CC BY 4.0), NHTSA vPIC and country-generator; see [doc/data.md](doc/data.md) and [LICENSE_DATA.txt](LICENSE_DATA.txt). Plates and VINs are realistic by design; use `safe` where a real one must never appear.
 
 ## License
 
