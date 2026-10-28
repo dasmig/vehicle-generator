@@ -363,10 +363,7 @@ class vhg
 
         const country_rec& c = ctx.country ? *ctx.country : draw_country_(ctx, request, call);
         v.country_code = c.code;
-        if (request.region && c.jurisdictions.empty() &&
-            std::ranges::none_of(plate_regions(c.code), [&](const std::string& code) {
-                return upper_(code) == upper_(*request.region);
-            }))
+        if (request.region && !has_region_(c, *request.region))
             throw std::invalid_argument("vehicle-generator: " + *request.region + " is not a plate region of " + c.code);
         const std::string jurisdiction = draw_jurisdiction_(c, request, call);
 
@@ -1997,6 +1994,13 @@ class vhg
         return _model.countries[it->second];
     }
 
+    // Whether a region code (any case) is one of the country's plate regions.
+    [[nodiscard]] bool has_region_(const country_rec& c, std::string_view region) const
+    {
+        const auto code = upper_(region);
+        return std::ranges::any_of(plate_regions(c.code), [&](const std::string& r) { return upper_(r) == code; });
+    }
+
     context resolve_(const vehicle_request& request) const
     {
         context ctx;
@@ -2129,7 +2133,7 @@ class vhg
         for (const auto& c : _model.countries)
         {
             double weight = 0.0;
-            if (c.drawable)
+            if (c.drawable && (!request.region || has_region_(c, *request.region)))
             {
                 const auto supply = supply_(c, ctx);
                 for (int a = ctx.min_age; a <= ctx.max_age && weight == 0.0; ++a)
@@ -2137,7 +2141,11 @@ class vhg
             }
             w.push_back(weight);
         }
-        if (!any_positive_(w)) throw std::invalid_argument("vehicle-generator: no country has a" + describe_(ctx));
+        if (!any_positive_(w))
+        {
+            const std::string where = request.region ? " with plate region " + *request.region : std::string{};
+            throw std::invalid_argument("vehicle-generator: no country" + where + " has a" + describe_(ctx));
+        }
         auto r = call.split("country");
         return _model.countries[pick_index_(w, request.weighted, r)];
     }
@@ -2471,26 +2479,26 @@ class vhg
         return check();
     }
 
-    plate_out make_plate_(const plate_format& f, int issued, int reference_day, const std::string& region_request,
-                          bool safe, bool weighted, core::rng& r, core::rng& rr) const
+    plate_out make_plate_(const plate_format& f, int issued, const std::string& region_request, bool safe,
+                          bool weighted, core::rng& r, core::rng& rr) const
     {
         const region_set* set = f.regions.empty() ? nullptr : &_model.region_sets.at(f.regions);
         plate_out out;
         const region_rec* region = nullptr;
         if (set)
         {
-            if (safe && !set->reserved.empty() && !f.sequential)
-            {
-                region = &set->codes[set->reserved[below_(rr, set->reserved.size())]];
-                out.reserved = true;
-            }
-            else if (!region_request.empty())
+            if (!region_request.empty())
             {
                 for (const auto& code : set->codes)
                     if (!code.reserved && upper_(code.code) == upper_(region_request)) region = &code;
                 if (!region)
                     throw std::invalid_argument("vehicle-generator: " + region_request +
                                                 " is not a region of plate format " + f.key);
+            }
+            else if (safe && !set->reserved.empty() && !f.sequential)
+            {
+                region = &set->codes[set->reserved[below_(rr, set->reserved.size())]];
+                out.reserved = true;
             }
             else
             {
@@ -2503,19 +2511,16 @@ class vhg
         if (f.sequential)
         {
             auto [at, rate] = series_at_(f, issued);
-            if (safe)
+            at += core::math::fenced(rate * core::uniform_real(r, -7.0, 7.0));
+            if (safe && !out.reserved && unused_letters_(f).empty())
             {
-                const auto [now, now_rate] = series_at_(f, reference_day);
-                const double ahead = now + core::math::fenced(now_rate * (90.0 + core::uniform_real(r, 0.0, 365.0)));
-                if (now_rate > 0.0 && ahead < f.capacity - 1.0)
+                // Past the last plate of the series: where it ended, or where it will be at the end of the data.
+                const double last = series_at_(f, std::min(f.until, latest_day_())).first + 1.0;
+                if (last < f.capacity - 1.0)
                 {
-                    at = ahead;
+                    at = core::uniform_real(r, last, f.capacity - 1.0);
                     out.reserved = true;
                 }
-            }
-            else
-            {
-                at += core::math::fenced(rate * core::uniform_real(r, -7.0, 7.0));
             }
             index = std::clamp(at, 0.0, f.capacity - 1.0);
         }
@@ -2602,6 +2607,26 @@ class vhg
         throw std::runtime_error("vehicle-generator: plate format " + f.key + " produced no valid plate");
     }
 
+    // Letters the format's alphabet never takes: I, O and Q, or, when it takes all three, the other capitals it lacks.
+    static std::string unused_letters_(const plate_format& f)
+    {
+        const auto collect = [&](std::string_view candidates) {
+            std::string out;
+            for (const char c : candidates)
+                if (std::ranges::find(f.letters, std::string(1, c)) == f.letters.end()) out += c;
+            return out;
+        };
+        auto unused = collect("IOQ");
+        if (unused.empty()) unused = collect("ABCDEFGHJKLMNPRSTUVWXYZ");
+        return unused;
+    }
+
+    static int latest_day_()
+    {
+        return static_cast<int>(
+            std::chrono::sys_days{vehicle_request::latest_reference_date}.time_since_epoch().count());
+    }
+
     // Make a plate one no authority issues: a letter the format never uses, a 0 where it never stands, or all zeros.
     static bool mark_unissued_(const plate_format& f, std::vector<plate_slot>& slots, core::rng& r)
     {
@@ -2614,9 +2639,7 @@ class vhg
             if (slots[i].token == 'N') nonzero.push_back(i);
             if (slots[i].token == 'D') digits.push_back(i);
         }
-        std::string unused;
-        for (const char c : std::string_view{"IOQ"})
-            if (std::ranges::find(f.letters, std::string(1, c)) == f.letters.end()) unused += c;
+        const auto unused = unused_letters_(f);
         if (!letters.empty() && !unused.empty())
         {
             slots[letters[below_(r, letters.size())]].text = std::string(1, unused[below_(r, unused.size())]);
@@ -2676,7 +2699,7 @@ class vhg
         }
         if (!f) return;
         const std::string region_request = c.jurisdictions.empty() && request.region ? *request.region : std::string{};
-        auto out = make_plate_(*f, issued, day, region_request, request.safe, request.weighted, r, rr);
+        auto out = make_plate_(*f, issued, region_request, request.safe, request.weighted, r, rr);
         v.plate = std::move(out.text);
         v.plate_region = jurisdiction.empty() ? std::move(out.region) : jurisdiction;
         v.plate_format = f->key;

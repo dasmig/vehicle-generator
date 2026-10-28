@@ -414,6 +414,17 @@ TEST_CASE("plate regions: US states, German districts and requests", "[plates][r
     for (std::uint64_t s = 0; s < 200; ++s) REQUIRE(gen.get_vehicle(request, s).plate.starts_with("M-"));
     request.region = "ZZZ";
     REQUIRE_THROWS_AS(gen.get_vehicle(request, 1), std::invalid_argument);
+
+    // Without a country, the country is drawn among those that have the region.
+    request.country.reset();
+    request.region = "CA";
+    for (std::uint64_t s = 0; s < 200; ++s)
+    {
+        const auto regions = gen.plate_regions(gen.get_vehicle(request, s).country_code);
+        REQUIRE(std::ranges::find(regions, "CA") != regions.end());
+    }
+    request.region = "ZZZ";
+    REQUIRE_THROWS_AS(gen.get_vehicle(request, 1), std::invalid_argument);
 }
 
 TEST_CASE("safe plates and VINs come from series nobody holds", "[safe]")
@@ -422,13 +433,7 @@ TEST_CASE("safe plates and VINs come from series nobody holds", "[safe]")
     for (const auto& row : read_table("wmis.tsv"))
         if (row.at("reserved") == "1") reserved_wmis.insert(row.at("wmi"));
     const auto& gen = shared();
-    std::string spain_issued; // the latest Spanish series of a normal draw
-    auto normal = at(2024, 6, 1);
-    normal.country = "ES";
-    for (std::uint64_t s = 0; s < 3000; ++s)
-        if (const auto v = gen.get_vehicle(normal, s); v.plate_format == "es-2000")
-            spain_issued = std::max(spain_issued, v.plate.substr(5, 3));
-    for (const auto* country : {"DE", "US", "ES", "FR", "GB", "JP", "CN", "BR", "KE", "IN"})
+    for (const auto* country : {"DE", "US", "ES", "FR", "GB", "JP", "CN", "BR", "KE", "IN", "AR", "PT", "NL"})
     {
         auto request = at(2024, 6, 1);
         request.country = country;
@@ -440,9 +445,49 @@ TEST_CASE("safe plates and VINs come from series nobody holds", "[safe]")
             REQUIRE(v.reserved);
             REQUIRE(reserved_wmis.contains(v.wmi));
             REQUIRE(vin_valid(v.vin));
-            if (v.plate_format == "es-2000") REQUIRE(v.plate.substr(5, 3) > spain_issued);
+            // Spanish, Dutch and Portuguese series never issue these letters, whatever the date.
+            if (v.plate_format == "es-2000") REQUIRE(v.plate.find_first_of("IOQ") != std::string::npos);
+            if (v.plate_format.starts_with("nl-")) REQUIRE(v.plate.find_first_of("IOQ") != std::string::npos);
+            if (v.plate_format.starts_with("pt-")) REQUIRE(v.plate.find_first_of("KWY") != std::string::npos);
             if (v.plate_format == "de") REQUIRE((v.plate.starts_with("QX-") || v.plate.starts_with("YY-")));
         }
+    }
+
+    // Argentina's series take every letter: a safe plate lies past where a series ended or will be in 2050.
+    auto ar = at(2024, 6, 1);
+    ar.country = "AR";
+    std::string ar_1995_last;
+    std::string ar_2016_2050;
+    for (std::uint64_t s = 0; s < 3000; ++s)
+    {
+        const auto v = gen.get_vehicle(ar, s);
+        if (v.plate_format == "ar-1995") ar_1995_last = std::max(ar_1995_last, v.plate.substr(0, 3));
+    }
+    auto late = at(2050, 12, 31);
+    late.country = "AR";
+    late.max_age = 0;
+    for (std::uint64_t s = 0; s < 300; ++s)
+        ar_2016_2050 = std::max(ar_2016_2050, gen.get_vehicle(late, s).plate.substr(0, 2));
+    ar.safe = true;
+    for (std::uint64_t s = 0; s < 300; ++s)
+    {
+        const auto v = gen.get_vehicle(ar, s);
+        INFO(v.to_json());
+        if (v.plate_format == "ar-1995") REQUIRE(v.plate.substr(0, 3) >= ar_1995_last);
+        if (v.plate_format == "ar-2016") REQUIRE(v.plate.substr(0, 2) >= ar_2016_2050);
+    }
+
+    // A requested region stays; the plate is marked unissued another way.
+    auto munich = at(2024, 6, 1);
+    munich.country = "DE";
+    munich.region = "M";
+    munich.safe = true;
+    for (std::uint64_t s = 0; s < 200; ++s)
+    {
+        const auto v = gen.get_vehicle(munich, s);
+        INFO(v.to_json());
+        REQUIRE(v.plate_region == "M");
+        REQUIRE(v.plate.starts_with("M-"));
     }
 }
 

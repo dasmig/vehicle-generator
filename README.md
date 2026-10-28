@@ -55,7 +55,7 @@ auto& gen = dasmig::vhg::instance(); // loads the lite tier
 
 auto v = gen.get_vehicle(dasmig::vehicle_request{});
 std::cout << v << '\n';           // 2019 Volkswagen Golf 1.5 TSI, petrol, silver, 54,300 km, B-KX 4821
-std::cout << v.vin << '\n';       // WVWZZZCDZKW123456
+std::cout << v.vin << '\n';       // WVWZZZJY9KH761457
 std::cout << v.to_json() << '\n'; // {"country_code":"DE","make":"Volkswagen",...}
 
 dasmig::vehicle_request r;

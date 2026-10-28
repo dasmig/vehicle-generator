@@ -60,7 +60,7 @@ Each `load` replaces the data and every layer loaded before.
 | Field | Meaning |
 | --- | --- |
 | `country` | ISO 3166-1 alpha-2, any case. Unset: drawn by passenger cars in use. |
-| `region` | A plate region of the country (`plate_regions(country)`): a US state, Canadian province or Australian state (which picks that jurisdiction's plates), or a district or province code where plates carry one (`"M"` for Munich). |
+| `region` | A plate region of the country (`plate_regions(country)`): a US state, Canadian province or Australian state (which picks that jurisdiction's plates), or a district or province code where plates carry one (`"M"` for Munich). Without `country`, the country is drawn among those that have the region. |
 | `make`, `model` | A make as `makes()` lists it, or a model key (`models(make)`), which implies its make. |
 | `body`, `fuel` | `vehicle_body` and `vehicle_fuel` values. |
 | `min_age`, `max_age` | Completed years since the model year at the reference date. |
@@ -93,7 +93,7 @@ The result:
 | `colour`, `colour_family` | `"Reflex Silver"`, `"silver"` |
 | `odometer`, `odometer_unit` | `54300`, `"km"` |
 | `plate`, `plate_region`, `plate_format` | `"B-KX 4821"`, `"B"`, `"de"` |
-| `vin`, `wmi` | `"WVWZZZCDZKW123456"`, `"WVW"` |
+| `vin`, `wmi` | `"WVWZZZJY9KH761457"`, `"WVW"` |
 | `reserved` | `true` for safe plates and VINs |
 
 Queries: `countries()`, `makes(country)` (sold there; every make without a country), `models(make)` (keys), `plate_regions(country)`.

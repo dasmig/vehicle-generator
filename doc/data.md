@@ -78,7 +78,7 @@ A model offers a fuel in a year when one of its trims of that fuel covers the ye
 
 ## Safe mode
 
-A safe plate is, in order: a sequential series 90 to 455 days of issuance ahead of the reference date; a reserved region code; a letter the format's alphabet never uses (`I`, `O` or `Q`); a `0` where the format has a 1-9 digit; all digits zero. A safe VIN has a reserved WMI. `reserved` is set when both apply.
+A safe plate is, in order: a reserved region code (unless the request names a region); a letter the format's alphabet never uses (`I`, `O` or `Q`, or when it takes all three, another capital it lacks); in a sequential series that takes every letter, a plate past the series' last one, where it ended or where it will be on 2050-12-31; a `0` where the format has a 1-9 digit; all digits zero. None of these depends on the reference date, so a safe plate stays unissued as the series move on. A safe VIN has a reserved WMI. `reserved` is set when both apply.
 
 ## Limits
 
