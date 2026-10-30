@@ -1041,6 +1041,8 @@ class vhg
         std::vector<make_entry> makes;
         fuel_masks supply{};    // model years some make offers each fuel in
         fuel_masks positive{};  // model years each fuel has a positive share
+        fuel_masks sold{};      // model years each fuel is both supplied and has a positive share
+        year_mask sold_any{0};  // model years some fuel is
         std::size_t colours{npos_};
         bool drawable{false};
     };
@@ -1059,6 +1061,15 @@ class vhg
         [[nodiscard]] const fleet_rec& fleet(vehicle_kind k) const { return fleets.at(static_cast<std::size_t>(k)); }
     };
 
+    // What a country draw reads of a fleet, kept apart from the country so the loop over every country stays in cache.
+    struct fleet_sum
+    {
+        double size{0.0};
+        bool drawable{false};
+        year_mask sold_any{0};
+        fuel_masks sold{};
+    };
+
     static constexpr std::size_t npos_ = std::numeric_limits<std::size_t>::max();
 
     struct colour_table
@@ -1070,6 +1081,7 @@ class vhg
     struct model
     {
         std::vector<country_rec> countries;
+        std::vector<std::array<fleet_sum, kind_count_>> sums;  // by country
         std::unordered_map<std::string, std::size_t> country_index;
         std::vector<model_rec> models;
         std::unordered_map<std::string, std::size_t> model_index;
@@ -2055,8 +2067,18 @@ class vhg
                     return m.formats[i].kinds == 0 || (m.formats[i].kinds & kind_bit_(k)) != 0;
                 });
                 for (std::size_t f = 0; f < fuel_count_; ++f)
-                    if ((fl.supply.at(f) & fl.positive.at(f)) != 0) fl.drawable = fl.size > 0.0 && plated;
+                {
+                    fl.sold.at(f) = fl.supply.at(f) & fl.positive.at(f);
+                    fl.sold_any |= fl.sold.at(f);
+                    if (fl.sold.at(f) != 0) fl.drawable = fl.size > 0.0 && plated;
+                }
                 c.drawable = c.drawable || fl.drawable;
+            }
+            auto& sum = m.sums.emplace_back();
+            for (std::size_t ki = 0; ki < kind_count_; ++ki)
+            {
+                const auto& fl = c.fleets.at(ki);
+                sum.at(ki) = {fl.size, fl.drawable, fl.sold_any, fl.sold};
             }
             m.country_index.emplace(c.code, m.countries.size());
             m.countries.push_back(std::move(c));
@@ -2361,23 +2383,49 @@ class vhg
         if (ctx.kind && *ctx.kind != k) return 0.0;
         const auto& fl = c.fleet(k);
         if (!fl.drawable) return 0.0;
+        if (!ctx.narrowed())
+            return plain_kind_weight_({fl.size, fl.drawable, fl.sold_any, fl.sold}, k, ctx, age_window_(ctx));
         const auto supply = supply_(fl, ctx);
         for (int a = ctx.min_age; a <= ctx.max_age; ++a)
-            if (year_weight_(fl, supply, ctx, ctx.year - a) > 0.0)
-                return ctx.owner ? core::math::fenced(fl.size * ctx.owner->kind.at(static_cast<std::size_t>(k)))
-                                 : fl.size;
+            if (year_weight_(fl, supply, ctx, ctx.year - a) > 0.0) return sized_(fl.size, k, ctx);
         return 0.0;
+    }
+
+    static double sized_(double size, vehicle_kind k, const context& ctx)
+    {
+        return ctx.owner ? core::math::fenced(size * ctx.owner->kind.at(static_cast<std::size_t>(k))) : size;
+    }
+
+    // kind_weight_ for a request without a make, model or body: the supply is the fleet's, so a model year is sold
+    // when some allowed fuel is both supplied and has a positive share in it, which the masks say without the shares.
+    static double plain_kind_weight_(const fleet_sum& fl, vehicle_kind k, const context& ctx, year_mask window)
+    {
+        if (ctx.kind && *ctx.kind != k) return 0.0;
+        if (!fl.drawable) return 0.0;
+        const year_mask sold = ctx.fuel ? fl.sold.at(static_cast<std::size_t>(*ctx.fuel)) : fl.sold_any;
+        return (sold & window) != 0 ? sized_(fl.size, k, ctx) : 0.0;
+    }
+
+    // The year slots of the model years from min_age to max_age old: slot_ is monotone, so they are a run of bits.
+    static year_mask age_window_(const context& ctx)
+    {
+        return (bit_(ctx.year - ctx.min_age) << 1U) - bit_(ctx.year - ctx.max_age);  // wraps when the top slot is 63
     }
 
     const country_rec& draw_country_(const context& ctx, const vehicle_request& request, const core::rng& call) const
     {
         std::vector<double> w;
         w.reserve(_model.countries.size());
-        for (const auto& c : _model.countries)
+        const bool plain = !ctx.narrowed();
+        const year_mask window = plain ? age_window_(ctx) : 0;
+        for (std::size_t i = 0; i < _model.countries.size(); ++i)
         {
+            const auto& c = _model.countries[i];
             double weight = 0.0;
             if (c.drawable && (!request.region || has_region_(c, *request.region)))
-                for (const auto k : kinds_) weight += kind_weight_(c, k, ctx);
+                for (const auto k : kinds_)
+                    weight += plain ? plain_kind_weight_(_model.sums[i].at(static_cast<std::size_t>(k)), k, ctx, window)
+                                    : kind_weight_(c, k, ctx);
             w.push_back(weight);
         }
         if (!any_positive_(w))
