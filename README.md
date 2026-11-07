@@ -108,6 +108,31 @@ Tested with:
 
 The data is curated for this library from public sources (national registration rules and statistics, motorcycle industry associations, makers' specifications, paint makers' colour reports) and derived from Eurostat, Our World in Data / IEA (CC BY 4.0), NHTSA vPIC and country-generator; see [doc/data.md](doc/data.md) and [LICENSE_DATA.txt](LICENSE_DATA.txt). Plates and VINs are realistic by design; use `safe` where a real one must never appear.
 
+## Related Libraries
+
+| Library | Description |
+|---------|-------------|
+| [address-generator](https://github.com/dasmig/address-generator) | Postal addresses with real streets by place |
+| [biodata-generator](https://github.com/dasmig/biodata-generator) | Procedural human physical characteristics |
+| [birth-generator](https://github.com/dasmig/birth-generator) | Demographically plausible birthdays |
+| [city-generator](https://github.com/dasmig/city-generator) | Weighted city selection by population |
+| [country-generator](https://github.com/dasmig/country-generator) | Weighted country selection by population |
+| [device-generator](https://github.com/dasmig/device-generator) | Devices, browsers, user agents and IP addresses that fit together |
+| [email-generator](https://github.com/dasmig/email-generator) | Email addresses in each country's style |
+| [entity-generator](https://github.com/dasmig/entity-generator) | ECS-based entity generation |
+| [finance-generator](https://github.com/dasmig/finance-generator) | Bank accounts and payment cards in each country's form |
+| [id-generator](https://github.com/dasmig/id-generator) | National identity numbers, passports and identity cards that fit a person and a date |
+| [interest-generator](https://github.com/dasmig/interest-generator) | Religion, hobbies and favourite media by country, age and sex |
+| [name-generator](https://github.com/dasmig/name-generator) | Culturally appropriate full names |
+| [nickname-generator](https://github.com/dasmig/nickname-generator) | Gamer-style nicknames |
+| [occupation-generator](https://github.com/dasmig/occupation-generator) | Employment status, education and occupation by country, age and sex |
+| [persona-generator](https://github.com/dasmig/persona-generator) | Complete characters composed from the other generators |
+| [phone-generator](https://github.com/dasmig/phone-generator) | Phone numbers valid in each country's numbering plan |
+| [relationship-generator](https://github.com/dasmig/relationship-generator) | Families around a person: parents, siblings, partners and children |
+| [trait-generator](https://github.com/dasmig/trait-generator) | Personality traits with conflicts, synergies and Big Five axes |
+| [user-generator](https://github.com/dasmig/user-generator) | Complete user records: account, username, email, phone and address |
+| [weather-generator](https://github.com/dasmig/weather-generator) | Daily weather for any place on land and any date |
+
 ## License
 
 This library is released under the [MIT License](https://opensource.org/licenses/MIT).
